@@ -1,0 +1,63 @@
+{
+  "record_kind": "EXPERIMENT_RUN_RECEIPT",
+  "receipt_id": "RCPT-20260929-EXP-SLICE",
+  "experiment_id": "EXPERIMENT-2026-09-29-SLICE",
+  "run_id": "RUN-20260929T120000Z-EXPERIMENT",
+  "written_by": "INTEGRATOR",
+  "created_at": "2026-09-29T12:30:00Z",
+  "per_document_receipts": [
+    {
+      "fixture_id": "FIX-SYNTH-TEXT-001",
+      "run_id": "RUN-20260929T120000Z-01",
+      "run_receipt_sha256": "cecea57651c316d03988c312a5c3aeedb7574ade7204357ec62543a0ea50ebd6",
+      "disposition": "ACCEPT"
+    },
+    {
+      "fixture_id": "FIX-SYNTH-REFUSED-ENC-001",
+      "run_id": "RUN-20260929T120000Z-02",
+      "run_receipt_sha256": "03ef0664c982173357200f8a816fbf6cbcb2b31b7da083d808c8eb093cd786ac",
+      "disposition": "REFUSE"
+    }
+  ],
+  "determinism": {
+    "rerun_performed": true,
+    "first_run_digest": "f242a22602da2021d1062fb09732d6ef4a04de2689ac640564c3dd7fbb0b8c16",
+    "second_run_digest": "f242a22602da2021d1062fb09732d6ef4a04de2689ac640564c3dd7fbb0b8c16",
+    "intentionally_variable_fields_declared": [
+      "created_at"
+    ],
+    "match": "DETERMINISTIC_MATCH",
+    "evidence_ref": "receipts/determinism#EXPERIMENT-2026-09-29-SLICE"
+  },
+  "mutation_checks": [
+    {
+      "mutation_id": "MUT-SYNTH-001",
+      "mutation_spec_ref": "lanes/03-fixtures-oracles/MUTATION-SPECS.json#MUT-SYNTH-001",
+      "seed_ref": "sha256:8a62023459f65ef8180aa16e1655e1c190d65f0a9c85d02e72e322698487b7b4",
+      "expected_failing_gate": "G03_TEXT_IDENTITY",
+      "observed_failing_gate": "G03_TEXT_IDENTITY",
+      "detected": true,
+      "expected_disposition": "REVIEW",
+      "observed_disposition": "REVIEW"
+    }
+  ],
+  "refusal_controls": [
+    {
+      "control_id": "CTRL-SYNTH-ENC-001",
+      "expected_refusal_family": "ENCRYPTED",
+      "observed_refusal_family": "ENCRYPTED",
+      "matched": true
+    }
+  ],
+  "benign_controls": [
+    {
+      "control_id": "CTRL-SYNTH-BENIGN-001",
+      "expected_disposition": "ACCEPT",
+      "observed_disposition": "ACCEPT",
+      "matched": true
+    }
+  ],
+  "run_outcome": "INVALID_EXPERIMENT",
+  "invalidation_conditions": [],
+  "final_status": "VERTICAL_SLICE_VERIFIED"
+}
