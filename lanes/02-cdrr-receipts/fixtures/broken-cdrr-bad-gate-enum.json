@@ -1,0 +1,732 @@
+{
+  "record_kind": "CDRR",
+  "schema_version": "1.0.0",
+  "cdrr_id": "CDRR-20260929-SYNTHTEXT01",
+  "experiment_id": "EXPERIMENT-2026-09-29-SLICE",
+  "run_id": "RUN-20260929T120000Z-01",
+  "fixture_id": "FIX-SYNTH-TEXT-001",
+  "created_at": "2026-09-29T12:10:00Z",
+  "generated_by": {
+    "tool_name": "synthetic-lane02-example-generator",
+    "tool_version": "0.1.0",
+    "lane_id": "02-cdrr-receipts"
+  },
+  "document_identity": {
+    "original_filename": "synthetic-text-001.pdf",
+    "mime_detected": "application/pdf",
+    "byte_size": 28471,
+    "sha256": "b68b716ac5e31f75432ff861be4052f9115bff9f08c56bc0a211f80cf9292a36",
+    "sealed_fixture_manifest_ref": "lanes/03-fixtures-oracles/FIXTURE-MANIFEST.json#FIX-SYNTH-TEXT-001"
+  },
+  "source_inventory": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "hash_algorithm": "sha256",
+    "object_count": 42,
+    "inventory_digest": "33a416d47b54fd2dc6aaf48046180b6d8af7d4fe5ace121e556136454c415771",
+    "summary": "42 indirect objects: 1 catalog, 2 page-tree nodes, 2 page objects, 35 stream/content objects, 2 font objects"
+  },
+  "classification": {
+    "status": "CLASSIFIED",
+    "class_label": "TEXT_NATIVE_SINGLE_COLUMN",
+    "classifier_tool": {
+      "name": "synthetic-classifier",
+      "version": "0.1.0"
+    },
+    "classifier_evidence": [
+      {
+        "evidence_type": "PAGE_TEXT_LAYER_PRESENT",
+        "detail": "templated: extractable text layer present on 2 of 2 pages",
+        "page_index": null
+      },
+      {
+        "evidence_type": "LAYOUT_ANALYSIS",
+        "detail": "templated: single-column layout detected on all pages",
+        "page_index": null
+      }
+    ]
+  },
+  "refusal_scan": {
+    "status": "COMPLETED",
+    "outcome": "NOT_REFUSED",
+    "refusal_family": "NOT_APPLICABLE",
+    "scan_tool": {
+      "name": "synthetic-refusal-scanner",
+      "version": "0.1.0"
+    },
+    "evidence_anchors": []
+  },
+  "pages": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "page_index": 0,
+        "media_box": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 612,
+          "y1": 792,
+          "units": "pt"
+        },
+        "crop_box": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 612,
+          "y1": 792,
+          "units": "pt"
+        },
+        "rotation": 0,
+        "source_page_hash": "a0123bfd5fc03df609b026496f1790842b6bf5be96d111e2657110e8b5611f4f",
+        "object_count": 7
+      },
+      {
+        "page_index": 1,
+        "media_box": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 612,
+          "y1": 792,
+          "units": "pt"
+        },
+        "crop_box": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 612,
+          "y1": 792,
+          "units": "pt"
+        },
+        "rotation": 0,
+        "source_page_hash": "a6916bdecfbb2fbaec0e33954101dd32224af9d0342d0eb0408c822195561c5e",
+        "object_count": 9
+      }
+    ]
+  },
+  "text_spans": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "span_id": "SP-00000001",
+        "page_index": 0,
+        "bbox": {
+          "x0": 72,
+          "y0": 704,
+          "x1": 300,
+          "y1": 724,
+          "units": "pt"
+        },
+        "unicode_text": "Synthetic heading",
+        "font_name": "Helvetica",
+        "font_size": 18,
+        "glyph_mapping_status": "VERIFIED"
+      },
+      {
+        "span_id": "SP-00000002",
+        "page_index": 0,
+        "bbox": {
+          "x0": 72,
+          "y0": 640,
+          "x1": 480,
+          "y1": 660,
+          "units": "pt"
+        },
+        "unicode_text": "Synthetic body text with  double space",
+        "font_name": "Helvetica",
+        "font_size": 10,
+        "glyph_mapping_status": "VERIFIED"
+      },
+      {
+        "span_id": "SP-00000003",
+        "page_index": 1,
+        "bbox": {
+          "x0": 72,
+          "y0": 704,
+          "x1": 460,
+          "y1": 724,
+          "units": "pt"
+        },
+        "unicode_text": "Synthetic closing paragraph",
+        "font_name": "Helvetica",
+        "font_size": 10,
+        "glyph_mapping_status": "VERIFIED"
+      }
+    ]
+  },
+  "structure": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "element_id": "EL-00000001",
+        "element_type": "HEADING",
+        "heading_level": 1,
+        "span_ids": [
+          "SP-00000001"
+        ],
+        "list_marker_type": "NONE",
+        "notice_kind": "NONE",
+        "figure_kind": "NONE"
+      },
+      {
+        "element_id": "EL-00000002",
+        "element_type": "PARAGRAPH",
+        "heading_level": null,
+        "span_ids": [
+          "SP-00000002"
+        ],
+        "list_marker_type": "NONE",
+        "notice_kind": "NONE",
+        "figure_kind": "NONE"
+      },
+      {
+        "element_id": "EL-00000003",
+        "element_type": "PARAGRAPH",
+        "heading_level": null,
+        "span_ids": [
+          "SP-00000003"
+        ],
+        "list_marker_type": "NONE",
+        "notice_kind": "NONE",
+        "figure_kind": "NONE"
+      }
+    ]
+  },
+  "reading_order": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "derivation_method": "EXPLICIT_STRUCTURE_TREE",
+    "confidence": {
+      "band": "HIGH",
+      "score": 0.98
+    },
+    "ordered_element_ids": [
+      "EL-00000001",
+      "EL-00000002",
+      "EL-00000003"
+    ]
+  },
+  "tables": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "table_id": "TBL-00000001",
+        "page_index": 0,
+        "grid_row_count": 2,
+        "grid_column_count": 2,
+        "cells": [
+          {
+            "row_anchor": "row-header",
+            "column_anchor": "col-year",
+            "displayed_string": "Year",
+            "numeric_lexemes": [],
+            "header_relationship": "COLUMN_HEADER",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "row_anchor": "row-header",
+            "column_anchor": "col-value",
+            "displayed_string": "Amount",
+            "numeric_lexemes": [],
+            "header_relationship": "COLUMN_HEADER",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "row_anchor": "row-2019",
+            "column_anchor": "col-year",
+            "displayed_string": "2019",
+            "numeric_lexemes": [
+              {
+                "lexeme": "2019",
+                "parsed_value": 2019,
+                "unit": null
+              }
+            ],
+            "header_relationship": "DATA",
+            "col_span": 1,
+            "row_span": 1
+          },
+          {
+            "row_anchor": "row-2019",
+            "column_anchor": "col-value",
+            "displayed_string": "1200.50",
+            "numeric_lexemes": [
+              {
+                "lexeme": "1200.50",
+                "parsed_value": 1200.5,
+                "unit": null
+              }
+            ],
+            "header_relationship": "DATA",
+            "col_span": 1,
+            "row_span": 1
+          }
+        ],
+        "external_unit_declarations": []
+      }
+    ]
+  },
+  "navigation": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "bookmarks": [
+      {
+        "bookmark_id": "BM-00000001",
+        "title_text": "Synthetic heading",
+        "destination": {
+          "kind": "PAGE",
+          "page_index": 0,
+          "coordinates": null,
+          "named_dest": null
+        },
+        "parent_bookmark_id": null
+      }
+    ],
+    "toc_entries": [
+      {
+        "entry_text": "Synthetic heading",
+        "target_page_index": 0,
+        "confidence": "HIGH"
+      }
+    ],
+    "internal_links": [
+      {
+        "link_id": "LN-00000001",
+        "source_page_index": 1,
+        "source_bbox": {
+          "x0": 72,
+          "y0": 500,
+          "x1": 200,
+          "y1": 514,
+          "units": "pt"
+        },
+        "destination": {
+          "kind": "PAGE",
+          "page_index": 0,
+          "coordinates": null,
+          "named_dest": null
+        },
+        "target_independently_established": true
+      }
+    ]
+  },
+  "visible_ink": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "per_page_anchors": [
+      {
+        "page_index": 0,
+        "ink_coverage_ratio": 0.031,
+        "ink_anchor_digest": "0ad18b4c98bc3ae3f51c389f2f1fa2e2b909e99a93b8460d142144f054bf7273",
+        "renderer": {
+          "name": "synthetic-renderer-independent",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "page_index": 1,
+        "ink_coverage_ratio": 0.022,
+        "ink_anchor_digest": "b477041a19fac685d51ad27a272fac702b7f00a0c5bd17412f63ae906030a6e3",
+        "renderer": {
+          "name": "synthetic-renderer-independent",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "operation_plan": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "operation_id": "OP-0001",
+        "operation_name": "NORMALIZE_SPACING",
+        "source_anchors": [
+          {
+            "kind": "TEXT_SPAN",
+            "page_index": 0,
+            "element_id": null,
+            "span_id": "SP-00000002",
+            "bbox": {
+              "x0": 72,
+              "y0": 640,
+              "x1": 480,
+              "y1": 660,
+              "units": "pt"
+            }
+          }
+        ],
+        "justification_code": "SPACING_IRREGULAR",
+        "justification_note": null,
+        "expected_delta": {
+          "delta_type": "WHITESPACE_ONLY",
+          "scope": "SPAN",
+          "magnitude": {
+            "metric": "CHAR_COUNT",
+            "value": 1,
+            "tolerance": 0
+          },
+          "material_change": false
+        },
+        "requires_glyph_verification": false,
+        "review_only": false
+      },
+      {
+        "operation_id": "OP-0002",
+        "operation_name": "SET_VERIFIED_READING_ORDER",
+        "source_anchors": [
+          {
+            "kind": "STRUCTURE_ELEMENT",
+            "page_index": 0,
+            "element_id": "EL-00000002",
+            "span_id": null,
+            "bbox": null
+          }
+        ],
+        "justification_code": "READING_ORDER_UNVERIFIED",
+        "justification_note": null,
+        "expected_delta": {
+          "delta_type": "READING_ORDER_ANNOTATION",
+          "scope": "DOCUMENT",
+          "magnitude": {
+            "metric": "COUNT",
+            "value": 1,
+            "tolerance": null
+          },
+          "material_change": false
+        },
+        "requires_glyph_verification": false,
+        "review_only": false
+      }
+    ]
+  },
+  "applied_operations": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "operation_id": "OP-0001",
+        "applied_status": "APPLIED",
+        "applied_at": "2026-09-29T12:05:00Z",
+        "tool": {
+          "name": "synthetic-builder",
+          "version": "0.1.0"
+        },
+        "observed_delta": {
+          "delta_type": "WHITESPACE_ONLY",
+          "scope": "SPAN",
+          "magnitude": {
+            "metric": "CHAR_COUNT",
+            "value": 1,
+            "tolerance": 0
+          },
+          "material_change": false
+        },
+        "candidate_artifact_ref": "outputs/candidates/FIX-SYNTH-TEXT-001-candidate.pdf"
+      },
+      {
+        "operation_id": "OP-0002",
+        "applied_status": "APPLIED",
+        "applied_at": "2026-09-29T12:05:10Z",
+        "tool": {
+          "name": "synthetic-builder",
+          "version": "0.1.0"
+        },
+        "observed_delta": {
+          "delta_type": "READING_ORDER_ANNOTATION",
+          "scope": "DOCUMENT",
+          "magnitude": {
+            "metric": "COUNT",
+            "value": 1,
+            "tolerance": null
+          },
+          "material_change": false
+        },
+        "candidate_artifact_ref": "outputs/candidates/FIX-SYNTH-TEXT-001-candidate.pdf"
+      }
+    ]
+  },
+  "delta_reconciliation": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "operation_id": "OP-0001",
+        "reconciliation_status": "RECONCILED",
+        "evidence_refs": [
+          "RCPT-20260929-G03-SYNTHTEXT01"
+        ]
+      },
+      {
+        "operation_id": "OP-0002",
+        "reconciliation_status": "RECONCILED",
+        "evidence_refs": [
+          "RCPT-20260929-G05-SYNTHTEXT01"
+        ]
+      }
+    ]
+  },
+  "verifier_results": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "gate_id": "G01_SOURCE_HASH_INVENTORY",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "sha256:b68b716ac5e31f75432ff861be4052f9115bff9f08c56bc0a211f80cf9292a36"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:06:00Z",
+        "finished_at": "2026-09-29T12:06:02Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G02_PAGE_GEOMETRY_RECONCILIATION",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "sha256:a0123bfd5fc03df609b026496f1790842b6bf5be96d111e2657110e8b5611f4f",
+          "sha256:a6916bdecfbb2fbaec0e33954101dd32224af9d0342d0eb0408c822195561c5e"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:06:02Z",
+        "finished_at": "2026-09-29T12:06:04Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G03_TEXT_IDENTITY",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G03-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:06:04Z",
+        "finished_at": "2026-09-29T12:06:06Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G04_VISIBLE_TEXT_AGREEMENT",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G04-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-renderer-independent",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:06:06Z",
+        "finished_at": "2026-09-29T12:06:09Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G05_READING_ORDER_HIERARCHY",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G05-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:06:09Z",
+        "finished_at": "2026-09-29T12:06:11Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G06_NAVIGATION_INTEGRITY",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G06-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": false
+        },
+        "started_at": "2026-09-29T12:06:11Z",
+        "finished_at": "2026-09-29T12:06:12Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G07_TABLE_IDENTITY_NUMERIC",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G07-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": false
+        },
+        "started_at": "2026-09-29T12:06:12Z",
+        "finished_at": "2026-09-29T12:06:14Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G08_ACROFORM_ROUNDTRIP",
+        "gate_status": "PASSED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-form-verifier",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "GATE_NOT_REQUIRED_FOR_CLASS"
+      },
+      {
+        "gate_id": "G09_INDEPENDENT_RENDER_INK",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G09-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-renderer-independent",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:06:14Z",
+        "finished_at": "2026-09-29T12:06:18Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-G10-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-security-scanner",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": false
+        },
+        "started_at": "2026-09-29T12:06:18Z",
+        "finished_at": "2026-09-29T12:06:19Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G11_RESOURCE_BUDGET_NO_NETWORK",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-RUN-SYNTHTEXT01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-budget-observer",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": false
+        },
+        "started_at": "2026-09-29T12:06:19Z",
+        "finished_at": "2026-09-29T12:06:20Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G12_HUMAN_AB_USABILITY_CLOSURE",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "closure-study-protocol",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "CLOSURE_LEVEL_GATE"
+      }
+    ]
+  },
+  "disposition": {
+    "final_disposition": "ACCEPT",
+    "derivation": {
+      "document_class": "TEXT_NATIVE_SINGLE_COLUMN",
+      "gate_statuses": [
+        {
+          "gate_id": "G01_SOURCE_HASH_INVENTORY",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G02_PAGE_GEOMETRY_RECONCILIATION",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G03_TEXT_IDENTITY",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G04_VISIBLE_TEXT_AGREEMENT",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G05_READING_ORDER_HIERARCHY",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G06_NAVIGATION_INTEGRITY",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G07_TABLE_IDENTITY_NUMERIC",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G08_ACROFORM_ROUNDTRIP",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G09_INDEPENDENT_RENDER_INK",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G11_RESOURCE_BUDGET_NO_NETWORK",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G12_HUMAN_AB_USABILITY_CLOSURE",
+          "gate_status": "NOT_EXERCISED"
+        }
+      ],
+      "required_gate_matrix_version": "DISPOSITION-SPEC.json#class-gate-matrix@lane-01-freeze-pending",
+      "fired_precedence_rule_id": "PR-PLACEHOLDER-01",
+      "disposition_engine": {
+        "name": "synthetic-disposition-engine",
+        "version": "0.1.0"
+      },
+      "derived_from_records_only": true
+    },
+    "refusal_family": null,
+    "human_confirmation_ref": null
+  }
+}

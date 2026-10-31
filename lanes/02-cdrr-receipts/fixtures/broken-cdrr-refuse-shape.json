@@ -1,0 +1,381 @@
+{
+  "record_kind": "CDRR",
+  "schema_version": "1.0.0",
+  "cdrr_id": "CDRR-20260929-SYNTHENC01",
+  "experiment_id": "EXPERIMENT-2026-09-29-SLICE",
+  "run_id": "RUN-20260929T120000Z-02",
+  "fixture_id": "FIX-SYNTH-REFUSED-ENC-001",
+  "created_at": "2026-09-29T12:11:00Z",
+  "generated_by": {
+    "tool_name": "synthetic-lane02-example-generator",
+    "tool_version": "0.1.0",
+    "lane_id": "02-cdrr-receipts"
+  },
+  "document_identity": {
+    "original_filename": "synthetic-refused-encrypted-001.pdf",
+    "mime_detected": "application/pdf",
+    "byte_size": 15204,
+    "sha256": "6da14d1c75dfc0fcb5390f666074edacfec55dfcfa7eaeb7ed51a16f5524c2d8",
+    "sealed_fixture_manifest_ref": "lanes/03-fixtures-oracles/FIXTURE-MANIFEST.json#FIX-SYNTH-REFUSED-ENC-001"
+  },
+  "source_inventory": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "hash_algorithm": "sha256",
+    "object_count": null,
+    "inventory_digest": null,
+    "summary": "not exercised: document refused at the Phase-0 refusal scan"
+  },
+  "classification": {
+    "status": "CLASSIFIED",
+    "class_label": "UNSUPPORTED",
+    "classifier_tool": {
+      "name": "synthetic-classifier",
+      "version": "0.1.0"
+    },
+    "classifier_evidence": [
+      {
+        "evidence_type": "ENCRYPTION_FLAG",
+        "detail": "templated: encryption flag detected at document level",
+        "page_index": null
+      }
+    ]
+  },
+  "refusal_scan": {
+    "status": "COMPLETED",
+    "outcome": "REFUSED",
+    "refusal_family": "ENCRYPTED",
+    "scan_tool": {
+      "name": "synthetic-refusal-scanner",
+      "version": "0.1.0"
+    },
+    "evidence_anchors": [
+      {
+        "page_index": null,
+        "object_number": null,
+        "detail": "templated: encryption flag detected at document level; refusal reason family ENCRYPTED"
+      }
+    ]
+  },
+  "pages": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "page_index": 0,
+        "media_box": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 612,
+          "y1": 792,
+          "units": "pt"
+        },
+        "crop_box": {
+          "x0": 0,
+          "y0": 0,
+          "x1": 612,
+          "y1": 792,
+          "units": "pt"
+        },
+        "rotation": 0,
+        "source_page_hash": "a0123bfd5fc03df609b026496f1790842b6bf5be96d111e2657110e8b5611f4f",
+        "object_count": 7
+      }
+    ]
+  },
+  "text_spans": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "records": []
+  },
+  "structure": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "records": []
+  },
+  "reading_order": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "derivation_method": "NOT_EXERCISED",
+    "confidence": {
+      "band": "NOT_EXERCISED",
+      "score": null
+    },
+    "ordered_element_ids": []
+  },
+  "tables": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "records": []
+  },
+  "navigation": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "bookmarks": [],
+    "toc_entries": [],
+    "internal_links": []
+  },
+  "visible_ink": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "per_page_anchors": []
+  },
+  "operation_plan": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "records": []
+  },
+  "applied_operations": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "records": []
+  },
+  "delta_reconciliation": {
+    "status": "NOT_EXERCISED",
+    "not_exercised_reason": "REFUSED_BEFORE_EXTRACTION",
+    "records": []
+  },
+  "verifier_results": {
+    "status": "EXERCISED",
+    "not_exercised_reason": null,
+    "records": [
+      {
+        "gate_id": "G01_SOURCE_HASH_INVENTORY",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "sha256:6da14d1c75dfc0fcb5390f666074edacfec55dfcfa7eaeb7ed51a16f5524c2d8"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": true
+        },
+        "started_at": "2026-09-29T12:10:30Z",
+        "finished_at": "2026-09-29T12:10:31Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G02_PAGE_GEOMETRY_RECONCILIATION",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": true
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G03_TEXT_IDENTITY",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": true
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G04_VISIBLE_TEXT_AGREEMENT",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-renderer-independent",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": true
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G05_READING_ORDER_HIERARCHY",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": true
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G06_NAVIGATION_INTEGRITY",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G07_TABLE_IDENTITY_NUMERIC",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-second-extractor",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G08_ACROFORM_ROUNDTRIP",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-form-verifier",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G09_INDEPENDENT_RENDER_INK",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-renderer-independent",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": true
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "synthetic-security-scanner",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "DOCUMENT_REFUSED_BEFORE_GATE"
+      },
+      {
+        "gate_id": "G11_RESOURCE_BUDGET_NO_NETWORK",
+        "gate_status": "PASS",
+        "evidence_refs": [
+          "RCPT-20260929-RUN-SYNTHENC01"
+        ],
+        "independence_declaration": {
+          "tool_name": "synthetic-budget-observer",
+          "tool_version": "0.1.0",
+          "independence_class": "INDEPENDENT_IMPLEMENTATION",
+          "decisive": false
+        },
+        "started_at": "2026-09-29T12:10:31Z",
+        "finished_at": "2026-09-29T12:10:32Z",
+        "not_exercised_reason_code": null
+      },
+      {
+        "gate_id": "G12_HUMAN_AB_USABILITY_CLOSURE",
+        "gate_status": "NOT_EXERCISED",
+        "evidence_refs": [],
+        "independence_declaration": {
+          "tool_name": "closure-study-protocol",
+          "tool_version": "0.1.0",
+          "independence_class": "NOT_EXERCISED",
+          "decisive": false
+        },
+        "started_at": null,
+        "finished_at": null,
+        "not_exercised_reason_code": "CLOSURE_LEVEL_GATE"
+      }
+    ]
+  },
+  "disposition": {
+    "final_disposition": "REFUSE",
+    "derivation": {
+      "document_class": "UNSUPPORTED",
+      "gate_statuses": [
+        {
+          "gate_id": "G01_SOURCE_HASH_INVENTORY",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G02_PAGE_GEOMETRY_RECONCILIATION",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G03_TEXT_IDENTITY",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G04_VISIBLE_TEXT_AGREEMENT",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G05_READING_ORDER_HIERARCHY",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G06_NAVIGATION_INTEGRITY",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G07_TABLE_IDENTITY_NUMERIC",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G08_ACROFORM_ROUNDTRIP",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G09_INDEPENDENT_RENDER_INK",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+          "gate_status": "NOT_EXERCISED"
+        },
+        {
+          "gate_id": "G11_RESOURCE_BUDGET_NO_NETWORK",
+          "gate_status": "PASS"
+        },
+        {
+          "gate_id": "G12_HUMAN_AB_USABILITY_CLOSURE",
+          "gate_status": "NOT_EXERCISED"
+        }
+      ],
+      "required_gate_matrix_version": "DISPOSITION-SPEC.json#class-gate-matrix@lane-01-freeze-pending",
+      "fired_precedence_rule_id": "PR-REFUSE-PHASE0",
+      "disposition_engine": {
+        "name": "synthetic-disposition-engine",
+        "version": "0.1.0"
+      },
+      "derived_from_records_only": true
+    },
+    "refusal_family": "ENCRYPTED",
+    "human_confirmation_ref": null
+  }
+}
