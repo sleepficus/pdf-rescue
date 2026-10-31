@@ -1,0 +1,77 @@
+validate.py — lane 01-protocol-disposition self-check (spec 1.0.0)
+
+[1] Structural integrity of DISPOSITION-SPEC.json
+  ok    spec_version present (1.0.0)
+  ok    status enum exact
+  ok    disposition enum exact
+  ok    exactly 10 gates in registry
+  ok    nine classes defined (8 fixture + UNRESOLVED)
+  ok    matrix covers all classes
+  ok    matrix is class x G1-G10 with REQUIRED/NOT_REQUIRED/OUT_OF_SCOPE
+  ok    all three matrix values exercised
+  ok    rule ids unique (PR-00,PR-01,PR-02,PR-03,PR-04,PR-05,PR-06,PR-07,PR-08,PR-09,PR-10,PR-11,PR-12,PR-13,PR-14)
+  ok    rule dispositions valid
+  ok    last rule is the else totality fallback
+  ok    every rule has a rationale
+  ok    all condition keys are documented DSL vocabulary (unknown=[] missing=)
+  ok    every documented atom/combinator is used by at least one rule (unused=[])
+  ok    normalization whitelist is a finite explicit list (3 entries)
+  ok    material-by-exclusion examples present and distinct from whitelist
+  ok    reconciliation outcomes complete
+
+[2] Totality, uniqueness, and acceptance invariants over enumerated cases
+  ok    every enumerated case returned exactly one disposition (82079 cases)
+  ok    every precedence rule fires for at least one case (missing=[])
+  ok    each in-scope class has at least one ACCEPT case (accept_classes=['BENIGN', 'TEXT_MULTI_COLUMN', 'TEXT_SINGLE_COLUMN', 'TEXT_TABLE'])
+  ok    undeclared material delta refuses (REFUSE)
+  ok    NOT_EXERCISED required gate blocks ACCEPT (NOT_VERIFIABLE) (NOT_VERIFIABLE)
+  ok    ERROR treated worse than FAIL (blocks ACCEPT) (NOT_VERIFIABLE)
+  ok    refusal class refuses even with all gates PASS (REFUSE)
+  ok    UNRESOLVED class is NOT_VERIFIABLE (NOT_VERIFIABLE)
+  ok    reconciliation not run -> NOT_VERIFIABLE, never ACCEPT (NOT_VERIFIABLE)
+  ok    post-classification active content refuses (PR-04) (REFUSE)
+  ok    page invariant violation refuses (PR-05) (REFUSE)
+  ok    divergent hidden text refuses (PR-06) (REFUSE)
+  ok    verbatim-duplicate hidden text reviews, never accepts (PR-10) (REVIEW)
+  ok    anomaly without a FAILed G4 is inconsistent evidence -> NOT_VERIFIABLE (NOT_VERIFIABLE)
+  ok    reading-order failure reviews, never accepts (PR-09) (REVIEW)
+  ok    unconfirmed forced-review operation reviews (PR-12) (REVIEW)
+  ok    confirmed forced-review op + all gates PASS -> ACCEPT via PR-13 (ACCEPT)
+  ok    CONFIRM cannot rescue a FAILed gate (still REFUSE via PR-07) (REFUSE)
+
+[3] Scenario resolution against the spec
+  ok    exactly six scenarios (6)
+  ok    SCN-01 has machine-evaluable cases (2 case(s))
+  ok    SCN-01/primary-undeclared -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-01/declared-attempt -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-01 ambiguous readings never ACCEPT
+  ok    SCN-02 has machine-evaluable cases (2 case(s))
+  ok    SCN-02/primary-undeclared -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-02/declared-attempt -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-02 ambiguous readings never ACCEPT
+  ok    SCN-03 has machine-evaluable cases (2 case(s))
+  ok    SCN-03/primary-undeclared -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-03/declared-glyph-verified -> ACCEPT via PR-13 (got ACCEPT via PR-13)
+  ok    SCN-03 ambiguous readings never ACCEPT
+  ok    SCN-04 has machine-evaluable cases (1 case(s))
+  ok    SCN-04/primary-undeclared -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-04 ambiguous readings never ACCEPT
+  ok    SCN-05 has machine-evaluable cases (2 case(s))
+  ok    SCN-05/primary-uniform-application -> REFUSE via PR-07 (got REFUSE via PR-07)
+  ok    SCN-05/compliant-per-instance -> ACCEPT via PR-13 (got ACCEPT via PR-13)
+  ok    SCN-05 ambiguous readings never ACCEPT
+  ok    SCN-06 has machine-evaluable cases (2 case(s))
+  ok    SCN-06/variant-poison-duplicate -> REVIEW via PR-10 (got REVIEW via PR-10)
+  ok    SCN-06/variant-true-poison -> REFUSE via PR-06 (got REFUSE via PR-06)
+  ok    SCN-06 ambiguous readings never ACCEPT
+
+[4] Human-confirmation replay semantics
+  ok    replay path marked NOT_EXERCISED for this run
+  ok    only U-FORCED-REVIEW-OP is confirmable
+  ok    meaning-preservation uncertainties are not confirmable
+  ok    CONFIRM may never convert FAIL/NOT_EXERCISED/ERROR into a pass
+  ok    CONFIRM may never make an out-of-scope class in-scope
+
+RESULT: PASS — all 64 checks passed
+dispose(class, gate_statuses, reconciliation) is total, deterministic,
+and implementable from DISPOSITION-SPEC.json alone.
