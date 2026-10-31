@@ -82,3 +82,9 @@ license findings as unverified; those notes are not a completed license audit.
 
 Built by Stephen Luc and the Misfit Circuit crew. See the
 [Lab](https://www.misfitcircuit.com/labs/) for related experiments.
+
+## License
+
+[MIT](LICENSE). You may use, modify, and share this project, including commercially,
+while keeping the copyright and license notice. Third-party dependencies and any
+separately attributed material retain their own terms.
