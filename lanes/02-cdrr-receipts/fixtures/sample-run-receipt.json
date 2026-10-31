@@ -1,0 +1,131 @@
+{
+  "record_kind": "RUN_RECEIPT",
+  "receipt_id": "RCPT-20260929-RUN-SYNTHTEXT01",
+  "experiment_id": "EXPERIMENT-2026-09-29-SLICE",
+  "run_id": "RUN-20260929T120000Z-01",
+  "fixture_id": "FIX-SYNTH-TEXT-001",
+  "written_by": "INTEGRATOR",
+  "created_at": "2026-09-29T12:07:00Z",
+  "input_identity": {
+    "original_filename": "synthetic-text-001.pdf",
+    "byte_size": 28471,
+    "sha256": "b68b716ac5e31f75432ff861be4052f9115bff9f08c56bc0a211f80cf9292a36",
+    "sealed_fixture_manifest_ref": "lanes/03-fixtures-oracles/FIXTURE-MANIFEST.json#FIX-SYNTH-TEXT-001"
+  },
+  "toolchain": [
+    {
+      "component": "INTAKE",
+      "name": "synthetic-intake",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/07-intake-extract",
+      "decisive_role": false
+    },
+    {
+      "component": "REFUSAL_SCANNER",
+      "name": "synthetic-refusal-scanner",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/07-intake-extract",
+      "decisive_role": false
+    },
+    {
+      "component": "EXTRACTOR_PRIMARY",
+      "name": "synthetic-extractor-primary",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/04-dependencies-independence/TOOLCHAIN.json",
+      "decisive_role": false
+    },
+    {
+      "component": "EXTRACTOR_SECOND_INDEPENDENT",
+      "name": "synthetic-second-extractor",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/04-dependencies-independence/TOOLCHAIN.json",
+      "decisive_role": true
+    },
+    {
+      "component": "BUILDER",
+      "name": "synthetic-builder",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/08-plan-apply",
+      "decisive_role": false
+    },
+    {
+      "component": "RENDERER_INDEPENDENT",
+      "name": "synthetic-renderer-independent",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/04-dependencies-independence/TOOLCHAIN.json",
+      "decisive_role": true
+    },
+    {
+      "component": "DISPOSITION_ENGINE",
+      "name": "synthetic-disposition-engine",
+      "version": "0.1.0",
+      "provenance_ref": "lanes/01-protocol-disposition/DISPOSITION-SPEC.json",
+      "decisive_role": true
+    }
+  ],
+  "budgets": [
+    { "budget_id": "PAGE_COUNT", "observed": 2, "limit": 100, "status": "WITHIN_BUDGET" },
+    { "budget_id": "OBJECT_COUNT", "observed": 42, "limit": 5000, "status": "WITHIN_BUDGET" },
+    { "budget_id": "FILE_BYTES", "observed": 28471, "limit": 10485760, "status": "WITHIN_BUDGET" },
+    { "budget_id": "PIXELS", "observed": 1244160, "limit": 50331648, "status": "WITHIN_BUDGET" },
+    { "budget_id": "CPU_SECONDS", "observed": 0.4, "limit": 10, "status": "WITHIN_BUDGET" },
+    { "budget_id": "WALL_SECONDS", "observed": 1.2, "limit": 60, "status": "WITHIN_BUDGET" },
+    { "budget_id": "TEMP_STORAGE_BYTES", "observed": 512000, "limit": 10485760, "status": "WITHIN_BUDGET" },
+    { "budget_id": "OUTPUT_BYTES", "observed": 27900, "limit": 10485760, "status": "WITHIN_BUDGET" }
+  ],
+  "temp_directory_lifecycle": {
+    "status": "CREATED_AND_REMOVED",
+    "path_prefix_templated": "tmp/<run_id>/",
+    "created": true,
+    "removed_after_run": true,
+    "reused_across_documents": false,
+    "removed_at": "2026-09-29T12:06:30Z",
+    "removal_evidence_ref": "receipts/temp-removal-log#RUN-20260929T120000Z-01"
+  },
+  "no_network_evidence": {
+    "status": "VERIFIED_NO_NETWORK",
+    "method": "PROCESS_ISOLATION",
+    "evidence_ref": "receipts/no-network-observer#RUN-20260929T120000Z-01"
+  },
+  "candidate": {
+    "written": true,
+    "candidate_hash": "7dad0a0a689681ce1a3c369e5fbcff6248f6f1046ad768661a84b6b6a5c75d54",
+    "artifact_ref": "outputs/candidates/FIX-SYNTH-TEXT-001-candidate.pdf",
+    "written_atomically": true,
+    "temp_path_templated": "outputs/candidates/.tmp-<run_id>-candidate.pdf",
+    "final_path": "outputs/candidates/FIX-SYNTH-TEXT-001-candidate.pdf"
+  },
+  "crash_evidence": {
+    "crashed": false,
+    "stage_at_crash": "NONE",
+    "receipt_preserved": false
+  },
+  "disposition": "ACCEPT",
+  "records": {
+    "cdrr_sha256": "30d9de27eaddd6c0bd3ec339d679a326e3d610d8837e460a64544a7476f93279",
+    "operation_record_refs": [
+      "RCPT-20260929-OP-0001-SYNTHTEXT01",
+      "RCPT-20260929-OP-0002-SYNTHTEXT01"
+    ],
+    "verifier_record_refs": [
+      "RCPT-20260929-G01-SYNTHTEXT01",
+      "RCPT-20260929-G02-SYNTHTEXT01",
+      "RCPT-20260929-G03-SYNTHTEXT01",
+      "RCPT-20260929-G04-SYNTHTEXT01",
+      "RCPT-20260929-G05-SYNTHTEXT01",
+      "RCPT-20260929-G06-SYNTHTEXT01",
+      "RCPT-20260929-G07-SYNTHTEXT01",
+      "RCPT-20260929-G08-SYNTHTEXT01",
+      "RCPT-20260929-G09-SYNTHTEXT01",
+      "RCPT-20260929-G10-SYNTHTEXT01",
+      "RCPT-20260929-G11-SYNTHTEXT01",
+      "RCPT-20260929-G12-SYNTHTEXT01"
+    ],
+    "render_artifact_refs": [
+      "outputs/renders/FIX-SYNTH-TEXT-001-original-page-000.png",
+      "outputs/renders/FIX-SYNTH-TEXT-001-original-page-001.png",
+      "outputs/renders/FIX-SYNTH-TEXT-001-candidate-page-000.png",
+      "outputs/renders/FIX-SYNTH-TEXT-001-candidate-page-001.png"
+    ]
+  }
+}

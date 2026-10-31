@@ -1,0 +1,20 @@
+{
+  "record_kind": "VERIFIER_RECORD",
+  "receipt_id": "RCPT-20260929-G08-SYNTHTEXT01",
+  "experiment_id": "EXPERIMENT-2026-09-29-SLICE",
+  "run_id": "RUN-20260929T120000Z-01",
+  "fixture_id": "FIX-SYNTH-TEXT-001",
+  "cdrr_ref": "CDRR-20260929-SYNTHTEXT01@sha256:30d9de27eaddd6c0bd3ec339d679a326e3d610d8837e460a64544a7476f93279",
+  "written_by": "VERIFIER",
+  "gate_id": "G08_ACROFORM_ROUNDTRIP",
+  "gate_status": "NOT_EXERCISED",
+  "tool": { "name": "synthetic-form-verifier", "version": "0.1.0" },
+  "independence_class": "NOT_EXERCISED",
+  "decisive": false,
+  "evidence_refs": [],
+  "started_at": null,
+  "finished_at": null,
+  "duration_ms": null,
+  "not_exercised_reason_code": "GATE_NOT_REQUIRED_FOR_CLASS",
+  "failure_detail": null
+}
