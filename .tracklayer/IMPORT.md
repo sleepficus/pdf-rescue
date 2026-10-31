@@ -1,0 +1,1 @@
+honest note: original was built locally with no git history as an offline pdf-rescue vertical slice; this history is a reconstruction in build order estimating how an AI builder recreating it today would commit it session-paced.
