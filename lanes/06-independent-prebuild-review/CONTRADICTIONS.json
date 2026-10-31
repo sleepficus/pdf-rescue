@@ -1,0 +1,77 @@
+{
+  "artifact": "CONTRADICTIONS.json",
+  "lane": "06-independent-prebuild-review",
+  "date": "2026-09-29",
+  "verdict": "NOT_READY",
+  "labels": "FACT=observed in supplied packet; INFERENCE=derived by applying frozen rules; FIX=recommended correction",
+  "conflicting_outcomes_demonstrated": [
+    {"id": "CO-1", "kind": "INFERENCE", "trigger": "recorded event 'G9 FAIL'", "reading_a": "lane01/03 G9 = budget/no-network; no PR maps G9 FAIL", "outcome_a": "PR-14 NOT_VERIFIABLE (L05-SAFETY-SPEC S5)", "reading_b": "lane02 G09_INDEPENDENT_RENDER_INK", "outcome_b": "lane01 PR-11 REFUSE"},
+    {"id": "CO-2", "kind": "INFERENCE", "trigger": "recorded event 'G10 FAIL'", "reading_a": "lane01/03 G10 = render accounting", "outcome_a": "PR-11 REFUSE", "reading_b": "lane02 G10_ACTIVE_CONTENT_SECURITY_SCAN (== lane01 G8)", "outcome_b": "PR-04 REFUSE via different rule/provenance; lane01 G8 has no lane02 number and lane02 G08_ACROFORM_ROUNDTRIP has no lane01 counterpart"},
+    {"id": "CO-3", "kind": "INFERENCE", "trigger": "in-scope run where builder adds no outline entries", "reading_a": "L03-EXPECTED-DISPOSITIONS F01 note: 'G6 may be NOT_EXERCISED ... ACCEPT may still stand'", "outcome_a": "ACCEPT", "reading_b": "L01 matrix: G6 REQUIRED for every in-scope class; PR-08", "outcome_b": "NOT_VERIFIABLE"},
+    {"id": "CO-4", "kind": "INFERENCE", "trigger": "candidate without structure tree (frozen L03 expected plans for F02/F04 add none)", "reading_a": "L03 expected_final_disposition ACCEPT", "outcome_a": "ACCEPT", "reading_b": "L04 C2 fail path: G5 second derivation NOT_DERIVABLE => G5 NOT_EXERCISED; G5 REQUIRED => PR-08", "outcome_b": "NOT_VERIFIABLE"},
+    {"id": "CO-5", "kind": "FACT", "trigger": "same artifact F05-article.pdf", "reading_a": "L03-FIXTURE-MANIFEST.json sha256 (64 hex; L03-VALIDATION PASS against file)", "outcome_a": "manifest hash authoritative", "reading_b": "L03-SEALED.md table line (63 hex) claiming shasum must reproduce it", "outcome_b": "different hash; table unreproducible"}
+  ],
+  "contradictions": [
+    {"id": "X-01", "severity": "BLOCKER", "lanes": ["01", "02", "03"], "finding": "Gate-id vocabularies G1-G10 (lane01/03) and G01-G12 (lane02) collide numerically (G8/G9/G10 transposed); only G11<->G9 and G09<->G10 mapped (L05-BUDGETS gate_mapping); no frozen full mapping exists.", "fix": "Freeze gate_id_map in PREBUILD-GATE.json; record ESC-01 detection-pass results with decisive=false."},
+    {"id": "X-02", "severity": "BLOCKER", "lanes": ["03"], "finding": "SEALED.md F05 hash line is 63 hex chars and differs from FIXTURE-MANIFEST.json, which SEALED.md declares must be reproduced by shasum.", "fix": "Supersede the SEALED.md line with the manifest hash; sealed bytes untouched."},
+    {"id": "X-03", "severity": "MAJOR", "lanes": ["01", "02"], "finding": "Class vocabularies disjoint: lane02 class_label enum cannot express BENIGN (disposition.derivation echo cannot record the engine input; INV-20 audit stressed); UNRESOLVED mapping to UNKNOWN only partially pinned.", "fix": "Freeze class_map: BENIGN == TEXT_NATIVE_SINGLE_COLUMN + plan.operations==[]; REFUSE_* == UNSUPPORTED + refusal_family; UNRESOLVED == UNKNOWN + status ERROR/NOT_EXERCISED + CONSERVATIVE_PARSER_FAILURE."},
+    {"id": "X-04", "severity": "MAJOR", "lanes": ["01", "02", "03"], "finding": "Refusal families in three vocabularies: refuse/encrypted|signed|xfa|active (L01); ENCRYPTED|SIGNED_OR_CERTIFIED|XFA_OR_HYBRID_XFA|ACTIVE_CONTENT_OR_JAVASCRIPT (L02); 'encrypted'|'signed'|'xfa'|'active-content' (L03).", "fix": "Freeze refusal_family_map."},
+    {"id": "X-05", "severity": "MAJOR", "lanes": ["01", "02"], "finding": "Delta-type sets non-isomorphic (lane01: 12 types incl. LINE_END_WHITESPACE_STRIP; lane02: 11 incl. METADATA_ONLY, DUPLICATE_SUPPRESSION, NO_TEXT_DELTA); operation-name bijection (OP_* vs bare names) unplanned.", "fix": "Freeze operation_name_map and delta_type_map; operation_plan (lane01 vocabulary) authoritative, receipts echo mapped values."},
+    {"id": "X-06", "severity": "MAJOR", "lanes": ["01", "03"], "finding": "L03 B02 expected_plan_outcome invites 'metadata normalization', outside lane01's frozen ten operations (INV-15/E15 run invalidation).", "fix": "Freeze: B01/B02 receive zero operations."},
+    {"id": "X-07", "severity": "MAJOR", "lanes": ["02"], "finding": "lane02 schemas validated only by stdlib fallback under Python 3.9.6 with jsonschema absent; draft-2020-12 semantics (oneOf/if-then/const) NOT_EXERCISED.", "fix": "Revalidate with real jsonschema on the bundled runtime or record NOT_EXERCISED in PREBUILD-GATE.json."},
+    {"id": "X-08", "severity": "MAJOR", "lanes": ["02", "05"], "finding": "No-network evidence is worker-process-only (poppler children NOT_ACHIEVABLE_WITHOUT_INSTALL) while RECEIPT-SCHEMA requires VERIFIED_NO_NETWORK for ACCEPT/REVIEW/NOT_VERIFIABLE; no recorded scoping decision exists.", "fix": "Record decision at Gate A with evidence_ref disclosure of the child-process gap."},
+    {"id": "X-09", "severity": "MINOR", "lanes": ["03", "04", "05"], "finding": "Sealing versions (reportlab 5.0.1 / pypdf 6.14.2 / py3.12.7) differ from runtime (4.4.9 / 6.10.0 / 3.12.14); double-gen determinism evidence does not bind runtime; L04 stale-notes 'BUDGETS.json not in this packet' (now supplied).", "fix": "Record actual run versions and adjudicate in PREBUILD-GATE.json; mutant checks target spec semantics, not sealed bytes."},
+    {"id": "X-10", "severity": "MINOR", "lanes": ["05"], "finding": "TC-09 (network trip) records refusal_family RESOURCE_BUDGET_EXCEEDED though it is not a resource-budget event (TC-13/TC-14 use OTHER_RECORDED).", "fix": "Switch TC-09 to OTHER_RECORDED or record the sentinel choice in PREBUILD-GATE.json."},
+    {"id": "X-11", "severity": "MINOR", "lanes": ["03", "04"], "finding": "pdfminer.six presence contested (L03-ORACLE-NOTES S5 'no pdfminer' vs pdfplumber 0.11.9 engine); all license facts UNKNOWN-UNVERIFIED. Correctly preserved UNKNOWN pending C1; no waiver.", "fix": "Run C1; keep UNKNOWN state until evidenced."}
+  ],
+  "shared_decisive_path_audit": {
+    "builder": ["reportlab 4.4.9 (writer)", "pypdf 6.10.0 (object surgery; frozen planning extractor)"],
+    "verifier_lineages": ["POPPLER pdftotext 26.09.0 / pdftoppm 26.05.0 / pdfinfo 26.05.0", "PDFMINER_SIX pdfplumber 0.11.9 + pdfminer.six (C1 pending)", "OS_UTIL shasum, /usr/bin/time, du", "HARNESS CPython socket audit hook; Pillow 12.3.0 PNG accounting"],
+    "verdict": "No circular proof found; builder and verifier lineages disjoint; pypdf banned for verifier-decisive use; POPPLER-internal pairs prohibited as independence pairs and respected (G4/G10 = pdftoppm+pdfplumber; G2 = pdfplumber+pdftotext -bbox-layout); expected dispositions authored pre-builder with recorded independence guarantee.",
+    "conditional_gates": {"G1": "C1/C3", "G5": "C1/C2", "G6": "C1/C3", "G9": "harness observation; BUDGETS.json supplied"}
+  },
+  "budget_trip_mechanics": {
+    "budget_ids_match_receipt_enum": true,
+    "arithmetic": "1275*1650=2103750; MEASURED limits >= 2x observed (PAGE_COUNT 8>=8; FILE_BYTES 204800>=13938); DERIVED limits exceed baselines (PIXELS 64000000>16830000; WALL 600>10; TEMP 104857600>2000000)",
+    "disposition_mapping_uses_existing_rules": ["PR-08", "PR-14"],
+    "refusal_family_and_reason_codes_exist": true,
+    "result": "PASS static; runtime trip execution NOT_EXERCISED; TC-09 family nit (X-10)"
+  },
+  "gate_a_requirements": [
+    {"req": "R1", "item": "draft-2020-12 schema validation (lane02)", "evidence": "inputs/L02-VALIDATION.txt", "status": "NOT_EXERCISED"},
+    {"req": "R2", "item": "fixture hash/size/page integrity", "evidence": "inputs/L03-VALIDATION.txt", "status": "PASS"},
+    {"req": "R3", "item": "sealing receipt table == manifest", "evidence": "inputs/L03-SEALED.md", "status": "FAIL"},
+    {"req": "R4", "item": "expected dispositions cover id set", "evidence": "inputs/L03-EXPECTED-DISPOSITIONS.json", "status": "PASS"},
+    {"req": "R5", "item": "tool import/version checklist", "evidence": "inputs/L04-TOOLCHAIN.json", "status": "NOT_EXERCISED"},
+    {"req": "R6", "item": "C1 pdfminer.six resolution", "evidence": "inputs/L04-TOOLCHAIN.json#C1", "status": "NOT_EXERCISED"},
+    {"req": "R7", "item": "C2 structure-tree probe", "evidence": "inputs/L04-TOOLCHAIN.json#C2", "status": "NOT_EXERCISED"},
+    {"req": "R8", "item": "C3 verifier-scanner acceptance", "evidence": "inputs/L04-TOOLCHAIN.json#C3", "status": "NOT_EXERCISED"},
+    {"req": "R9", "item": "per-gate independence completeness", "evidence": "inputs/L04-DEPENDENCY-SPIKE.md", "status": "NOT_EXERCISED"},
+    {"req": "R10", "item": "budgets parse + arithmetic", "evidence": "inputs/L05-BUDGETS.json", "status": "PASS"},
+    {"req": "R11", "item": "trip-case coverage + fail-closed protocol", "evidence": "inputs/L05-TRIP-CASES.json", "status": "PASS"},
+    {"req": "R12", "item": "no-network scoping decision", "evidence": "inputs/L05-SAFETY-SPEC.md#S8", "status": "NOT_EXERCISED"},
+    {"req": "R13", "item": "version-tension adjudication", "evidence": "inputs/ENVIRONMENT-INVENTORY.md", "status": "NOT_EXERCISED"},
+    {"req": "R14", "item": "cross-lane vocabulary mapping frozen", "evidence": "none", "status": "FAIL"},
+    {"req": "R15", "item": "G6/G5/B02 disambiguations frozen", "evidence": "inputs/L03-EXPECTED-DISPOSITIONS.json vs L01/L04", "status": "FAIL"}
+  ],
+  "smallest_consolidated_correction": [
+    "Supersede SEALED.md F05 line with the manifest hash (doc-only; bytes untouched).",
+    "Freeze in PREBUILD-GATE.json: gate_id_map (G8<->G10_ACTIVE, G9<->G11, G10<->G09 transposition; G08/G12 out-of-predicate), class_map, refusal_family_map, operation_name_map, delta_type_map; ESC-01 detection pass decisive=false.",
+    "Freeze: REQUIRED G6 runs (vacuous PASS allowed; L03 F01/F02/F04 notes superseded); every candidate carries a structure tree via OP_STRUCTURE_TAGS else G5 NOT_EXERCISED -> PR-08 NOT_VERIFIABLE; B01/B02 zero operations (metadata normalization not a frozen op).",
+    "Run L04 S5 checklist + C1 + C3 at Gate A; record verbatim; record C2 pending with fail-closed consequence.",
+    "Revalidate lane02 schemas with real jsonschema or record NOT_EXERCISED.",
+    "Record scoped no-network decision with evidence_ref disclosure; adjudicate version tension."
+  ],
+  "machine_checks_for_main": [
+    "shasum -a 256 fixtures/*.pdf == FIXTURE-MANIFEST.json (14/14)",
+    "python3 -c \"import reportlab,pypdf,pdfplumber,PIL;print(reportlab.Version,pypdf.__version__,pdfplumber.__version__,PIL.__version__)\" == 4.4.9 6.10.0 0.11.9 12.3.0",
+    "python3 -c \"import pdfminer;print(pdfminer.__version__)\" (C1)",
+    "pdftotext -v; pdftoppm -v; pdfinfo -v (record versions/skew)",
+    "command -v qpdf mutool gs (expect empty)",
+    "bundled runtime: import jsonschema; validate L02 schemas + lane02 sample/broken fixtures; else NOT_EXERCISED",
+    "script SAFETY-SPEC S13 checks 1-9 on L05 JSONs",
+    "assert PREBUILD-GATE.json contains non-empty gate_id_map/class_map/refusal_family_map/operation_name_map/delta_type_map + 3 disambiguations",
+    "re-dispatch lane 06 re-break"
+  ],
+  "rebreak": "After the six corrections are recorded, lane 06 re-breaks on the corrected packet; expected verdict READY_FOR_VERTICAL_SLICE without reopening lane content."
+}
