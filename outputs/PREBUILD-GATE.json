@@ -1,0 +1,207 @@
+{
+  "artifact": "PREBUILD-GATE.json",
+  "date": "2026-09-29",
+  "phase": "GATE_A_CORRECTION_BATCH",
+  "status": "READY_FOR_INDEPENDENT_REBREAK",
+  "authority": "Lane 01 vocabulary and disposition engine remain authoritative; this artifact only maps lane vocabularies and resolves recorded ambiguities.",
+  "gate_id_map": {
+    "G1": "G01_SOURCE_HASH_INVENTORY",
+    "G2": "G02_PAGE_GEOMETRY_RECONCILIATION",
+    "G3": "G03_TEXT_IDENTITY",
+    "G4": "G04_VISIBLE_TEXT_AGREEMENT",
+    "G5": "G05_READING_ORDER_HIERARCHY",
+    "G6": "G06_NAVIGATION_INTEGRITY",
+    "G7": "G07_TABLE_IDENTITY_NUMERIC",
+    "G8": "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+    "G9": "G11_RESOURCE_BUDGET_NO_NETWORK",
+    "G10": "G09_INDEPENDENT_RENDER_INK",
+    "lane02_out_of_automatic_phase0_predicate": [
+      "G08_ACROFORM_ROUNDTRIP",
+      "G12_HUMAN_AB_USABILITY_CLOSURE"
+    ]
+  },
+  "class_map": {
+    "TEXT_SINGLE_COLUMN": {
+      "lane02_class_label": "TEXT_NATIVE_SINGLE_COLUMN"
+    },
+    "TEXT_MULTI_COLUMN": {
+      "lane02_class_label": "TEXT_NATIVE_MULTI_COLUMN"
+    },
+    "TEXT_TABLE": {
+      "lane02_class_label": "TEXT_NATIVE_TABLED"
+    },
+    "BENIGN": {
+      "lane02_class_label": "TEXT_NATIVE_SINGLE_COLUMN",
+      "additional_predicate": "operation_plan.operations is empty"
+    },
+    "REFUSE_ENCRYPTED": {
+      "lane02_class_label": "UNSUPPORTED",
+      "refusal_family": "ENCRYPTED"
+    },
+    "REFUSE_SIGNED": {
+      "lane02_class_label": "UNSUPPORTED",
+      "refusal_family": "SIGNED_OR_CERTIFIED"
+    },
+    "REFUSE_XFA": {
+      "lane02_class_label": "UNSUPPORTED",
+      "refusal_family": "XFA_OR_HYBRID_XFA"
+    },
+    "REFUSE_ACTIVE": {
+      "lane02_class_label": "UNSUPPORTED",
+      "refusal_family_rule": "ACTIVE_CONTENT_OR_JAVASCRIPT for R04/JavaScript; EMBEDDED_FILE_OR_EXECUTABLE_TARGET for embedded/launch/remote-target evidence; PENDING_REDACTION for pending-redaction evidence"
+    },
+    "UNRESOLVED": {
+      "lane02_class_label": "UNKNOWN",
+      "required_status": [
+        "NOT_EXERCISED",
+        "ERROR"
+      ],
+      "refusal_family": "CONSERVATIVE_PARSER_FAILURE"
+    }
+  },
+  "refusal_family_map": {
+    "refuse/encrypted": {
+      "lane02": "ENCRYPTED",
+      "lane03": "encrypted"
+    },
+    "refuse/signed": {
+      "lane02": "SIGNED_OR_CERTIFIED",
+      "lane03": "signed"
+    },
+    "refuse/xfa": {
+      "lane02": "XFA_OR_HYBRID_XFA",
+      "lane03": "xfa"
+    },
+    "refuse/active": {
+      "lane02_default_for_R04": "ACTIVE_CONTENT_OR_JAVASCRIPT",
+      "lane02_evidence_specific_alternatives": [
+        "EMBEDDED_FILE_OR_EXECUTABLE_TARGET",
+        "PENDING_REDACTION"
+      ],
+      "lane03": "active-content"
+    }
+  },
+  "operation_name_map": {
+    "OP_SPACING_NORMALIZE": "NORMALIZE_SPACING",
+    "OP_ALIGNMENT_NORMALIZE": "NORMALIZE_ALIGNMENT",
+    "OP_TYPOGRAPHY_SUBSTITUTION": "NORMALIZE_TYPOGRAPHY",
+    "OP_HYPHENATION_JOIN": "JOIN_DECLARED_HYPHENATION",
+    "OP_HEADER_FOOTER_NORMALIZATION": "NORMALIZE_REPEATED_HEADER_FOOTER",
+    "OP_STRUCTURE_TAGS": "ADD_OR_REPAIR_STRUCTURE_TAGS",
+    "OP_READING_ORDER": "SET_VERIFIED_READING_ORDER",
+    "OP_BOOKMARKS": "ADD_OR_REPAIR_BOOKMARKS",
+    "OP_LINK_REPAIR": "REPAIR_INTERNAL_NAVIGATION",
+    "OP_PAGE_ROTATE": "ROTATE_PAGE"
+  },
+  "delta_type_map": {
+    "authority": "Lane 01 delta id is retained as authoritative evidence. Lane 02 value is a lossy receipt echo and never derives disposition by itself.",
+    "lane01_to_lane02": {
+      "SPACING_COLLAPSE": "WHITESPACE_ONLY",
+      "LINE_END_WHITESPACE_STRIP": "WHITESPACE_ONLY",
+      "ALIGNMENT_SHIFT": "COORDINATE_SHIFT",
+      "GLYPH_SUBSTITUTION": "GLYPH_SUBSTITUTION",
+      "HYPHENATION_JOIN": "TEXT_JOIN_HYPHEN",
+      "HEADER_FOOTER_INSTANCE_NORMALIZATION": "COORDINATE_SHIFT",
+      "STRUCTURE_TAG_ADD": "STRUCTURE_TAG_ADDITION",
+      "READING_ORDER_SET": "READING_ORDER_ANNOTATION",
+      "BOOKMARK_ADD": "NAVIGATION_ADDITION",
+      "BOOKMARK_DEST_REPAIR": "NAVIGATION_ADDITION",
+      "LINK_DEST_REPAIR": "NAVIGATION_ADDITION",
+      "PAGE_ROTATE_REVIEW": "PAGE_ROTATION"
+    },
+    "lane02_values_not_authoritative_phase0_deltas": [
+      "METADATA_ONLY",
+      "DUPLICATE_SUPPRESSION",
+      "NO_TEXT_DELTA"
+    ],
+    "lossy_mapping_evidence_rule": "The original lane01 delta id, anchor, scope, and magnitude remain in the operation evidence reference whenever multiple lane01 values map to one lane02 value."
+  },
+  "disambiguations": {
+    "G6_REQUIRED": "G6 runs for every in-scope class. If source and plan contain no navigation items or navigation operations, G6 records a vacuous PASS with empty inventories from both independent readers; NOT_EXERCISED still blocks through PR-08.",
+    "G5_STRUCTURE_TREE": "Every generated candidate carries a structure tree through OP_STRUCTURE_TAGS so the second G5 derivation is attempted. If C2 cannot derive it, G5 is NOT_EXERCISED and the document is NOT_VERIFIABLE through PR-08.",
+    "BENIGN_ZERO_OPERATIONS": "B01 and B02 receive zero operations. Metadata normalization is not a frozen operation and would trigger E15.",
+    "ESC_01": "The G7 detection pass runs on every in-scope class and is recorded with decisive=false unless it detects a classifier conflict; a conflict follows PR-03."
+  },
+  "toolchain_check": {
+    "status": "PASS_WITH_RECORDED_ABSENCES",
+    "runtime": {
+      "python": "3.12.14",
+      "reportlab": "4.4.9",
+      "pypdf": "6.10.0",
+      "pdfplumber": "0.11.9",
+      "Pillow": "12.3.0",
+      "pdfminer.six": "20251230",
+      "pdftotext": "26.09.0",
+      "pdftoppm": "26.05.0",
+      "pdfinfo": "26.05.0"
+    },
+    "recorded_absent_no_install": [
+      "qpdf",
+      "mutool",
+      "ghostscript gs"
+    ],
+    "C1": {
+      "status": "PASS",
+      "evidence": "Bundled Python imported pdfminer.six version 20251230."
+    },
+    "C2": {
+      "status": "PENDING_POST_BUILD_FAIL_CLOSED",
+      "evidence": "Requires the frozen one-page tagged-candidate probe after lane 09 creates a candidate. Failure makes G5 NOT_EXERCISED and therefore NOT_VERIFIABLE."
+    },
+    "C3": {
+      "status": "PASS",
+      "evidence": "lanes/04-dependencies-independence/C3-VALIDATION.json",
+      "scope": "CPython stdlib raw-byte inventory/marker cross-check; no builder library imports and never sole semantic proof."
+    }
+  },
+  "schema_validation": {
+    "draft": "2020-12",
+    "status": "NOT_EXERCISED_REAL_VALIDATOR_UNAVAILABLE",
+    "jsonschema_python": "ABSENT",
+    "ajv_node": "ABSENT",
+    "install_action": "NONE",
+    "fallback_evidence": "lanes/02-cdrr-receipts/VALIDATION-OUTPUT.txt",
+    "fallback_result": "PASS for six positive and four deliberately broken fixtures using the lane's stdlib subset validator; this does not claim full Draft-2020-12 conformance."
+  },
+  "fixture_integrity": {
+    "status": "PASS",
+    "count": 14,
+    "evidence": "All file SHA-256 values equal FIXTURE-MANIFEST.json; F05 SEALED.md documentation typo corrected to the manifest/file hash without changing any PDF bytes."
+  },
+  "safety_budget_static_check": {
+    "status": "PASS",
+    "scope": "JSON parse, exact eight-id set, arithmetic, constants, trip coverage, rule/enum citations, and fail-closed protocol; runtime trip execution remains Wave B work.",
+    "tc09_correction": "Network-use trip records OTHER_RECORDED rather than RESOURCE_BUDGET_EXCEEDED because it is a run-level E06 invalidation, not a budget trip."
+  },
+  "no_network_decision": {
+    "status": "SCOPED_ACCEPTANCE_FOR_LOCAL_SYNTHETIC_EXPERIMENT",
+    "worker_evidence": "The Python worker uses a socket audit hook and records any socket event as E06 INVALID_EXPERIMENT.",
+    "child_process_gap": "Poppler child processes are not independently socket-audited without adding/installing an external isolation layer.",
+    "mandatory_receipt_disclosure": "Every run receipt claiming VERIFIED_NO_NETWORK must cite the worker audit evidence and explicitly state that Poppler-child coverage is unaudited.",
+    "claim_limit": "An ACCEPT in this experiment is not proof of production-grade network isolation. Any observed network use invalidates the experiment."
+  },
+  "version_tension_adjudication": {
+    "status": "ADJUDICATED",
+    "sealed_generation_versions": "Python 3.12.7 / reportlab 5.0.1 / pypdf 6.14.2",
+    "runtime_versions": "Python 3.12.14 / reportlab 4.4.9 / pypdf 6.10.0",
+    "decision": "The sealed fixture bytes and authoritative hashes remain unchanged. Runtime tools operate on those bytes and record their actual versions. Mutation checks target frozen mutation semantics, never regeneration-byte identity."
+  },
+  "gate_a_ledger": [
+    {"id": "R1", "status": "NOT_EXERCISED", "item": "full Draft-2020-12 validation", "fail_closed": true},
+    {"id": "R2", "status": "PASS", "item": "fixture hash/size/page integrity"},
+    {"id": "R3", "status": "PASS", "item": "sealing receipt table equals manifest after documentation-only F05 correction"},
+    {"id": "R4", "status": "PASS", "item": "expected dispositions cover fixture id set"},
+    {"id": "R5", "status": "PASS", "item": "tool import and version checklist"},
+    {"id": "R6", "status": "PASS", "item": "C1 pdfminer.six resolution"},
+    {"id": "R7", "status": "PENDING_POST_BUILD_FAIL_CLOSED", "item": "C2 structure-tree probe"},
+    {"id": "R8", "status": "PASS", "item": "C3 verifier-scanner acceptance"},
+    {"id": "R9", "status": "CONDITIONAL_POST_BUILD", "item": "per-gate independence completeness; G5 awaits C2"},
+    {"id": "R10", "status": "PASS_STATIC", "item": "budgets parse and arithmetic"},
+    {"id": "R11", "status": "PASS_STATIC", "item": "trip-case coverage and fail-closed protocol"},
+    {"id": "R12", "status": "SCOPED_DECISION_RECORDED", "item": "no-network evidence scope"},
+    {"id": "R13", "status": "PASS", "item": "version tension adjudication"},
+    {"id": "R14", "status": "PASS", "item": "cross-lane vocabulary mappings frozen"},
+    {"id": "R15", "status": "PASS", "item": "G6, G5, and B01/B02 disambiguations frozen"}
+  ],
+  "next_action": "Independent lane 06 re-break. Wave B remains forbidden unless that re-break returns exact READY_FOR_VERTICAL_SLICE."
+}
