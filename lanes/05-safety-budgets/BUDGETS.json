@@ -1,0 +1,201 @@
+{
+  "kind": "lane05-budgets",
+  "schema": 1,
+  "lane": "05-safety-budgets",
+  "frozen_date": "2026-09-29",
+  "status": "FROZEN",
+  "authority_order": [
+    "inputs/FINAL-RECONCILIATION.md",
+    "ASSIGNMENT.md",
+    "inputs/MAIN-GLM-SYNTHESIS.md"
+  ],
+  "measurement_basis": {
+    "source": "inputs/ENVIRONMENT-INVENTORY.md",
+    "observation_date": "2026-09-29",
+    "observation_character": "FACT: single bounded observation on the build Mac; the inventory states these timings are not universal performance claims",
+    "observed_maxima_used": {
+      "pages": 4,
+      "source_bytes": 6969,
+      "pdftotext_wall_seconds": 0.04,
+      "pdftoppm_r150_wall_seconds": 4.96,
+      "render_bytes_150dpi": 461550
+    }
+  },
+  "scope": {
+    "budget_unit": "one document run: intake -> preflight -> extract -> plan -> apply -> verify -> dispose",
+    "isolation": "one expendable worker process per document; private per-run temp; no cross-document state (INV-11)",
+    "inputs_covered": "the 14 sealed fixtures (F01-F08, R01-R04, B01-B02), lane 03 mutants M01-M06, and harness-synthetic trip probes; nothing else",
+    "not_a_claim": "synthetic local vertical slice only; no production-service or arbitrary-PDF safety claim"
+  },
+  "gate_mapping": {
+    "lane01_vocabulary_gate": "G9 (resource budget + no-network)",
+    "lane02_vocabulary_gate_id": "G11_RESOURCE_BUDGET_NO_NETWORK",
+    "related": "lane 02 G09_INDEPENDENT_RENDER_INK corresponds to lane 01/03 G10 and consumes frozen_constants.render_dpi",
+    "fail_closed": "if BUDGETS.json or a harness measurement point is unavailable, that budget is recorded NOT_EXERCISED and lane 01 G9 cannot be PASS (NOT_VERIFIABLE via PR-08 for in-scope classes)"
+  },
+  "budgets": [
+    {
+      "budget_id": "PAGE_COUNT",
+      "limit": 8,
+      "unit": "pages",
+      "comparison": "<=",
+      "measured_on": [
+        "source page count from the intake parser",
+        "candidate page count from the independent extractor at verify; must also equal the source count (INV-02)"
+      ],
+      "baseline": {
+        "observed_max_in_packet": 4,
+        "basis": "F07-dense-report.pdf",
+        "status": "MEASURED"
+      },
+      "headroom": "2x observed max",
+      "rationale": "Any input above 8 pages is out of the sealed slice and refuses at intake; generous vs the 4-page sealed max."
+    },
+    {
+      "budget_id": "OBJECT_COUNT",
+      "limit": 1000,
+      "unit": "indirect objects",
+      "comparison": "<=",
+      "measured_on": [
+        "raw object inventory from the conservative parser at intake",
+        "verifier re-inventory consumed by lane 01 gates G1/G2"
+      ],
+      "baseline": {
+        "observed_max_in_packet": null,
+        "basis": "no object counts appear in ENVIRONMENT-INVENTORY.md",
+        "status": "UNKNOWN_NOT_MEASURED"
+      },
+      "derivation": "INFERENCE: a classic xref spends at least ~20 bytes per object, so the largest sealed fixture (6969 bytes) mechanically cannot exceed ~348 objects; 1000 is ~2.9x that ceiling",
+      "rationale": "Fail-closed conservative bound; the first pipeline run must record the actual per-fixture object counts."
+    },
+    {
+      "budget_id": "FILE_BYTES",
+      "limit": 204800,
+      "unit": "bytes",
+      "comparison": "<=",
+      "measured_on": [
+        "byte size of the source at intake, before parse; must equal the sealed manifest byte_size and sha256 (INV-01)"
+      ],
+      "baseline": {
+        "observed_max_in_packet": 6969,
+        "basis": "F07-dense-report.pdf",
+        "status": "MEASURED"
+      },
+      "headroom": "29.4x observed max",
+      "rationale": "Matches the lane 03 frozen ceiling that every sealed PDF is under 200 KB (GENERATOR-SPEC.md section 5)."
+    },
+    {
+      "budget_id": "PIXELS",
+      "limit": 64000000,
+      "unit": "decoded pixels",
+      "comparison": "<=",
+      "measured_on": [
+        "sum of width*height over every page rendered during the run (source render set + candidate render set) at frozen 150 DPI",
+        "cross-checked against actual PNG dimensions via installed Pillow; both values recorded"
+      ],
+      "baseline": {
+        "observed_max_in_packet": 16830000,
+        "basis": "derived: 2 renders x 4 pages x 2103750 px/page (US Letter at 150 DPI = 1275x1650)",
+        "status": "DERIVED"
+      },
+      "headroom": "3.8x derived worst case",
+      "rationale": "Defensive backstop; unreachable while PAGE_COUNT <= 8 and render_dpi = 150 hold; catches renderer-parameter drift or repeated render loops."
+    },
+    {
+      "budget_id": "CPU_SECONDS",
+      "limit": 600.0,
+      "unit": "cpu-seconds (user+system)",
+      "comparison": "<=",
+      "measured_on": [
+        "worker process: resource.getrusage(RUSAGE_SELF) utime+stime delta",
+        "children (poppler): resource.getrusage(RUSAGE_CHILDREN) delta over waited-for subprocesses",
+        "harness-owned; never builder self-report (lane 01 G9 independence)"
+      ],
+      "baseline": {
+        "observed_max_in_packet": null,
+        "basis": "ENVIRONMENT-INVENTORY.md supplies wall times only",
+        "status": "UNKNOWN_NOT_MEASURED"
+      },
+      "derivation": "INFERENCE: observed wall component sum is ~10 s worst case; assuming CPU ~ wall for single-threaded poppler, 600 cpu-seconds is at least ~60x",
+      "rationale": "Hard stop for runaway workers on a synthetic slice; first run records actuals."
+    },
+    {
+      "budget_id": "WALL_SECONDS",
+      "limit": 600.0,
+      "unit": "wall-seconds",
+      "comparison": "<=",
+      "measured_on": [
+        "time.monotonic() delta across the whole run, harness-owned, never builder self-report"
+      ],
+      "baseline": {
+        "observed_max_in_packet": 10.0,
+        "basis": "derived from observed components: 0.04 s (pdftotext, F01) + 2 x 4.96 s (source and candidate pdftoppm -r 150 at the observed F01 rate)",
+        "status": "DERIVED_FROM_COMPONENTS"
+      },
+      "headroom": "~60x observed component sum",
+      "rationale": "Generous bound that still guarantees termination of a stalled stage."
+    },
+    {
+      "budget_id": "TEMP_STORAGE_BYTES",
+      "limit": 104857600,
+      "unit": "bytes",
+      "comparison": "<=",
+      "measured_on": [
+        "sum of file sizes under the private per-run temp directory, sampled at every stage boundary and at any trip; maximum recorded"
+      ],
+      "baseline": {
+        "observed_max_in_packet": 2000000,
+        "basis": "derived worst need: source render set (<= 461550 B) + candidate render set (<= 2x) + candidate PDF (~source scale) + extraction text + CDRR",
+        "status": "DERIVED"
+      },
+      "headroom": ">= 50x derived worst need",
+      "rationale": "Prevents disk exhaustion; frozen sampling cadence keeps the check mechanical."
+    },
+    {
+      "budget_id": "OUTPUT_BYTES",
+      "limit": 1048576,
+      "unit": "bytes",
+      "comparison": "<=",
+      "measured_on": [
+        "size of the finished candidate PDF at write time, before atomic rename"
+      ],
+      "baseline": {
+        "observed_max_in_packet": null,
+        "basis": "no candidate exists yet; no builder has run in this experiment",
+        "status": "UNKNOWN_NOT_MEASURED"
+      },
+      "derivation": "INFERENCE: expected candidate magnitude is source scale (under ~10 KiB including added outline/structure tags); 1 MiB is a ~100x tripwire, not a target",
+      "rationale": "A candidate orders of magnitude larger than its source signals a defect; trip and refuse."
+    }
+  ],
+  "frozen_constants": {
+    "render_dpi": 150,
+    "page_box_pt": [612.0, 792.0],
+    "render_pixel_size": [1275, 1650],
+    "pixels_per_page_at_render_dpi": 2103750,
+    "temp_dir_template": "workspace/.tmp/<run_id>/",
+    "temp_reused_across_documents": false,
+    "atomic_write_procedure": "write to '<final_name>.tmp-<run_id>' in the final target directory, fsync, then os.replace to the final name",
+    "budget_rollover": "all eight budget ids roll up into lane 01 gate G9 / lane 02 gate G11_RESOURCE_BUDGET_NO_NETWORK; status semantics in status_mapping"
+  },
+  "status_mapping": {
+    "WITHIN_BUDGET": "measured value exists and satisfies '<= limit'",
+    "EXCEEDED": "measured value exists and violates the limit; trip or post-hoc G9/G11 FAIL per SAFETY-SPEC section 5",
+    "NOT_EXERCISED": "measurement point never ran (refused earlier, out of scope) or harness/BUDGETS.json unavailable; observed=null; never counts as PASS (INV-08)",
+    "ERROR": "the measurement itself failed; treated as gate ERROR, worse than FAIL (lane 01 section 5)"
+  },
+  "not_measured_disclosures": [
+    "OBJECT_COUNT: no per-fixture object counts exist in the packet; the first pipeline run must record them (UNKNOWN preserved).",
+    "CPU_SECONDS: the inventory contains wall times only; the CPU baseline is UNKNOWN until the first run.",
+    "OUTPUT_BYTES: no builder output exists in the packet; the first candidate size is UNKNOWN until lanes 08/09 run.",
+    "Tool-version tension (FACT, unresolved here): ENVIRONMENT-INVENTORY.md observes Python 3.12.14 / reportlab 4.4.9 / pypdf 6.10.0, while FIXTURE-MANIFEST.json records sealing with Python 3.12.7 / reportlab 5.0.1 / pypdf 6.14.2. Budgets are sized to file/page/pixel magnitudes, not tool speed; Gate A and lane 06 must record actual run-time versions and adjudicate."
+  ],
+  "experiment_level_informational": {
+    "note": "harness bookkeeping only; not a receipt budget id and never written into receipts budgets arrays",
+    "max_document_runs": 28,
+    "max_document_runs_basis": "14 inputs x 2 (primary + determinism rerun)",
+    "experiment_wall_ceiling_seconds": 16800,
+    "expected_experiment_wall_seconds": "under ~600 s at observed rates"
+  }
+}
+
