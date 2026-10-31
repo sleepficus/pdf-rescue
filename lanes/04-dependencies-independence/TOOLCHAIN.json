@@ -1,0 +1,54 @@
+{
+  "artifact": "TOOLCHAIN.json",
+  "spec_version": "1.0.0-repair1",
+  "frozen_date": "2026-09-29",
+  "evidence_basis": "inputs/ENVIRONMENT-INVENTORY.md sealed observations; this repair seat performed no new inspection and no installs.",
+  "install_policy": "FAIL_CLOSED_NO_INSTALL",
+  "license_status": "all upstream license texts UNKNOWN-UNVERIFIED; see LICENSE-NOTES.md",
+  "independence_rule": {
+    "definition": "A decisive computation is independent iff (a) the verifier tool is not the builder writer library and shares no decisive code path for that computation, (b) it is never invoked through builder APIs, (c) the role is recorded here (L01-PROTOCOL.md section 4).",
+    "builder_lineages": ["REPORTLAB", "PYPDF"],
+    "verifier_lineages": ["POPPLER", "PDFMINER_SIX", "OS_UTIL", "HARNESS", "VERIFIER_STDLIB_PENDING"],
+    "same_lineage_pairs_prohibited": ["pdftotext+pdftoppm", "pdftotext+pdfinfo", "pdftoppm+pdfinfo"],
+    "verifier_decisive_use_banned": ["reportlab", "pypdf"]
+  },
+  "builder_path": {
+    "content_writer": {"tool": "reportlab", "version": "4.4.9", "role": "page content generation, base-14 fonts, F08 grid rules"},
+    "object_surgery": {"tool": "pypdf", "version": "6.10.0", "role": "trailer ID pinning, metadata, outline and link annotation objects, intake classification"},
+    "planning_time_extractor": {"tool": "pypdf", "version": "6.10.0", "role": "frozen builder-side planning extractor; makes the G3 lineage requirement decidable"}
+  },
+  "independent_second_extractor": {"tool": "pdftotext", "version": "26.09.0", "lineage": "POPPLER", "path": "/opt/homebrew/bin/pdftotext"},
+  "independent_renderer": {"tool": "pdftoppm", "version": "26.05.0", "lineage": "POPPLER", "path": "bundled runtime override path; exact filesystem path not stated in sealed inventory"},
+  "verifier_components": [
+    {"tool": "pdftotext", "version": "26.09.0", "lineage": "POPPLER", "roles": ["G3 second extractor plain and -layout", "G5 layout-order derivation via -bbox-layout", "G2 geometry cross-check"]},
+    {"tool": "pdftoppm", "version": "26.05.0", "lineage": "POPPLER", "roles": ["independent renderer at 150 DPI for G4 and G10"]},
+    {"tool": "pdfinfo", "version": "26.05.0", "lineage": "POPPLER", "roles": ["G1 and G2 page count and box cross-check", "R01 encrypted-control observation"]},
+    {"tool": "pdfplumber", "version": "0.11.9", "lineage": "PDFMINER_SIX", "engine": "pdfminer.six, version UNKNOWN (check C1)", "roles": ["G4 text-layer extraction", "G7 table detector and cell extraction", "G2 primary geometry", "G6 link annotations via public API", "G8 parsed-object scan"]},
+    {"tool": "pdfminer.six direct import", "version": "UNKNOWN", "lineage": "PDFMINER_SIX", "status": "CONDITIONAL on C1 and C2", "roles": ["G1 raw object inventory", "G5 structure-tree derivation", "G6 outline and destination traversal"]},
+    {"tool": "shasum -a 256 or sha256sum", "version": "OS-provided", "lineage": "OS_UTIL", "roles": ["G1 hash"]},
+    {"tool": "/usr/bin/time -l, du, Pillow 12.3.0 PNG accounting", "lineage": "OS_UTIL", "roles": ["G9 CPU and wall time, temp storage, decoded pixels"]},
+    {"tool": "CPython 3.12.14 stdlib socket audit hook", "lineage": "HARNESS", "roles": ["G9 no-network evidence"]},
+    {"tool": "verifier-owned stdlib raw-object scanner", "version": "none yet", "lineage": "VERIFIER_STDLIB_PENDING", "status": "UNPROVEN until built by lane 09 and accepted at Gate A (check C3)", "roles": ["fallback for G1 inventory and G6 outline traversal"]}
+  ],
+  "gate_map": {
+    "G1": {"tools": ["shasum -a 256", "pdfminer.six inventory (C1) or scanner (C3)", "pdfinfo"], "verdict": "CONDITIONAL", "on_fail": "NOT_EXERCISED, then NOT_VERIFIABLE via PR-08"},
+    "G2": {"tools": ["pdfplumber", "pdftotext -bbox-layout"], "verdict": "MET"},
+    "G3": {"tools": ["pdftotext"], "verdict": "MET", "note": "POPPLER vs builder writer reportlab and planning extractor pypdf"},
+    "G4": {"tools": ["pdftoppm", "pdfplumber"], "verdict": "MET", "note": "renderer POPPLER vs extractor PDFMINER_SIX vs builder layout engine"},
+    "G5": {"tools": ["pdftotext -bbox-layout", "pdfminer.six structure tree (C2)"], "verdict": "CONDITIONAL", "on_fail": "second derivation NOT_DERIVABLE; G5 NOT_EXERCISED for affected documents"},
+    "G6": {"tools": ["pdfplumber.hyperlinks", "pdfminer.six traversal (C1, C2) or scanner (C3)"], "verdict": "CONDITIONAL", "banned": "pypdf, because the builder writes navigation with pypdf (shared decisive library)", "on_fail": "NOT_EXERCISED, then NOT_VERIFIABLE via PR-08"},
+    "G7": {"tools": ["pdfplumber table detector", "verifier numeric lexer over pdfminer.six text"], "verdict": "MET"},
+    "G8": {"tools": ["stdlib or grep raw byte scan", "pdfplumber parsed-object scan"], "verdict": "MET", "banned": "builder classification report"},
+    "G9": {"tools": ["/usr/bin/time -l", "du", "Pillow PNG accounting", "stdlib socket audit hook"], "verdict": "MET iff harness observation present; also requires lane 05 BUDGETS.json, not present in this packet"},
+    "G10": {"tools": ["pdftoppm renders", "pdfplumber text layer for ink comparison"], "verdict": "MET under the frozen pairing; comparison extractor is PDFMINER_SIX, never pdftotext", "on_fail": "if pairing rejected, NOT_EXERCISED; no second renderer lineage exists"}
+  },
+  "capability_checks": {
+    "C1": {"purpose": "resolve sealed-evidence conflict: pdfplumber 0.11.9 installed implies pdfminer.six present, while L03-ORACLE-NOTES section 5 says no pdfminer on this machine", "command": "python3 -c \"import pdfminer; print(pdfminer.__version__)\"", "on_fail": "C1-dependent roles NOT_EXERCISED; G1, G5, G6 fall closed"},
+    "C2": {"purpose": "prove structure-tree traversal for the G5 second derivation using pdfminer.six only", "command": "frozen one-page tagged-candidate probe in lane 09 code, no pypdf or reportlab code path", "on_fail": "G5 second derivation NOT_DERIVABLE for affected documents"},
+    "C3": {"purpose": "accept the verifier-owned stdlib scanner as INDEPENDENT_IMPLEMENTATION", "command": "stdlib-only import audit plus Gate A diff review", "on_fail": "scanner serves no decisive role"}
+  },
+  "unavailable_tools_recorded_not_installed": ["qpdf", "mutool", "ghostscript gs", "pikepdf", "pdfminer standalone (importability contested, see C1)", "PyMuPDF"],
+  "unknowns": ["pdfminer.six version and importability (C1)", "pdfminer.six structure-tree capability (C2)", "pdftoppm and pdfinfo exact filesystem paths", "all upstream license texts (see LICENSE-NOTES.md)"],
+  "fail_closed_policy": "Unproven independence or absent tool means the gate records NOT_EXERCISED, never PASS; REQUIRED gates then yield NOT_VERIFIABLE via PR-08."
+}
+
