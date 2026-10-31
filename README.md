@@ -18,7 +18,8 @@ PDFs with their expected acceptance outcomes. One fixture had a measured spacing
 improvement; the other seven had no visible change. Two builds produced matching
 candidate hashes, and the original fixture bytes remained unchanged.
 
-Six deliberately damaged candidates were rejected by their intended checks.
+Six deliberately damaged candidates failed their intended checks; none was
+accepted, and all six were sent to REVIEW.
 These are results on selected synthetic documents, not a success rate for
 arbitrary PDFs or proof of accessibility compliance.
 
