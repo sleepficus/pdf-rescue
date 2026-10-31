@@ -1,0 +1,438 @@
+{
+  "authority": {
+    "order": [
+      "inputs/FINAL-RECONCILIATION.md",
+      "ASSIGNMENT.md",
+      "inputs/MAIN-GLM-SYNTHESIS.md"
+    ],
+    "scope": "text-native vertical slice only (no forms, scans, OCR, RTL)"
+  },
+  "determinism_evidence": {
+    "files_compared": 20,
+    "method": "every PDF generated twice (scratch/gen-a, scratch/gen-b) by generator/doublegen_check.py; pairwise sha256 asserted equal",
+    "mismatches": 0,
+    "result": "byte-identical"
+  },
+  "fixtures": [
+    {
+      "byte_size": 3762,
+      "class": "TEXT_SINGLE_COLUMN",
+      "control_kind": null,
+      "filename": "F01-memo.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F01",
+      "notes": "Two-page memo; running header/footer exercise per-page hashing; no bookmarks so outline addition is a tidy opportunity.",
+      "page_count": 2,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "203f751515606c543d1d730e707345ef3f3d270a23e1fedc53dc12d147a50ec7",
+      "ugly_features": [
+        "spacing: literal double spaces and irregular paragraph gaps (4/8/14pt)",
+        "alignment: inconsistent indents (0/18/24pt)",
+        "typography: mixed families/sizes in body (Helvetica 10.5, Times-Roman 11, Courier 9.5, headings 14)",
+        "hyphenation: declared line-end breaks (exam-/ple, oper-/ations)",
+        "header/footer: repeated running header and footer on every page",
+        "bookmarks: missing (none)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 2721,
+      "class": "TEXT_SINGLE_COLUMN",
+      "control_kind": null,
+      "filename": "F02-letter.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F02",
+      "notes": "Single-page letter; M02 target sentence frozen in the body.",
+      "page_count": 1,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "bbe15b2e7fa10f213f9876699db55513d9b66cebd59a3b5e1054e6f3621171ea",
+      "ugly_features": [
+        "spacing: one literal double-spaced sentence, irregular paragraph gaps (2/6/12/18pt)",
+        "alignment: centered letterhead, right-aligned date, indented blocks",
+        "typography: mixed sizes (8-14) and families",
+        "hyphenation: none declared",
+        "header/footer: none (letter format)",
+        "bookmarks: missing (none)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 4396,
+      "class": "TEXT_SINGLE_COLUMN",
+      "control_kind": null,
+      "filename": "F03-report.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F03",
+      "notes": "Two-page report; flat bookmarks exercise hierarchy repair; inline numeric rows exercise lexeme round-trip without a grid.",
+      "page_count": 2,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "54b84a8b39562705b6c9bf77f8a4cb22619d49298f944bb3533bafc04acda683",
+      "ugly_features": [
+        "spacing: irregular paragraph gaps",
+        "alignment: inconsistent indents (0/6/12pt)",
+        "typography: mixed families/sizes (8.5-14)",
+        "hyphenation: declared line-end break (assess-/ment)",
+        "header/footer: footer only",
+        "bookmarks: flat (4 top-level entries, no nesting despite heading hierarchy)",
+        "structure tags: none",
+        "tables: inline numeric row set without grid lines"
+      ]
+    },
+    {
+      "byte_size": 2719,
+      "class": "TEXT_SINGLE_COLUMN",
+      "control_kind": null,
+      "filename": "F04-agenda.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F04",
+      "notes": "Single-page agenda; M06 hidden-text target; irregular alignment/indents.",
+      "page_count": 1,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "46e1e1ab8b415ffc1b38188ba0f948d617f83c084d1d852136d68e0c5fca4def",
+      "ugly_features": [
+        "spacing: irregular gaps and one literal double space inside agenda item 3",
+        "alignment: varying item indents (0-18pt) plus one right-aligned line and centered title",
+        "typography: mixed Times/Helvetica sizes (8-13)",
+        "hyphenation: none declared",
+        "header/footer: footer only",
+        "bookmarks: missing (none)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 5334,
+      "class": "TEXT_MULTI_COLUMN",
+      "control_kind": null,
+      "filename": "F05-article.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F05",
+      "notes": "Three-page two-column article; reading order is left-then-right per page; M03 column-order-swap target.",
+      "page_count": 3,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "888e283dca1174834cae8bc62ea45ca56435ed92cbb4b54f0b200f4fda3437ef",
+      "ugly_features": [
+        "reading order: two-column, order-sensitive (left column then right column per page)",
+        "spacing: irregular gaps, one literal double space",
+        "alignment: two-column layout with spanning title",
+        "typography: mixed sizes (9-14)",
+        "hyphenation: declared line-end breaks (back-/log, condi-/tion)",
+        "header/footer: footer only",
+        "bookmarks: missing (none)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 4961,
+      "class": "TEXT_MULTI_COLUMN",
+      "control_kind": null,
+      "filename": "F06-column-report.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F06",
+      "notes": "Three-page two-column report; numeric table carries the four frozen lexemes with deliberately mixed row bases (no arithmetic obligation, see ORACLE-NOTES.md).",
+      "page_count": 3,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "6ba966997b869ed5ea90c39e29b8f6979ac21d7439f0aac99ba496fa5c75dde9",
+      "ugly_features": [
+        "reading order: two-column, order-sensitive (left column then right column per page)",
+        "tables: small numeric table with frozen lexemes 1,234.50 / (500) / 12% / $0.75 and differing row bases",
+        "spacing: irregular paragraph gaps",
+        "typography: mixed sizes (8.5-13)",
+        "hyphenation: none declared",
+        "header/footer: footer only",
+        "bookmarks: missing (none)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 6969,
+      "class": "TEXT_MULTI_COLUMN",
+      "control_kind": null,
+      "filename": "F07-dense-report.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F07",
+      "notes": "Four-page dense report; accurate TOC, cross-reference phrase, flat bookmarks; M05 bookmark-loss target.",
+      "page_count": 4,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "9021c2194f106e5ba2b5c38b423985d96b90377e5f61305f8fbddf859d790503",
+      "ugly_features": [
+        "header/footer: repeated running header and footer on every page",
+        "navigation: TOC-like contents list with accurate page numbers; internal cross-reference phrase ('as detailed in Section 3 (page 3)')",
+        "bookmarks: flat (4 top-level entries)",
+        "spacing: irregular paragraph gaps",
+        "alignment: single dense column",
+        "typography: mixed families/sizes (8.5-14)",
+        "hyphenation: declared line-end breaks (main-/tenance, recommend-/ations)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 4207,
+      "class": "TEXT_TABLE",
+      "control_kind": null,
+      "filename": "F08-statement.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "F08",
+      "notes": "Three-page statement; drawn grid, TOTAL row arithmetically consistent (descriptive only); M04 numeric-reassignment target.",
+      "page_count": 3,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "9479c2bd1ca100f6970e09c222e1950e657f00d2c02cab51a4383024adff0238",
+      "ugly_features": [
+        "tables: drawn grid with columns Item/Quantity/Unit Price/Amount, repeated header row per page, TOTAL row",
+        "numeric lexemes: thousands separator ($1,234.50), parenthesised negative (($250.00)), currency ($0.75), mixed magnitudes",
+        "units: 'All amounts in USD.' note plus parentheses convention note",
+        "header/footer: repeated on every page",
+        "spacing: irregular gaps in the sub-header block",
+        "typography: mixed Helvetica/Helvetica-Bold",
+        "bookmarks: missing (none)",
+        "structure tags: none"
+      ]
+    },
+    {
+      "byte_size": 3623,
+      "class": "BENIGN",
+      "control_kind": "benign-control: already-clean document",
+      "filename": "B01-clean.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "B01",
+      "notes": "Already-clean two-page document: consistent font/spacing, correct hierarchical bookmarks; must need zero operations.",
+      "page_count": 2,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "1fad93c654fdb14c205719ac8bea7eddecc895b0461736ca2e103dc4e0e611ca",
+      "ugly_features": []
+    },
+    {
+      "byte_size": 3411,
+      "class": "BENIGN",
+      "control_kind": "benign-control: clean navigation document",
+      "filename": "B02-clean-navigation.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "B02",
+      "notes": "Clean two-page document with correct hierarchical bookmarks and exactly one internal GoTo link annotation on page 1 targeting page 2.",
+      "page_count": 2,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "1bedc9c90ce384acccd48c8d9609b35ca6f0bd5bbd714ac9bb7fe8c1da094a71",
+      "ugly_features": []
+    },
+    {
+      "byte_size": 1856,
+      "class": "REFUSE_ENCRYPTED",
+      "control_kind": "refusal-control: encrypted input",
+      "filename": "R01-encrypted.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "R01",
+      "notes": "Built with reportlab then pypdf PdfWriter.encrypt(RC4-128) with frozen dummy passwords and pinned /ID.",
+      "page_count": 1,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "f101e7a3e1f56387461048993720af23005b50ef6b8755a1c211af4f79c6c9ca",
+      "ugly_features": []
+    },
+    {
+      "byte_size": 2314,
+      "class": "REFUSE_SIGNED",
+      "control_kind": "refusal-control: signed-looking input",
+      "filename": "R02-signed.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "R02",
+      "notes": "AcroForm with /SigFlags 3 and one /FT /Sig widget whose /V holds /ByteRange and a dummy hex /Contents; built via pypdf low-level objects.",
+      "page_count": 1,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "838ae03261655403fd5421337d2e5d33eee853f6999e55709c06cab2d3f735c7",
+      "ugly_features": []
+    },
+    {
+      "byte_size": 1861,
+      "class": "REFUSE_XFA",
+      "control_kind": "refusal-control: XFA input",
+      "filename": "R03-xfa.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "R03",
+      "notes": "AcroForm carries /XFA as [name, stream] with a small synthetic XDP XML stream.",
+      "page_count": 1,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "977ec97893ca54e35d2b3c3fb4d9c13fa4b6aa797eb7b9144b062d916855fcd6",
+      "ugly_features": []
+    },
+    {
+      "byte_size": 1877,
+      "class": "REFUSE_ACTIVE",
+      "control_kind": "refusal-control: active-content input",
+      "filename": "R04-active.pdf",
+      "generator": {
+        "script": "generator/generate_all.py",
+        "tool": "reportlab 5.0.1 (Canvas invariant=1) + pypdf 6.14.2 post-processing for R01-R04"
+      },
+      "id": "R04",
+      "notes": "Catalog /OpenAction is a /JavaScript action; page 1 carries an /AA additional JavaScript action. Strings are inert synthetic text.",
+      "page_count": 1,
+      "page_size_pt": [
+        612.0,
+        792.0
+      ],
+      "seed_record": {
+        "mode": "deterministic no-RNG; seeds frozen in GENERATOR-SPEC.md before generation",
+        "nominal_seed": 20260929,
+        "rng": "none"
+      },
+      "sha256": "a2fb30725e18db32a755fa3c4e56afff2c46b0d6330547e2d14c528f4ddaea42",
+      "ugly_features": []
+    }
+  ],
+  "frozen_date": "2026-09-29",
+  "generator": "lane03-fixture-generator",
+  "immutability": "sealed PDFs in fixtures/ are immutable; defects are recorded, never patched in place",
+  "kind": "lane03-fixture-manifest",
+  "schema": 1,
+  "seed_record": {
+    "mode": "deterministic no-RNG; invariant=1; pinned /ID",
+    "nominal_seed": 20260929,
+    "rng": "none"
+  },
+  "versions": {
+    "pypdf": "6.14.2",
+    "python": "3.12.7",
+    "reportlab": "5.0.1"
+  }
+}

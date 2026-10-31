@@ -1,0 +1,177 @@
+lane 03 validation output (validate.py)
+[PASS] file exists: F01-memo.pdf
+[PASS] sha256 matches manifest: F01-memo.pdf
+[PASS] byte size matches manifest: F01-memo.pdf  -- file=3762 manifest=3762
+[PASS] page count matches manifest: F01-memo.pdf  -- file=2 manifest=2
+[PASS] file exists: F02-letter.pdf
+[PASS] sha256 matches manifest: F02-letter.pdf
+[PASS] byte size matches manifest: F02-letter.pdf  -- file=2721 manifest=2721
+[PASS] page count matches manifest: F02-letter.pdf  -- file=1 manifest=1
+[PASS] file exists: F03-report.pdf
+[PASS] sha256 matches manifest: F03-report.pdf
+[PASS] byte size matches manifest: F03-report.pdf  -- file=4396 manifest=4396
+[PASS] page count matches manifest: F03-report.pdf  -- file=2 manifest=2
+[PASS] file exists: F04-agenda.pdf
+[PASS] sha256 matches manifest: F04-agenda.pdf
+[PASS] byte size matches manifest: F04-agenda.pdf  -- file=2719 manifest=2719
+[PASS] page count matches manifest: F04-agenda.pdf  -- file=1 manifest=1
+[PASS] file exists: F05-article.pdf
+[PASS] sha256 matches manifest: F05-article.pdf
+[PASS] byte size matches manifest: F05-article.pdf  -- file=5334 manifest=5334
+[PASS] page count matches manifest: F05-article.pdf  -- file=3 manifest=3
+[PASS] file exists: F06-column-report.pdf
+[PASS] sha256 matches manifest: F06-column-report.pdf
+[PASS] byte size matches manifest: F06-column-report.pdf  -- file=4961 manifest=4961
+[PASS] page count matches manifest: F06-column-report.pdf  -- file=3 manifest=3
+[PASS] file exists: F07-dense-report.pdf
+[PASS] sha256 matches manifest: F07-dense-report.pdf
+[PASS] byte size matches manifest: F07-dense-report.pdf  -- file=6969 manifest=6969
+[PASS] page count matches manifest: F07-dense-report.pdf  -- file=4 manifest=4
+[PASS] file exists: F08-statement.pdf
+[PASS] sha256 matches manifest: F08-statement.pdf
+[PASS] byte size matches manifest: F08-statement.pdf  -- file=4207 manifest=4207
+[PASS] page count matches manifest: F08-statement.pdf  -- file=3 manifest=3
+[PASS] file exists: B01-clean.pdf
+[PASS] sha256 matches manifest: B01-clean.pdf
+[PASS] byte size matches manifest: B01-clean.pdf  -- file=3623 manifest=3623
+[PASS] page count matches manifest: B01-clean.pdf  -- file=2 manifest=2
+[PASS] file exists: B02-clean-navigation.pdf
+[PASS] sha256 matches manifest: B02-clean-navigation.pdf
+[PASS] byte size matches manifest: B02-clean-navigation.pdf  -- file=3411 manifest=3411
+[PASS] page count matches manifest: B02-clean-navigation.pdf  -- file=2 manifest=2
+[PASS] file exists: R01-encrypted.pdf
+[PASS] sha256 matches manifest: R01-encrypted.pdf
+[PASS] byte size matches manifest: R01-encrypted.pdf  -- file=1856 manifest=1856
+[PASS] page count matches manifest: R01-encrypted.pdf  -- file=1 manifest=1
+[PASS] file exists: R02-signed.pdf
+[PASS] sha256 matches manifest: R02-signed.pdf
+[PASS] byte size matches manifest: R02-signed.pdf  -- file=2314 manifest=2314
+[PASS] page count matches manifest: R02-signed.pdf  -- file=1 manifest=1
+[PASS] file exists: R03-xfa.pdf
+[PASS] sha256 matches manifest: R03-xfa.pdf
+[PASS] byte size matches manifest: R03-xfa.pdf  -- file=1861 manifest=1861
+[PASS] page count matches manifest: R03-xfa.pdf  -- file=1 manifest=1
+[PASS] file exists: R04-active.pdf
+[PASS] sha256 matches manifest: R04-active.pdf
+[PASS] byte size matches manifest: R04-active.pdf  -- file=1877 manifest=1877
+[PASS] page count matches manifest: R04-active.pdf  -- file=1 manifest=1
+[PASS] expected-dispositions covers exactly the manifest id set  -- missing=[] extra=[]
+[PASS] every expected disposition entry names an existing file
+[PASS] no /Encrypt: F01
+[PASS] pypdf is_encrypted False: F01
+[PASS] no signature field: F01
+[PASS] no XFA: F01
+[PASS] no active content: F01
+[PASS] pdftotext extraction non-trivial: F01
+[PASS] meaningful marker present: F01
+[PASS] no /Encrypt: F02
+[PASS] pypdf is_encrypted False: F02
+[PASS] no signature field: F02
+[PASS] no XFA: F02
+[PASS] no active content: F02
+[PASS] pdftotext extraction non-trivial: F02
+[PASS] meaningful marker present: F02
+[PASS] no /Encrypt: F03
+[PASS] pypdf is_encrypted False: F03
+[PASS] no signature field: F03
+[PASS] no XFA: F03
+[PASS] no active content: F03
+[PASS] pdftotext extraction non-trivial: F03
+[PASS] meaningful marker present: F03
+[PASS] no /Encrypt: F04
+[PASS] pypdf is_encrypted False: F04
+[PASS] no signature field: F04
+[PASS] no XFA: F04
+[PASS] no active content: F04
+[PASS] pdftotext extraction non-trivial: F04
+[PASS] meaningful marker present: F04
+[PASS] no /Encrypt: F05
+[PASS] pypdf is_encrypted False: F05
+[PASS] no signature field: F05
+[PASS] no XFA: F05
+[PASS] no active content: F05
+[PASS] pdftotext extraction non-trivial: F05
+[PASS] meaningful marker present: F05
+[PASS] no /Encrypt: F06
+[PASS] pypdf is_encrypted False: F06
+[PASS] no signature field: F06
+[PASS] no XFA: F06
+[PASS] no active content: F06
+[PASS] pdftotext extraction non-trivial: F06
+[PASS] meaningful marker present: F06
+[PASS] no /Encrypt: F07
+[PASS] pypdf is_encrypted False: F07
+[PASS] no signature field: F07
+[PASS] no XFA: F07
+[PASS] no active content: F07
+[PASS] pdftotext extraction non-trivial: F07
+[PASS] meaningful marker present: F07
+[PASS] no /Encrypt: F08
+[PASS] pypdf is_encrypted False: F08
+[PASS] no signature field: F08
+[PASS] no XFA: F08
+[PASS] no active content: F08
+[PASS] pdftotext extraction non-trivial: F08
+[PASS] meaningful marker present: F08
+[PASS] no /Encrypt: B01
+[PASS] pypdf is_encrypted False: B01
+[PASS] no signature field: B01
+[PASS] no XFA: B01
+[PASS] no active content: B01
+[PASS] pdftotext extraction non-trivial: B01
+[PASS] meaningful marker present: B01
+[PASS] no /Encrypt: B02
+[PASS] pypdf is_encrypted False: B02
+[PASS] no signature field: B02
+[PASS] no XFA: B02
+[PASS] no active content: B02
+[PASS] pdftotext extraction non-trivial: B02
+[PASS] meaningful marker present: B02
+[PASS] refusing marker in raw bytes: R01 (/Encrypt)
+[PASS] pypdf is_encrypted True: R01
+[PASS] decrypts with the frozen dummy password: R01
+[PASS] refusing marker in raw bytes: R02 (/Sig)
+[PASS] secondary marker in raw bytes: R02 (/ByteRange)
+[PASS] pypdf low-level: AcroForm /SigFlags signatures-exist: R02
+[PASS] pypdf low-level: /FT /Sig field with /ByteRange /V: R02
+[PASS] refusing marker in raw bytes: R03 (/XFA)
+[PASS] pypdf low-level: AcroForm /XFA present: R03
+[PASS] refusing marker in raw bytes: R04 (/JavaScript)
+[PASS] secondary marker in raw bytes: R04 (/AA)
+[PASS] pypdf low-level: /OpenAction is /JavaScript: R04
+[PASS] pypdf low-level: page /AA additional action: R04
+[PASS] dev IDs are exactly F01-F08
+[PASS] refusal IDs are exactly R01-R04
+[PASS] benign IDs are exactly B01-B02
+[PASS] no unexpected IDs
+[PASS] 14 sealed PDFs on disk
+[PASS] classes: F01-F04 TEXT_SINGLE_COLUMN, F05-F07 TEXT_MULTI_COLUMN, F08 TEXT_TABLE
+[PASS] at least four dev fixtures have >= 3 pages  -- found ['F05', 'F06', 'F07', 'F08']
+[PASS] every sealed PDF < 200 KB
+[PASS] mutation IDs are exactly M01-M06
+[PASS] M01 names an expected failing gate in G1-G10  -- gate=G3
+[PASS] M01 expects a non-ACCEPT outcome mentioning FAIL
+[PASS] M01 targets an existing fixture with a frozen seed record
+[PASS] M01 specifies an exact edit
+[PASS] M02 names an expected failing gate in G1-G10  -- gate=G3
+[PASS] M02 expects a non-ACCEPT outcome mentioning FAIL
+[PASS] M02 targets an existing fixture with a frozen seed record
+[PASS] M02 specifies an exact edit
+[PASS] M03 names an expected failing gate in G1-G10  -- gate=G5
+[PASS] M03 expects a non-ACCEPT outcome mentioning FAIL
+[PASS] M03 targets an existing fixture with a frozen seed record
+[PASS] M03 specifies an exact edit
+[PASS] M04 names an expected failing gate in G1-G10  -- gate=G7
+[PASS] M04 expects a non-ACCEPT outcome mentioning FAIL
+[PASS] M04 targets an existing fixture with a frozen seed record
+[PASS] M04 specifies an exact edit
+[PASS] M05 names an expected failing gate in G1-G10  -- gate=G6
+[PASS] M05 expects a non-ACCEPT outcome mentioning FAIL
+[PASS] M05 targets an existing fixture with a frozen seed record
+[PASS] M05 specifies an exact edit
+[PASS] M06 names an expected failing gate in G1-G10  -- gate=G4
+[PASS] M06 expects a non-ACCEPT outcome mentioning FAIL
+[PASS] M06 targets an existing fixture with a frozen seed record
+[PASS] M06 specifies an exact edit
+[PASS] mutation targets cover F01/F02/F04/F05/F07/F08
+VERDICT: ALL CHECKS PASSED
