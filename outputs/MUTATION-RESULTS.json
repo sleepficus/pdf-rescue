@@ -1,0 +1,151 @@
+{
+  "all_detected": true,
+  "kind": "pdfslice-hostile-mutation-run",
+  "mutations": [
+    {
+      "disposition": {
+        "disposition": "REVIEW",
+        "rule": "PR-09"
+      },
+      "document_id": "F01",
+      "expected_failing_gate": "G3",
+      "gate_statuses": {
+        "G1": "PASS",
+        "G10": "PASS",
+        "G2": "PASS",
+        "G3": "FAIL",
+        "G4": "PASS",
+        "G5": "FAIL",
+        "G6": "PASS",
+        "G7": "NOT_EXERCISED",
+        "G8": "PASS",
+        "G9": "PASS"
+      },
+      "mutant": "workspace/.tmp/mutations/F01-M01-mutant.pdf",
+      "mutation_id": "M01",
+      "passed": true,
+      "target_gate_status": "FAIL"
+    },
+    {
+      "disposition": {
+        "disposition": "REVIEW",
+        "rule": "PR-09"
+      },
+      "document_id": "F02",
+      "expected_failing_gate": "G3",
+      "gate_statuses": {
+        "G1": "PASS",
+        "G10": "PASS",
+        "G2": "PASS",
+        "G3": "FAIL",
+        "G4": "PASS",
+        "G5": "FAIL",
+        "G6": "PASS",
+        "G7": "NOT_EXERCISED",
+        "G8": "PASS",
+        "G9": "PASS"
+      },
+      "mutant": "workspace/.tmp/mutations/F02-M02-mutant.pdf",
+      "mutation_id": "M02",
+      "passed": true,
+      "target_gate_status": "FAIL"
+    },
+    {
+      "disposition": {
+        "disposition": "REVIEW",
+        "rule": "PR-09"
+      },
+      "document_id": "F05",
+      "expected_failing_gate": "G5",
+      "gate_statuses": {
+        "G1": "PASS",
+        "G10": "FAIL",
+        "G2": "PASS",
+        "G3": "FAIL",
+        "G4": "PASS",
+        "G5": "FAIL",
+        "G6": "PASS",
+        "G7": "NOT_EXERCISED",
+        "G8": "PASS",
+        "G9": "PASS"
+      },
+      "mutant": "workspace/.tmp/mutations/F05-M03-mutant.pdf",
+      "mutation_id": "M03",
+      "passed": true,
+      "target_gate_status": "FAIL"
+    },
+    {
+      "disposition": {
+        "disposition": "REVIEW",
+        "rule": "PR-09"
+      },
+      "document_id": "F08",
+      "expected_failing_gate": "G7",
+      "gate_statuses": {
+        "G1": "PASS",
+        "G10": "PASS",
+        "G2": "PASS",
+        "G3": "FAIL",
+        "G4": "PASS",
+        "G5": "FAIL",
+        "G6": "PASS",
+        "G7": "FAIL",
+        "G8": "PASS",
+        "G9": "PASS"
+      },
+      "mutant": "workspace/.tmp/mutations/F08-M04-mutant.pdf",
+      "mutation_id": "M04",
+      "passed": true,
+      "target_gate_status": "FAIL"
+    },
+    {
+      "disposition": {
+        "disposition": "REVIEW",
+        "rule": "PR-09"
+      },
+      "document_id": "F07",
+      "expected_failing_gate": "G6",
+      "gate_statuses": {
+        "G1": "PASS",
+        "G10": "PASS",
+        "G2": "PASS",
+        "G3": "PASS",
+        "G4": "PASS",
+        "G5": "FAIL",
+        "G6": "FAIL",
+        "G7": "NOT_EXERCISED",
+        "G8": "PASS",
+        "G9": "PASS"
+      },
+      "mutant": "workspace/.tmp/mutations/F07-M05-mutant.pdf",
+      "mutation_id": "M05",
+      "passed": true,
+      "target_gate_status": "FAIL"
+    },
+    {
+      "disposition": {
+        "disposition": "REVIEW",
+        "rule": "PR-09"
+      },
+      "document_id": "F04",
+      "expected_failing_gate": "G4",
+      "gate_statuses": {
+        "G1": "PASS",
+        "G10": "PASS",
+        "G2": "PASS",
+        "G3": "FAIL",
+        "G4": "FAIL",
+        "G5": "FAIL",
+        "G6": "PASS",
+        "G7": "NOT_EXERCISED",
+        "G8": "PASS",
+        "G9": "PASS"
+      },
+      "mutant": "workspace/.tmp/mutations/F04-M06-mutant.pdf",
+      "mutation_id": "M06",
+      "passed": true,
+      "target_gate_status": "FAIL"
+    }
+  ],
+  "schema": 1
+}

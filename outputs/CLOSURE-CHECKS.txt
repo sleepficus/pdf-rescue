@@ -1,0 +1,62 @@
+inputs/FINAL-MANIFEST.sha256: OK
+inputs/FINAL-RECONCILIATION.md: OK
+inputs/MAIN-GLM-SYNTHESIS.md: OK
+inputs/RUN-CARD.md: OK
+inputs/STATUS.json: OK
+inputs/VERIFICATION-RECEIPT.md: OK
+test_header_and_manifest_fail_closed (test_intake.IntakeTests.test_header_and_manifest_fail_closed) ... ok
+test_numeric_lexemes_are_display_strings (test_intake.IntakeTests.test_numeric_lexemes_are_display_strings) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+test_benign_is_zero_operation (test_builder.PlannerTests.test_benign_is_zero_operation) ... ok
+test_other_fixture_stays_structure_only (test_builder.PlannerTests.test_other_fixture_stays_structure_only) ... ok
+test_supported_has_structure (test_builder.PlannerTests.test_supported_has_structure) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+test_divergent_hidden_text_refuses (test_verifier.DispositionTests.test_divergent_hidden_text_refuses) ... ok
+test_not_exercised_never_passes (test_verifier.DispositionTests.test_not_exercised_never_passes) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+PASS: GA-01-FIXTURE-HASHES — 14 fixture files equal authoritative manifest hashes
+PASS: GA-02-SEALED-TABLE — sealed_rows=14 manifest_rows=14
+PASS: GA-03-EXPECTED-ID-COVERAGE — missing=[] extra=[]
+PASS: GA-04-MAPS — required=['gate_id_map', 'class_map', 'refusal_family_map', 'operation_name_map', 'delta_type_map']
+PASS: GA-05-DISAMBIGUATIONS — G6/G5/B01-B02 rules present
+PASS: GA-06-C3 — C3 status=PASS
+PASS: GA-07-BUDGET-ID-SET — ids=['CPU_SECONDS', 'FILE_BYTES', 'OBJECT_COUNT', 'OUTPUT_BYTES', 'PAGE_COUNT', 'PIXELS', 'TEMP_STORAGE_BYTES', 'WALL_SECONDS']
+PASS: GA-08-BUDGET-SHAPE — all budgets carry limit/unit/<=/measurement points
+PASS: GA-09-BUDGET-HEADROOM — all measured/derived limits exceed baselines; measured limits >=2x
+PASS: GA-10-FROZEN-CONSTANTS — 1275x1650=2103750, 150 DPI, US Letter points
+PASS: GA-11-TRIP-SHAPE — trip_cases=14
+PASS: GA-12-TRIP-TARGETS — each trip targets a budget or allowed audit E-condition
+PASS: GA-13-DISPOSITION-CITATIONS — PR-08/PR-14 and receipt enums resolve
+PASS: GA-14-NO-EXTERNAL-ACTION — unsafe_tokens=[] absolute_paths=[]
+PASS: GA-15-TC09-FAMILY — network E06 is not mislabeled as a resource budget trip
+GATE_A_MECHANICAL=PASS
+PYPDF_REOPEN PASS F01-memo-candidate.pdf pages=2
+PYPDF_REOPEN PASS F02-letter-candidate.pdf pages=1
+PYPDF_REOPEN PASS F03-report-candidate.pdf pages=2
+PYPDF_REOPEN PASS F04-agenda-candidate.pdf pages=1
+PYPDF_REOPEN PASS F05-article-candidate.pdf pages=3
+PYPDF_REOPEN PASS F06-column-report-candidate.pdf pages=3
+PYPDF_REOPEN PASS F07-dense-report-candidate.pdf pages=4
+PYPDF_REOPEN PASS F08-statement-candidate.pdf pages=3
+RUN_ASSERTIONS PASS
+PDFINFO PASS F01-memo-candidate.pdf pages=2 bytes=7475
+PDFINFO PASS F02-letter-candidate.pdf pages=1 bytes=5198
+PDFINFO PASS F03-report-candidate.pdf pages=2 bytes=7873
+PDFINFO PASS F04-agenda-candidate.pdf pages=1 bytes=4587
+PDFINFO PASS F05-article-candidate.pdf pages=3 bytes=12747
+PDFINFO PASS F06-column-report-candidate.pdf pages=3 bytes=11372
+PDFINFO PASS F07-dense-report-candidate.pdf pages=4 bytes=14804
+PDFINFO PASS F08-statement-candidate.pdf pages=3 bytes=10464
+RENDER_COUNTS source=19 candidate=19 contact_sheets=8
