@@ -1,0 +1,4572 @@
+{
+  "build": {
+    "candidate_bytes": 12747,
+    "candidate_sha256": "c315dae57466226f29a1dafec0389b4c9f09b358363d64bdd8a1f88da769f3ad",
+    "document_id": "F05",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS"
+    ],
+    "page_count": 3,
+    "source_sha256": "888e283dca1174834cae8bc62ea45ca56435ed92cbb4b54f0b200f4fda3437ef",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F05-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F05",
+  "intake": {
+    "class_label": "TEXT_MULTI_COLUMN",
+    "document_id": "F05",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 5334,
+    "filename": "F05-article.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 0
+    },
+    "object_count": 13,
+    "page_count": 3,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          ", 2026",
+          "1",
+          "3"
+        ],
+        "page_index": 0,
+        "reading_text": "Field Notes on Municipal Audit Backlogs\nPrepared for the Cedar Hollow Review - fictional working notes, 2026\nWhy backlogs form The pattern shows up in ordinary intake logs. Intake\nstays flat while closures fall behind, and the gap\nAudit backlogs rarely appear because a review\nbetween the two curves is the backlog taking\nteam works slowly. They form when new cases\nshape. Nothing about that gap is mysterious; it is\narrive faster than the team can close them for\narithmetic.\nlonger than one budget cycle. A delay of two or\nthree weeks in spring becomes a queue of Three forces push the gap wider. Intake grows with\nunopened files by autumn. the town, rules change more often than training\ndoes, and vacancies stay unfilled until the next\nThe queue then changes how the office behaves.\nbudget year.\nStaff close the easy cases first, and the average\nage of the remaining files quietly rises while\nmanagers report throughput instead of backlog age,\nwhich hides the problem from the people who fund\nthe team.\nCedar Hollow Review - synthetic fixture Page 1 of 3",
+        "rotation": 0,
+        "tokens": [
+          "Field",
+          "Notes",
+          "on",
+          "Municipal",
+          "Audit",
+          "Backlogs",
+          "Prepared",
+          "for",
+          "the",
+          "Cedar",
+          "Hollow",
+          "Review",
+          "-",
+          "fictional",
+          "working",
+          "notes,",
+          "2026",
+          "Why",
+          "backlogs",
+          "form",
+          "The",
+          "pattern",
+          "shows",
+          "up",
+          "in",
+          "ordinary",
+          "intake",
+          "logs.",
+          "Intake",
+          "stays",
+          "flat",
+          "while",
+          "closures",
+          "fall",
+          "behind,",
+          "and",
+          "the",
+          "gap",
+          "Audit",
+          "backlogs",
+          "rarely",
+          "appear",
+          "because",
+          "a",
+          "review",
+          "between",
+          "the",
+          "two",
+          "curves",
+          "is",
+          "the",
+          "backlog",
+          "taking",
+          "team",
+          "works",
+          "slowly.",
+          "They",
+          "form",
+          "when",
+          "new",
+          "cases",
+          "shape.",
+          "Nothing",
+          "about",
+          "that",
+          "gap",
+          "is",
+          "mysterious;",
+          "it",
+          "is",
+          "arrive",
+          "faster",
+          "than",
+          "the",
+          "team",
+          "can",
+          "close",
+          "them",
+          "for",
+          "arithmetic.",
+          "longer",
+          "than",
+          "one",
+          "budget",
+          "cycle.",
+          "A",
+          "delay",
+          "of",
+          "two",
+          "or",
+          "three",
+          "weeks",
+          "in",
+          "spring",
+          "becomes",
+          "a",
+          "queue",
+          "of",
+          "Three",
+          "forces",
+          "push",
+          "the",
+          "gap",
+          "wider.",
+          "Intake",
+          "grows",
+          "with",
+          "unopened",
+          "files",
+          "by",
+          "autumn.",
+          "the",
+          "town,",
+          "rules",
+          "change",
+          "more",
+          "often",
+          "than",
+          "training",
+          "does,",
+          "and",
+          "vacancies",
+          "stay",
+          "unfilled",
+          "until",
+          "the",
+          "next",
+          "The",
+          "queue",
+          "then",
+          "changes",
+          "how",
+          "the",
+          "office",
+          "behaves.",
+          "budget",
+          "year.",
+          "Staff",
+          "close",
+          "the",
+          "easy",
+          "cases",
+          "first,",
+          "and",
+          "the",
+          "average",
+          "age",
+          "of",
+          "the",
+          "remaining",
+          "files",
+          "quietly",
+          "rises",
+          "while",
+          "managers",
+          "report",
+          "throughput",
+          "instead",
+          "of",
+          "backlog",
+          "age,",
+          "which",
+          "hides",
+          "the",
+          "problem",
+          "from",
+          "the",
+          "people",
+          "who",
+          "fund",
+          "the",
+          "team.",
+          "Cedar",
+          "Hollow",
+          "Review",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "1",
+          "of",
+          "3"
+        ],
+        "words": [
+          {
+            "bottom": 91.038,
+            "text": "Field",
+            "top": 77.038,
+            "x0": 183.29,
+            "x1": 213.628
+          },
+          {
+            "bottom": 91.038,
+            "text": "Notes",
+            "top": 77.038,
+            "x0": 217.128,
+            "x1": 250.56
+          },
+          {
+            "bottom": 91.038,
+            "text": "on",
+            "top": 77.038,
+            "x0": 254.06,
+            "x1": 268.844
+          },
+          {
+            "bottom": 91.038,
+            "text": "Municipal",
+            "top": 77.038,
+            "x0": 272.344,
+            "x1": 333.804
+          },
+          {
+            "bottom": 91.038,
+            "text": "Audit",
+            "top": 77.038,
+            "x0": 337.304,
+            "x1": 371.534
+          },
+          {
+            "bottom": 91.038,
+            "text": "Backlogs",
+            "top": 77.038,
+            "x0": 375.034,
+            "x1": 428.71
+          },
+          {
+            "bottom": 107.863,
+            "text": "Prepared",
+            "top": 98.863,
+            "x0": 168.448,
+            "x1": 205.465
+          },
+          {
+            "bottom": 107.863,
+            "text": "for",
+            "top": 98.863,
+            "x0": 207.968,
+            "x1": 218.471
+          },
+          {
+            "bottom": 107.863,
+            "text": "the",
+            "top": 98.863,
+            "x0": 220.972,
+            "x1": 233.482
+          },
+          {
+            "bottom": 107.863,
+            "text": "Cedar",
+            "top": 98.863,
+            "x0": 235.984,
+            "x1": 260.492
+          },
+          {
+            "bottom": 107.863,
+            "text": "Hollow",
+            "top": 98.863,
+            "x0": 262.994,
+            "x1": 289.994
+          },
+          {
+            "bottom": 107.863,
+            "text": "Review",
+            "top": 98.863,
+            "x0": 292.496,
+            "x1": 321.998
+          },
+          {
+            "bottom": 107.863,
+            "text": "-",
+            "top": 98.863,
+            "x0": 324.5,
+            "x1": 327.497
+          },
+          {
+            "bottom": 107.863,
+            "text": "fictional",
+            "top": 98.863,
+            "x0": 329.999,
+            "x1": 360.508
+          },
+          {
+            "bottom": 107.863,
+            "text": "working",
+            "top": 98.863,
+            "x0": 363.01,
+            "x1": 394.015
+          },
+          {
+            "bottom": 107.863,
+            "text": "notes,",
+            "top": 98.863,
+            "x0": 396.517,
+            "x1": 421.033
+          },
+          {
+            "bottom": 107.863,
+            "text": "2026",
+            "top": 98.863,
+            "x0": 423.535,
+            "x1": 443.552
+          },
+          {
+            "bottom": 129.173,
+            "text": "Why",
+            "top": 118.673,
+            "x0": 72.0,
+            "x1": 94.166
+          },
+          {
+            "bottom": 129.173,
+            "text": "backlogs",
+            "top": 118.673,
+            "x0": 97.085,
+            "x1": 142.602
+          },
+          {
+            "bottom": 129.173,
+            "text": "form",
+            "top": 118.673,
+            "x0": 145.521,
+            "x1": 168.852
+          },
+          {
+            "bottom": 128.966,
+            "text": "The",
+            "top": 119.466,
+            "x0": 321.0,
+            "x1": 337.368
+          },
+          {
+            "bottom": 128.966,
+            "text": "pattern",
+            "top": 119.466,
+            "x0": 340.01,
+            "x1": 369.583
+          },
+          {
+            "bottom": 128.966,
+            "text": "shows",
+            "top": 119.466,
+            "x0": 372.224,
+            "x1": 399.147
+          },
+          {
+            "bottom": 128.966,
+            "text": "up",
+            "top": 119.466,
+            "x0": 401.788,
+            "x1": 412.352
+          },
+          {
+            "bottom": 128.966,
+            "text": "in",
+            "top": 119.466,
+            "x0": 414.993,
+            "x1": 422.384
+          },
+          {
+            "bottom": 128.966,
+            "text": "ordinary",
+            "top": 119.466,
+            "x0": 425.025,
+            "x1": 459.339
+          },
+          {
+            "bottom": 128.966,
+            "text": "intake",
+            "top": 119.466,
+            "x0": 461.98,
+            "x1": 487.326
+          },
+          {
+            "bottom": 128.966,
+            "text": "logs.",
+            "top": 119.466,
+            "x0": 489.967,
+            "x1": 510.031
+          },
+          {
+            "bottom": 128.966,
+            "text": "Intake",
+            "top": 119.466,
+            "x0": 512.672,
+            "x1": 538.55
+          },
+          {
+            "bottom": 140.466,
+            "text": "stays",
+            "top": 130.966,
+            "x0": 321.0,
+            "x1": 343.173
+          },
+          {
+            "bottom": 140.466,
+            "text": "flat",
+            "top": 130.966,
+            "x0": 345.814,
+            "x1": 358.487
+          },
+          {
+            "bottom": 140.466,
+            "text": "while",
+            "top": 130.966,
+            "x0": 361.128,
+            "x1": 382.769
+          },
+          {
+            "bottom": 140.466,
+            "text": "closures",
+            "top": 130.966,
+            "x0": 385.41,
+            "x1": 420.779
+          },
+          {
+            "bottom": 140.466,
+            "text": "fall",
+            "top": 130.966,
+            "x0": 423.419,
+            "x1": 435.56
+          },
+          {
+            "bottom": 140.466,
+            "text": "behind,",
+            "top": 130.966,
+            "x0": 438.202,
+            "x1": 469.362
+          },
+          {
+            "bottom": 140.466,
+            "text": "and",
+            "top": 130.966,
+            "x0": 472.002,
+            "x1": 487.849
+          },
+          {
+            "bottom": 140.466,
+            "text": "the",
+            "top": 130.966,
+            "x0": 490.49,
+            "x1": 503.695
+          },
+          {
+            "bottom": 140.466,
+            "text": "gap",
+            "top": 130.966,
+            "x0": 506.336,
+            "x1": 522.182
+          },
+          {
+            "bottom": 146.966,
+            "text": "Audit",
+            "top": 137.466,
+            "x0": 72.0,
+            "x1": 93.651
+          },
+          {
+            "bottom": 146.966,
+            "text": "backlogs",
+            "top": 137.466,
+            "x0": 96.291,
+            "x1": 133.779
+          },
+          {
+            "bottom": 146.966,
+            "text": "rarely",
+            "top": 137.466,
+            "x0": 136.419,
+            "x1": 160.169
+          },
+          {
+            "bottom": 146.966,
+            "text": "appear",
+            "top": 137.466,
+            "x0": 162.81,
+            "x1": 192.384
+          },
+          {
+            "bottom": 146.966,
+            "text": "because",
+            "top": 137.466,
+            "x0": 195.025,
+            "x1": 230.935
+          },
+          {
+            "bottom": 146.966,
+            "text": "a",
+            "top": 137.466,
+            "x0": 233.576,
+            "x1": 238.858
+          },
+          {
+            "bottom": 146.966,
+            "text": "review",
+            "top": 137.466,
+            "x0": 241.499,
+            "x1": 268.945
+          },
+          {
+            "bottom": 151.966,
+            "text": "between",
+            "top": 142.466,
+            "x0": 321.0,
+            "x1": 356.91
+          },
+          {
+            "bottom": 151.966,
+            "text": "the",
+            "top": 142.466,
+            "x0": 359.551,
+            "x1": 372.756
+          },
+          {
+            "bottom": 151.966,
+            "text": "two",
+            "top": 142.466,
+            "x0": 375.397,
+            "x1": 390.179
+          },
+          {
+            "bottom": 151.966,
+            "text": "curves",
+            "top": 142.466,
+            "x0": 392.82,
+            "x1": 420.798
+          },
+          {
+            "bottom": 151.966,
+            "text": "is",
+            "top": 142.466,
+            "x0": 423.438,
+            "x1": 430.298
+          },
+          {
+            "bottom": 151.966,
+            "text": "the",
+            "top": 142.466,
+            "x0": 432.938,
+            "x1": 446.143
+          },
+          {
+            "bottom": 151.966,
+            "text": "backlog",
+            "top": 142.466,
+            "x0": 448.784,
+            "x1": 481.522
+          },
+          {
+            "bottom": 151.966,
+            "text": "taking",
+            "top": 142.466,
+            "x0": 484.163,
+            "x1": 509.509
+          },
+          {
+            "bottom": 158.466,
+            "text": "team",
+            "top": 148.966,
+            "x0": 72.0,
+            "x1": 93.118
+          },
+          {
+            "bottom": 158.466,
+            "text": "works",
+            "top": 148.966,
+            "x0": 95.76,
+            "x1": 120.564
+          },
+          {
+            "bottom": 158.466,
+            "text": "slowly.",
+            "top": 148.966,
+            "x0": 123.205,
+            "x1": 151.705
+          },
+          {
+            "bottom": 158.466,
+            "text": "They",
+            "top": 148.966,
+            "x0": 154.346,
+            "x1": 175.464
+          },
+          {
+            "bottom": 158.466,
+            "text": "form",
+            "top": 148.966,
+            "x0": 178.106,
+            "x1": 197.106
+          },
+          {
+            "bottom": 158.466,
+            "text": "when",
+            "top": 148.966,
+            "x0": 199.747,
+            "x1": 222.452
+          },
+          {
+            "bottom": 158.466,
+            "text": "new",
+            "top": 148.966,
+            "x0": 225.093,
+            "x1": 242.516
+          },
+          {
+            "bottom": 158.466,
+            "text": "cases",
+            "top": 148.966,
+            "x0": 245.157,
+            "x1": 269.971
+          },
+          {
+            "bottom": 163.466,
+            "text": "shape.",
+            "top": 153.966,
+            "x0": 321.0,
+            "x1": 349.519
+          },
+          {
+            "bottom": 163.466,
+            "text": "Nothing",
+            "top": 153.966,
+            "x0": 352.16,
+            "x1": 384.897
+          },
+          {
+            "bottom": 163.466,
+            "text": "about",
+            "top": 153.966,
+            "x0": 387.538,
+            "x1": 411.307
+          },
+          {
+            "bottom": 163.466,
+            "text": "that",
+            "top": 153.966,
+            "x0": 413.948,
+            "x1": 429.794
+          },
+          {
+            "bottom": 163.466,
+            "text": "gap",
+            "top": 153.966,
+            "x0": 432.435,
+            "x1": 448.281
+          },
+          {
+            "bottom": 163.466,
+            "text": "is",
+            "top": 153.966,
+            "x0": 450.922,
+            "x1": 457.781
+          },
+          {
+            "bottom": 163.466,
+            "text": "mysterious;",
+            "top": 153.966,
+            "x0": 460.422,
+            "x1": 508.986
+          },
+          {
+            "bottom": 163.466,
+            "text": "it",
+            "top": 153.966,
+            "x0": 511.627,
+            "x1": 516.377
+          },
+          {
+            "bottom": 163.466,
+            "text": "is",
+            "top": 153.966,
+            "x0": 519.018,
+            "x1": 525.877
+          },
+          {
+            "bottom": 169.966,
+            "text": "arrive",
+            "top": 160.466,
+            "x0": 72.0,
+            "x1": 95.75
+          },
+          {
+            "bottom": 169.966,
+            "text": "faster",
+            "top": 160.466,
+            "x0": 98.391,
+            "x1": 122.15
+          },
+          {
+            "bottom": 169.966,
+            "text": "than",
+            "top": 160.466,
+            "x0": 124.791,
+            "x1": 143.278
+          },
+          {
+            "bottom": 169.966,
+            "text": "the",
+            "top": 160.466,
+            "x0": 145.919,
+            "x1": 159.124
+          },
+          {
+            "bottom": 169.966,
+            "text": "team",
+            "top": 160.466,
+            "x0": 161.765,
+            "x1": 182.884
+          },
+          {
+            "bottom": 169.966,
+            "text": "can",
+            "top": 160.466,
+            "x0": 185.525,
+            "x1": 200.839
+          },
+          {
+            "bottom": 169.966,
+            "text": "close",
+            "top": 160.466,
+            "x0": 203.48,
+            "x1": 225.653
+          },
+          {
+            "bottom": 169.966,
+            "text": "them",
+            "top": 160.466,
+            "x0": 228.294,
+            "x1": 249.413
+          },
+          {
+            "bottom": 169.966,
+            "text": "for",
+            "top": 160.466,
+            "x0": 252.054,
+            "x1": 263.14
+          },
+          {
+            "bottom": 174.966,
+            "text": "arithmetic.",
+            "top": 165.466,
+            "x0": 321.0,
+            "x1": 364.814
+          },
+          {
+            "bottom": 181.466,
+            "text": "longer",
+            "top": 171.966,
+            "x0": 72.0,
+            "x1": 98.4
+          },
+          {
+            "bottom": 181.466,
+            "text": "than",
+            "top": 171.966,
+            "x0": 101.041,
+            "x1": 119.528
+          },
+          {
+            "bottom": 181.466,
+            "text": "one",
+            "top": 171.966,
+            "x0": 122.169,
+            "x1": 138.016
+          },
+          {
+            "bottom": 181.466,
+            "text": "budget",
+            "top": 171.966,
+            "x0": 140.656,
+            "x1": 169.707
+          },
+          {
+            "bottom": 181.466,
+            "text": "cycle.",
+            "top": 171.966,
+            "x0": 172.349,
+            "x1": 196.63
+          },
+          {
+            "bottom": 181.466,
+            "text": "A",
+            "top": 171.966,
+            "x0": 199.272,
+            "x1": 205.608
+          },
+          {
+            "bottom": 181.466,
+            "text": "delay",
+            "top": 171.966,
+            "x0": 208.249,
+            "x1": 230.954
+          },
+          {
+            "bottom": 181.466,
+            "text": "of",
+            "top": 171.966,
+            "x0": 233.595,
+            "x1": 241.518
+          },
+          {
+            "bottom": 181.466,
+            "text": "two",
+            "top": 171.966,
+            "x0": 244.159,
+            "x1": 258.941
+          },
+          {
+            "bottom": 181.466,
+            "text": "or",
+            "top": 171.966,
+            "x0": 261.582,
+            "x1": 270.028
+          },
+          {
+            "bottom": 191.466,
+            "text": "Three",
+            "top": 181.966,
+            "x0": 321.0,
+            "x1": 345.814
+          },
+          {
+            "bottom": 191.466,
+            "text": "forces",
+            "top": 181.966,
+            "x0": 348.455,
+            "x1": 374.323
+          },
+          {
+            "bottom": 191.466,
+            "text": "push",
+            "top": 181.966,
+            "x0": 376.964,
+            "x1": 397.56
+          },
+          {
+            "bottom": 191.466,
+            "text": "the",
+            "top": 181.966,
+            "x0": 400.202,
+            "x1": 413.406
+          },
+          {
+            "bottom": 191.466,
+            "text": "gap",
+            "top": 181.966,
+            "x0": 416.048,
+            "x1": 431.893
+          },
+          {
+            "bottom": 191.466,
+            "text": "wider.",
+            "top": 181.966,
+            "x0": 434.534,
+            "x1": 459.871
+          },
+          {
+            "bottom": 191.466,
+            "text": "Intake",
+            "top": 181.966,
+            "x0": 462.512,
+            "x1": 488.39
+          },
+          {
+            "bottom": 191.466,
+            "text": "grows",
+            "top": 181.966,
+            "x0": 491.031,
+            "x1": 516.368
+          },
+          {
+            "bottom": 191.466,
+            "text": "with",
+            "top": 181.966,
+            "x0": 519.009,
+            "x1": 535.9
+          },
+          {
+            "bottom": 192.966,
+            "text": "three",
+            "top": 183.466,
+            "x0": 72.0,
+            "x1": 93.65
+          },
+          {
+            "bottom": 192.966,
+            "text": "weeks",
+            "top": 183.466,
+            "x0": 96.291,
+            "x1": 123.215
+          },
+          {
+            "bottom": 192.966,
+            "text": "in",
+            "top": 183.466,
+            "x0": 125.856,
+            "x1": 133.246
+          },
+          {
+            "bottom": 192.966,
+            "text": "spring",
+            "top": 183.466,
+            "x0": 135.887,
+            "x1": 161.756
+          },
+          {
+            "bottom": 192.966,
+            "text": "becomes",
+            "top": 183.466,
+            "x0": 164.397,
+            "x1": 202.938
+          },
+          {
+            "bottom": 192.966,
+            "text": "a",
+            "top": 183.466,
+            "x0": 205.579,
+            "x1": 210.861
+          },
+          {
+            "bottom": 192.966,
+            "text": "queue",
+            "top": 183.466,
+            "x0": 213.502,
+            "x1": 239.913
+          },
+          {
+            "bottom": 192.966,
+            "text": "of",
+            "top": 183.466,
+            "x0": 242.554,
+            "x1": 250.477
+          },
+          {
+            "bottom": 202.966,
+            "text": "the",
+            "top": 193.466,
+            "x0": 321.0,
+            "x1": 334.205
+          },
+          {
+            "bottom": 202.966,
+            "text": "town,",
+            "top": 193.466,
+            "x0": 336.846,
+            "x1": 359.551
+          },
+          {
+            "bottom": 202.966,
+            "text": "rules",
+            "top": 193.466,
+            "x0": 362.192,
+            "x1": 382.779
+          },
+          {
+            "bottom": 202.966,
+            "text": "change",
+            "top": 193.466,
+            "x0": 385.419,
+            "x1": 416.579
+          },
+          {
+            "bottom": 202.966,
+            "text": "more",
+            "top": 193.466,
+            "x0": 419.221,
+            "x1": 440.861
+          },
+          {
+            "bottom": 202.966,
+            "text": "often",
+            "top": 193.466,
+            "x0": 443.502,
+            "x1": 464.63
+          },
+          {
+            "bottom": 202.966,
+            "text": "than",
+            "top": 193.466,
+            "x0": 467.271,
+            "x1": 485.758
+          },
+          {
+            "bottom": 202.966,
+            "text": "training",
+            "top": 193.466,
+            "x0": 488.399,
+            "x1": 519.55
+          },
+          {
+            "bottom": 204.466,
+            "text": "unopened",
+            "top": 194.966,
+            "x0": 72.0,
+            "x1": 114.256
+          },
+          {
+            "bottom": 204.466,
+            "text": "files",
+            "top": 194.966,
+            "x0": 116.897,
+            "x1": 133.788
+          },
+          {
+            "bottom": 204.466,
+            "text": "by",
+            "top": 194.966,
+            "x0": 136.429,
+            "x1": 146.461
+          },
+          {
+            "bottom": 204.466,
+            "text": "autumn.",
+            "top": 194.966,
+            "x0": 149.102,
+            "x1": 183.425
+          },
+          {
+            "bottom": 214.466,
+            "text": "does,",
+            "top": 204.966,
+            "x0": 321.0,
+            "x1": 344.237
+          },
+          {
+            "bottom": 214.466,
+            "text": "and",
+            "top": 204.966,
+            "x0": 346.878,
+            "x1": 362.724
+          },
+          {
+            "bottom": 214.466,
+            "text": "vacancies",
+            "top": 204.966,
+            "x0": 365.365,
+            "x1": 407.602
+          },
+          {
+            "bottom": 214.466,
+            "text": "stay",
+            "top": 204.966,
+            "x0": 410.243,
+            "x1": 427.666
+          },
+          {
+            "bottom": 214.466,
+            "text": "unfilled",
+            "top": 204.966,
+            "x0": 430.307,
+            "x1": 460.403
+          },
+          {
+            "bottom": 214.466,
+            "text": "until",
+            "top": 204.966,
+            "x0": 463.044,
+            "x1": 480.467
+          },
+          {
+            "bottom": 214.466,
+            "text": "the",
+            "top": 204.966,
+            "x0": 483.108,
+            "x1": 496.313
+          },
+          {
+            "bottom": 214.466,
+            "text": "next",
+            "top": 204.966,
+            "x0": 498.954,
+            "x1": 516.909
+          },
+          {
+            "bottom": 220.966,
+            "text": "The",
+            "top": 211.466,
+            "x0": 72.0,
+            "x1": 88.368
+          },
+          {
+            "bottom": 220.966,
+            "text": "queue",
+            "top": 211.466,
+            "x0": 91.01,
+            "x1": 117.419
+          },
+          {
+            "bottom": 220.966,
+            "text": "then",
+            "top": 211.466,
+            "x0": 120.06,
+            "x1": 138.547
+          },
+          {
+            "bottom": 220.966,
+            "text": "changes",
+            "top": 211.466,
+            "x0": 141.188,
+            "x1": 177.098
+          },
+          {
+            "bottom": 220.966,
+            "text": "how",
+            "top": 211.466,
+            "x0": 179.739,
+            "x1": 197.162
+          },
+          {
+            "bottom": 220.966,
+            "text": "the",
+            "top": 211.466,
+            "x0": 199.803,
+            "x1": 213.008
+          },
+          {
+            "bottom": 220.966,
+            "text": "office",
+            "top": 211.466,
+            "x0": 215.649,
+            "x1": 238.355
+          },
+          {
+            "bottom": 220.966,
+            "text": "behaves.",
+            "top": 211.466,
+            "x0": 240.995,
+            "x1": 279.547
+          },
+          {
+            "bottom": 225.966,
+            "text": "budget",
+            "top": 216.466,
+            "x0": 321.0,
+            "x1": 350.051
+          },
+          {
+            "bottom": 225.966,
+            "text": "year.",
+            "top": 216.466,
+            "x0": 352.692,
+            "x1": 373.81
+          },
+          {
+            "bottom": 232.466,
+            "text": "Staff",
+            "top": 222.966,
+            "x0": 72.0,
+            "x1": 91.541
+          },
+          {
+            "bottom": 232.466,
+            "text": "close",
+            "top": 222.966,
+            "x0": 94.183,
+            "x1": 116.355
+          },
+          {
+            "bottom": 232.466,
+            "text": "the",
+            "top": 222.966,
+            "x0": 118.996,
+            "x1": 132.201
+          },
+          {
+            "bottom": 232.466,
+            "text": "easy",
+            "top": 222.966,
+            "x0": 134.842,
+            "x1": 154.906
+          },
+          {
+            "bottom": 232.466,
+            "text": "cases",
+            "top": 222.966,
+            "x0": 157.547,
+            "x1": 182.361
+          },
+          {
+            "bottom": 232.466,
+            "text": "first,",
+            "top": 222.966,
+            "x0": 185.002,
+            "x1": 202.948
+          },
+          {
+            "bottom": 232.466,
+            "text": "and",
+            "top": 222.966,
+            "x0": 205.589,
+            "x1": 221.435
+          },
+          {
+            "bottom": 232.466,
+            "text": "the",
+            "top": 222.966,
+            "x0": 224.076,
+            "x1": 237.281
+          },
+          {
+            "bottom": 232.466,
+            "text": "average",
+            "top": 222.966,
+            "x0": 239.922,
+            "x1": 274.246
+          },
+          {
+            "bottom": 243.966,
+            "text": "age",
+            "top": 234.466,
+            "x0": 72.0,
+            "x1": 87.846
+          },
+          {
+            "bottom": 243.966,
+            "text": "of",
+            "top": 234.466,
+            "x0": 90.487,
+            "x1": 98.41
+          },
+          {
+            "bottom": 243.966,
+            "text": "the",
+            "top": 234.466,
+            "x0": 101.051,
+            "x1": 114.256
+          },
+          {
+            "bottom": 243.966,
+            "text": "remaining",
+            "top": 234.466,
+            "x0": 116.897,
+            "x1": 158.602
+          },
+          {
+            "bottom": 243.966,
+            "text": "files",
+            "top": 234.466,
+            "x0": 161.243,
+            "x1": 178.134
+          },
+          {
+            "bottom": 243.966,
+            "text": "quietly",
+            "top": 234.466,
+            "x0": 183.416,
+            "x1": 210.871
+          },
+          {
+            "bottom": 243.966,
+            "text": "rises",
+            "top": 234.466,
+            "x0": 213.512,
+            "x1": 233.566
+          },
+          {
+            "bottom": 243.966,
+            "text": "while",
+            "top": 234.466,
+            "x0": 236.207,
+            "x1": 257.849
+          },
+          {
+            "bottom": 255.466,
+            "text": "managers",
+            "top": 245.966,
+            "x0": 72.0,
+            "x1": 114.237
+          },
+          {
+            "bottom": 255.466,
+            "text": "report",
+            "top": 245.966,
+            "x0": 116.878,
+            "x1": 141.692
+          },
+          {
+            "bottom": 255.466,
+            "text": "throughput",
+            "top": 245.966,
+            "x0": 144.333,
+            "x1": 189.752
+          },
+          {
+            "bottom": 255.466,
+            "text": "instead",
+            "top": 245.966,
+            "x0": 192.393,
+            "x1": 223.022
+          },
+          {
+            "bottom": 255.466,
+            "text": "of",
+            "top": 245.966,
+            "x0": 225.662,
+            "x1": 233.585
+          },
+          {
+            "bottom": 255.466,
+            "text": "backlog",
+            "top": 245.966,
+            "x0": 236.226,
+            "x1": 268.964
+          },
+          {
+            "bottom": 255.466,
+            "text": "age,",
+            "top": 245.966,
+            "x0": 271.605,
+            "x1": 290.092
+          },
+          {
+            "bottom": 266.966,
+            "text": "which",
+            "top": 257.466,
+            "x0": 72.0,
+            "x1": 96.282
+          },
+          {
+            "bottom": 266.966,
+            "text": "hides",
+            "top": 257.466,
+            "x0": 98.923,
+            "x1": 121.628
+          },
+          {
+            "bottom": 266.966,
+            "text": "the",
+            "top": 257.466,
+            "x0": 124.269,
+            "x1": 137.474
+          },
+          {
+            "bottom": 266.966,
+            "text": "problem",
+            "top": 257.466,
+            "x0": 140.115,
+            "x1": 174.429
+          },
+          {
+            "bottom": 266.966,
+            "text": "from",
+            "top": 257.466,
+            "x0": 177.07,
+            "x1": 196.07
+          },
+          {
+            "bottom": 266.966,
+            "text": "the",
+            "top": 257.466,
+            "x0": 198.711,
+            "x1": 211.916
+          },
+          {
+            "bottom": 266.966,
+            "text": "people",
+            "top": 257.466,
+            "x0": 214.557,
+            "x1": 243.076
+          },
+          {
+            "bottom": 266.966,
+            "text": "who",
+            "top": 257.466,
+            "x0": 245.717,
+            "x1": 263.14
+          },
+          {
+            "bottom": 266.966,
+            "text": "fund",
+            "top": 257.466,
+            "x0": 265.781,
+            "x1": 284.268
+          },
+          {
+            "bottom": 278.466,
+            "text": "the",
+            "top": 268.966,
+            "x0": 72.0,
+            "x1": 85.205
+          },
+          {
+            "bottom": 278.466,
+            "text": "team.",
+            "top": 268.966,
+            "x0": 87.846,
+            "x1": 111.606
+          },
+          {
+            "bottom": 757.656,
+            "text": "Cedar",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 93.784
+          },
+          {
+            "bottom": 757.656,
+            "text": "Hollow",
+            "top": 749.656,
+            "x0": 96.008,
+            "x1": 120.008
+          },
+          {
+            "bottom": 757.656,
+            "text": "Review",
+            "top": 749.656,
+            "x0": 122.232,
+            "x1": 148.456
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 150.68,
+            "x1": 153.344
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 155.568,
+            "x1": 187.136
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 189.36,
+            "x1": 211.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "1,900",
+          "2024,",
+          "37",
+          "214",
+          "2",
+          "3"
+        ],
+        "page_index": 1,
+        "reading_text": "Measuring the queue Publishing those three numbers changed the\nconversation. The board stopped asking how busy\nA backlog is best measured by age, not by count. A\nthe team was and started asking which rule\nqueue of four hundred files that are ninety days old\nchange had made the back-\nis a different problem from four hundred files that\nlog wider without adding staff.\nare nine days old, even though both offices would\nreport the same headline number. In the fictional example used throughout these\nnotes, the review office held 1,900 open files at the\nThe useful figures are the oldest open case, the\nend of 2024, and 37 percent of them were older\nshare of cases older than one quarter, and the\nthan one quarter. The oldest case had waited 214\nclosure rate over the last ninety days. Those three\ndays.\nnumbers, published monthly, make the queue\nvisible without any new tooling.\nCedar Hollow Review - synthetic fixture Page 2 of 3",
+        "rotation": 0,
+        "tokens": [
+          "Measuring",
+          "the",
+          "queue",
+          "Publishing",
+          "those",
+          "three",
+          "numbers",
+          "changed",
+          "the",
+          "conversation.",
+          "The",
+          "board",
+          "stopped",
+          "asking",
+          "how",
+          "busy",
+          "A",
+          "backlog",
+          "is",
+          "best",
+          "measured",
+          "by",
+          "age,",
+          "not",
+          "by",
+          "count.",
+          "A",
+          "the",
+          "team",
+          "was",
+          "and",
+          "started",
+          "asking",
+          "which",
+          "rule",
+          "queue",
+          "of",
+          "four",
+          "hundred",
+          "files",
+          "that",
+          "are",
+          "ninety",
+          "days",
+          "old",
+          "change",
+          "had",
+          "made",
+          "the",
+          "back-",
+          "is",
+          "a",
+          "different",
+          "problem",
+          "from",
+          "four",
+          "hundred",
+          "files",
+          "that",
+          "log",
+          "wider",
+          "without",
+          "adding",
+          "staff.",
+          "are",
+          "nine",
+          "days",
+          "old,",
+          "even",
+          "though",
+          "both",
+          "offices",
+          "would",
+          "report",
+          "the",
+          "same",
+          "headline",
+          "number.",
+          "In",
+          "the",
+          "fictional",
+          "example",
+          "used",
+          "throughout",
+          "these",
+          "notes,",
+          "the",
+          "review",
+          "office",
+          "held",
+          "1,900",
+          "open",
+          "files",
+          "at",
+          "the",
+          "The",
+          "useful",
+          "figures",
+          "are",
+          "the",
+          "oldest",
+          "open",
+          "case,",
+          "the",
+          "end",
+          "of",
+          "2024,",
+          "and",
+          "37",
+          "percent",
+          "of",
+          "them",
+          "were",
+          "older",
+          "share",
+          "of",
+          "cases",
+          "older",
+          "than",
+          "one",
+          "quarter,",
+          "and",
+          "the",
+          "than",
+          "one",
+          "quarter.",
+          "The",
+          "oldest",
+          "case",
+          "had",
+          "waited",
+          "214",
+          "closure",
+          "rate",
+          "over",
+          "the",
+          "last",
+          "ninety",
+          "days.",
+          "Those",
+          "three",
+          "days.",
+          "numbers,",
+          "published",
+          "monthly,",
+          "make",
+          "the",
+          "queue",
+          "visible",
+          "without",
+          "any",
+          "new",
+          "tooling.",
+          "Cedar",
+          "Hollow",
+          "Review",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "2",
+          "of",
+          "3"
+        ],
+        "words": [
+          {
+            "bottom": 90.173,
+            "text": "Measuring",
+            "top": 79.673,
+            "x0": 72.0,
+            "x1": 124.51
+          },
+          {
+            "bottom": 90.173,
+            "text": "the",
+            "top": 79.673,
+            "x0": 127.43,
+            "x1": 143.179
+          },
+          {
+            "bottom": 90.173,
+            "text": "queue",
+            "top": 79.673,
+            "x0": 146.099,
+            "x1": 177.021
+          },
+          {
+            "bottom": 89.966,
+            "text": "Publishing",
+            "top": 80.466,
+            "x0": 321.0,
+            "x1": 364.823
+          },
+          {
+            "bottom": 89.966,
+            "text": "those",
+            "top": 80.466,
+            "x0": 367.464,
+            "x1": 390.701
+          },
+          {
+            "bottom": 89.966,
+            "text": "three",
+            "top": 80.466,
+            "x0": 393.342,
+            "x1": 414.993
+          },
+          {
+            "bottom": 89.966,
+            "text": "numbers",
+            "top": 80.466,
+            "x0": 417.634,
+            "x1": 454.589
+          },
+          {
+            "bottom": 89.966,
+            "text": "changed",
+            "top": 80.466,
+            "x0": 457.23,
+            "x1": 493.672
+          },
+          {
+            "bottom": 89.966,
+            "text": "the",
+            "top": 80.466,
+            "x0": 496.313,
+            "x1": 509.518
+          },
+          {
+            "bottom": 101.466,
+            "text": "conversation.",
+            "top": 91.966,
+            "x0": 321.0,
+            "x1": 377.497
+          },
+          {
+            "bottom": 101.466,
+            "text": "The",
+            "top": 91.966,
+            "x0": 380.137,
+            "x1": 396.506
+          },
+          {
+            "bottom": 101.466,
+            "text": "board",
+            "top": 91.966,
+            "x0": 399.147,
+            "x1": 423.438
+          },
+          {
+            "bottom": 101.466,
+            "text": "stopped",
+            "top": 91.966,
+            "x0": 426.079,
+            "x1": 459.88
+          },
+          {
+            "bottom": 101.466,
+            "text": "asking",
+            "top": 91.966,
+            "x0": 462.522,
+            "x1": 489.977
+          },
+          {
+            "bottom": 101.466,
+            "text": "how",
+            "top": 91.966,
+            "x0": 492.618,
+            "x1": 510.041
+          },
+          {
+            "bottom": 101.466,
+            "text": "busy",
+            "top": 91.966,
+            "x0": 512.682,
+            "x1": 532.746
+          },
+          {
+            "bottom": 107.966,
+            "text": "A",
+            "top": 98.466,
+            "x0": 72.0,
+            "x1": 78.337
+          },
+          {
+            "bottom": 107.966,
+            "text": "backlog",
+            "top": 98.466,
+            "x0": 80.977,
+            "x1": 113.715
+          },
+          {
+            "bottom": 107.966,
+            "text": "is",
+            "top": 98.466,
+            "x0": 116.356,
+            "x1": 123.215
+          },
+          {
+            "bottom": 107.966,
+            "text": "best",
+            "top": 98.466,
+            "x0": 125.856,
+            "x1": 143.81
+          },
+          {
+            "bottom": 107.966,
+            "text": "measured",
+            "top": 98.466,
+            "x0": 146.452,
+            "x1": 188.689
+          },
+          {
+            "bottom": 107.966,
+            "text": "by",
+            "top": 98.466,
+            "x0": 191.329,
+            "x1": 201.361
+          },
+          {
+            "bottom": 107.966,
+            "text": "age,",
+            "top": 98.466,
+            "x0": 204.002,
+            "x1": 222.489
+          },
+          {
+            "bottom": 107.966,
+            "text": "not",
+            "top": 98.466,
+            "x0": 225.13,
+            "x1": 238.335
+          },
+          {
+            "bottom": 107.966,
+            "text": "by",
+            "top": 98.466,
+            "x0": 240.976,
+            "x1": 251.008
+          },
+          {
+            "bottom": 107.966,
+            "text": "count.",
+            "top": 98.466,
+            "x0": 253.649,
+            "x1": 279.528
+          },
+          {
+            "bottom": 107.966,
+            "text": "A",
+            "top": 98.466,
+            "x0": 282.168,
+            "x1": 288.505
+          },
+          {
+            "bottom": 112.966,
+            "text": "the",
+            "top": 103.466,
+            "x0": 321.0,
+            "x1": 334.205
+          },
+          {
+            "bottom": 112.966,
+            "text": "team",
+            "top": 103.466,
+            "x0": 336.846,
+            "x1": 357.964
+          },
+          {
+            "bottom": 112.966,
+            "text": "was",
+            "top": 103.466,
+            "x0": 360.606,
+            "x1": 377.496
+          },
+          {
+            "bottom": 112.966,
+            "text": "and",
+            "top": 103.466,
+            "x0": 380.137,
+            "x1": 395.983
+          },
+          {
+            "bottom": 112.966,
+            "text": "started",
+            "top": 103.466,
+            "x0": 398.625,
+            "x1": 427.666
+          },
+          {
+            "bottom": 112.966,
+            "text": "asking",
+            "top": 103.466,
+            "x0": 430.307,
+            "x1": 457.762
+          },
+          {
+            "bottom": 112.966,
+            "text": "which",
+            "top": 103.466,
+            "x0": 460.403,
+            "x1": 484.685
+          },
+          {
+            "bottom": 112.966,
+            "text": "rule",
+            "top": 103.466,
+            "x0": 487.326,
+            "x1": 503.163
+          },
+          {
+            "bottom": 119.466,
+            "text": "queue",
+            "top": 109.966,
+            "x0": 72.0,
+            "x1": 98.41
+          },
+          {
+            "bottom": 119.466,
+            "text": "of",
+            "top": 109.966,
+            "x0": 101.051,
+            "x1": 108.974
+          },
+          {
+            "bottom": 119.466,
+            "text": "four",
+            "top": 109.966,
+            "x0": 111.615,
+            "x1": 127.983
+          },
+          {
+            "bottom": 119.466,
+            "text": "hundred",
+            "top": 109.966,
+            "x0": 130.624,
+            "x1": 165.48
+          },
+          {
+            "bottom": 119.466,
+            "text": "files",
+            "top": 109.966,
+            "x0": 168.121,
+            "x1": 185.012
+          },
+          {
+            "bottom": 119.466,
+            "text": "that",
+            "top": 109.966,
+            "x0": 187.653,
+            "x1": 203.499
+          },
+          {
+            "bottom": 119.466,
+            "text": "are",
+            "top": 109.966,
+            "x0": 206.14,
+            "x1": 219.867
+          },
+          {
+            "bottom": 119.466,
+            "text": "ninety",
+            "top": 109.966,
+            "x0": 222.508,
+            "x1": 247.855
+          },
+          {
+            "bottom": 119.466,
+            "text": "days",
+            "top": 109.966,
+            "x0": 250.495,
+            "x1": 270.56
+          },
+          {
+            "bottom": 119.466,
+            "text": "old",
+            "top": 109.966,
+            "x0": 273.201,
+            "x1": 285.873
+          },
+          {
+            "bottom": 124.466,
+            "text": "change",
+            "top": 114.966,
+            "x0": 321.0,
+            "x1": 352.16
+          },
+          {
+            "bottom": 124.466,
+            "text": "had",
+            "top": 114.966,
+            "x0": 354.801,
+            "x1": 370.647
+          },
+          {
+            "bottom": 124.466,
+            "text": "made",
+            "top": 114.966,
+            "x0": 373.288,
+            "x1": 397.047
+          },
+          {
+            "bottom": 124.466,
+            "text": "the",
+            "top": 114.966,
+            "x0": 399.688,
+            "x1": 412.893
+          },
+          {
+            "bottom": 124.466,
+            "text": "back-",
+            "top": 114.966,
+            "x0": 415.534,
+            "x1": 438.762
+          },
+          {
+            "bottom": 130.966,
+            "text": "is",
+            "top": 121.466,
+            "x0": 72.0,
+            "x1": 78.859
+          },
+          {
+            "bottom": 130.966,
+            "text": "a",
+            "top": 121.466,
+            "x0": 81.5,
+            "x1": 86.782
+          },
+          {
+            "bottom": 130.966,
+            "text": "different",
+            "top": 121.466,
+            "x0": 89.423,
+            "x1": 123.746
+          },
+          {
+            "bottom": 130.966,
+            "text": "problem",
+            "top": 121.466,
+            "x0": 126.387,
+            "x1": 160.701
+          },
+          {
+            "bottom": 130.966,
+            "text": "from",
+            "top": 121.466,
+            "x0": 163.342,
+            "x1": 182.342
+          },
+          {
+            "bottom": 130.966,
+            "text": "four",
+            "top": 121.466,
+            "x0": 184.983,
+            "x1": 201.352
+          },
+          {
+            "bottom": 130.966,
+            "text": "hundred",
+            "top": 121.466,
+            "x0": 203.993,
+            "x1": 238.849
+          },
+          {
+            "bottom": 130.966,
+            "text": "files",
+            "top": 121.466,
+            "x0": 241.49,
+            "x1": 258.381
+          },
+          {
+            "bottom": 130.966,
+            "text": "that",
+            "top": 121.466,
+            "x0": 261.022,
+            "x1": 276.868
+          },
+          {
+            "bottom": 135.966,
+            "text": "log",
+            "top": 126.466,
+            "x0": 321.0,
+            "x1": 333.673
+          },
+          {
+            "bottom": 135.966,
+            "text": "wider",
+            "top": 126.466,
+            "x0": 336.314,
+            "x1": 359.01
+          },
+          {
+            "bottom": 135.966,
+            "text": "without",
+            "top": 126.466,
+            "x0": 361.651,
+            "x1": 391.747
+          },
+          {
+            "bottom": 135.966,
+            "text": "adding",
+            "top": 126.466,
+            "x0": 394.387,
+            "x1": 422.906
+          },
+          {
+            "bottom": 135.966,
+            "text": "staff.",
+            "top": 126.466,
+            "x0": 425.548,
+            "x1": 446.144
+          },
+          {
+            "bottom": 142.466,
+            "text": "are",
+            "top": 132.966,
+            "x0": 72.0,
+            "x1": 85.727
+          },
+          {
+            "bottom": 142.466,
+            "text": "nine",
+            "top": 132.966,
+            "x0": 88.368,
+            "x1": 106.323
+          },
+          {
+            "bottom": 142.466,
+            "text": "days",
+            "top": 132.966,
+            "x0": 108.964,
+            "x1": 129.029
+          },
+          {
+            "bottom": 142.466,
+            "text": "old,",
+            "top": 132.966,
+            "x0": 131.669,
+            "x1": 146.983
+          },
+          {
+            "bottom": 142.466,
+            "text": "even",
+            "top": 132.966,
+            "x0": 149.625,
+            "x1": 170.22
+          },
+          {
+            "bottom": 142.466,
+            "text": "though",
+            "top": 132.966,
+            "x0": 172.861,
+            "x1": 201.912
+          },
+          {
+            "bottom": 142.466,
+            "text": "both",
+            "top": 132.966,
+            "x0": 204.553,
+            "x1": 223.041
+          },
+          {
+            "bottom": 142.466,
+            "text": "offices",
+            "top": 132.966,
+            "x0": 225.681,
+            "x1": 253.137
+          },
+          {
+            "bottom": 142.466,
+            "text": "would",
+            "top": 132.966,
+            "x0": 255.778,
+            "x1": 280.592
+          },
+          {
+            "bottom": 152.466,
+            "text": "In",
+            "top": 142.966,
+            "x0": 321.0,
+            "x1": 328.923
+          },
+          {
+            "bottom": 152.466,
+            "text": "the",
+            "top": 142.966,
+            "x0": 331.564,
+            "x1": 344.769
+          },
+          {
+            "bottom": 152.466,
+            "text": "fictional",
+            "top": 142.966,
+            "x0": 347.41,
+            "x1": 379.615
+          },
+          {
+            "bottom": 152.466,
+            "text": "example",
+            "top": 142.966,
+            "x0": 382.256,
+            "x1": 418.156
+          },
+          {
+            "bottom": 152.466,
+            "text": "used",
+            "top": 142.966,
+            "x0": 420.798,
+            "x1": 441.393
+          },
+          {
+            "bottom": 152.466,
+            "text": "throughout",
+            "top": 142.966,
+            "x0": 444.034,
+            "x1": 489.454
+          },
+          {
+            "bottom": 152.466,
+            "text": "these",
+            "top": 142.966,
+            "x0": 492.095,
+            "x1": 515.332
+          },
+          {
+            "bottom": 153.966,
+            "text": "report",
+            "top": 144.466,
+            "x0": 72.0,
+            "x1": 96.814
+          },
+          {
+            "bottom": 153.966,
+            "text": "the",
+            "top": 144.466,
+            "x0": 99.455,
+            "x1": 112.66
+          },
+          {
+            "bottom": 153.966,
+            "text": "same",
+            "top": 144.466,
+            "x0": 115.301,
+            "x1": 138.529
+          },
+          {
+            "bottom": 153.966,
+            "text": "headline",
+            "top": 144.466,
+            "x0": 141.169,
+            "x1": 177.079
+          },
+          {
+            "bottom": 153.966,
+            "text": "number.",
+            "top": 144.466,
+            "x0": 179.72,
+            "x1": 214.566
+          },
+          {
+            "bottom": 163.966,
+            "text": "notes,",
+            "top": 154.466,
+            "x0": 321.0,
+            "x1": 346.878
+          },
+          {
+            "bottom": 163.966,
+            "text": "the",
+            "top": 154.466,
+            "x0": 349.519,
+            "x1": 362.724
+          },
+          {
+            "bottom": 163.966,
+            "text": "review",
+            "top": 154.466,
+            "x0": 365.365,
+            "x1": 392.81
+          },
+          {
+            "bottom": 163.966,
+            "text": "office",
+            "top": 154.466,
+            "x0": 395.452,
+            "x1": 418.156
+          },
+          {
+            "bottom": 163.966,
+            "text": "held",
+            "top": 154.466,
+            "x0": 420.798,
+            "x1": 438.752
+          },
+          {
+            "bottom": 163.966,
+            "text": "1,900",
+            "top": 154.466,
+            "x0": 441.394,
+            "x1": 465.162
+          },
+          {
+            "bottom": 163.966,
+            "text": "open",
+            "top": 154.466,
+            "x0": 467.803,
+            "x1": 488.932
+          },
+          {
+            "bottom": 163.966,
+            "text": "files",
+            "top": 154.466,
+            "x0": 491.573,
+            "x1": 508.464
+          },
+          {
+            "bottom": 163.966,
+            "text": "at",
+            "top": 154.466,
+            "x0": 511.105,
+            "x1": 519.028
+          },
+          {
+            "bottom": 163.966,
+            "text": "the",
+            "top": 154.466,
+            "x0": 521.668,
+            "x1": 534.874
+          },
+          {
+            "bottom": 170.466,
+            "text": "The",
+            "top": 160.966,
+            "x0": 72.0,
+            "x1": 88.368
+          },
+          {
+            "bottom": 170.466,
+            "text": "useful",
+            "top": 160.966,
+            "x0": 91.01,
+            "x1": 116.355
+          },
+          {
+            "bottom": 170.466,
+            "text": "figures",
+            "top": 160.966,
+            "x0": 118.996,
+            "x1": 147.506
+          },
+          {
+            "bottom": 170.466,
+            "text": "are",
+            "top": 160.966,
+            "x0": 150.147,
+            "x1": 163.874
+          },
+          {
+            "bottom": 170.466,
+            "text": "the",
+            "top": 160.966,
+            "x0": 166.515,
+            "x1": 179.72
+          },
+          {
+            "bottom": 170.466,
+            "text": "oldest",
+            "top": 160.966,
+            "x0": 182.361,
+            "x1": 207.707
+          },
+          {
+            "bottom": 170.466,
+            "text": "open",
+            "top": 160.966,
+            "x0": 210.348,
+            "x1": 231.477
+          },
+          {
+            "bottom": 170.466,
+            "text": "case,",
+            "top": 160.966,
+            "x0": 234.118,
+            "x1": 256.823
+          },
+          {
+            "bottom": 170.466,
+            "text": "the",
+            "top": 160.966,
+            "x0": 259.464,
+            "x1": 272.668
+          },
+          {
+            "bottom": 175.466,
+            "text": "end",
+            "top": 165.966,
+            "x0": 321.0,
+            "x1": 336.846
+          },
+          {
+            "bottom": 175.466,
+            "text": "of",
+            "top": 165.966,
+            "x0": 339.487,
+            "x1": 347.41
+          },
+          {
+            "bottom": 175.466,
+            "text": "2024,",
+            "top": 165.966,
+            "x0": 350.051,
+            "x1": 373.82
+          },
+          {
+            "bottom": 175.466,
+            "text": "and",
+            "top": 165.966,
+            "x0": 376.461,
+            "x1": 392.307
+          },
+          {
+            "bottom": 175.466,
+            "text": "37",
+            "top": 165.966,
+            "x0": 394.948,
+            "x1": 405.512
+          },
+          {
+            "bottom": 175.466,
+            "text": "percent",
+            "top": 165.966,
+            "x0": 408.153,
+            "x1": 439.835
+          },
+          {
+            "bottom": 175.466,
+            "text": "of",
+            "top": 165.966,
+            "x0": 442.476,
+            "x1": 450.399
+          },
+          {
+            "bottom": 175.466,
+            "text": "them",
+            "top": 165.966,
+            "x0": 453.04,
+            "x1": 474.159
+          },
+          {
+            "bottom": 175.466,
+            "text": "were",
+            "top": 165.966,
+            "x0": 476.8,
+            "x1": 497.386
+          },
+          {
+            "bottom": 175.466,
+            "text": "older",
+            "top": 165.966,
+            "x0": 500.027,
+            "x1": 521.146
+          },
+          {
+            "bottom": 181.966,
+            "text": "share",
+            "top": 172.466,
+            "x0": 72.0,
+            "x1": 95.759
+          },
+          {
+            "bottom": 181.966,
+            "text": "of",
+            "top": 172.466,
+            "x0": 98.4,
+            "x1": 106.324
+          },
+          {
+            "bottom": 181.966,
+            "text": "cases",
+            "top": 172.466,
+            "x0": 108.965,
+            "x1": 133.779
+          },
+          {
+            "bottom": 181.966,
+            "text": "older",
+            "top": 172.466,
+            "x0": 136.419,
+            "x1": 157.538
+          },
+          {
+            "bottom": 181.966,
+            "text": "than",
+            "top": 172.466,
+            "x0": 160.179,
+            "x1": 178.666
+          },
+          {
+            "bottom": 181.966,
+            "text": "one",
+            "top": 172.466,
+            "x0": 181.307,
+            "x1": 197.153
+          },
+          {
+            "bottom": 181.966,
+            "text": "quarter,",
+            "top": 172.466,
+            "x0": 199.794,
+            "x1": 232.531
+          },
+          {
+            "bottom": 181.966,
+            "text": "and",
+            "top": 172.466,
+            "x0": 235.172,
+            "x1": 251.018
+          },
+          {
+            "bottom": 181.966,
+            "text": "the",
+            "top": 172.466,
+            "x0": 253.659,
+            "x1": 266.864
+          },
+          {
+            "bottom": 186.966,
+            "text": "than",
+            "top": 177.466,
+            "x0": 321.0,
+            "x1": 339.487
+          },
+          {
+            "bottom": 186.966,
+            "text": "one",
+            "top": 177.466,
+            "x0": 342.128,
+            "x1": 357.974
+          },
+          {
+            "bottom": 186.966,
+            "text": "quarter.",
+            "top": 177.466,
+            "x0": 360.615,
+            "x1": 393.352
+          },
+          {
+            "bottom": 186.966,
+            "text": "The",
+            "top": 177.466,
+            "x0": 395.993,
+            "x1": 412.361
+          },
+          {
+            "bottom": 186.966,
+            "text": "oldest",
+            "top": 177.466,
+            "x0": 415.002,
+            "x1": 440.349
+          },
+          {
+            "bottom": 186.966,
+            "text": "case",
+            "top": 177.466,
+            "x0": 442.99,
+            "x1": 463.053
+          },
+          {
+            "bottom": 186.966,
+            "text": "had",
+            "top": 177.466,
+            "x0": 465.695,
+            "x1": 481.541
+          },
+          {
+            "bottom": 186.966,
+            "text": "waited",
+            "top": 177.466,
+            "x0": 484.182,
+            "x1": 511.637
+          },
+          {
+            "bottom": 186.966,
+            "text": "214",
+            "top": 177.466,
+            "x0": 514.278,
+            "x1": 530.124
+          },
+          {
+            "bottom": 193.466,
+            "text": "closure",
+            "top": 183.966,
+            "x0": 72.0,
+            "x1": 102.618
+          },
+          {
+            "bottom": 193.466,
+            "text": "rate",
+            "top": 183.966,
+            "x0": 105.26,
+            "x1": 121.628
+          },
+          {
+            "bottom": 193.466,
+            "text": "over",
+            "top": 183.966,
+            "x0": 124.269,
+            "x1": 142.746
+          },
+          {
+            "bottom": 193.466,
+            "text": "the",
+            "top": 183.966,
+            "x0": 145.387,
+            "x1": 158.593
+          },
+          {
+            "bottom": 193.466,
+            "text": "last",
+            "top": 183.966,
+            "x0": 161.233,
+            "x1": 176.016
+          },
+          {
+            "bottom": 193.466,
+            "text": "ninety",
+            "top": 183.966,
+            "x0": 178.656,
+            "x1": 204.002
+          },
+          {
+            "bottom": 193.466,
+            "text": "days.",
+            "top": 183.966,
+            "x0": 206.643,
+            "x1": 229.349
+          },
+          {
+            "bottom": 193.466,
+            "text": "Those",
+            "top": 183.966,
+            "x0": 231.989,
+            "x1": 258.39
+          },
+          {
+            "bottom": 193.466,
+            "text": "three",
+            "top": 183.966,
+            "x0": 261.031,
+            "x1": 282.681
+          },
+          {
+            "bottom": 198.466,
+            "text": "days.",
+            "top": 188.966,
+            "x0": 321.0,
+            "x1": 343.705
+          },
+          {
+            "bottom": 204.966,
+            "text": "numbers,",
+            "top": 195.466,
+            "x0": 72.0,
+            "x1": 111.596
+          },
+          {
+            "bottom": 204.966,
+            "text": "published",
+            "top": 195.466,
+            "x0": 114.237,
+            "x1": 154.897
+          },
+          {
+            "bottom": 204.966,
+            "text": "monthly,",
+            "top": 195.466,
+            "x0": 157.538,
+            "x1": 193.438
+          },
+          {
+            "bottom": 204.966,
+            "text": "make",
+            "top": 195.466,
+            "x0": 196.079,
+            "x1": 219.307
+          },
+          {
+            "bottom": 204.966,
+            "text": "the",
+            "top": 195.466,
+            "x0": 221.948,
+            "x1": 235.153
+          },
+          {
+            "bottom": 204.966,
+            "text": "queue",
+            "top": 195.466,
+            "x0": 237.794,
+            "x1": 264.204
+          },
+          {
+            "bottom": 216.466,
+            "text": "visible",
+            "top": 206.966,
+            "x0": 72.0,
+            "x1": 98.391
+          },
+          {
+            "bottom": 216.466,
+            "text": "without",
+            "top": 206.966,
+            "x0": 101.032,
+            "x1": 131.128
+          },
+          {
+            "bottom": 216.466,
+            "text": "any",
+            "top": 206.966,
+            "x0": 133.769,
+            "x1": 149.083
+          },
+          {
+            "bottom": 216.466,
+            "text": "new",
+            "top": 206.966,
+            "x0": 151.724,
+            "x1": 169.147
+          },
+          {
+            "bottom": 216.466,
+            "text": "tooling.",
+            "top": 206.966,
+            "x0": 171.788,
+            "x1": 202.416
+          },
+          {
+            "bottom": 757.656,
+            "text": "Cedar",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 93.784
+          },
+          {
+            "bottom": 757.656,
+            "text": "Hollow",
+            "top": 749.656,
+            "x0": 96.008,
+            "x1": 120.008
+          },
+          {
+            "bottom": 757.656,
+            "text": "Review",
+            "top": 749.656,
+            "x0": 122.232,
+            "x1": 148.456
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 150.68,
+            "x1": 153.344
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 155.568,
+            "x1": 187.136
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 189.36,
+            "x1": 211.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "90",
+          "37",
+          "11",
+          "3",
+          "3"
+        ],
+        "page_index": 2,
+        "reading_text": "Clearing older cases What worked in practice\nClearing a backlog is not the same as working In the example office, the oldest-case rule removed\nfaster. The durable approach is to hold a small 90 days from the maximum wait in five months\nshare of capacity for old cases, month after month, without new staff. The share of cases older than\nuntil the tail is gone. Teams that sprint for one one quarter fell from 37 percent to 11 percent.\nquarter usually hand the condi-\nThese are fictional working notes, but the shape of\ntion of the queue to the next quarter.\nthe result matches what the wider literature reports:\nA simple rule works: every week, close the oldest backlogs yield to patient, published, age-first rules,\ncase that can be closed with the evidence already and they return the moment attention moves\non file. The rule needs no software, and it keeps the elsewhere.\ntail from growing while the rest of the queue is\nserviced.\nCedar Hollow Review - synthetic fixture Page 3 of 3",
+        "rotation": 0,
+        "tokens": [
+          "Clearing",
+          "older",
+          "cases",
+          "What",
+          "worked",
+          "in",
+          "practice",
+          "Clearing",
+          "a",
+          "backlog",
+          "is",
+          "not",
+          "the",
+          "same",
+          "as",
+          "working",
+          "In",
+          "the",
+          "example",
+          "office,",
+          "the",
+          "oldest-case",
+          "rule",
+          "removed",
+          "faster.",
+          "The",
+          "durable",
+          "approach",
+          "is",
+          "to",
+          "hold",
+          "a",
+          "small",
+          "90",
+          "days",
+          "from",
+          "the",
+          "maximum",
+          "wait",
+          "in",
+          "five",
+          "months",
+          "share",
+          "of",
+          "capacity",
+          "for",
+          "old",
+          "cases,",
+          "month",
+          "after",
+          "month,",
+          "without",
+          "new",
+          "staff.",
+          "The",
+          "share",
+          "of",
+          "cases",
+          "older",
+          "than",
+          "until",
+          "the",
+          "tail",
+          "is",
+          "gone.",
+          "Teams",
+          "that",
+          "sprint",
+          "for",
+          "one",
+          "one",
+          "quarter",
+          "fell",
+          "from",
+          "37",
+          "percent",
+          "to",
+          "11",
+          "percent.",
+          "quarter",
+          "usually",
+          "hand",
+          "the",
+          "condi-",
+          "These",
+          "are",
+          "fictional",
+          "working",
+          "notes,",
+          "but",
+          "the",
+          "shape",
+          "of",
+          "tion",
+          "of",
+          "the",
+          "queue",
+          "to",
+          "the",
+          "next",
+          "quarter.",
+          "the",
+          "result",
+          "matches",
+          "what",
+          "the",
+          "wider",
+          "literature",
+          "reports:",
+          "A",
+          "simple",
+          "rule",
+          "works:",
+          "every",
+          "week,",
+          "close",
+          "the",
+          "oldest",
+          "backlogs",
+          "yield",
+          "to",
+          "patient,",
+          "published,",
+          "age-first",
+          "rules,",
+          "case",
+          "that",
+          "can",
+          "be",
+          "closed",
+          "with",
+          "the",
+          "evidence",
+          "already",
+          "and",
+          "they",
+          "return",
+          "the",
+          "moment",
+          "attention",
+          "moves",
+          "on",
+          "file.",
+          "The",
+          "rule",
+          "needs",
+          "no",
+          "software,",
+          "and",
+          "it",
+          "keeps",
+          "the",
+          "elsewhere.",
+          "tail",
+          "from",
+          "growing",
+          "while",
+          "the",
+          "rest",
+          "of",
+          "the",
+          "queue",
+          "is",
+          "serviced.",
+          "Cedar",
+          "Hollow",
+          "Review",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "3",
+          "of",
+          "3"
+        ],
+        "words": [
+          {
+            "bottom": 90.173,
+            "text": "Clearing",
+            "top": 79.673,
+            "x0": 72.0,
+            "x1": 114.01
+          },
+          {
+            "bottom": 90.173,
+            "text": "older",
+            "top": 79.673,
+            "x0": 116.93,
+            "x1": 142.602
+          },
+          {
+            "bottom": 90.173,
+            "text": "cases",
+            "top": 79.673,
+            "x0": 145.521,
+            "x1": 174.711
+          },
+          {
+            "bottom": 90.173,
+            "text": "What",
+            "top": 79.673,
+            "x0": 321.0,
+            "x1": 346.662
+          },
+          {
+            "bottom": 90.173,
+            "text": "worked",
+            "top": 79.673,
+            "x0": 349.581,
+            "x1": 386.341
+          },
+          {
+            "bottom": 90.173,
+            "text": "in",
+            "top": 79.673,
+            "x0": 389.26,
+            "x1": 398.595
+          },
+          {
+            "bottom": 90.173,
+            "text": "practice",
+            "top": 79.673,
+            "x0": 401.514,
+            "x1": 441.781
+          },
+          {
+            "bottom": 107.966,
+            "text": "Clearing",
+            "top": 98.466,
+            "x0": 72.0,
+            "x1": 107.368
+          },
+          {
+            "bottom": 107.966,
+            "text": "a",
+            "top": 98.466,
+            "x0": 110.01,
+            "x1": 115.291
+          },
+          {
+            "bottom": 107.966,
+            "text": "backlog",
+            "top": 98.466,
+            "x0": 117.933,
+            "x1": 150.669
+          },
+          {
+            "bottom": 107.966,
+            "text": "is",
+            "top": 98.466,
+            "x0": 153.31,
+            "x1": 160.169
+          },
+          {
+            "bottom": 107.966,
+            "text": "not",
+            "top": 98.466,
+            "x0": 162.81,
+            "x1": 176.015
+          },
+          {
+            "bottom": 107.966,
+            "text": "the",
+            "top": 98.466,
+            "x0": 178.656,
+            "x1": 191.862
+          },
+          {
+            "bottom": 107.966,
+            "text": "same",
+            "top": 98.466,
+            "x0": 194.502,
+            "x1": 217.73
+          },
+          {
+            "bottom": 107.966,
+            "text": "as",
+            "top": 98.466,
+            "x0": 220.371,
+            "x1": 230.403
+          },
+          {
+            "bottom": 107.966,
+            "text": "working",
+            "top": 98.466,
+            "x0": 233.044,
+            "x1": 265.772
+          },
+          {
+            "bottom": 107.966,
+            "text": "In",
+            "top": 98.466,
+            "x0": 321.0,
+            "x1": 328.923
+          },
+          {
+            "bottom": 107.966,
+            "text": "the",
+            "top": 98.466,
+            "x0": 331.564,
+            "x1": 344.769
+          },
+          {
+            "bottom": 107.966,
+            "text": "example",
+            "top": 98.466,
+            "x0": 347.41,
+            "x1": 383.31
+          },
+          {
+            "bottom": 107.966,
+            "text": "office,",
+            "top": 98.466,
+            "x0": 385.952,
+            "x1": 411.298
+          },
+          {
+            "bottom": 107.966,
+            "text": "the",
+            "top": 98.466,
+            "x0": 413.939,
+            "x1": 427.144
+          },
+          {
+            "bottom": 107.966,
+            "text": "oldest-case",
+            "top": 98.466,
+            "x0": 429.785,
+            "x1": 478.358
+          },
+          {
+            "bottom": 107.966,
+            "text": "rule",
+            "top": 98.466,
+            "x0": 480.999,
+            "x1": 496.836
+          },
+          {
+            "bottom": 107.966,
+            "text": "removed",
+            "top": 98.466,
+            "x0": 499.477,
+            "x1": 536.432
+          },
+          {
+            "bottom": 119.466,
+            "text": "faster.",
+            "top": 109.966,
+            "x0": 72.0,
+            "x1": 98.401
+          },
+          {
+            "bottom": 119.466,
+            "text": "The",
+            "top": 109.966,
+            "x0": 101.041,
+            "x1": 117.41
+          },
+          {
+            "bottom": 119.466,
+            "text": "durable",
+            "top": 109.966,
+            "x0": 120.051,
+            "x1": 151.733
+          },
+          {
+            "bottom": 119.466,
+            "text": "approach",
+            "top": 109.966,
+            "x0": 154.374,
+            "x1": 193.98
+          },
+          {
+            "bottom": 119.466,
+            "text": "is",
+            "top": 109.966,
+            "x0": 196.621,
+            "x1": 203.48
+          },
+          {
+            "bottom": 119.466,
+            "text": "to",
+            "top": 109.966,
+            "x0": 206.121,
+            "x1": 214.044
+          },
+          {
+            "bottom": 119.466,
+            "text": "hold",
+            "top": 109.966,
+            "x0": 216.685,
+            "x1": 234.64
+          },
+          {
+            "bottom": 119.466,
+            "text": "a",
+            "top": 109.966,
+            "x0": 237.281,
+            "x1": 242.563
+          },
+          {
+            "bottom": 119.466,
+            "text": "small",
+            "top": 109.966,
+            "x0": 245.204,
+            "x1": 267.368
+          },
+          {
+            "bottom": 119.466,
+            "text": "90",
+            "top": 109.966,
+            "x0": 321.0,
+            "x1": 331.564
+          },
+          {
+            "bottom": 119.466,
+            "text": "days",
+            "top": 109.966,
+            "x0": 334.205,
+            "x1": 354.269
+          },
+          {
+            "bottom": 119.466,
+            "text": "from",
+            "top": 109.966,
+            "x0": 356.91,
+            "x1": 375.91
+          },
+          {
+            "bottom": 119.466,
+            "text": "the",
+            "top": 109.966,
+            "x0": 378.551,
+            "x1": 391.756
+          },
+          {
+            "bottom": 119.466,
+            "text": "maximum",
+            "top": 109.966,
+            "x0": 394.397,
+            "x1": 435.56
+          },
+          {
+            "bottom": 119.466,
+            "text": "wait",
+            "top": 109.966,
+            "x0": 438.202,
+            "x1": 455.093
+          },
+          {
+            "bottom": 119.466,
+            "text": "in",
+            "top": 109.966,
+            "x0": 457.733,
+            "x1": 465.124
+          },
+          {
+            "bottom": 119.466,
+            "text": "five",
+            "top": 109.966,
+            "x0": 467.765,
+            "x1": 482.547
+          },
+          {
+            "bottom": 119.466,
+            "text": "months",
+            "top": 109.966,
+            "x0": 485.188,
+            "x1": 516.339
+          },
+          {
+            "bottom": 130.966,
+            "text": "share",
+            "top": 121.466,
+            "x0": 72.0,
+            "x1": 95.759
+          },
+          {
+            "bottom": 130.966,
+            "text": "of",
+            "top": 121.466,
+            "x0": 98.4,
+            "x1": 106.324
+          },
+          {
+            "bottom": 130.966,
+            "text": "capacity",
+            "top": 121.466,
+            "x0": 108.965,
+            "x1": 143.81
+          },
+          {
+            "bottom": 130.966,
+            "text": "for",
+            "top": 121.466,
+            "x0": 146.452,
+            "x1": 157.538
+          },
+          {
+            "bottom": 130.966,
+            "text": "old",
+            "top": 121.466,
+            "x0": 160.179,
+            "x1": 172.852
+          },
+          {
+            "bottom": 130.966,
+            "text": "cases,",
+            "top": 121.466,
+            "x0": 175.493,
+            "x1": 202.948
+          },
+          {
+            "bottom": 130.966,
+            "text": "month",
+            "top": 121.466,
+            "x0": 205.589,
+            "x1": 231.989
+          },
+          {
+            "bottom": 130.966,
+            "text": "after",
+            "top": 121.466,
+            "x0": 234.63,
+            "x1": 253.64
+          },
+          {
+            "bottom": 130.966,
+            "text": "month,",
+            "top": 121.466,
+            "x0": 256.281,
+            "x1": 285.323
+          },
+          {
+            "bottom": 130.966,
+            "text": "without",
+            "top": 121.466,
+            "x0": 321.0,
+            "x1": 351.096
+          },
+          {
+            "bottom": 130.966,
+            "text": "new",
+            "top": 121.466,
+            "x0": 353.737,
+            "x1": 371.16
+          },
+          {
+            "bottom": 130.966,
+            "text": "staff.",
+            "top": 121.466,
+            "x0": 373.801,
+            "x1": 394.397
+          },
+          {
+            "bottom": 130.966,
+            "text": "The",
+            "top": 121.466,
+            "x0": 397.038,
+            "x1": 413.406
+          },
+          {
+            "bottom": 130.966,
+            "text": "share",
+            "top": 121.466,
+            "x0": 416.048,
+            "x1": 439.807
+          },
+          {
+            "bottom": 130.966,
+            "text": "of",
+            "top": 121.466,
+            "x0": 442.448,
+            "x1": 450.371
+          },
+          {
+            "bottom": 130.966,
+            "text": "cases",
+            "top": 121.466,
+            "x0": 453.012,
+            "x1": 477.826
+          },
+          {
+            "bottom": 130.966,
+            "text": "older",
+            "top": 121.466,
+            "x0": 480.467,
+            "x1": 501.586
+          },
+          {
+            "bottom": 130.966,
+            "text": "than",
+            "top": 121.466,
+            "x0": 504.227,
+            "x1": 522.714
+          },
+          {
+            "bottom": 142.466,
+            "text": "until",
+            "top": 132.966,
+            "x0": 72.0,
+            "x1": 89.423
+          },
+          {
+            "bottom": 142.466,
+            "text": "the",
+            "top": 132.966,
+            "x0": 92.064,
+            "x1": 105.269
+          },
+          {
+            "bottom": 142.466,
+            "text": "tail",
+            "top": 132.966,
+            "x0": 107.91,
+            "x1": 120.051
+          },
+          {
+            "bottom": 142.466,
+            "text": "is",
+            "top": 132.966,
+            "x0": 122.692,
+            "x1": 129.551
+          },
+          {
+            "bottom": 142.466,
+            "text": "gone.",
+            "top": 132.966,
+            "x0": 132.192,
+            "x1": 155.961
+          },
+          {
+            "bottom": 142.466,
+            "text": "Teams",
+            "top": 132.966,
+            "x0": 158.602,
+            "x1": 187.634
+          },
+          {
+            "bottom": 142.466,
+            "text": "that",
+            "top": 132.966,
+            "x0": 190.275,
+            "x1": 206.121
+          },
+          {
+            "bottom": 142.466,
+            "text": "sprint",
+            "top": 132.966,
+            "x0": 208.762,
+            "x1": 231.99
+          },
+          {
+            "bottom": 142.466,
+            "text": "for",
+            "top": 132.966,
+            "x0": 234.631,
+            "x1": 245.717
+          },
+          {
+            "bottom": 142.466,
+            "text": "one",
+            "top": 132.966,
+            "x0": 248.358,
+            "x1": 264.204
+          },
+          {
+            "bottom": 142.466,
+            "text": "one",
+            "top": 132.966,
+            "x0": 321.0,
+            "x1": 336.846
+          },
+          {
+            "bottom": 142.466,
+            "text": "quarter",
+            "top": 132.966,
+            "x0": 339.487,
+            "x1": 369.583
+          },
+          {
+            "bottom": 142.466,
+            "text": "fell",
+            "top": 132.966,
+            "x0": 372.224,
+            "x1": 384.365
+          },
+          {
+            "bottom": 142.466,
+            "text": "from",
+            "top": 132.966,
+            "x0": 387.006,
+            "x1": 406.006
+          },
+          {
+            "bottom": 142.466,
+            "text": "37",
+            "top": 132.966,
+            "x0": 408.647,
+            "x1": 419.211
+          },
+          {
+            "bottom": 142.466,
+            "text": "percent",
+            "top": 132.966,
+            "x0": 421.852,
+            "x1": 453.535
+          },
+          {
+            "bottom": 142.466,
+            "text": "to",
+            "top": 132.966,
+            "x0": 456.175,
+            "x1": 464.098
+          },
+          {
+            "bottom": 142.466,
+            "text": "11",
+            "top": 132.966,
+            "x0": 466.739,
+            "x1": 477.303
+          },
+          {
+            "bottom": 142.466,
+            "text": "percent.",
+            "top": 132.966,
+            "x0": 479.944,
+            "x1": 514.268
+          },
+          {
+            "bottom": 153.966,
+            "text": "quarter",
+            "top": 144.466,
+            "x0": 72.0,
+            "x1": 102.096
+          },
+          {
+            "bottom": 153.966,
+            "text": "usually",
+            "top": 144.466,
+            "x0": 104.737,
+            "x1": 134.301
+          },
+          {
+            "bottom": 153.966,
+            "text": "hand",
+            "top": 144.466,
+            "x0": 136.942,
+            "x1": 158.07
+          },
+          {
+            "bottom": 153.966,
+            "text": "the",
+            "top": 144.466,
+            "x0": 160.711,
+            "x1": 173.916
+          },
+          {
+            "bottom": 153.966,
+            "text": "condi-",
+            "top": 144.466,
+            "x0": 176.557,
+            "x1": 202.425
+          },
+          {
+            "bottom": 158.966,
+            "text": "These",
+            "top": 149.466,
+            "x0": 321.0,
+            "x1": 347.4
+          },
+          {
+            "bottom": 158.966,
+            "text": "are",
+            "top": 149.466,
+            "x0": 350.041,
+            "x1": 363.769
+          },
+          {
+            "bottom": 158.966,
+            "text": "fictional",
+            "top": 149.466,
+            "x0": 366.41,
+            "x1": 398.615
+          },
+          {
+            "bottom": 158.966,
+            "text": "working",
+            "top": 149.466,
+            "x0": 401.256,
+            "x1": 433.983
+          },
+          {
+            "bottom": 158.966,
+            "text": "notes,",
+            "top": 149.466,
+            "x0": 436.624,
+            "x1": 462.502
+          },
+          {
+            "bottom": 158.966,
+            "text": "but",
+            "top": 149.466,
+            "x0": 465.143,
+            "x1": 478.349
+          },
+          {
+            "bottom": 158.966,
+            "text": "the",
+            "top": 149.466,
+            "x0": 480.989,
+            "x1": 494.194
+          },
+          {
+            "bottom": 158.966,
+            "text": "shape",
+            "top": 149.466,
+            "x0": 496.835,
+            "x1": 522.714
+          },
+          {
+            "bottom": 158.966,
+            "text": "of",
+            "top": 149.466,
+            "x0": 525.355,
+            "x1": 533.278
+          },
+          {
+            "bottom": 165.466,
+            "text": "tion",
+            "top": 155.966,
+            "x0": 72.0,
+            "x1": 87.314
+          },
+          {
+            "bottom": 165.466,
+            "text": "of",
+            "top": 155.966,
+            "x0": 89.955,
+            "x1": 97.878
+          },
+          {
+            "bottom": 165.466,
+            "text": "the",
+            "top": 155.966,
+            "x0": 100.519,
+            "x1": 113.724
+          },
+          {
+            "bottom": 165.466,
+            "text": "queue",
+            "top": 155.966,
+            "x0": 116.365,
+            "x1": 142.775
+          },
+          {
+            "bottom": 165.466,
+            "text": "to",
+            "top": 155.966,
+            "x0": 145.416,
+            "x1": 153.339
+          },
+          {
+            "bottom": 165.466,
+            "text": "the",
+            "top": 155.966,
+            "x0": 155.98,
+            "x1": 169.185
+          },
+          {
+            "bottom": 165.466,
+            "text": "next",
+            "top": 155.966,
+            "x0": 171.826,
+            "x1": 189.781
+          },
+          {
+            "bottom": 165.466,
+            "text": "quarter.",
+            "top": 155.966,
+            "x0": 192.422,
+            "x1": 225.159
+          },
+          {
+            "bottom": 170.466,
+            "text": "the",
+            "top": 160.966,
+            "x0": 321.0,
+            "x1": 334.205
+          },
+          {
+            "bottom": 170.466,
+            "text": "result",
+            "top": 160.966,
+            "x0": 336.846,
+            "x1": 360.074
+          },
+          {
+            "bottom": 170.466,
+            "text": "matches",
+            "top": 160.966,
+            "x0": 362.714,
+            "x1": 398.615
+          },
+          {
+            "bottom": 170.466,
+            "text": "what",
+            "top": 160.966,
+            "x0": 401.256,
+            "x1": 421.32
+          },
+          {
+            "bottom": 170.466,
+            "text": "the",
+            "top": 160.966,
+            "x0": 423.961,
+            "x1": 437.166
+          },
+          {
+            "bottom": 170.466,
+            "text": "wider",
+            "top": 160.966,
+            "x0": 439.807,
+            "x1": 462.502
+          },
+          {
+            "bottom": 170.466,
+            "text": "literature",
+            "top": 160.966,
+            "x0": 465.144,
+            "x1": 502.099
+          },
+          {
+            "bottom": 170.466,
+            "text": "reports:",
+            "top": 160.966,
+            "x0": 504.74,
+            "x1": 536.944
+          },
+          {
+            "bottom": 181.966,
+            "text": "A",
+            "top": 172.466,
+            "x0": 72.0,
+            "x1": 78.337
+          },
+          {
+            "bottom": 181.966,
+            "text": "simple",
+            "top": 172.466,
+            "x0": 80.977,
+            "x1": 108.423
+          },
+          {
+            "bottom": 181.966,
+            "text": "rule",
+            "top": 172.466,
+            "x0": 111.064,
+            "x1": 126.901
+          },
+          {
+            "bottom": 181.966,
+            "text": "works:",
+            "top": 172.466,
+            "x0": 129.542,
+            "x1": 156.987
+          },
+          {
+            "bottom": 181.966,
+            "text": "every",
+            "top": 172.466,
+            "x0": 159.628,
+            "x1": 182.856
+          },
+          {
+            "bottom": 181.966,
+            "text": "week,",
+            "top": 172.466,
+            "x0": 185.497,
+            "x1": 210.31
+          },
+          {
+            "bottom": 181.966,
+            "text": "close",
+            "top": 172.466,
+            "x0": 212.951,
+            "x1": 235.125
+          },
+          {
+            "bottom": 181.966,
+            "text": "the",
+            "top": 172.466,
+            "x0": 237.766,
+            "x1": 250.971
+          },
+          {
+            "bottom": 181.966,
+            "text": "oldest",
+            "top": 172.466,
+            "x0": 253.612,
+            "x1": 278.958
+          },
+          {
+            "bottom": 181.966,
+            "text": "backlogs",
+            "top": 172.466,
+            "x0": 321.0,
+            "x1": 358.487
+          },
+          {
+            "bottom": 181.966,
+            "text": "yield",
+            "top": 172.466,
+            "x0": 361.128,
+            "x1": 380.66
+          },
+          {
+            "bottom": 181.966,
+            "text": "to",
+            "top": 172.466,
+            "x0": 383.301,
+            "x1": 391.224
+          },
+          {
+            "bottom": 181.966,
+            "text": "patient,",
+            "top": 172.466,
+            "x0": 393.865,
+            "x1": 425.025
+          },
+          {
+            "bottom": 181.966,
+            "text": "published,",
+            "top": 172.466,
+            "x0": 427.666,
+            "x1": 470.967
+          },
+          {
+            "bottom": 181.966,
+            "text": "age-first",
+            "top": 172.466,
+            "x0": 473.608,
+            "x1": 507.922
+          },
+          {
+            "bottom": 181.966,
+            "text": "rules,",
+            "top": 172.466,
+            "x0": 510.563,
+            "x1": 533.79
+          },
+          {
+            "bottom": 193.466,
+            "text": "case",
+            "top": 183.966,
+            "x0": 72.0,
+            "x1": 92.064
+          },
+          {
+            "bottom": 193.466,
+            "text": "that",
+            "top": 183.966,
+            "x0": 94.705,
+            "x1": 110.551
+          },
+          {
+            "bottom": 193.466,
+            "text": "can",
+            "top": 183.966,
+            "x0": 113.192,
+            "x1": 128.506
+          },
+          {
+            "bottom": 193.466,
+            "text": "be",
+            "top": 183.966,
+            "x0": 131.147,
+            "x1": 141.711
+          },
+          {
+            "bottom": 193.466,
+            "text": "closed",
+            "top": 183.966,
+            "x0": 144.352,
+            "x1": 171.807
+          },
+          {
+            "bottom": 193.466,
+            "text": "with",
+            "top": 183.966,
+            "x0": 174.448,
+            "x1": 191.339
+          },
+          {
+            "bottom": 193.466,
+            "text": "the",
+            "top": 183.966,
+            "x0": 193.98,
+            "x1": 207.185
+          },
+          {
+            "bottom": 193.466,
+            "text": "evidence",
+            "top": 183.966,
+            "x0": 209.826,
+            "x1": 247.845
+          },
+          {
+            "bottom": 193.466,
+            "text": "already",
+            "top": 183.966,
+            "x0": 250.486,
+            "x1": 281.637
+          },
+          {
+            "bottom": 193.466,
+            "text": "and",
+            "top": 183.966,
+            "x0": 321.0,
+            "x1": 336.846
+          },
+          {
+            "bottom": 193.466,
+            "text": "they",
+            "top": 183.966,
+            "x0": 339.487,
+            "x1": 357.442
+          },
+          {
+            "bottom": 193.466,
+            "text": "return",
+            "top": 183.966,
+            "x0": 360.083,
+            "x1": 384.897
+          },
+          {
+            "bottom": 193.466,
+            "text": "the",
+            "top": 183.966,
+            "x0": 387.538,
+            "x1": 400.743
+          },
+          {
+            "bottom": 193.466,
+            "text": "moment",
+            "top": 183.966,
+            "x0": 403.384,
+            "x1": 437.698
+          },
+          {
+            "bottom": 193.466,
+            "text": "attention",
+            "top": 183.966,
+            "x0": 440.339,
+            "x1": 476.781
+          },
+          {
+            "bottom": 193.466,
+            "text": "moves",
+            "top": 183.966,
+            "x0": 479.422,
+            "x1": 507.4
+          },
+          {
+            "bottom": 204.966,
+            "text": "on",
+            "top": 195.466,
+            "x0": 72.0,
+            "x1": 82.564
+          },
+          {
+            "bottom": 204.966,
+            "text": "file.",
+            "top": 195.466,
+            "x0": 85.205,
+            "x1": 99.987
+          },
+          {
+            "bottom": 204.966,
+            "text": "The",
+            "top": 195.466,
+            "x0": 102.628,
+            "x1": 118.996
+          },
+          {
+            "bottom": 204.966,
+            "text": "rule",
+            "top": 195.466,
+            "x0": 121.637,
+            "x1": 137.474
+          },
+          {
+            "bottom": 204.966,
+            "text": "needs",
+            "top": 195.466,
+            "x0": 140.115,
+            "x1": 165.993
+          },
+          {
+            "bottom": 204.966,
+            "text": "no",
+            "top": 195.466,
+            "x0": 168.634,
+            "x1": 179.198
+          },
+          {
+            "bottom": 204.966,
+            "text": "software,",
+            "top": 195.466,
+            "x0": 181.839,
+            "x1": 220.381
+          },
+          {
+            "bottom": 204.966,
+            "text": "and",
+            "top": 195.466,
+            "x0": 223.022,
+            "x1": 238.868
+          },
+          {
+            "bottom": 204.966,
+            "text": "it",
+            "top": 195.466,
+            "x0": 241.509,
+            "x1": 246.259
+          },
+          {
+            "bottom": 204.966,
+            "text": "keeps",
+            "top": 195.466,
+            "x0": 248.9,
+            "x1": 274.246
+          },
+          {
+            "bottom": 204.966,
+            "text": "the",
+            "top": 195.466,
+            "x0": 276.887,
+            "x1": 290.092
+          },
+          {
+            "bottom": 204.966,
+            "text": "elsewhere.",
+            "top": 195.466,
+            "x0": 321.0,
+            "x1": 366.933
+          },
+          {
+            "bottom": 216.466,
+            "text": "tail",
+            "top": 206.966,
+            "x0": 72.0,
+            "x1": 84.141
+          },
+          {
+            "bottom": 216.466,
+            "text": "from",
+            "top": 206.966,
+            "x0": 86.782,
+            "x1": 105.782
+          },
+          {
+            "bottom": 216.466,
+            "text": "growing",
+            "top": 206.966,
+            "x0": 108.423,
+            "x1": 141.683
+          },
+          {
+            "bottom": 216.466,
+            "text": "while",
+            "top": 206.966,
+            "x0": 144.323,
+            "x1": 165.964
+          },
+          {
+            "bottom": 216.466,
+            "text": "the",
+            "top": 206.966,
+            "x0": 168.605,
+            "x1": 181.81
+          },
+          {
+            "bottom": 216.466,
+            "text": "rest",
+            "top": 206.966,
+            "x0": 184.451,
+            "x1": 200.288
+          },
+          {
+            "bottom": 216.466,
+            "text": "of",
+            "top": 206.966,
+            "x0": 202.929,
+            "x1": 210.852
+          },
+          {
+            "bottom": 216.466,
+            "text": "the",
+            "top": 206.966,
+            "x0": 213.493,
+            "x1": 226.698
+          },
+          {
+            "bottom": 216.466,
+            "text": "queue",
+            "top": 206.966,
+            "x0": 229.339,
+            "x1": 255.749
+          },
+          {
+            "bottom": 216.466,
+            "text": "is",
+            "top": 206.966,
+            "x0": 258.39,
+            "x1": 265.249
+          },
+          {
+            "bottom": 227.966,
+            "text": "serviced.",
+            "top": 218.466,
+            "x0": 72.0,
+            "x1": 110.01
+          },
+          {
+            "bottom": 757.656,
+            "text": "Cedar",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 93.784
+          },
+          {
+            "bottom": 757.656,
+            "text": "Hollow",
+            "top": 749.656,
+            "x0": 96.008,
+            "x1": 120.008
+          },
+          {
+            "bottom": 757.656,
+            "text": "Review",
+            "top": 749.656,
+            "x0": 122.232,
+            "x1": 148.456
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 150.68,
+            "x1": 153.344
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 155.568,
+            "x1": 187.136
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 189.36,
+            "x1": 211.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 5334,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 13,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 112
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 219
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 327
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 439
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 634
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 829
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1024
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1093
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1505
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1577
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2759
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 3769
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F05-article.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "888e283dca1174834cae8bc62ea45ca56435ed92cbb4b54f0b200f4fda3437ef"
+    },
+    "source_sha256": "888e283dca1174834cae8bc62ea45ca56435ed92cbb4b54f0b200f4fda3437ef",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_MULTI_COLUMN",
+    "document_id": "F05",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 3,
+      "page_order": [
+        0,
+        1,
+        2
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0,
+            1,
+            2
+          ],
+          "region_ids": [
+            "p0-body",
+            "p1-body",
+            "p2-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 3,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0,
+              1,
+              2
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      }
+    ],
+    "page_mapping": [
+      0,
+      1,
+      2
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 13,
+            "source_sha256": "888e283dca1174834cae8bc62ea45ca56435ed92cbb4b54f0b200f4fda3437ef"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_fraction": 0.0,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 3,
+            "source": 3
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [],
+            "pdfminer_source": [],
+            "scanner_both_empty": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "classifier_conflict": false,
+            "decisive": false
+          }
+        ],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 5334,
+              "OBJECT_COUNT": 21,
+              "OUTPUT_BYTES": 12747,
+              "PAGE_COUNT": 3
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0,
+            1,
+            2
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}

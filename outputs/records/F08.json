@@ -1,0 +1,1596 @@
+{
+  "build": {
+    "candidate_bytes": 10464,
+    "candidate_sha256": "5f188d23c5f7b1bc50f93b9288c7be810393fb5f36dc2d70d575262cdc26e349",
+    "document_id": "F08",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS"
+    ],
+    "page_count": 3,
+    "source_sha256": "9479c2bd1ca100f6970e09c222e1950e657f00d2c02cab51a4383024adff0238",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F08-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F08",
+  "intake": {
+    "class_label": "TEXT_TABLE",
+    "document_id": "F08",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 4207,
+    "filename": "F08-statement.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 0
+    },
+    "object_count": 12,
+    "page_count": 3,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "-40213",
+          ": 31",
+          "2027",
+          "24 $0.75 $18.00",
+          "6 $2.40 $14.40",
+          "150 $0.08 $12.00",
+          "12 $3.25 $39.00",
+          "1",
+          "3"
+        ],
+        "page_index": 0,
+        "reading_text": "Northbridge Supply Co. Statement of account\nCustomer: Hartwell Manufacturing\nAccount: HM-40213\nStatement date: 31 March 2027\nItem Quantity Unit Price Amount\nStandard bracket 24 $0.75 $18.00\nHeavy bracket 6 $2.40 $14.40\nAlignment pin 150 $0.08 $12.00\nGasket set 12 $3.25 $39.00\nNorthbridge Supply Co. - synthetic fixture Page 1 of 3",
+        "rotation": 0,
+        "tokens": [
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "Statement",
+          "of",
+          "account",
+          "Customer:",
+          "Hartwell",
+          "Manufacturing",
+          "Account:",
+          "HM-40213",
+          "Statement",
+          "date:",
+          "31",
+          "March",
+          "2027",
+          "Item",
+          "Quantity",
+          "Unit",
+          "Price",
+          "Amount",
+          "Standard",
+          "bracket",
+          "24",
+          "$0.75",
+          "$18.00",
+          "Heavy",
+          "bracket",
+          "6",
+          "$2.40",
+          "$14.40",
+          "Alignment",
+          "pin",
+          "150",
+          "$0.08",
+          "$12.00",
+          "Gasket",
+          "set",
+          "12",
+          "$3.25",
+          "$39.00",
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "1",
+          "of",
+          "3"
+        ],
+        "words": [
+          {
+            "bottom": 41.966,
+            "text": "Northbridge",
+            "top": 32.466,
+            "x0": 72.0,
+            "x1": 126.359
+          },
+          {
+            "bottom": 41.966,
+            "text": "Supply",
+            "top": 32.466,
+            "x0": 129.0,
+            "x1": 160.673
+          },
+          {
+            "bottom": 41.966,
+            "text": "Co.",
+            "top": 32.466,
+            "x0": 163.314,
+            "x1": 178.619
+          },
+          {
+            "bottom": 41.966,
+            "text": "Statement",
+            "top": 32.466,
+            "x0": 450.225,
+            "x1": 493.526
+          },
+          {
+            "bottom": 41.966,
+            "text": "of",
+            "top": 32.466,
+            "x0": 496.167,
+            "x1": 504.09
+          },
+          {
+            "bottom": 41.966,
+            "text": "account",
+            "top": 32.466,
+            "x0": 506.731,
+            "x1": 540.0
+          },
+          {
+            "bottom": 90.07,
+            "text": "Customer:",
+            "top": 80.07,
+            "x0": 72.0,
+            "x1": 118.12
+          },
+          {
+            "bottom": 90.07,
+            "text": "Hartwell",
+            "top": 80.07,
+            "x0": 120.9,
+            "x1": 157.01
+          },
+          {
+            "bottom": 90.07,
+            "text": "Manufacturing",
+            "top": 80.07,
+            "x0": 159.79,
+            "x1": 223.15
+          },
+          {
+            "bottom": 103.07,
+            "text": "Account:",
+            "top": 93.07,
+            "x0": 72.0,
+            "x1": 110.91
+          },
+          {
+            "bottom": 103.07,
+            "text": "HM-40213",
+            "top": 93.07,
+            "x0": 113.69,
+            "x1": 160.37
+          },
+          {
+            "bottom": 116.07,
+            "text": "Statement",
+            "top": 106.07,
+            "x0": 72.0,
+            "x1": 117.58
+          },
+          {
+            "bottom": 116.07,
+            "text": "date:",
+            "top": 106.07,
+            "x0": 120.36,
+            "x1": 142.6
+          },
+          {
+            "bottom": 116.07,
+            "text": "31",
+            "top": 106.07,
+            "x0": 145.38,
+            "x1": 156.5
+          },
+          {
+            "bottom": 116.07,
+            "text": "March",
+            "top": 106.07,
+            "x0": 159.28,
+            "x1": 187.06
+          },
+          {
+            "bottom": 116.07,
+            "text": "2027",
+            "top": 106.07,
+            "x0": 189.84,
+            "x1": 212.08
+          },
+          {
+            "bottom": 142.966,
+            "text": "Item",
+            "top": 133.466,
+            "x0": 76.0,
+            "x1": 95.532
+          },
+          {
+            "bottom": 142.966,
+            "text": "Quantity",
+            "top": 133.466,
+            "x0": 262.734,
+            "x1": 301.266
+          },
+          {
+            "bottom": 142.966,
+            "text": "Unit",
+            "top": 133.466,
+            "x0": 353.654,
+            "x1": 372.122
+          },
+          {
+            "bottom": 142.966,
+            "text": "Price",
+            "top": 133.466,
+            "x0": 374.763,
+            "x1": 398.0
+          },
+          {
+            "bottom": 142.966,
+            "text": "Amount",
+            "top": 133.466,
+            "x0": 500.118,
+            "x1": 536.0
+          },
+          {
+            "bottom": 154.966,
+            "text": "Standard",
+            "top": 145.466,
+            "x0": 76.0,
+            "x1": 114.551
+          },
+          {
+            "bottom": 154.966,
+            "text": "bracket",
+            "top": 145.466,
+            "x0": 117.192,
+            "x1": 148.343
+          },
+          {
+            "bottom": 154.966,
+            "text": "24",
+            "top": 145.466,
+            "x0": 276.718,
+            "x1": 287.282
+          },
+          {
+            "bottom": 154.966,
+            "text": "$0.75",
+            "top": 145.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 154.966,
+            "text": "$18.00",
+            "top": 145.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 176.966,
+            "text": "Heavy",
+            "top": 167.466,
+            "x0": 76.0,
+            "x1": 102.923
+          },
+          {
+            "bottom": 176.966,
+            "text": "bracket",
+            "top": 167.466,
+            "x0": 105.564,
+            "x1": 136.714
+          },
+          {
+            "bottom": 176.966,
+            "text": "6",
+            "top": 167.466,
+            "x0": 279.359,
+            "x1": 284.641
+          },
+          {
+            "bottom": 176.966,
+            "text": "$2.40",
+            "top": 167.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 176.966,
+            "text": "$14.40",
+            "top": 167.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 198.966,
+            "text": "Alignment",
+            "top": 189.466,
+            "x0": 76.0,
+            "x1": 118.237
+          },
+          {
+            "bottom": 198.966,
+            "text": "pin",
+            "top": 189.466,
+            "x0": 120.878,
+            "x1": 133.551
+          },
+          {
+            "bottom": 198.966,
+            "text": "150",
+            "top": 189.466,
+            "x0": 274.077,
+            "x1": 289.923
+          },
+          {
+            "bottom": 198.966,
+            "text": "$0.08",
+            "top": 189.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 198.966,
+            "text": "$12.00",
+            "top": 189.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 220.966,
+            "text": "Gasket",
+            "top": 211.466,
+            "x0": 76.0,
+            "x1": 106.096
+          },
+          {
+            "bottom": 220.966,
+            "text": "set",
+            "top": 211.466,
+            "x0": 108.737,
+            "x1": 121.41
+          },
+          {
+            "bottom": 220.966,
+            "text": "12",
+            "top": 211.466,
+            "x0": 276.718,
+            "x1": 287.282
+          },
+          {
+            "bottom": 220.966,
+            "text": "$3.25",
+            "top": 211.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 220.966,
+            "text": "$39.00",
+            "top": 211.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 757.656,
+            "text": "Northbridge",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 113.792
+          },
+          {
+            "bottom": 757.656,
+            "text": "Supply",
+            "top": 749.656,
+            "x0": 116.016,
+            "x1": 140.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "Co.",
+            "top": 749.656,
+            "x0": 142.696,
+            "x1": 155.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 157.368,
+            "x1": 160.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 162.256,
+            "x1": 193.824
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 196.048,
+            "x1": 217.832
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "40 $0.30 $12.00",
+          "90 $0.12 $10.80",
+          "4 $6.10 $24.40",
+          "7 $1.95 $13.65",
+          "2",
+          "3"
+        ],
+        "page_index": 1,
+        "reading_text": "Northbridge Supply Co. Statement of account\nItem Quantity Unit Price Amount\nTorque washer 40 $0.30 $12.00\nRetainer clip 90 $0.12 $10.80\nGuide rail 4 $6.10 $24.40\nSpacer kit 7 $1.95 $13.65\nNorthbridge Supply Co. - synthetic fixture Page 2 of 3",
+        "rotation": 0,
+        "tokens": [
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "Statement",
+          "of",
+          "account",
+          "Item",
+          "Quantity",
+          "Unit",
+          "Price",
+          "Amount",
+          "Torque",
+          "washer",
+          "40",
+          "$0.30",
+          "$12.00",
+          "Retainer",
+          "clip",
+          "90",
+          "$0.12",
+          "$10.80",
+          "Guide",
+          "rail",
+          "4",
+          "$6.10",
+          "$24.40",
+          "Spacer",
+          "kit",
+          "7",
+          "$1.95",
+          "$13.65",
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "2",
+          "of",
+          "3"
+        ],
+        "words": [
+          {
+            "bottom": 41.966,
+            "text": "Northbridge",
+            "top": 32.466,
+            "x0": 72.0,
+            "x1": 126.359
+          },
+          {
+            "bottom": 41.966,
+            "text": "Supply",
+            "top": 32.466,
+            "x0": 129.0,
+            "x1": 160.673
+          },
+          {
+            "bottom": 41.966,
+            "text": "Co.",
+            "top": 32.466,
+            "x0": 163.314,
+            "x1": 178.619
+          },
+          {
+            "bottom": 41.966,
+            "text": "Statement",
+            "top": 32.466,
+            "x0": 450.225,
+            "x1": 493.526
+          },
+          {
+            "bottom": 41.966,
+            "text": "of",
+            "top": 32.466,
+            "x0": 496.167,
+            "x1": 504.09
+          },
+          {
+            "bottom": 41.966,
+            "text": "account",
+            "top": 32.466,
+            "x0": 506.731,
+            "x1": 540.0
+          },
+          {
+            "bottom": 93.966,
+            "text": "Item",
+            "top": 84.466,
+            "x0": 76.0,
+            "x1": 95.532
+          },
+          {
+            "bottom": 93.966,
+            "text": "Quantity",
+            "top": 84.466,
+            "x0": 262.734,
+            "x1": 301.266
+          },
+          {
+            "bottom": 93.966,
+            "text": "Unit",
+            "top": 84.466,
+            "x0": 353.654,
+            "x1": 372.122
+          },
+          {
+            "bottom": 93.966,
+            "text": "Price",
+            "top": 84.466,
+            "x0": 374.763,
+            "x1": 398.0
+          },
+          {
+            "bottom": 93.966,
+            "text": "Amount",
+            "top": 84.466,
+            "x0": 500.118,
+            "x1": 536.0
+          },
+          {
+            "bottom": 105.966,
+            "text": "Torque",
+            "top": 96.466,
+            "x0": 76.0,
+            "x1": 106.096
+          },
+          {
+            "bottom": 105.966,
+            "text": "washer",
+            "top": 96.466,
+            "x0": 108.737,
+            "x1": 139.356
+          },
+          {
+            "bottom": 105.966,
+            "text": "40",
+            "top": 96.466,
+            "x0": 276.718,
+            "x1": 287.282
+          },
+          {
+            "bottom": 105.966,
+            "text": "$0.30",
+            "top": 96.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 105.966,
+            "text": "$12.00",
+            "top": 96.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 127.966,
+            "text": "Retainer",
+            "top": 118.466,
+            "x0": 76.0,
+            "x1": 111.9
+          },
+          {
+            "bottom": 127.966,
+            "text": "clip",
+            "top": 118.466,
+            "x0": 114.541,
+            "x1": 128.792
+          },
+          {
+            "bottom": 127.966,
+            "text": "90",
+            "top": 118.466,
+            "x0": 276.718,
+            "x1": 287.282
+          },
+          {
+            "bottom": 127.966,
+            "text": "$0.12",
+            "top": 118.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 127.966,
+            "text": "$10.80",
+            "top": 118.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 149.966,
+            "text": "Guide",
+            "top": 140.466,
+            "x0": 76.0,
+            "x1": 101.346
+          },
+          {
+            "bottom": 149.966,
+            "text": "rail",
+            "top": 140.466,
+            "x0": 103.987,
+            "x1": 116.651
+          },
+          {
+            "bottom": 149.966,
+            "text": "4",
+            "top": 140.466,
+            "x0": 279.359,
+            "x1": 284.641
+          },
+          {
+            "bottom": 149.966,
+            "text": "$6.10",
+            "top": 140.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 149.966,
+            "text": "$24.40",
+            "top": 140.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 171.966,
+            "text": "Spacer",
+            "top": 162.466,
+            "x0": 76.0,
+            "x1": 106.096
+          },
+          {
+            "bottom": 171.966,
+            "text": "kit",
+            "top": 162.466,
+            "x0": 108.737,
+            "x1": 118.237
+          },
+          {
+            "bottom": 171.966,
+            "text": "7",
+            "top": 162.466,
+            "x0": 279.359,
+            "x1": 284.641
+          },
+          {
+            "bottom": 171.966,
+            "text": "$1.95",
+            "top": 162.466,
+            "x0": 374.231,
+            "x1": 398.0
+          },
+          {
+            "bottom": 171.966,
+            "text": "$13.65",
+            "top": 162.466,
+            "x0": 506.949,
+            "x1": 536.0
+          },
+          {
+            "bottom": 757.656,
+            "text": "Northbridge",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 113.792
+          },
+          {
+            "bottom": 757.656,
+            "text": "Supply",
+            "top": 749.656,
+            "x0": 116.016,
+            "x1": 140.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "Co.",
+            "top": 749.656,
+            "x0": 142.696,
+            "x1": 155.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 157.368,
+            "x1": 160.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 162.256,
+            "x1": 193.824
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 196.048,
+            "x1": 217.832
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "1 $1,234.50 $1,234.50",
+          "2 ($250.00) ($500.00)",
+          "$878.75",
+          "3",
+          "3"
+        ],
+        "page_index": 2,
+        "reading_text": "Northbridge Supply Co. Statement of account\nItem Quantity Unit Price Amount\nConsolidated freight 1 $1,234.50 $1,234.50\nReturned goods credit 2 ($250.00) ($500.00)\nTOTAL $878.75\nAll amounts in USD.\nQuantities are whole units; negative amounts appear in parentheses.\nPrepared by the Northbridge Supply Co. billing desk.\nNorthbridge Supply Co. - synthetic fixture Page 3 of 3",
+        "rotation": 0,
+        "tokens": [
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "Statement",
+          "of",
+          "account",
+          "Item",
+          "Quantity",
+          "Unit",
+          "Price",
+          "Amount",
+          "Consolidated",
+          "freight",
+          "1",
+          "$1,234.50",
+          "$1,234.50",
+          "Returned",
+          "goods",
+          "credit",
+          "2",
+          "($250.00)",
+          "($500.00)",
+          "TOTAL",
+          "$878.75",
+          "All",
+          "amounts",
+          "in",
+          "USD.",
+          "Quantities",
+          "are",
+          "whole",
+          "units;",
+          "negative",
+          "amounts",
+          "appear",
+          "in",
+          "parentheses.",
+          "Prepared",
+          "by",
+          "the",
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "billing",
+          "desk.",
+          "Northbridge",
+          "Supply",
+          "Co.",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "3",
+          "of",
+          "3"
+        ],
+        "words": [
+          {
+            "bottom": 41.966,
+            "text": "Northbridge",
+            "top": 32.466,
+            "x0": 72.0,
+            "x1": 126.359
+          },
+          {
+            "bottom": 41.966,
+            "text": "Supply",
+            "top": 32.466,
+            "x0": 129.0,
+            "x1": 160.673
+          },
+          {
+            "bottom": 41.966,
+            "text": "Co.",
+            "top": 32.466,
+            "x0": 163.314,
+            "x1": 178.619
+          },
+          {
+            "bottom": 41.966,
+            "text": "Statement",
+            "top": 32.466,
+            "x0": 450.225,
+            "x1": 493.526
+          },
+          {
+            "bottom": 41.966,
+            "text": "of",
+            "top": 32.466,
+            "x0": 496.167,
+            "x1": 504.09
+          },
+          {
+            "bottom": 41.966,
+            "text": "account",
+            "top": 32.466,
+            "x0": 506.731,
+            "x1": 540.0
+          },
+          {
+            "bottom": 93.966,
+            "text": "Item",
+            "top": 84.466,
+            "x0": 76.0,
+            "x1": 95.532
+          },
+          {
+            "bottom": 93.966,
+            "text": "Quantity",
+            "top": 84.466,
+            "x0": 262.734,
+            "x1": 301.266
+          },
+          {
+            "bottom": 93.966,
+            "text": "Unit",
+            "top": 84.466,
+            "x0": 353.654,
+            "x1": 372.122
+          },
+          {
+            "bottom": 93.966,
+            "text": "Price",
+            "top": 84.466,
+            "x0": 374.763,
+            "x1": 398.0
+          },
+          {
+            "bottom": 93.966,
+            "text": "Amount",
+            "top": 84.466,
+            "x0": 500.118,
+            "x1": 536.0
+          },
+          {
+            "bottom": 105.966,
+            "text": "Consolidated",
+            "top": 96.466,
+            "x0": 76.0,
+            "x1": 131.442
+          },
+          {
+            "bottom": 105.966,
+            "text": "freight",
+            "top": 96.466,
+            "x0": 134.083,
+            "x1": 160.483
+          },
+          {
+            "bottom": 105.966,
+            "text": "1",
+            "top": 96.466,
+            "x0": 279.359,
+            "x1": 284.641
+          },
+          {
+            "bottom": 105.966,
+            "text": "$1,234.50",
+            "top": 96.466,
+            "x0": 355.744,
+            "x1": 398.0
+          },
+          {
+            "bottom": 105.966,
+            "text": "$1,234.50",
+            "top": 96.466,
+            "x0": 493.744,
+            "x1": 536.0
+          },
+          {
+            "bottom": 127.966,
+            "text": "Returned",
+            "top": 118.466,
+            "x0": 76.0,
+            "x1": 115.073
+          },
+          {
+            "bottom": 127.966,
+            "text": "goods",
+            "top": 118.466,
+            "x0": 117.714,
+            "x1": 143.592
+          },
+          {
+            "bottom": 127.966,
+            "text": "credit",
+            "top": 118.466,
+            "x0": 146.233,
+            "x1": 169.461
+          },
+          {
+            "bottom": 127.966,
+            "text": "2",
+            "top": 118.466,
+            "x0": 279.359,
+            "x1": 284.641
+          },
+          {
+            "bottom": 127.966,
+            "text": "($250.00)",
+            "top": 118.466,
+            "x0": 357.34,
+            "x1": 398.0
+          },
+          {
+            "bottom": 127.966,
+            "text": "($500.00)",
+            "top": 118.466,
+            "x0": 495.34,
+            "x1": 536.0
+          },
+          {
+            "bottom": 149.966,
+            "text": "TOTAL",
+            "top": 140.466,
+            "x0": 76.0,
+            "x1": 107.664
+          },
+          {
+            "bottom": 149.966,
+            "text": "$878.75",
+            "top": 140.466,
+            "x0": 501.667,
+            "x1": 536.0
+          },
+          {
+            "bottom": 183.863,
+            "text": "All",
+            "top": 174.863,
+            "x0": 72.0,
+            "x1": 81.999
+          },
+          {
+            "bottom": 183.863,
+            "text": "amounts",
+            "top": 174.863,
+            "x0": 84.501,
+            "x1": 119.016
+          },
+          {
+            "bottom": 183.863,
+            "text": "in",
+            "top": 174.863,
+            "x0": 121.518,
+            "x1": 128.52
+          },
+          {
+            "bottom": 183.863,
+            "text": "USD.",
+            "top": 174.863,
+            "x0": 131.022,
+            "x1": 152.523
+          },
+          {
+            "bottom": 198.363,
+            "text": "Quantities",
+            "top": 189.363,
+            "x0": 72.0,
+            "x1": 112.518
+          },
+          {
+            "bottom": 198.363,
+            "text": "are",
+            "top": 189.363,
+            "x0": 115.02,
+            "x1": 128.025
+          },
+          {
+            "bottom": 198.363,
+            "text": "whole",
+            "top": 189.363,
+            "x0": 130.527,
+            "x1": 154.035
+          },
+          {
+            "bottom": 198.363,
+            "text": "units;",
+            "top": 189.363,
+            "x0": 156.537,
+            "x1": 178.047
+          },
+          {
+            "bottom": 198.363,
+            "text": "negative",
+            "top": 189.363,
+            "x0": 180.549,
+            "x1": 214.569
+          },
+          {
+            "bottom": 198.363,
+            "text": "amounts",
+            "top": 189.363,
+            "x0": 217.071,
+            "x1": 251.586
+          },
+          {
+            "bottom": 198.363,
+            "text": "appear",
+            "top": 189.363,
+            "x0": 254.088,
+            "x1": 282.105
+          },
+          {
+            "bottom": 198.363,
+            "text": "in",
+            "top": 189.363,
+            "x0": 284.607,
+            "x1": 291.609
+          },
+          {
+            "bottom": 198.363,
+            "text": "parentheses.",
+            "top": 189.363,
+            "x0": 294.111,
+            "x1": 346.14
+          },
+          {
+            "bottom": 212.863,
+            "text": "Prepared",
+            "top": 203.863,
+            "x0": 72.0,
+            "x1": 109.017
+          },
+          {
+            "bottom": 212.863,
+            "text": "by",
+            "top": 203.863,
+            "x0": 111.519,
+            "x1": 121.023
+          },
+          {
+            "bottom": 212.863,
+            "text": "the",
+            "top": 203.863,
+            "x0": 123.525,
+            "x1": 136.035
+          },
+          {
+            "bottom": 212.863,
+            "text": "Northbridge",
+            "top": 203.863,
+            "x0": 138.537,
+            "x1": 185.553
+          },
+          {
+            "bottom": 212.863,
+            "text": "Supply",
+            "top": 203.863,
+            "x0": 188.055,
+            "x1": 215.568
+          },
+          {
+            "bottom": 212.863,
+            "text": "Co.",
+            "top": 203.863,
+            "x0": 218.07,
+            "x1": 232.074
+          },
+          {
+            "bottom": 212.863,
+            "text": "billing",
+            "top": 203.863,
+            "x0": 234.576,
+            "x1": 257.58
+          },
+          {
+            "bottom": 212.863,
+            "text": "desk.",
+            "top": 203.863,
+            "x0": 260.082,
+            "x1": 281.592
+          },
+          {
+            "bottom": 757.656,
+            "text": "Northbridge",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 113.792
+          },
+          {
+            "bottom": 757.656,
+            "text": "Supply",
+            "top": 749.656,
+            "x0": 116.016,
+            "x1": 140.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "Co.",
+            "top": 749.656,
+            "x0": 142.696,
+            "x1": 155.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 157.368,
+            "x1": 160.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 162.256,
+            "x1": 193.824
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 196.048,
+            "x1": 217.832
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 4207,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 12,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 102
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 209
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 321
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 515
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 709
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 903
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 971
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1393
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1464
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 2245
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2931
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F08-statement.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "9479c2bd1ca100f6970e09c222e1950e657f00d2c02cab51a4383024adff0238"
+    },
+    "source_sha256": "9479c2bd1ca100f6970e09c222e1950e657f00d2c02cab51a4383024adff0238",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_TABLE",
+    "document_id": "F08",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 3,
+      "page_order": [
+        0,
+        1,
+        2
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0,
+            1,
+            2
+          ],
+          "region_ids": [
+            "p0-body",
+            "p1-body",
+            "p2-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 3,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0,
+              1,
+              2
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      }
+    ],
+    "page_mapping": [
+      0,
+      1,
+      2
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 12,
+            "source_sha256": "9479c2bd1ca100f6970e09c222e1950e657f00d2c02cab51a4383024adff0238"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_fraction": 0.0,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 3,
+            "source": 3
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [],
+            "pdfminer_source": [],
+            "scanner_both_empty": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "numeric_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 4207,
+              "OBJECT_COUNT": 20,
+              "OUTPUT_BYTES": 10464,
+              "PAGE_COUNT": 3
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0,
+            1,
+            2
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}
