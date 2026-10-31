@@ -1,0 +1,1497 @@
+{
+  "artifact": "C3-VALIDATION.json",
+  "check": "C3 verifier-owned stdlib scanner acceptance",
+  "checks": [
+    {
+      "check_id": "C3-IMPORT-AUDIT",
+      "detail": "imports=['__future__', 'argparse', 'hashlib', 'json', 'pathlib', 're']; nonstdlib=[]",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-ALL-FILES",
+      "detail": "scanned=14",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-PDF-SHAPE",
+      "detail": "all fixtures have header, EOF marker, and indirect objects",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-R01-ENCRYPT",
+      "detail": "R01 raw /Encrypt marker",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-R02-SIGNATURE",
+      "detail": "R02 raw signature/ByteRange marker",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-R03-XFA",
+      "detail": "R03 raw /XFA marker",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-R04-ACTIVE",
+      "detail": "R04 raw JavaScript/active marker",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-CLEAN-NO-REFUSAL-MARKERS",
+      "detail": "clean_ids=['F01', 'F02', 'F03', 'F04', 'F05', 'F06', 'F07', 'F08', 'B01', 'B02']",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-MANIFEST-HASH-DIFF",
+      "detail": "scanner hashes match all authoritative manifest hashes",
+      "status": "PASS"
+    },
+    {
+      "check_id": "C3-NAVIGATION-INVENTORY",
+      "detail": "B02 navigation={'outline_marker_count': 2, 'destination_marker_count': 4, 'link_annotation_count': 1}",
+      "status": "PASS"
+    }
+  ],
+  "independence": {
+    "builder_lineages": [
+      "REPORTLAB",
+      "PYPDF"
+    ],
+    "decisive_use_limit": "May independently corroborate G1/G6/G8 observations; cannot render, decrypt, execute, or repair.",
+    "nonstdlib_imports": [],
+    "scanner_lineage": "CPYTHON_STDLIB_RAW_BYTES"
+  },
+  "scans": {
+    "B01": {
+      "bytes": 3623,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 15,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 102
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 209
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 321
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 516
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 711
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 800
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1218
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1289
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1406
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1496
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1599
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1691
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 1757
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 2567
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 0,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/B01-clean.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "1fad93c654fdb14c205719ac8bea7eddecc895b0461736ca2e103dc4e0e611ca"
+    },
+    "B02": {
+      "bytes": 3411,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 15,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 102
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 209
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 321
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 469
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 682
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 877
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 966
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1389
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1462
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1579
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1676
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1772
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 1838
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 2478
+        }
+      ],
+      "markers": {
+        "annotations": 1,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 1,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 1,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/B02-clean-navigation.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "1bedc9c90ce384acccd48c8d9609b35ca6f0bd5bbd714ac9bb7fe8c1da094a71"
+    },
+    "F01": {
+      "bytes": 3762,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 12,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 122
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 229
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 341
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 450
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 555
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 750
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 945
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1014
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1413
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1479
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2581
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F01-memo.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "203f751515606c543d1d730e707345ef3f3d270a23e1fedc53dc12d147a50ec7"
+    },
+    "F02": {
+      "bytes": 2721,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 9,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 112
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 219
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 327
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 436
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 629
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 697
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1103
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1162
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F02-letter.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "bbe15b2e7fa10f213f9876699db55513d9b66cebd59a3b5e1054e6f3621171ea"
+    },
+    "F03": {
+      "bytes": 4396,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 18,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 132
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 239
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 347
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 459
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 564
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 759
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 868
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1063
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1149
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1560
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1634
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1722
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 1830
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 1936
+        },
+        {
+          "generation": 0,
+          "object": 16,
+          "offset": 2036
+        },
+        {
+          "generation": 0,
+          "object": 17,
+          "offset": 2102
+        },
+        {
+          "generation": 0,
+          "object": 18,
+          "offset": 2984
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 0,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F03-report.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "54b84a8b39562705b6c9bf77f8a4cb22619d49298f944bb3533bafc04acda683"
+    },
+    "F04": {
+      "bytes": 2719,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 10,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 122
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 229
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 337
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 446
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 558
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 752
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 820
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1247
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1306
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F04-agenda.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "46e1e1ab8b415ffc1b38188ba0f948d617f83c084d1d852136d68e0c5fca4def"
+    },
+    "F05": {
+      "bytes": 5334,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 13,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 112
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 219
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 327
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 439
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 634
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 829
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1024
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1093
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1505
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1577
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2759
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 3769
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F05-article.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "888e283dca1174834cae8bc62ea45ca56435ed92cbb4b54f0b200f4fda3437ef"
+    },
+    "F06": {
+      "bytes": 4961,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 13,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 112
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 219
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 327
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 522
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 634
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 829
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1024
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1093
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1526
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1598
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2619
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 3610
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F06-column-report.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "6ba966997b869ed5ea90c39e29b8f6979ac21d7439f0aac99ba496fa5c75dde9"
+    },
+    "F07": {
+      "bytes": 6969,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 21,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 122
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 229
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 341
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 449
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 644
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 839
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 948
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1143
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1338
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1429
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1853
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1927
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 2029
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 2150
+        },
+        {
+          "generation": 0,
+          "object": 16,
+          "offset": 2264
+        },
+        {
+          "generation": 0,
+          "object": 17,
+          "offset": 2371
+        },
+        {
+          "generation": 0,
+          "object": 18,
+          "offset": 2449
+        },
+        {
+          "generation": 0,
+          "object": 19,
+          "offset": 3175
+        },
+        {
+          "generation": 0,
+          "object": 20,
+          "offset": 4433
+        },
+        {
+          "generation": 0,
+          "object": 21,
+          "offset": 5458
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 0,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F07-dense-report.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "9021c2194f106e5ba2b5c38b423985d96b90377e5f61305f8fbddf859d790503"
+    },
+    "F08": {
+      "bytes": 4207,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 12,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 102
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 209
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 321
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 515
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 709
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 903
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 971
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1393
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1464
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 2245
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2931
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F08-statement.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "9479c2bd1ca100f6970e09c222e1950e657f00d2c02cab51a4383024adff0238"
+    },
+    "R01": {
+      "bytes": 1856,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 10,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 15
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 59
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 118
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 183
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 372
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 929
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 970
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1077
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1189
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1210
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 1,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 1,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 1
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/R01-encrypted.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": true,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "f101e7a3e1f56387461048993720af23005b50ef6b8755a1c211af4f79c6c9ca"
+    },
+    "R02": {
+      "bytes": 2314,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 12,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 15
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 54
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 113
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 195
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 403
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 926
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 967
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1074
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1186
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1207
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1714
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1833
+        }
+      ],
+      "markers": {
+        "annotations": 1,
+        "byte_range": 1,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 1,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 2,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 1
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/R02-signed.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": true,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "838ae03261655403fd5421337d2e5d33eee853f6999e55709c06cab2d3f735c7"
+    },
+    "R03": {
+      "bytes": 1861,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 11,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 15
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 54
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 113
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 195
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 384
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 900
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 941
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1048
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1160
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1181
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1392
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 1,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 1
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 1
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/R03-xfa.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": true
+      },
+      "sha256": "977ec97893ca54e35d2b3c3fb4d9c13fa4b6aa797eb7b9144b062d916855fcd6"
+    },
+    "R04": {
+      "bytes": 1877,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 11,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 15
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 54
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 113
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 197
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 397
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 960
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 1001
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1108
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1220
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1241
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1366
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 4,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 1,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 1
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/R04-active.pdf",
+      "refusal_detection": {
+        "active_content": true,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "a2fb30725e18db32a755fa3c4e56afff2c46b0d6330547e2d14c528f4ddaea42"
+    }
+  },
+  "scope": "read-only raw-byte inventory and marker cross-check; never a sole semantic proof",
+  "status": "PASS"
+}
