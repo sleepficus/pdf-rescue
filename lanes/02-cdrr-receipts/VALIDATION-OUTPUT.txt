@@ -1,0 +1,52 @@
+INFO: lane: 02-cdrr-receipts
+INFO: validation run (UTC): 2026-09-29T17:04:41Z
+INFO: python: 3.12.14
+PASS: CDRR-SCHEMA.json loads as valid JSON
+PASS: RECEIPT-SCHEMA.json loads as valid JSON
+PASS: fixtures/broken-cdrr-bad-gate-enum.json loads as valid JSON
+PASS: fixtures/broken-cdrr-refuse-shape.json loads as valid JSON
+PASS: fixtures/broken-experiment-receipt-empty-conditions.json loads as valid JSON
+PASS: fixtures/broken-run-receipt-temp-reuse.json loads as valid JSON
+PASS: fixtures/sample-cdrr-accept.json loads as valid JSON
+PASS: fixtures/sample-cdrr-refused.json loads as valid JSON
+PASS: fixtures/sample-experiment-receipt.json loads as valid JSON
+PASS: fixtures/sample-operation-record.json loads as valid JSON
+PASS: fixtures/sample-run-receipt.json loads as valid JSON
+PASS: fixtures/sample-verifier-record-not-exercised.json loads as valid JSON
+INFO: jsonschema importable: NO (falling back to the stdlib structural validator)
+INFO: validator path: stdlib minimal structural validator (fallback)
+PASS: fixtures/sample-cdrr-accept.json validates against CDRR-SCHEMA.json [fallback]
+PASS: fixtures/sample-cdrr-refused.json validates against CDRR-SCHEMA.json [fallback]
+PASS: fixtures/sample-operation-record.json validates against RECEIPT-SCHEMA.json [fallback]
+PASS: fixtures/sample-verifier-record-not-exercised.json validates against RECEIPT-SCHEMA.json [fallback]
+PASS: fixtures/sample-run-receipt.json validates against RECEIPT-SCHEMA.json [fallback]
+PASS: fixtures/sample-experiment-receipt.json validates against RECEIPT-SCHEMA.json [fallback]
+PASS: fixtures/broken-cdrr-bad-gate-enum.json correctly REJECTED by CDRR-SCHEMA.json [fallback]
+PASS: fixtures/broken-cdrr-refuse-shape.json correctly REJECTED by CDRR-SCHEMA.json [fallback]
+PASS: fixtures/broken-run-receipt-temp-reuse.json correctly REJECTED by RECEIPT-SCHEMA.json [fallback]
+PASS: fixtures/broken-experiment-receipt-empty-conditions.json correctly REJECTED by RECEIPT-SCHEMA.json [fallback]
+PASS: refused fixture records final_disposition REFUSE
+PASS: refused fixture: section source_inventory present with status NOT_EXERCISED
+PASS: refused fixture: section pages present with status NOT_EXERCISED
+PASS: refused fixture: section pages records explicitly empty
+PASS: refused fixture: section text_spans present with status NOT_EXERCISED
+PASS: refused fixture: section text_spans records explicitly empty
+PASS: refused fixture: section structure present with status NOT_EXERCISED
+PASS: refused fixture: section structure records explicitly empty
+PASS: refused fixture: section tables present with status NOT_EXERCISED
+PASS: refused fixture: section tables records explicitly empty
+PASS: refused fixture: section visible_ink present with status NOT_EXERCISED
+PASS: refused fixture: section operation_plan present with status NOT_EXERCISED
+PASS: refused fixture: section operation_plan records explicitly empty
+PASS: refused fixture: section applied_operations present with status NOT_EXERCISED
+PASS: refused fixture: section applied_operations records explicitly empty
+PASS: refused fixture: section delta_reconciliation present with status NOT_EXERCISED
+PASS: refused fixture: section delta_reconciliation records explicitly empty
+PASS: refused fixture: navigation arrays explicitly empty
+PASS: INVARIANTS.md defines all 24 expected invariant ids (INV-01..INV-24)
+PASS: every INVARIANTS.md invariant id appears inside CDRR-SCHEMA.json (descriptions / x-invariants-registry)
+PASS: CDRR-SCHEMA.json x-invariants-registry table lists all 24 invariant ids
+PASS: every INVARIANTS.md invariant id appears inside RECEIPT-SCHEMA.json (descriptions / x-invariants-registry)
+PASS: RECEIPT-SCHEMA.json x-invariants-registry table lists all 24 invariant ids
+INFO: checks run: 45, failures: 0
+INFO: OVERALL: PASS
