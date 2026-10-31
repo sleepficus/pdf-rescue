@@ -1,0 +1,5502 @@
+{
+  "build": {
+    "candidate_bytes": 14804,
+    "candidate_sha256": "9083dd0fd3c5e6b69915bcc8ecb9bf6e86b7d8fe8716d10ea58e421b4296ced1",
+    "document_id": "F07",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS"
+    ],
+    "page_count": 4,
+    "source_sha256": "9021c2194f106e5ba2b5c38b423985d96b90377e5f61305f8fbddf859d790503",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F07-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F07",
+  "intake": {
+    "class_label": "TEXT_MULTI_COLUMN",
+    "document_id": "F07",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 6969,
+    "filename": "F07-dense-report.pdf",
+    "navigation": {
+      "destination_marker_count": 4,
+      "link_annotation_count": 0,
+      "outline_marker_count": 2
+    },
+    "object_count": 21,
+    "page_count": 4,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "3",
+          "2027",
+          "1:",
+          "2",
+          "2:",
+          "2",
+          "3:",
+          "3",
+          "4:",
+          "4",
+          "2027",
+          "1",
+          "4"
+        ],
+        "page_index": 0,
+        "reading_text": "Alder Grange Estate Trust - Restoration Programme Report Draft 3\nRestoration Programme Report\nAlder Grange Estate Trust - trustees' draft, February 2027\nContents\nSection 1: Background - page 2\nSection 2: Condition survey - page 2\nSection 3: Cost plan - page 3\nSection 4: Recommendations - page 4\nThis report is a trustees' working draft for the 2027 restoration programme at Alder Grange, a fictional\ncountry estate used here as fixture material. It sets out the background to the programme, the findings of\nthe condition survey, the cost plan, and the recommendations the trustees are asked to approve.\nConfidential draft for trustees - synthetic fixture Page 1 of 4",
+        "rotation": 0,
+        "tokens": [
+          "Alder",
+          "Grange",
+          "Estate",
+          "Trust",
+          "-",
+          "Restoration",
+          "Programme",
+          "Report",
+          "Draft",
+          "3",
+          "Restoration",
+          "Programme",
+          "Report",
+          "Alder",
+          "Grange",
+          "Estate",
+          "Trust",
+          "-",
+          "trustees'",
+          "draft,",
+          "February",
+          "2027",
+          "Contents",
+          "Section",
+          "1:",
+          "Background",
+          "-",
+          "page",
+          "2",
+          "Section",
+          "2:",
+          "Condition",
+          "survey",
+          "-",
+          "page",
+          "2",
+          "Section",
+          "3:",
+          "Cost",
+          "plan",
+          "-",
+          "page",
+          "3",
+          "Section",
+          "4:",
+          "Recommendations",
+          "-",
+          "page",
+          "4",
+          "This",
+          "report",
+          "is",
+          "a",
+          "trustees'",
+          "working",
+          "draft",
+          "for",
+          "the",
+          "2027",
+          "restoration",
+          "programme",
+          "at",
+          "Alder",
+          "Grange,",
+          "a",
+          "fictional",
+          "country",
+          "estate",
+          "used",
+          "here",
+          "as",
+          "fixture",
+          "material.",
+          "It",
+          "sets",
+          "out",
+          "the",
+          "background",
+          "to",
+          "the",
+          "programme,",
+          "the",
+          "findings",
+          "of",
+          "the",
+          "condition",
+          "survey,",
+          "the",
+          "cost",
+          "plan,",
+          "and",
+          "the",
+          "recommendations",
+          "the",
+          "trustees",
+          "are",
+          "asked",
+          "to",
+          "approve.",
+          "Confidential",
+          "draft",
+          "for",
+          "trustees",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "1",
+          "of",
+          "4"
+        ],
+        "words": [
+          {
+            "bottom": 41.76,
+            "text": "Alder",
+            "top": 33.26,
+            "x0": 72.0,
+            "x1": 93.726
+          },
+          {
+            "bottom": 41.76,
+            "text": "Grange",
+            "top": 33.26,
+            "x0": 96.089,
+            "x1": 125.847
+          },
+          {
+            "bottom": 41.76,
+            "text": "Estate",
+            "top": 33.26,
+            "x0": 128.21,
+            "x1": 153.719
+          },
+          {
+            "bottom": 41.76,
+            "text": "Trust",
+            "top": 33.26,
+            "x0": 156.082,
+            "x1": 177.332
+          },
+          {
+            "bottom": 41.76,
+            "text": "-",
+            "top": 33.26,
+            "x0": 179.695,
+            "x1": 182.525
+          },
+          {
+            "bottom": 41.76,
+            "text": "Restoration",
+            "top": 33.26,
+            "x0": 184.888,
+            "x1": 232.114
+          },
+          {
+            "bottom": 41.76,
+            "text": "Programme",
+            "top": 33.26,
+            "x0": 234.477,
+            "x1": 281.712
+          },
+          {
+            "bottom": 41.76,
+            "text": "Report",
+            "top": 33.26,
+            "x0": 284.075,
+            "x1": 311.462
+          },
+          {
+            "bottom": 41.76,
+            "text": "Draft",
+            "top": 33.26,
+            "x0": 514.491,
+            "x1": 532.911
+          },
+          {
+            "bottom": 41.76,
+            "text": "3",
+            "top": 33.26,
+            "x0": 535.274,
+            "x1": 540.0
+          },
+          {
+            "bottom": 91.038,
+            "text": "Restoration",
+            "top": 77.038,
+            "x0": 72.0,
+            "x1": 141.986
+          },
+          {
+            "bottom": 91.038,
+            "text": "Programme",
+            "top": 77.038,
+            "x0": 145.486,
+            "x1": 217.012
+          },
+          {
+            "bottom": 91.038,
+            "text": "Report",
+            "top": 77.038,
+            "x0": 220.512,
+            "x1": 262.498
+          },
+          {
+            "bottom": 108.07,
+            "text": "Alder",
+            "top": 98.07,
+            "x0": 72.0,
+            "x1": 95.34
+          },
+          {
+            "bottom": 108.07,
+            "text": "Grange",
+            "top": 98.07,
+            "x0": 98.12,
+            "x1": 131.47
+          },
+          {
+            "bottom": 108.07,
+            "text": "Estate",
+            "top": 98.07,
+            "x0": 134.25,
+            "x1": 162.6
+          },
+          {
+            "bottom": 108.07,
+            "text": "Trust",
+            "top": 98.07,
+            "x0": 165.38,
+            "x1": 188.16
+          },
+          {
+            "bottom": 108.07,
+            "text": "-",
+            "top": 98.07,
+            "x0": 190.94,
+            "x1": 194.27
+          },
+          {
+            "bottom": 108.07,
+            "text": "trustees'",
+            "top": 98.07,
+            "x0": 197.05,
+            "x1": 234.53
+          },
+          {
+            "bottom": 108.07,
+            "text": "draft,",
+            "top": 98.07,
+            "x0": 237.31,
+            "x1": 260.1
+          },
+          {
+            "bottom": 108.07,
+            "text": "February",
+            "top": 98.07,
+            "x0": 262.88,
+            "x1": 302.89
+          },
+          {
+            "bottom": 108.07,
+            "text": "2027",
+            "top": 98.07,
+            "x0": 305.67,
+            "x1": 327.91
+          },
+          {
+            "bottom": 133.38,
+            "text": "Contents",
+            "top": 121.88,
+            "x0": 72.0,
+            "x1": 121.829
+          },
+          {
+            "bottom": 151.07,
+            "text": "Section",
+            "top": 141.07,
+            "x0": 72.0,
+            "x1": 105.35
+          },
+          {
+            "bottom": 151.07,
+            "text": "1:",
+            "top": 141.07,
+            "x0": 108.13,
+            "x1": 116.47
+          },
+          {
+            "bottom": 151.07,
+            "text": "Background",
+            "top": 141.07,
+            "x0": 119.25,
+            "x1": 172.61
+          },
+          {
+            "bottom": 151.07,
+            "text": "-",
+            "top": 141.07,
+            "x0": 175.39,
+            "x1": 178.72
+          },
+          {
+            "bottom": 151.07,
+            "text": "page",
+            "top": 141.07,
+            "x0": 181.5,
+            "x1": 203.74
+          },
+          {
+            "bottom": 151.07,
+            "text": "2",
+            "top": 141.07,
+            "x0": 206.52,
+            "x1": 212.08
+          },
+          {
+            "bottom": 166.57,
+            "text": "Section",
+            "top": 156.57,
+            "x0": 72.0,
+            "x1": 105.35
+          },
+          {
+            "bottom": 166.57,
+            "text": "2:",
+            "top": 156.57,
+            "x0": 108.13,
+            "x1": 116.47
+          },
+          {
+            "bottom": 166.57,
+            "text": "Condition",
+            "top": 156.57,
+            "x0": 119.25,
+            "x1": 161.49
+          },
+          {
+            "bottom": 166.57,
+            "text": "survey",
+            "top": 156.57,
+            "x0": 164.27,
+            "x1": 193.72
+          },
+          {
+            "bottom": 166.57,
+            "text": "-",
+            "top": 156.57,
+            "x0": 196.5,
+            "x1": 199.83
+          },
+          {
+            "bottom": 166.57,
+            "text": "page",
+            "top": 156.57,
+            "x0": 202.61,
+            "x1": 224.85
+          },
+          {
+            "bottom": 166.57,
+            "text": "2",
+            "top": 156.57,
+            "x0": 227.63,
+            "x1": 233.19
+          },
+          {
+            "bottom": 182.07,
+            "text": "Section",
+            "top": 172.07,
+            "x0": 72.0,
+            "x1": 105.35
+          },
+          {
+            "bottom": 182.07,
+            "text": "3:",
+            "top": 172.07,
+            "x0": 108.13,
+            "x1": 116.47
+          },
+          {
+            "bottom": 182.07,
+            "text": "Cost",
+            "top": 172.07,
+            "x0": 119.25,
+            "x1": 139.81
+          },
+          {
+            "bottom": 182.07,
+            "text": "plan",
+            "top": 172.07,
+            "x0": 142.59,
+            "x1": 161.49
+          },
+          {
+            "bottom": 182.07,
+            "text": "-",
+            "top": 172.07,
+            "x0": 164.27,
+            "x1": 167.6
+          },
+          {
+            "bottom": 182.07,
+            "text": "page",
+            "top": 172.07,
+            "x0": 170.38,
+            "x1": 192.62
+          },
+          {
+            "bottom": 182.07,
+            "text": "3",
+            "top": 172.07,
+            "x0": 195.4,
+            "x1": 200.96
+          },
+          {
+            "bottom": 197.57,
+            "text": "Section",
+            "top": 187.57,
+            "x0": 72.0,
+            "x1": 105.35
+          },
+          {
+            "bottom": 197.57,
+            "text": "4:",
+            "top": 187.57,
+            "x0": 108.13,
+            "x1": 116.47
+          },
+          {
+            "bottom": 197.57,
+            "text": "Recommendations",
+            "top": 187.57,
+            "x0": 119.25,
+            "x1": 202.61
+          },
+          {
+            "bottom": 197.57,
+            "text": "-",
+            "top": 187.57,
+            "x0": 205.39,
+            "x1": 208.72
+          },
+          {
+            "bottom": 197.57,
+            "text": "page",
+            "top": 187.57,
+            "x0": 211.5,
+            "x1": 233.74
+          },
+          {
+            "bottom": 197.57,
+            "text": "4",
+            "top": 187.57,
+            "x0": 236.52,
+            "x1": 242.08
+          },
+          {
+            "bottom": 221.07,
+            "text": "This",
+            "top": 211.07,
+            "x0": 72.0,
+            "x1": 90.89
+          },
+          {
+            "bottom": 221.07,
+            "text": "report",
+            "top": 211.07,
+            "x0": 93.67,
+            "x1": 119.79
+          },
+          {
+            "bottom": 221.07,
+            "text": "is",
+            "top": 211.07,
+            "x0": 122.57,
+            "x1": 129.79
+          },
+          {
+            "bottom": 221.07,
+            "text": "a",
+            "top": 211.07,
+            "x0": 132.57,
+            "x1": 138.13
+          },
+          {
+            "bottom": 221.07,
+            "text": "trustees'",
+            "top": 211.07,
+            "x0": 140.91,
+            "x1": 178.39
+          },
+          {
+            "bottom": 221.07,
+            "text": "working",
+            "top": 211.07,
+            "x0": 181.17,
+            "x1": 215.62
+          },
+          {
+            "bottom": 221.07,
+            "text": "draft",
+            "top": 211.07,
+            "x0": 218.4,
+            "x1": 238.41
+          },
+          {
+            "bottom": 221.07,
+            "text": "for",
+            "top": 211.07,
+            "x0": 241.19,
+            "x1": 252.86
+          },
+          {
+            "bottom": 221.07,
+            "text": "the",
+            "top": 211.07,
+            "x0": 255.64,
+            "x1": 269.54
+          },
+          {
+            "bottom": 221.07,
+            "text": "2027",
+            "top": 211.07,
+            "x0": 272.32,
+            "x1": 294.56
+          },
+          {
+            "bottom": 221.07,
+            "text": "restoration",
+            "top": 211.07,
+            "x0": 297.34,
+            "x1": 344.58
+          },
+          {
+            "bottom": 221.07,
+            "text": "programme",
+            "top": 211.07,
+            "x0": 347.36,
+            "x1": 398.48
+          },
+          {
+            "bottom": 221.07,
+            "text": "at",
+            "top": 211.07,
+            "x0": 401.26,
+            "x1": 409.6
+          },
+          {
+            "bottom": 221.07,
+            "text": "Alder",
+            "top": 211.07,
+            "x0": 412.38,
+            "x1": 435.72
+          },
+          {
+            "bottom": 221.07,
+            "text": "Grange,",
+            "top": 211.07,
+            "x0": 438.5,
+            "x1": 474.63
+          },
+          {
+            "bottom": 221.07,
+            "text": "a",
+            "top": 211.07,
+            "x0": 477.41,
+            "x1": 482.97
+          },
+          {
+            "bottom": 221.07,
+            "text": "fictional",
+            "top": 211.07,
+            "x0": 485.75,
+            "x1": 519.65
+          },
+          {
+            "bottom": 233.57,
+            "text": "country",
+            "top": 223.57,
+            "x0": 72.0,
+            "x1": 104.79
+          },
+          {
+            "bottom": 233.57,
+            "text": "estate",
+            "top": 223.57,
+            "x0": 107.57,
+            "x1": 134.81
+          },
+          {
+            "bottom": 233.57,
+            "text": "used",
+            "top": 223.57,
+            "x0": 137.59,
+            "x1": 159.27
+          },
+          {
+            "bottom": 233.57,
+            "text": "here",
+            "top": 223.57,
+            "x0": 162.05,
+            "x1": 182.06
+          },
+          {
+            "bottom": 233.57,
+            "text": "as",
+            "top": 223.57,
+            "x0": 184.84,
+            "x1": 195.4
+          },
+          {
+            "bottom": 233.57,
+            "text": "fixture",
+            "top": 223.57,
+            "x0": 198.18,
+            "x1": 225.41
+          },
+          {
+            "bottom": 233.57,
+            "text": "material.",
+            "top": 223.57,
+            "x0": 228.19,
+            "x1": 266.53
+          },
+          {
+            "bottom": 233.57,
+            "text": "It",
+            "top": 223.57,
+            "x0": 269.31,
+            "x1": 274.87
+          },
+          {
+            "bottom": 233.57,
+            "text": "sets",
+            "top": 223.57,
+            "x0": 277.65,
+            "x1": 295.99
+          },
+          {
+            "bottom": 233.57,
+            "text": "out",
+            "top": 223.57,
+            "x0": 298.77,
+            "x1": 312.67
+          },
+          {
+            "bottom": 233.57,
+            "text": "the",
+            "top": 223.57,
+            "x0": 315.45,
+            "x1": 329.35
+          },
+          {
+            "bottom": 233.57,
+            "text": "background",
+            "top": 223.57,
+            "x0": 332.13,
+            "x1": 384.38
+          },
+          {
+            "bottom": 233.57,
+            "text": "to",
+            "top": 223.57,
+            "x0": 387.16,
+            "x1": 395.5
+          },
+          {
+            "bottom": 233.57,
+            "text": "the",
+            "top": 223.57,
+            "x0": 398.28,
+            "x1": 412.18
+          },
+          {
+            "bottom": 233.57,
+            "text": "programme,",
+            "top": 223.57,
+            "x0": 414.96,
+            "x1": 468.86
+          },
+          {
+            "bottom": 233.57,
+            "text": "the",
+            "top": 223.57,
+            "x0": 471.64,
+            "x1": 485.54
+          },
+          {
+            "bottom": 233.57,
+            "text": "findings",
+            "top": 223.57,
+            "x0": 488.32,
+            "x1": 522.78
+          },
+          {
+            "bottom": 233.57,
+            "text": "of",
+            "top": 223.57,
+            "x0": 525.56,
+            "x1": 533.9
+          },
+          {
+            "bottom": 246.07,
+            "text": "the",
+            "top": 236.07,
+            "x0": 72.0,
+            "x1": 85.9
+          },
+          {
+            "bottom": 246.07,
+            "text": "condition",
+            "top": 236.07,
+            "x0": 88.68,
+            "x1": 128.7
+          },
+          {
+            "bottom": 246.07,
+            "text": "survey,",
+            "top": 236.07,
+            "x0": 131.48,
+            "x1": 163.71
+          },
+          {
+            "bottom": 246.07,
+            "text": "the",
+            "top": 236.07,
+            "x0": 166.49,
+            "x1": 180.39
+          },
+          {
+            "bottom": 246.07,
+            "text": "cost",
+            "top": 236.07,
+            "x0": 183.17,
+            "x1": 201.51
+          },
+          {
+            "bottom": 246.07,
+            "text": "plan,",
+            "top": 236.07,
+            "x0": 204.29,
+            "x1": 225.97
+          },
+          {
+            "bottom": 246.07,
+            "text": "and",
+            "top": 236.07,
+            "x0": 228.75,
+            "x1": 245.43
+          },
+          {
+            "bottom": 246.07,
+            "text": "the",
+            "top": 236.07,
+            "x0": 248.21,
+            "x1": 262.11
+          },
+          {
+            "bottom": 246.07,
+            "text": "recommendations",
+            "top": 236.07,
+            "x0": 264.89,
+            "x1": 344.36
+          },
+          {
+            "bottom": 246.07,
+            "text": "the",
+            "top": 236.07,
+            "x0": 347.14,
+            "x1": 361.04
+          },
+          {
+            "bottom": 246.07,
+            "text": "trustees",
+            "top": 236.07,
+            "x0": 363.82,
+            "x1": 399.39
+          },
+          {
+            "bottom": 246.07,
+            "text": "are",
+            "top": 236.07,
+            "x0": 402.17,
+            "x1": 416.62
+          },
+          {
+            "bottom": 246.07,
+            "text": "asked",
+            "top": 236.07,
+            "x0": 419.4,
+            "x1": 446.08
+          },
+          {
+            "bottom": 246.07,
+            "text": "to",
+            "top": 236.07,
+            "x0": 448.86,
+            "x1": 457.2
+          },
+          {
+            "bottom": 246.07,
+            "text": "approve.",
+            "top": 236.07,
+            "x0": 459.98,
+            "x1": 498.89
+          },
+          {
+            "bottom": 757.656,
+            "text": "Confidential",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 114.24
+          },
+          {
+            "bottom": 757.656,
+            "text": "draft",
+            "top": 749.656,
+            "x0": 116.464,
+            "x1": 132.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "for",
+            "top": 749.656,
+            "x0": 134.696,
+            "x1": 144.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "trustees",
+            "top": 749.656,
+            "x0": 146.256,
+            "x1": 174.712
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 176.936,
+            "x1": 179.6
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 181.824,
+            "x1": 213.392
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 215.616,
+            "x1": 237.4
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "4",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "3",
+          "1:",
+          "1897",
+          "1974.",
+          "1998.",
+          "2027",
+          "2029,",
+          "2:",
+          "2026",
+          "3 (",
+          "3),",
+          "2",
+          "4"
+        ],
+        "page_index": 1,
+        "reading_text": "Alder Grange Estate Trust - Restoration Programme Report Draft 3\nSection 1: Background\nAlder Grange was built in 1897 for the Vane family and passed to the trust in 1974. The estate comprises\nthe main house, two cotenanted lodges, a walled garden, and forty-one rooms of varying condition across\nthree floors. The trust has maintained the roof and services on an annual cycle, but no major restoration\nhas been undertaken since 1998.\nThe 2027 programme responds to two pressures. Rainwater goods and roof coverings have reached the\nend of their service life, and the trust has committed to opening the east wing to visitors by the summer of\n2029, which requires fire and access works that cannot be deferred.\nSection 2: Condition survey\nThe condition survey was carried out in November 2026 over eleven survey days and covered all\nforty-one rooms together with the roof voids. The survey found the roof coverings generally sound but the\nlead flashings at the end of their life, and found localised timber decay in the east wing where gutters\nhave overflowed.\nThe survey report runs to ninety pages and is summarised here. Its central finding, as detailed in Section\n3 (page 3), is that the roof programme dominates the cost plan and should be sequenced before any\ninternal works.\nConfidential draft for trustees - synthetic fixture Page 2 of 4",
+        "rotation": 0,
+        "tokens": [
+          "Alder",
+          "Grange",
+          "Estate",
+          "Trust",
+          "-",
+          "Restoration",
+          "Programme",
+          "Report",
+          "Draft",
+          "3",
+          "Section",
+          "1:",
+          "Background",
+          "Alder",
+          "Grange",
+          "was",
+          "built",
+          "in",
+          "1897",
+          "for",
+          "the",
+          "Vane",
+          "family",
+          "and",
+          "passed",
+          "to",
+          "the",
+          "trust",
+          "in",
+          "1974.",
+          "The",
+          "estate",
+          "comprises",
+          "the",
+          "main",
+          "house,",
+          "two",
+          "cotenanted",
+          "lodges,",
+          "a",
+          "walled",
+          "garden,",
+          "and",
+          "forty-one",
+          "rooms",
+          "of",
+          "varying",
+          "condition",
+          "across",
+          "three",
+          "floors.",
+          "The",
+          "trust",
+          "has",
+          "maintained",
+          "the",
+          "roof",
+          "and",
+          "services",
+          "on",
+          "an",
+          "annual",
+          "cycle,",
+          "but",
+          "no",
+          "major",
+          "restoration",
+          "has",
+          "been",
+          "undertaken",
+          "since",
+          "1998.",
+          "The",
+          "2027",
+          "programme",
+          "responds",
+          "to",
+          "two",
+          "pressures.",
+          "Rainwater",
+          "goods",
+          "and",
+          "roof",
+          "coverings",
+          "have",
+          "reached",
+          "the",
+          "end",
+          "of",
+          "their",
+          "service",
+          "life,",
+          "and",
+          "the",
+          "trust",
+          "has",
+          "committed",
+          "to",
+          "opening",
+          "the",
+          "east",
+          "wing",
+          "to",
+          "visitors",
+          "by",
+          "the",
+          "summer",
+          "of",
+          "2029,",
+          "which",
+          "requires",
+          "fire",
+          "and",
+          "access",
+          "works",
+          "that",
+          "cannot",
+          "be",
+          "deferred.",
+          "Section",
+          "2:",
+          "Condition",
+          "survey",
+          "The",
+          "condition",
+          "survey",
+          "was",
+          "carried",
+          "out",
+          "in",
+          "November",
+          "2026",
+          "over",
+          "eleven",
+          "survey",
+          "days",
+          "and",
+          "covered",
+          "all",
+          "forty-one",
+          "rooms",
+          "together",
+          "with",
+          "the",
+          "roof",
+          "voids.",
+          "The",
+          "survey",
+          "found",
+          "the",
+          "roof",
+          "coverings",
+          "generally",
+          "sound",
+          "but",
+          "the",
+          "lead",
+          "flashings",
+          "at",
+          "the",
+          "end",
+          "of",
+          "their",
+          "life,",
+          "and",
+          "found",
+          "localised",
+          "timber",
+          "decay",
+          "in",
+          "the",
+          "east",
+          "wing",
+          "where",
+          "gutters",
+          "have",
+          "overflowed.",
+          "The",
+          "survey",
+          "report",
+          "runs",
+          "to",
+          "ninety",
+          "pages",
+          "and",
+          "is",
+          "summarised",
+          "here.",
+          "Its",
+          "central",
+          "finding,",
+          "as",
+          "detailed",
+          "in",
+          "Section",
+          "3",
+          "(page",
+          "3),",
+          "is",
+          "that",
+          "the",
+          "roof",
+          "programme",
+          "dominates",
+          "the",
+          "cost",
+          "plan",
+          "and",
+          "should",
+          "be",
+          "sequenced",
+          "before",
+          "any",
+          "internal",
+          "works.",
+          "Confidential",
+          "draft",
+          "for",
+          "trustees",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "2",
+          "of",
+          "4"
+        ],
+        "words": [
+          {
+            "bottom": 41.76,
+            "text": "Alder",
+            "top": 33.26,
+            "x0": 72.0,
+            "x1": 93.726
+          },
+          {
+            "bottom": 41.76,
+            "text": "Grange",
+            "top": 33.26,
+            "x0": 96.089,
+            "x1": 125.847
+          },
+          {
+            "bottom": 41.76,
+            "text": "Estate",
+            "top": 33.26,
+            "x0": 128.21,
+            "x1": 153.719
+          },
+          {
+            "bottom": 41.76,
+            "text": "Trust",
+            "top": 33.26,
+            "x0": 156.082,
+            "x1": 177.332
+          },
+          {
+            "bottom": 41.76,
+            "text": "-",
+            "top": 33.26,
+            "x0": 179.695,
+            "x1": 182.525
+          },
+          {
+            "bottom": 41.76,
+            "text": "Restoration",
+            "top": 33.26,
+            "x0": 184.888,
+            "x1": 232.114
+          },
+          {
+            "bottom": 41.76,
+            "text": "Programme",
+            "top": 33.26,
+            "x0": 234.477,
+            "x1": 281.712
+          },
+          {
+            "bottom": 41.76,
+            "text": "Report",
+            "top": 33.26,
+            "x0": 284.075,
+            "x1": 311.462
+          },
+          {
+            "bottom": 41.76,
+            "text": "Draft",
+            "top": 33.26,
+            "x0": 514.491,
+            "x1": 532.911
+          },
+          {
+            "bottom": 41.76,
+            "text": "3",
+            "top": 33.26,
+            "x0": 535.274,
+            "x1": 540.0
+          },
+          {
+            "bottom": 90.484,
+            "text": "Section",
+            "top": 78.484,
+            "x0": 72.0,
+            "x1": 115.344
+          },
+          {
+            "bottom": 90.484,
+            "text": "1:",
+            "top": 78.484,
+            "x0": 118.68,
+            "x1": 129.348
+          },
+          {
+            "bottom": 90.484,
+            "text": "Background",
+            "top": 78.484,
+            "x0": 132.684,
+            "x1": 202.692
+          },
+          {
+            "bottom": 110.07,
+            "text": "Alder",
+            "top": 100.07,
+            "x0": 72.0,
+            "x1": 95.34
+          },
+          {
+            "bottom": 110.07,
+            "text": "Grange",
+            "top": 100.07,
+            "x0": 98.12,
+            "x1": 131.47
+          },
+          {
+            "bottom": 110.07,
+            "text": "was",
+            "top": 100.07,
+            "x0": 134.25,
+            "x1": 152.03
+          },
+          {
+            "bottom": 110.07,
+            "text": "built",
+            "top": 100.07,
+            "x0": 154.81,
+            "x1": 173.15
+          },
+          {
+            "bottom": 110.07,
+            "text": "in",
+            "top": 100.07,
+            "x0": 175.93,
+            "x1": 183.71
+          },
+          {
+            "bottom": 110.07,
+            "text": "1897",
+            "top": 100.07,
+            "x0": 186.49,
+            "x1": 208.73
+          },
+          {
+            "bottom": 110.07,
+            "text": "for",
+            "top": 100.07,
+            "x0": 211.51,
+            "x1": 223.18
+          },
+          {
+            "bottom": 110.07,
+            "text": "the",
+            "top": 100.07,
+            "x0": 225.96,
+            "x1": 239.86
+          },
+          {
+            "bottom": 110.07,
+            "text": "Vane",
+            "top": 100.07,
+            "x0": 242.64,
+            "x1": 265.99
+          },
+          {
+            "bottom": 110.07,
+            "text": "family",
+            "top": 100.07,
+            "x0": 268.77,
+            "x1": 294.88
+          },
+          {
+            "bottom": 110.07,
+            "text": "and",
+            "top": 100.07,
+            "x0": 297.66,
+            "x1": 314.34
+          },
+          {
+            "bottom": 110.07,
+            "text": "passed",
+            "top": 100.07,
+            "x0": 317.12,
+            "x1": 349.36
+          },
+          {
+            "bottom": 110.07,
+            "text": "to",
+            "top": 100.07,
+            "x0": 352.14,
+            "x1": 360.48
+          },
+          {
+            "bottom": 110.07,
+            "text": "the",
+            "top": 100.07,
+            "x0": 363.26,
+            "x1": 377.16
+          },
+          {
+            "bottom": 110.07,
+            "text": "trust",
+            "top": 100.07,
+            "x0": 379.94,
+            "x1": 399.39
+          },
+          {
+            "bottom": 110.07,
+            "text": "in",
+            "top": 100.07,
+            "x0": 402.17,
+            "x1": 409.95
+          },
+          {
+            "bottom": 110.07,
+            "text": "1974.",
+            "top": 100.07,
+            "x0": 412.73,
+            "x1": 437.75
+          },
+          {
+            "bottom": 110.07,
+            "text": "The",
+            "top": 100.07,
+            "x0": 440.53,
+            "x1": 457.76
+          },
+          {
+            "bottom": 110.07,
+            "text": "estate",
+            "top": 100.07,
+            "x0": 460.54,
+            "x1": 487.78
+          },
+          {
+            "bottom": 110.07,
+            "text": "comprises",
+            "top": 100.07,
+            "x0": 490.56,
+            "x1": 536.12
+          },
+          {
+            "bottom": 122.57,
+            "text": "the",
+            "top": 112.57,
+            "x0": 72.0,
+            "x1": 85.9
+          },
+          {
+            "bottom": 122.57,
+            "text": "main",
+            "top": 112.57,
+            "x0": 88.68,
+            "x1": 110.35
+          },
+          {
+            "bottom": 122.57,
+            "text": "house,",
+            "top": 112.57,
+            "x0": 113.13,
+            "x1": 143.15
+          },
+          {
+            "bottom": 122.57,
+            "text": "two",
+            "top": 112.57,
+            "x0": 145.93,
+            "x1": 161.49
+          },
+          {
+            "bottom": 122.57,
+            "text": "cotenanted",
+            "top": 112.57,
+            "x0": 164.27,
+            "x1": 213.75
+          },
+          {
+            "bottom": 122.57,
+            "text": "lodges,",
+            "top": 112.57,
+            "x0": 216.53,
+            "x1": 248.77
+          },
+          {
+            "bottom": 122.57,
+            "text": "a",
+            "top": 112.57,
+            "x0": 251.55,
+            "x1": 257.11
+          },
+          {
+            "bottom": 122.57,
+            "text": "walled",
+            "top": 112.57,
+            "x0": 259.89,
+            "x1": 288.23
+          },
+          {
+            "bottom": 122.57,
+            "text": "garden,",
+            "top": 112.57,
+            "x0": 291.01,
+            "x1": 324.92
+          },
+          {
+            "bottom": 122.57,
+            "text": "and",
+            "top": 112.57,
+            "x0": 327.7,
+            "x1": 344.38
+          },
+          {
+            "bottom": 122.57,
+            "text": "forty-one",
+            "top": 112.57,
+            "x0": 347.16,
+            "x1": 386.62
+          },
+          {
+            "bottom": 122.57,
+            "text": "rooms",
+            "top": 112.57,
+            "x0": 389.4,
+            "x1": 417.18
+          },
+          {
+            "bottom": 122.57,
+            "text": "of",
+            "top": 112.57,
+            "x0": 419.96,
+            "x1": 428.3
+          },
+          {
+            "bottom": 122.57,
+            "text": "varying",
+            "top": 112.57,
+            "x0": 431.08,
+            "x1": 463.31
+          },
+          {
+            "bottom": 122.57,
+            "text": "condition",
+            "top": 112.57,
+            "x0": 466.09,
+            "x1": 506.11
+          },
+          {
+            "bottom": 122.57,
+            "text": "across",
+            "top": 112.57,
+            "x0": 508.89,
+            "x1": 538.34
+          },
+          {
+            "bottom": 135.07,
+            "text": "three",
+            "top": 125.07,
+            "x0": 72.0,
+            "x1": 94.79
+          },
+          {
+            "bottom": 135.07,
+            "text": "floors.",
+            "top": 125.07,
+            "x0": 97.57,
+            "x1": 124.8
+          },
+          {
+            "bottom": 135.07,
+            "text": "The",
+            "top": 125.07,
+            "x0": 127.58,
+            "x1": 144.81
+          },
+          {
+            "bottom": 135.07,
+            "text": "trust",
+            "top": 125.07,
+            "x0": 147.59,
+            "x1": 167.04
+          },
+          {
+            "bottom": 135.07,
+            "text": "has",
+            "top": 125.07,
+            "x0": 169.82,
+            "x1": 185.94
+          },
+          {
+            "bottom": 135.07,
+            "text": "maintained",
+            "top": 125.07,
+            "x0": 188.72,
+            "x1": 237.63
+          },
+          {
+            "bottom": 135.07,
+            "text": "the",
+            "top": 125.07,
+            "x0": 240.41,
+            "x1": 254.31
+          },
+          {
+            "bottom": 135.07,
+            "text": "roof",
+            "top": 125.07,
+            "x0": 257.09,
+            "x1": 274.32
+          },
+          {
+            "bottom": 135.07,
+            "text": "and",
+            "top": 125.07,
+            "x0": 277.1,
+            "x1": 293.78
+          },
+          {
+            "bottom": 135.07,
+            "text": "services",
+            "top": 125.07,
+            "x0": 296.56,
+            "x1": 333.23
+          },
+          {
+            "bottom": 135.07,
+            "text": "on",
+            "top": 125.07,
+            "x0": 336.01,
+            "x1": 347.13
+          },
+          {
+            "bottom": 135.07,
+            "text": "an",
+            "top": 125.07,
+            "x0": 349.91,
+            "x1": 361.03
+          },
+          {
+            "bottom": 135.07,
+            "text": "annual",
+            "top": 125.07,
+            "x0": 363.81,
+            "x1": 393.83
+          },
+          {
+            "bottom": 135.07,
+            "text": "cycle,",
+            "top": 125.07,
+            "x0": 396.61,
+            "x1": 422.17
+          },
+          {
+            "bottom": 135.07,
+            "text": "but",
+            "top": 125.07,
+            "x0": 424.95,
+            "x1": 438.85
+          },
+          {
+            "bottom": 135.07,
+            "text": "no",
+            "top": 125.07,
+            "x0": 441.63,
+            "x1": 452.75
+          },
+          {
+            "bottom": 135.07,
+            "text": "major",
+            "top": 125.07,
+            "x0": 455.53,
+            "x1": 480.53
+          },
+          {
+            "bottom": 135.07,
+            "text": "restoration",
+            "top": 125.07,
+            "x0": 483.31,
+            "x1": 530.55
+          },
+          {
+            "bottom": 147.57,
+            "text": "has",
+            "top": 137.57,
+            "x0": 72.0,
+            "x1": 88.12
+          },
+          {
+            "bottom": 147.57,
+            "text": "been",
+            "top": 137.57,
+            "x0": 90.9,
+            "x1": 113.14
+          },
+          {
+            "bottom": 147.57,
+            "text": "undertaken",
+            "top": 137.57,
+            "x0": 115.92,
+            "x1": 165.95
+          },
+          {
+            "bottom": 147.57,
+            "text": "since",
+            "top": 137.57,
+            "x0": 168.73,
+            "x1": 192.07
+          },
+          {
+            "bottom": 147.57,
+            "text": "1998.",
+            "top": 137.57,
+            "x0": 194.85,
+            "x1": 219.87
+          },
+          {
+            "bottom": 168.07,
+            "text": "The",
+            "top": 158.07,
+            "x0": 72.0,
+            "x1": 89.23
+          },
+          {
+            "bottom": 168.07,
+            "text": "2027",
+            "top": 158.07,
+            "x0": 92.01,
+            "x1": 114.25
+          },
+          {
+            "bottom": 168.07,
+            "text": "programme",
+            "top": 158.07,
+            "x0": 117.03,
+            "x1": 168.15
+          },
+          {
+            "bottom": 168.07,
+            "text": "responds",
+            "top": 158.07,
+            "x0": 170.93,
+            "x1": 212.06
+          },
+          {
+            "bottom": 168.07,
+            "text": "to",
+            "top": 158.07,
+            "x0": 214.84,
+            "x1": 223.18
+          },
+          {
+            "bottom": 168.07,
+            "text": "two",
+            "top": 158.07,
+            "x0": 225.96,
+            "x1": 241.52
+          },
+          {
+            "bottom": 168.07,
+            "text": "pressures.",
+            "top": 158.07,
+            "x0": 244.3,
+            "x1": 290.98
+          },
+          {
+            "bottom": 168.07,
+            "text": "Rainwater",
+            "top": 158.07,
+            "x0": 293.76,
+            "x1": 338.77
+          },
+          {
+            "bottom": 168.07,
+            "text": "goods",
+            "top": 158.07,
+            "x0": 341.55,
+            "x1": 368.79
+          },
+          {
+            "bottom": 168.07,
+            "text": "and",
+            "top": 158.07,
+            "x0": 371.57,
+            "x1": 388.25
+          },
+          {
+            "bottom": 168.07,
+            "text": "roof",
+            "top": 158.07,
+            "x0": 391.03,
+            "x1": 408.26
+          },
+          {
+            "bottom": 168.07,
+            "text": "coverings",
+            "top": 158.07,
+            "x0": 411.04,
+            "x1": 453.83
+          },
+          {
+            "bottom": 168.07,
+            "text": "have",
+            "top": 158.07,
+            "x0": 456.61,
+            "x1": 478.29
+          },
+          {
+            "bottom": 168.07,
+            "text": "reached",
+            "top": 158.07,
+            "x0": 481.07,
+            "x1": 517.2
+          },
+          {
+            "bottom": 168.07,
+            "text": "the",
+            "top": 158.07,
+            "x0": 519.98,
+            "x1": 533.88
+          },
+          {
+            "bottom": 180.57,
+            "text": "end",
+            "top": 170.57,
+            "x0": 72.0,
+            "x1": 88.68
+          },
+          {
+            "bottom": 180.57,
+            "text": "of",
+            "top": 170.57,
+            "x0": 91.46,
+            "x1": 99.8
+          },
+          {
+            "bottom": 180.57,
+            "text": "their",
+            "top": 170.57,
+            "x0": 102.58,
+            "x1": 122.03
+          },
+          {
+            "bottom": 180.57,
+            "text": "service",
+            "top": 170.57,
+            "x0": 124.81,
+            "x1": 156.48
+          },
+          {
+            "bottom": 180.57,
+            "text": "life,",
+            "top": 170.57,
+            "x0": 159.26,
+            "x1": 174.82
+          },
+          {
+            "bottom": 180.57,
+            "text": "and",
+            "top": 170.57,
+            "x0": 177.6,
+            "x1": 194.28
+          },
+          {
+            "bottom": 180.57,
+            "text": "the",
+            "top": 170.57,
+            "x0": 197.06,
+            "x1": 210.96
+          },
+          {
+            "bottom": 180.57,
+            "text": "trust",
+            "top": 170.57,
+            "x0": 213.74,
+            "x1": 233.19
+          },
+          {
+            "bottom": 180.57,
+            "text": "has",
+            "top": 170.57,
+            "x0": 235.97,
+            "x1": 252.09
+          },
+          {
+            "bottom": 180.57,
+            "text": "committed",
+            "top": 170.57,
+            "x0": 254.87,
+            "x1": 300.99
+          },
+          {
+            "bottom": 180.57,
+            "text": "to",
+            "top": 170.57,
+            "x0": 303.77,
+            "x1": 312.11
+          },
+          {
+            "bottom": 180.57,
+            "text": "opening",
+            "top": 170.57,
+            "x0": 314.89,
+            "x1": 350.47
+          },
+          {
+            "bottom": 180.57,
+            "text": "the",
+            "top": 170.57,
+            "x0": 353.25,
+            "x1": 367.15
+          },
+          {
+            "bottom": 180.57,
+            "text": "east",
+            "top": 170.57,
+            "x0": 369.93,
+            "x1": 388.83
+          },
+          {
+            "bottom": 180.57,
+            "text": "wing",
+            "top": 170.57,
+            "x0": 391.61,
+            "x1": 412.17
+          },
+          {
+            "bottom": 180.57,
+            "text": "to",
+            "top": 170.57,
+            "x0": 414.95,
+            "x1": 423.29
+          },
+          {
+            "bottom": 180.57,
+            "text": "visitors",
+            "top": 170.57,
+            "x0": 426.07,
+            "x1": 457.18
+          },
+          {
+            "bottom": 180.57,
+            "text": "by",
+            "top": 170.57,
+            "x0": 459.96,
+            "x1": 470.52
+          },
+          {
+            "bottom": 180.57,
+            "text": "the",
+            "top": 170.57,
+            "x0": 473.3,
+            "x1": 487.2
+          },
+          {
+            "bottom": 180.57,
+            "text": "summer",
+            "top": 170.57,
+            "x0": 489.98,
+            "x1": 526.09
+          },
+          {
+            "bottom": 180.57,
+            "text": "of",
+            "top": 170.57,
+            "x0": 528.87,
+            "x1": 537.21
+          },
+          {
+            "bottom": 193.07,
+            "text": "2029,",
+            "top": 183.07,
+            "x0": 72.0,
+            "x1": 97.02
+          },
+          {
+            "bottom": 193.07,
+            "text": "which",
+            "top": 183.07,
+            "x0": 99.8,
+            "x1": 125.36
+          },
+          {
+            "bottom": 193.07,
+            "text": "requires",
+            "top": 183.07,
+            "x0": 128.14,
+            "x1": 164.26
+          },
+          {
+            "bottom": 193.07,
+            "text": "fire",
+            "top": 183.07,
+            "x0": 167.04,
+            "x1": 180.93
+          },
+          {
+            "bottom": 193.07,
+            "text": "and",
+            "top": 183.07,
+            "x0": 183.71,
+            "x1": 200.39
+          },
+          {
+            "bottom": 193.07,
+            "text": "access",
+            "top": 183.07,
+            "x0": 203.17,
+            "x1": 234.29
+          },
+          {
+            "bottom": 193.07,
+            "text": "works",
+            "top": 183.07,
+            "x0": 237.07,
+            "x1": 263.18
+          },
+          {
+            "bottom": 193.07,
+            "text": "that",
+            "top": 183.07,
+            "x0": 265.96,
+            "x1": 282.64
+          },
+          {
+            "bottom": 193.07,
+            "text": "cannot",
+            "top": 183.07,
+            "x0": 285.42,
+            "x1": 315.44
+          },
+          {
+            "bottom": 193.07,
+            "text": "be",
+            "top": 183.07,
+            "x0": 318.22,
+            "x1": 329.34
+          },
+          {
+            "bottom": 193.07,
+            "text": "deferred.",
+            "top": 183.07,
+            "x0": 332.12,
+            "x1": 372.14
+          },
+          {
+            "bottom": 217.984,
+            "text": "Section",
+            "top": 205.984,
+            "x0": 72.0,
+            "x1": 115.344
+          },
+          {
+            "bottom": 217.984,
+            "text": "2:",
+            "top": 205.984,
+            "x0": 118.68,
+            "x1": 129.348
+          },
+          {
+            "bottom": 217.984,
+            "text": "Condition",
+            "top": 205.984,
+            "x0": 132.684,
+            "x1": 188.676
+          },
+          {
+            "bottom": 217.984,
+            "text": "survey",
+            "top": 205.984,
+            "x0": 192.012,
+            "x1": 230.7
+          },
+          {
+            "bottom": 237.57,
+            "text": "The",
+            "top": 227.57,
+            "x0": 72.0,
+            "x1": 89.23
+          },
+          {
+            "bottom": 237.57,
+            "text": "condition",
+            "top": 227.57,
+            "x0": 92.01,
+            "x1": 132.03
+          },
+          {
+            "bottom": 237.57,
+            "text": "survey",
+            "top": 227.57,
+            "x0": 134.81,
+            "x1": 164.26
+          },
+          {
+            "bottom": 237.57,
+            "text": "was",
+            "top": 227.57,
+            "x0": 167.04,
+            "x1": 184.82
+          },
+          {
+            "bottom": 237.57,
+            "text": "carried",
+            "top": 227.57,
+            "x0": 187.6,
+            "x1": 218.16
+          },
+          {
+            "bottom": 237.57,
+            "text": "out",
+            "top": 227.57,
+            "x0": 220.94,
+            "x1": 234.84
+          },
+          {
+            "bottom": 237.57,
+            "text": "in",
+            "top": 227.57,
+            "x0": 237.62,
+            "x1": 245.4
+          },
+          {
+            "bottom": 237.57,
+            "text": "November",
+            "top": 227.57,
+            "x0": 248.18,
+            "x1": 294.3
+          },
+          {
+            "bottom": 237.57,
+            "text": "2026",
+            "top": 227.57,
+            "x0": 297.08,
+            "x1": 319.32
+          },
+          {
+            "bottom": 237.57,
+            "text": "over",
+            "top": 227.57,
+            "x0": 322.1,
+            "x1": 341.55
+          },
+          {
+            "bottom": 237.57,
+            "text": "eleven",
+            "top": 227.57,
+            "x0": 344.33,
+            "x1": 373.79
+          },
+          {
+            "bottom": 237.57,
+            "text": "survey",
+            "top": 227.57,
+            "x0": 376.57,
+            "x1": 406.02
+          },
+          {
+            "bottom": 237.57,
+            "text": "days",
+            "top": 227.57,
+            "x0": 408.8,
+            "x1": 429.92
+          },
+          {
+            "bottom": 237.57,
+            "text": "and",
+            "top": 227.57,
+            "x0": 432.7,
+            "x1": 449.38
+          },
+          {
+            "bottom": 237.57,
+            "text": "covered",
+            "top": 227.57,
+            "x0": 452.16,
+            "x1": 487.73
+          },
+          {
+            "bottom": 237.57,
+            "text": "all",
+            "top": 227.57,
+            "x0": 490.51,
+            "x1": 500.51
+          },
+          {
+            "bottom": 250.07,
+            "text": "forty-one",
+            "top": 240.07,
+            "x0": 72.0,
+            "x1": 111.46
+          },
+          {
+            "bottom": 250.07,
+            "text": "rooms",
+            "top": 240.07,
+            "x0": 114.24,
+            "x1": 142.02
+          },
+          {
+            "bottom": 250.07,
+            "text": "together",
+            "top": 240.07,
+            "x0": 144.8,
+            "x1": 181.49
+          },
+          {
+            "bottom": 250.07,
+            "text": "with",
+            "top": 240.07,
+            "x0": 184.27,
+            "x1": 202.05
+          },
+          {
+            "bottom": 250.07,
+            "text": "the",
+            "top": 240.07,
+            "x0": 204.83,
+            "x1": 218.73
+          },
+          {
+            "bottom": 250.07,
+            "text": "roof",
+            "top": 240.07,
+            "x0": 221.51,
+            "x1": 238.74
+          },
+          {
+            "bottom": 250.07,
+            "text": "voids.",
+            "top": 240.07,
+            "x0": 241.52,
+            "x1": 267.64
+          },
+          {
+            "bottom": 250.07,
+            "text": "The",
+            "top": 240.07,
+            "x0": 270.42,
+            "x1": 287.65
+          },
+          {
+            "bottom": 250.07,
+            "text": "survey",
+            "top": 240.07,
+            "x0": 290.43,
+            "x1": 319.88
+          },
+          {
+            "bottom": 250.07,
+            "text": "found",
+            "top": 240.07,
+            "x0": 322.66,
+            "x1": 347.68
+          },
+          {
+            "bottom": 250.07,
+            "text": "the",
+            "top": 240.07,
+            "x0": 350.46,
+            "x1": 364.36
+          },
+          {
+            "bottom": 250.07,
+            "text": "roof",
+            "top": 240.07,
+            "x0": 367.14,
+            "x1": 384.37
+          },
+          {
+            "bottom": 250.07,
+            "text": "coverings",
+            "top": 240.07,
+            "x0": 387.15,
+            "x1": 429.94
+          },
+          {
+            "bottom": 250.07,
+            "text": "generally",
+            "top": 240.07,
+            "x0": 432.72,
+            "x1": 473.29
+          },
+          {
+            "bottom": 250.07,
+            "text": "sound",
+            "top": 240.07,
+            "x0": 476.07,
+            "x1": 503.31
+          },
+          {
+            "bottom": 250.07,
+            "text": "but",
+            "top": 240.07,
+            "x0": 506.09,
+            "x1": 519.99
+          },
+          {
+            "bottom": 250.07,
+            "text": "the",
+            "top": 240.07,
+            "x0": 522.77,
+            "x1": 536.67
+          },
+          {
+            "bottom": 262.57,
+            "text": "lead",
+            "top": 252.57,
+            "x0": 72.0,
+            "x1": 90.9
+          },
+          {
+            "bottom": 262.57,
+            "text": "flashings",
+            "top": 252.57,
+            "x0": 93.68,
+            "x1": 133.14
+          },
+          {
+            "bottom": 262.57,
+            "text": "at",
+            "top": 252.57,
+            "x0": 135.92,
+            "x1": 144.26
+          },
+          {
+            "bottom": 262.57,
+            "text": "the",
+            "top": 252.57,
+            "x0": 147.04,
+            "x1": 160.94
+          },
+          {
+            "bottom": 262.57,
+            "text": "end",
+            "top": 252.57,
+            "x0": 163.72,
+            "x1": 180.4
+          },
+          {
+            "bottom": 262.57,
+            "text": "of",
+            "top": 252.57,
+            "x0": 183.18,
+            "x1": 191.52
+          },
+          {
+            "bottom": 262.57,
+            "text": "their",
+            "top": 252.57,
+            "x0": 194.3,
+            "x1": 213.75
+          },
+          {
+            "bottom": 262.57,
+            "text": "life,",
+            "top": 252.57,
+            "x0": 216.53,
+            "x1": 232.09
+          },
+          {
+            "bottom": 262.57,
+            "text": "and",
+            "top": 252.57,
+            "x0": 234.87,
+            "x1": 251.55
+          },
+          {
+            "bottom": 262.57,
+            "text": "found",
+            "top": 252.57,
+            "x0": 254.33,
+            "x1": 279.35
+          },
+          {
+            "bottom": 262.57,
+            "text": "localised",
+            "top": 252.57,
+            "x0": 282.13,
+            "x1": 321.03
+          },
+          {
+            "bottom": 262.57,
+            "text": "timber",
+            "top": 252.57,
+            "x0": 323.81,
+            "x1": 351.59
+          },
+          {
+            "bottom": 262.57,
+            "text": "decay",
+            "top": 252.57,
+            "x0": 354.37,
+            "x1": 381.05
+          },
+          {
+            "bottom": 262.57,
+            "text": "in",
+            "top": 252.57,
+            "x0": 383.83,
+            "x1": 391.61
+          },
+          {
+            "bottom": 262.57,
+            "text": "the",
+            "top": 252.57,
+            "x0": 394.39,
+            "x1": 408.29
+          },
+          {
+            "bottom": 262.57,
+            "text": "east",
+            "top": 252.57,
+            "x0": 411.07,
+            "x1": 429.97
+          },
+          {
+            "bottom": 262.57,
+            "text": "wing",
+            "top": 252.57,
+            "x0": 432.75,
+            "x1": 453.31
+          },
+          {
+            "bottom": 262.57,
+            "text": "where",
+            "top": 252.57,
+            "x0": 456.09,
+            "x1": 483.32
+          },
+          {
+            "bottom": 262.57,
+            "text": "gutters",
+            "top": 252.57,
+            "x0": 486.1,
+            "x1": 516.67
+          },
+          {
+            "bottom": 275.07,
+            "text": "have",
+            "top": 265.07,
+            "x0": 72.0,
+            "x1": 93.68
+          },
+          {
+            "bottom": 275.07,
+            "text": "overflowed.",
+            "top": 265.07,
+            "x0": 96.46,
+            "x1": 147.59
+          },
+          {
+            "bottom": 295.57,
+            "text": "The",
+            "top": 285.57,
+            "x0": 72.0,
+            "x1": 89.23
+          },
+          {
+            "bottom": 295.57,
+            "text": "survey",
+            "top": 285.57,
+            "x0": 92.01,
+            "x1": 121.46
+          },
+          {
+            "bottom": 295.57,
+            "text": "report",
+            "top": 285.57,
+            "x0": 124.24,
+            "x1": 150.36
+          },
+          {
+            "bottom": 295.57,
+            "text": "runs",
+            "top": 285.57,
+            "x0": 153.14,
+            "x1": 172.59
+          },
+          {
+            "bottom": 295.57,
+            "text": "to",
+            "top": 285.57,
+            "x0": 175.37,
+            "x1": 183.71
+          },
+          {
+            "bottom": 295.57,
+            "text": "ninety",
+            "top": 285.57,
+            "x0": 186.49,
+            "x1": 213.17
+          },
+          {
+            "bottom": 295.57,
+            "text": "pages",
+            "top": 285.57,
+            "x0": 215.95,
+            "x1": 243.19
+          },
+          {
+            "bottom": 295.57,
+            "text": "and",
+            "top": 285.57,
+            "x0": 245.97,
+            "x1": 262.65
+          },
+          {
+            "bottom": 295.57,
+            "text": "is",
+            "top": 285.57,
+            "x0": 265.43,
+            "x1": 272.65
+          },
+          {
+            "bottom": 295.57,
+            "text": "summarised",
+            "top": 285.57,
+            "x0": 275.43,
+            "x1": 329.88
+          },
+          {
+            "bottom": 295.57,
+            "text": "here.",
+            "top": 285.57,
+            "x0": 332.66,
+            "x1": 355.45
+          },
+          {
+            "bottom": 295.57,
+            "text": "Its",
+            "top": 285.57,
+            "x0": 358.23,
+            "x1": 368.79
+          },
+          {
+            "bottom": 295.57,
+            "text": "central",
+            "top": 285.57,
+            "x0": 371.57,
+            "x1": 401.58
+          },
+          {
+            "bottom": 295.57,
+            "text": "finding,",
+            "top": 285.57,
+            "x0": 404.36,
+            "x1": 436.6
+          },
+          {
+            "bottom": 295.57,
+            "text": "as",
+            "top": 285.57,
+            "x0": 439.38,
+            "x1": 449.94
+          },
+          {
+            "bottom": 295.57,
+            "text": "detailed",
+            "top": 285.57,
+            "x0": 452.72,
+            "x1": 487.74
+          },
+          {
+            "bottom": 295.57,
+            "text": "in",
+            "top": 285.57,
+            "x0": 490.52,
+            "x1": 498.3
+          },
+          {
+            "bottom": 295.57,
+            "text": "Section",
+            "top": 285.57,
+            "x0": 501.08,
+            "x1": 534.43
+          },
+          {
+            "bottom": 308.07,
+            "text": "3",
+            "top": 298.07,
+            "x0": 72.0,
+            "x1": 77.56
+          },
+          {
+            "bottom": 308.07,
+            "text": "(page",
+            "top": 298.07,
+            "x0": 80.34,
+            "x1": 105.91
+          },
+          {
+            "bottom": 308.07,
+            "text": "3),",
+            "top": 298.07,
+            "x0": 108.69,
+            "x1": 120.36
+          },
+          {
+            "bottom": 308.07,
+            "text": "is",
+            "top": 298.07,
+            "x0": 123.14,
+            "x1": 130.36
+          },
+          {
+            "bottom": 308.07,
+            "text": "that",
+            "top": 298.07,
+            "x0": 133.14,
+            "x1": 149.82
+          },
+          {
+            "bottom": 308.07,
+            "text": "the",
+            "top": 298.07,
+            "x0": 152.6,
+            "x1": 166.5
+          },
+          {
+            "bottom": 308.07,
+            "text": "roof",
+            "top": 298.07,
+            "x0": 169.28,
+            "x1": 186.51
+          },
+          {
+            "bottom": 308.07,
+            "text": "programme",
+            "top": 298.07,
+            "x0": 189.29,
+            "x1": 240.41
+          },
+          {
+            "bottom": 308.07,
+            "text": "dominates",
+            "top": 298.07,
+            "x0": 243.19,
+            "x1": 289.32
+          },
+          {
+            "bottom": 308.07,
+            "text": "the",
+            "top": 298.07,
+            "x0": 292.1,
+            "x1": 306.0
+          },
+          {
+            "bottom": 308.07,
+            "text": "cost",
+            "top": 298.07,
+            "x0": 308.78,
+            "x1": 327.12
+          },
+          {
+            "bottom": 308.07,
+            "text": "plan",
+            "top": 298.07,
+            "x0": 329.9,
+            "x1": 348.8
+          },
+          {
+            "bottom": 308.07,
+            "text": "and",
+            "top": 298.07,
+            "x0": 351.58,
+            "x1": 368.26
+          },
+          {
+            "bottom": 308.07,
+            "text": "should",
+            "top": 298.07,
+            "x0": 371.04,
+            "x1": 400.5
+          },
+          {
+            "bottom": 308.07,
+            "text": "be",
+            "top": 298.07,
+            "x0": 403.28,
+            "x1": 414.4
+          },
+          {
+            "bottom": 308.07,
+            "text": "sequenced",
+            "top": 298.07,
+            "x0": 417.18,
+            "x1": 466.1
+          },
+          {
+            "bottom": 308.07,
+            "text": "before",
+            "top": 298.07,
+            "x0": 468.88,
+            "x1": 497.23
+          },
+          {
+            "bottom": 308.07,
+            "text": "any",
+            "top": 298.07,
+            "x0": 500.01,
+            "x1": 516.13
+          },
+          {
+            "bottom": 320.57,
+            "text": "internal",
+            "top": 310.57,
+            "x0": 72.0,
+            "x1": 104.79
+          },
+          {
+            "bottom": 320.57,
+            "text": "works.",
+            "top": 310.57,
+            "x0": 107.57,
+            "x1": 136.46
+          },
+          {
+            "bottom": 757.656,
+            "text": "Confidential",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 114.24
+          },
+          {
+            "bottom": 757.656,
+            "text": "draft",
+            "top": 749.656,
+            "x0": 116.464,
+            "x1": 132.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "for",
+            "top": 749.656,
+            "x0": 134.696,
+            "x1": 144.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "trustees",
+            "top": 749.656,
+            "x0": 146.256,
+            "x1": 174.712
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 176.936,
+            "x1": 179.6
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 181.824,
+            "x1": 213.392
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 215.616,
+            "x1": 237.4
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "4",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "3",
+          "3:",
+          "2,150,000",
+          "840,000,",
+          "2027",
+          "615,000",
+          "2027,",
+          "3",
+          "4"
+        ],
+        "page_index": 2,
+        "reading_text": "Alder Grange Estate Trust - Restoration Programme Report Draft 3\nSection 3: Cost plan\nThe cost plan prices the roof and rainwater programme at 2,150,000 and the stonework repairs at\n840,000, both at 2027 prices from the trust's quantity surveyor. Internal access and fire works for the east\nwing are priced at 615,000 and are programmed to follow the roof works by one season.\nContingency is held at ten percent of the construction total,\nwhich the quantity surveyor considers adequate given the survey\ncoverage. The main-\ntenance reserve continues at its present level and is not drawn\non by the programme.\nFunding is planned from three sources: the trust's own restoration reserve, a heritage grant application\nsubmitted in January 2027, and a local fundraising appeal. The grant decision is expected in the autumn;\nthe programme can start on the roof regardless of the outcome, at reduced scope if necessary.\nConfidential draft for trustees - synthetic fixture Page 3 of 4",
+        "rotation": 0,
+        "tokens": [
+          "Alder",
+          "Grange",
+          "Estate",
+          "Trust",
+          "-",
+          "Restoration",
+          "Programme",
+          "Report",
+          "Draft",
+          "3",
+          "Section",
+          "3:",
+          "Cost",
+          "plan",
+          "The",
+          "cost",
+          "plan",
+          "prices",
+          "the",
+          "roof",
+          "and",
+          "rainwater",
+          "programme",
+          "at",
+          "2,150,000",
+          "and",
+          "the",
+          "stonework",
+          "repairs",
+          "at",
+          "840,000,",
+          "both",
+          "at",
+          "2027",
+          "prices",
+          "from",
+          "the",
+          "trust's",
+          "quantity",
+          "surveyor.",
+          "Internal",
+          "access",
+          "and",
+          "fire",
+          "works",
+          "for",
+          "the",
+          "east",
+          "wing",
+          "are",
+          "priced",
+          "at",
+          "615,000",
+          "and",
+          "are",
+          "programmed",
+          "to",
+          "follow",
+          "the",
+          "roof",
+          "works",
+          "by",
+          "one",
+          "season.",
+          "Contingency",
+          "is",
+          "held",
+          "at",
+          "ten",
+          "percent",
+          "of",
+          "the",
+          "construction",
+          "total,",
+          "which",
+          "the",
+          "quantity",
+          "surveyor",
+          "considers",
+          "adequate",
+          "given",
+          "the",
+          "survey",
+          "coverage.",
+          "The",
+          "main-",
+          "tenance",
+          "reserve",
+          "continues",
+          "at",
+          "its",
+          "present",
+          "level",
+          "and",
+          "is",
+          "not",
+          "drawn",
+          "on",
+          "by",
+          "the",
+          "programme.",
+          "Funding",
+          "is",
+          "planned",
+          "from",
+          "three",
+          "sources:",
+          "the",
+          "trust's",
+          "own",
+          "restoration",
+          "reserve,",
+          "a",
+          "heritage",
+          "grant",
+          "application",
+          "submitted",
+          "in",
+          "January",
+          "2027,",
+          "and",
+          "a",
+          "local",
+          "fundraising",
+          "appeal.",
+          "The",
+          "grant",
+          "decision",
+          "is",
+          "expected",
+          "in",
+          "the",
+          "autumn;",
+          "the",
+          "programme",
+          "can",
+          "start",
+          "on",
+          "the",
+          "roof",
+          "regardless",
+          "of",
+          "the",
+          "outcome,",
+          "at",
+          "reduced",
+          "scope",
+          "if",
+          "necessary.",
+          "Confidential",
+          "draft",
+          "for",
+          "trustees",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "3",
+          "of",
+          "4"
+        ],
+        "words": [
+          {
+            "bottom": 41.76,
+            "text": "Alder",
+            "top": 33.26,
+            "x0": 72.0,
+            "x1": 93.726
+          },
+          {
+            "bottom": 41.76,
+            "text": "Grange",
+            "top": 33.26,
+            "x0": 96.089,
+            "x1": 125.847
+          },
+          {
+            "bottom": 41.76,
+            "text": "Estate",
+            "top": 33.26,
+            "x0": 128.21,
+            "x1": 153.719
+          },
+          {
+            "bottom": 41.76,
+            "text": "Trust",
+            "top": 33.26,
+            "x0": 156.082,
+            "x1": 177.332
+          },
+          {
+            "bottom": 41.76,
+            "text": "-",
+            "top": 33.26,
+            "x0": 179.695,
+            "x1": 182.525
+          },
+          {
+            "bottom": 41.76,
+            "text": "Restoration",
+            "top": 33.26,
+            "x0": 184.888,
+            "x1": 232.114
+          },
+          {
+            "bottom": 41.76,
+            "text": "Programme",
+            "top": 33.26,
+            "x0": 234.477,
+            "x1": 281.712
+          },
+          {
+            "bottom": 41.76,
+            "text": "Report",
+            "top": 33.26,
+            "x0": 284.075,
+            "x1": 311.462
+          },
+          {
+            "bottom": 41.76,
+            "text": "Draft",
+            "top": 33.26,
+            "x0": 514.491,
+            "x1": 532.911
+          },
+          {
+            "bottom": 41.76,
+            "text": "3",
+            "top": 33.26,
+            "x0": 535.274,
+            "x1": 540.0
+          },
+          {
+            "bottom": 90.484,
+            "text": "Section",
+            "top": 78.484,
+            "x0": 72.0,
+            "x1": 115.344
+          },
+          {
+            "bottom": 90.484,
+            "text": "3:",
+            "top": 78.484,
+            "x0": 118.68,
+            "x1": 129.348
+          },
+          {
+            "bottom": 90.484,
+            "text": "Cost",
+            "top": 78.484,
+            "x0": 132.684,
+            "x1": 159.348
+          },
+          {
+            "bottom": 90.484,
+            "text": "plan",
+            "top": 78.484,
+            "x0": 162.684,
+            "x1": 187.356
+          },
+          {
+            "bottom": 110.07,
+            "text": "The",
+            "top": 100.07,
+            "x0": 72.0,
+            "x1": 89.23
+          },
+          {
+            "bottom": 110.07,
+            "text": "cost",
+            "top": 100.07,
+            "x0": 92.01,
+            "x1": 110.35
+          },
+          {
+            "bottom": 110.07,
+            "text": "plan",
+            "top": 100.07,
+            "x0": 113.13,
+            "x1": 132.03
+          },
+          {
+            "bottom": 110.07,
+            "text": "prices",
+            "top": 100.07,
+            "x0": 134.81,
+            "x1": 161.48
+          },
+          {
+            "bottom": 110.07,
+            "text": "the",
+            "top": 100.07,
+            "x0": 164.26,
+            "x1": 178.16
+          },
+          {
+            "bottom": 110.07,
+            "text": "roof",
+            "top": 100.07,
+            "x0": 180.94,
+            "x1": 198.17
+          },
+          {
+            "bottom": 110.07,
+            "text": "and",
+            "top": 100.07,
+            "x0": 200.95,
+            "x1": 217.63
+          },
+          {
+            "bottom": 110.07,
+            "text": "rainwater",
+            "top": 100.07,
+            "x0": 220.41,
+            "x1": 261.53
+          },
+          {
+            "bottom": 110.07,
+            "text": "programme",
+            "top": 100.07,
+            "x0": 264.31,
+            "x1": 315.43
+          },
+          {
+            "bottom": 110.07,
+            "text": "at",
+            "top": 100.07,
+            "x0": 318.21,
+            "x1": 326.55
+          },
+          {
+            "bottom": 110.07,
+            "text": "2,150,000",
+            "top": 100.07,
+            "x0": 329.33,
+            "x1": 373.81
+          },
+          {
+            "bottom": 110.07,
+            "text": "and",
+            "top": 100.07,
+            "x0": 376.59,
+            "x1": 393.27
+          },
+          {
+            "bottom": 110.07,
+            "text": "the",
+            "top": 100.07,
+            "x0": 396.05,
+            "x1": 409.95
+          },
+          {
+            "bottom": 110.07,
+            "text": "stonework",
+            "top": 100.07,
+            "x0": 412.73,
+            "x1": 458.3
+          },
+          {
+            "bottom": 110.07,
+            "text": "repairs",
+            "top": 100.07,
+            "x0": 461.08,
+            "x1": 491.64
+          },
+          {
+            "bottom": 110.07,
+            "text": "at",
+            "top": 100.07,
+            "x0": 494.42,
+            "x1": 502.76
+          },
+          {
+            "bottom": 122.57,
+            "text": "840,000,",
+            "top": 112.57,
+            "x0": 72.0,
+            "x1": 110.92
+          },
+          {
+            "bottom": 122.57,
+            "text": "both",
+            "top": 112.57,
+            "x0": 113.7,
+            "x1": 133.16
+          },
+          {
+            "bottom": 122.57,
+            "text": "at",
+            "top": 112.57,
+            "x0": 135.94,
+            "x1": 144.28
+          },
+          {
+            "bottom": 122.57,
+            "text": "2027",
+            "top": 112.57,
+            "x0": 147.06,
+            "x1": 169.3
+          },
+          {
+            "bottom": 122.57,
+            "text": "prices",
+            "top": 112.57,
+            "x0": 172.08,
+            "x1": 198.75
+          },
+          {
+            "bottom": 122.57,
+            "text": "from",
+            "top": 112.57,
+            "x0": 201.53,
+            "x1": 221.53
+          },
+          {
+            "bottom": 122.57,
+            "text": "the",
+            "top": 112.57,
+            "x0": 224.31,
+            "x1": 238.21
+          },
+          {
+            "bottom": 122.57,
+            "text": "trust's",
+            "top": 112.57,
+            "x0": 240.99,
+            "x1": 267.35
+          },
+          {
+            "bottom": 122.57,
+            "text": "quantity",
+            "top": 112.57,
+            "x0": 270.13,
+            "x1": 305.15
+          },
+          {
+            "bottom": 122.57,
+            "text": "surveyor.",
+            "top": 112.57,
+            "x0": 307.93,
+            "x1": 349.05
+          },
+          {
+            "bottom": 122.57,
+            "text": "Internal",
+            "top": 112.57,
+            "x0": 351.83,
+            "x1": 385.18
+          },
+          {
+            "bottom": 122.57,
+            "text": "access",
+            "top": 112.57,
+            "x0": 387.96,
+            "x1": 419.08
+          },
+          {
+            "bottom": 122.57,
+            "text": "and",
+            "top": 112.57,
+            "x0": 421.86,
+            "x1": 438.54
+          },
+          {
+            "bottom": 122.57,
+            "text": "fire",
+            "top": 112.57,
+            "x0": 441.32,
+            "x1": 455.21
+          },
+          {
+            "bottom": 122.57,
+            "text": "works",
+            "top": 112.57,
+            "x0": 457.99,
+            "x1": 484.1
+          },
+          {
+            "bottom": 122.57,
+            "text": "for",
+            "top": 112.57,
+            "x0": 486.88,
+            "x1": 498.55
+          },
+          {
+            "bottom": 122.57,
+            "text": "the",
+            "top": 112.57,
+            "x0": 501.33,
+            "x1": 515.23
+          },
+          {
+            "bottom": 122.57,
+            "text": "east",
+            "top": 112.57,
+            "x0": 518.01,
+            "x1": 536.91
+          },
+          {
+            "bottom": 135.07,
+            "text": "wing",
+            "top": 125.07,
+            "x0": 72.0,
+            "x1": 92.56
+          },
+          {
+            "bottom": 135.07,
+            "text": "are",
+            "top": 125.07,
+            "x0": 95.34,
+            "x1": 109.79
+          },
+          {
+            "bottom": 135.07,
+            "text": "priced",
+            "top": 125.07,
+            "x0": 112.57,
+            "x1": 139.8
+          },
+          {
+            "bottom": 135.07,
+            "text": "at",
+            "top": 125.07,
+            "x0": 142.58,
+            "x1": 150.92
+          },
+          {
+            "bottom": 135.07,
+            "text": "615,000",
+            "top": 125.07,
+            "x0": 153.7,
+            "x1": 189.84
+          },
+          {
+            "bottom": 135.07,
+            "text": "and",
+            "top": 125.07,
+            "x0": 192.62,
+            "x1": 209.3
+          },
+          {
+            "bottom": 135.07,
+            "text": "are",
+            "top": 125.07,
+            "x0": 212.08,
+            "x1": 226.53
+          },
+          {
+            "bottom": 135.07,
+            "text": "programmed",
+            "top": 125.07,
+            "x0": 229.31,
+            "x1": 285.99
+          },
+          {
+            "bottom": 135.07,
+            "text": "to",
+            "top": 125.07,
+            "x0": 288.77,
+            "x1": 297.11
+          },
+          {
+            "bottom": 135.07,
+            "text": "follow",
+            "top": 125.07,
+            "x0": 299.89,
+            "x1": 325.45
+          },
+          {
+            "bottom": 135.07,
+            "text": "the",
+            "top": 125.07,
+            "x0": 328.23,
+            "x1": 342.13
+          },
+          {
+            "bottom": 135.07,
+            "text": "roof",
+            "top": 125.07,
+            "x0": 344.91,
+            "x1": 362.14
+          },
+          {
+            "bottom": 135.07,
+            "text": "works",
+            "top": 125.07,
+            "x0": 364.92,
+            "x1": 391.03
+          },
+          {
+            "bottom": 135.07,
+            "text": "by",
+            "top": 125.07,
+            "x0": 393.81,
+            "x1": 404.37
+          },
+          {
+            "bottom": 135.07,
+            "text": "one",
+            "top": 125.07,
+            "x0": 407.15,
+            "x1": 423.83
+          },
+          {
+            "bottom": 135.07,
+            "text": "season.",
+            "top": 125.07,
+            "x0": 426.61,
+            "x1": 461.63
+          },
+          {
+            "bottom": 155.779,
+            "text": "Contingency",
+            "top": 145.279,
+            "x0": 72.0,
+            "x1": 125.666
+          },
+          {
+            "bottom": 155.779,
+            "text": "is",
+            "top": 145.279,
+            "x0": 128.291,
+            "x1": 135.294
+          },
+          {
+            "bottom": 155.779,
+            "text": "held",
+            "top": 145.279,
+            "x0": 137.919,
+            "x1": 156.0
+          },
+          {
+            "bottom": 155.779,
+            "text": "at",
+            "top": 145.279,
+            "x0": 158.625,
+            "x1": 166.206
+          },
+          {
+            "bottom": 155.779,
+            "text": "ten",
+            "top": 145.279,
+            "x0": 168.831,
+            "x1": 181.662
+          },
+          {
+            "bottom": 155.779,
+            "text": "percent",
+            "top": 145.279,
+            "x0": 184.287,
+            "x1": 215.189
+          },
+          {
+            "bottom": 155.779,
+            "text": "of",
+            "top": 145.279,
+            "x0": 217.814,
+            "x1": 226.56
+          },
+          {
+            "bottom": 155.779,
+            "text": "the",
+            "top": 145.279,
+            "x0": 229.185,
+            "x1": 242.016
+          },
+          {
+            "bottom": 155.779,
+            "text": "construction",
+            "top": 145.279,
+            "x0": 244.641,
+            "x1": 296.553
+          },
+          {
+            "bottom": 155.779,
+            "text": "total,",
+            "top": 145.279,
+            "x0": 299.178,
+            "x1": 320.472
+          },
+          {
+            "bottom": 168.779,
+            "text": "which",
+            "top": 158.279,
+            "x0": 72.0,
+            "x1": 97.662
+          },
+          {
+            "bottom": 168.779,
+            "text": "the",
+            "top": 158.279,
+            "x0": 100.287,
+            "x1": 113.118
+          },
+          {
+            "bottom": 168.779,
+            "text": "quantity",
+            "top": 158.279,
+            "x0": 115.743,
+            "x1": 150.162
+          },
+          {
+            "bottom": 168.779,
+            "text": "surveyor",
+            "top": 158.279,
+            "x0": 152.787,
+            "x1": 189.526
+          },
+          {
+            "bottom": 168.779,
+            "text": "considers",
+            "top": 158.279,
+            "x0": 192.151,
+            "x1": 231.81
+          },
+          {
+            "bottom": 168.779,
+            "text": "adequate",
+            "top": 158.279,
+            "x0": 234.435,
+            "x1": 271.752
+          },
+          {
+            "bottom": 168.779,
+            "text": "given",
+            "top": 158.279,
+            "x0": 274.377,
+            "x1": 297.708
+          },
+          {
+            "bottom": 168.779,
+            "text": "the",
+            "top": 158.279,
+            "x0": 300.333,
+            "x1": 313.164
+          },
+          {
+            "bottom": 168.779,
+            "text": "survey",
+            "top": 158.279,
+            "x0": 315.789,
+            "x1": 343.782
+          },
+          {
+            "bottom": 181.779,
+            "text": "coverage.",
+            "top": 171.279,
+            "x0": 72.0,
+            "x1": 112.519
+          },
+          {
+            "bottom": 181.779,
+            "text": "The",
+            "top": 171.279,
+            "x0": 115.144,
+            "x1": 131.472
+          },
+          {
+            "bottom": 181.779,
+            "text": "main-",
+            "top": 171.279,
+            "x0": 134.097,
+            "x1": 158.594
+          },
+          {
+            "bottom": 194.779,
+            "text": "tenance",
+            "top": 184.279,
+            "x0": 72.0,
+            "x1": 104.067
+          },
+          {
+            "bottom": 194.779,
+            "text": "reserve",
+            "top": 184.279,
+            "x0": 106.692,
+            "x1": 137.006
+          },
+          {
+            "bottom": 194.779,
+            "text": "continues",
+            "top": 184.279,
+            "x0": 139.63,
+            "x1": 179.877
+          },
+          {
+            "bottom": 194.779,
+            "text": "at",
+            "top": 184.279,
+            "x0": 182.502,
+            "x1": 190.083
+          },
+          {
+            "bottom": 194.779,
+            "text": "its",
+            "top": 184.279,
+            "x0": 192.708,
+            "x1": 202.63
+          },
+          {
+            "bottom": 194.779,
+            "text": "present",
+            "top": 184.279,
+            "x0": 205.256,
+            "x1": 235.58
+          },
+          {
+            "bottom": 194.779,
+            "text": "level",
+            "top": 184.279,
+            "x0": 238.205,
+            "x1": 258.617
+          },
+          {
+            "bottom": 194.779,
+            "text": "and",
+            "top": 184.279,
+            "x0": 261.242,
+            "x1": 276.404
+          },
+          {
+            "bottom": 194.779,
+            "text": "is",
+            "top": 184.279,
+            "x0": 279.029,
+            "x1": 286.032
+          },
+          {
+            "bottom": 194.779,
+            "text": "not",
+            "top": 184.279,
+            "x0": 288.657,
+            "x1": 302.076
+          },
+          {
+            "bottom": 194.779,
+            "text": "drawn",
+            "top": 184.279,
+            "x0": 304.701,
+            "x1": 330.941
+          },
+          {
+            "bottom": 207.779,
+            "text": "on",
+            "top": 197.279,
+            "x0": 72.0,
+            "x1": 82.5
+          },
+          {
+            "bottom": 207.779,
+            "text": "by",
+            "top": 197.279,
+            "x0": 85.125,
+            "x1": 95.625
+          },
+          {
+            "bottom": 207.779,
+            "text": "the",
+            "top": 197.279,
+            "x0": 98.25,
+            "x1": 111.081
+          },
+          {
+            "bottom": 207.779,
+            "text": "programme.",
+            "top": 197.279,
+            "x0": 113.706,
+            "x1": 164.736
+          },
+          {
+            "bottom": 228.57,
+            "text": "Funding",
+            "top": 218.57,
+            "x0": 72.0,
+            "x1": 108.13
+          },
+          {
+            "bottom": 228.57,
+            "text": "is",
+            "top": 218.57,
+            "x0": 110.91,
+            "x1": 118.13
+          },
+          {
+            "bottom": 228.57,
+            "text": "planned",
+            "top": 218.57,
+            "x0": 120.91,
+            "x1": 156.49
+          },
+          {
+            "bottom": 228.57,
+            "text": "from",
+            "top": 218.57,
+            "x0": 159.27,
+            "x1": 179.27
+          },
+          {
+            "bottom": 228.57,
+            "text": "three",
+            "top": 218.57,
+            "x0": 182.05,
+            "x1": 204.84
+          },
+          {
+            "bottom": 228.57,
+            "text": "sources:",
+            "top": 218.57,
+            "x0": 207.62,
+            "x1": 245.41
+          },
+          {
+            "bottom": 228.57,
+            "text": "the",
+            "top": 218.57,
+            "x0": 248.19,
+            "x1": 262.09
+          },
+          {
+            "bottom": 228.57,
+            "text": "trust's",
+            "top": 218.57,
+            "x0": 264.87,
+            "x1": 291.23
+          },
+          {
+            "bottom": 228.57,
+            "text": "own",
+            "top": 218.57,
+            "x0": 294.01,
+            "x1": 312.35
+          },
+          {
+            "bottom": 228.57,
+            "text": "restoration",
+            "top": 218.57,
+            "x0": 315.13,
+            "x1": 362.37
+          },
+          {
+            "bottom": 228.57,
+            "text": "reserve,",
+            "top": 218.57,
+            "x0": 365.15,
+            "x1": 401.27
+          },
+          {
+            "bottom": 228.57,
+            "text": "a",
+            "top": 218.57,
+            "x0": 404.05,
+            "x1": 409.61
+          },
+          {
+            "bottom": 228.57,
+            "text": "heritage",
+            "top": 218.57,
+            "x0": 412.39,
+            "x1": 448.52
+          },
+          {
+            "bottom": 228.57,
+            "text": "grant",
+            "top": 218.57,
+            "x0": 451.3,
+            "x1": 474.09
+          },
+          {
+            "bottom": 228.57,
+            "text": "application",
+            "top": 218.57,
+            "x0": 476.87,
+            "x1": 524.67
+          },
+          {
+            "bottom": 241.07,
+            "text": "submitted",
+            "top": 231.07,
+            "x0": 72.0,
+            "x1": 115.35
+          },
+          {
+            "bottom": 241.07,
+            "text": "in",
+            "top": 231.07,
+            "x0": 118.13,
+            "x1": 125.91
+          },
+          {
+            "bottom": 241.07,
+            "text": "January",
+            "top": 231.07,
+            "x0": 128.69,
+            "x1": 164.26
+          },
+          {
+            "bottom": 241.07,
+            "text": "2027,",
+            "top": 231.07,
+            "x0": 167.04,
+            "x1": 192.06
+          },
+          {
+            "bottom": 241.07,
+            "text": "and",
+            "top": 231.07,
+            "x0": 194.84,
+            "x1": 211.52
+          },
+          {
+            "bottom": 241.07,
+            "text": "a",
+            "top": 231.07,
+            "x0": 214.3,
+            "x1": 219.86
+          },
+          {
+            "bottom": 241.07,
+            "text": "local",
+            "top": 231.07,
+            "x0": 222.64,
+            "x1": 243.2
+          },
+          {
+            "bottom": 241.07,
+            "text": "fundraising",
+            "top": 231.07,
+            "x0": 245.98,
+            "x1": 294.89
+          },
+          {
+            "bottom": 241.07,
+            "text": "appeal.",
+            "top": 231.07,
+            "x0": 297.67,
+            "x1": 330.47
+          },
+          {
+            "bottom": 241.07,
+            "text": "The",
+            "top": 231.07,
+            "x0": 333.25,
+            "x1": 350.48
+          },
+          {
+            "bottom": 241.07,
+            "text": "grant",
+            "top": 231.07,
+            "x0": 353.26,
+            "x1": 376.05
+          },
+          {
+            "bottom": 241.07,
+            "text": "decision",
+            "top": 231.07,
+            "x0": 378.83,
+            "x1": 415.51
+          },
+          {
+            "bottom": 241.07,
+            "text": "is",
+            "top": 231.07,
+            "x0": 418.29,
+            "x1": 425.51
+          },
+          {
+            "bottom": 241.07,
+            "text": "expected",
+            "top": 231.07,
+            "x0": 428.29,
+            "x1": 468.87
+          },
+          {
+            "bottom": 241.07,
+            "text": "in",
+            "top": 231.07,
+            "x0": 471.65,
+            "x1": 479.43
+          },
+          {
+            "bottom": 241.07,
+            "text": "the",
+            "top": 231.07,
+            "x0": 482.21,
+            "x1": 496.11
+          },
+          {
+            "bottom": 241.07,
+            "text": "autumn;",
+            "top": 231.07,
+            "x0": 498.89,
+            "x1": 535.02
+          },
+          {
+            "bottom": 253.57,
+            "text": "the",
+            "top": 243.57,
+            "x0": 72.0,
+            "x1": 85.9
+          },
+          {
+            "bottom": 253.57,
+            "text": "programme",
+            "top": 243.57,
+            "x0": 88.68,
+            "x1": 139.8
+          },
+          {
+            "bottom": 253.57,
+            "text": "can",
+            "top": 243.57,
+            "x0": 142.58,
+            "x1": 158.7
+          },
+          {
+            "bottom": 253.57,
+            "text": "start",
+            "top": 243.57,
+            "x0": 161.48,
+            "x1": 180.93
+          },
+          {
+            "bottom": 253.57,
+            "text": "on",
+            "top": 243.57,
+            "x0": 183.71,
+            "x1": 194.83
+          },
+          {
+            "bottom": 253.57,
+            "text": "the",
+            "top": 243.57,
+            "x0": 197.61,
+            "x1": 211.51
+          },
+          {
+            "bottom": 253.57,
+            "text": "roof",
+            "top": 243.57,
+            "x0": 214.29,
+            "x1": 231.52
+          },
+          {
+            "bottom": 253.57,
+            "text": "regardless",
+            "top": 243.57,
+            "x0": 234.3,
+            "x1": 280.98
+          },
+          {
+            "bottom": 253.57,
+            "text": "of",
+            "top": 243.57,
+            "x0": 283.76,
+            "x1": 292.1
+          },
+          {
+            "bottom": 253.57,
+            "text": "the",
+            "top": 243.57,
+            "x0": 294.88,
+            "x1": 308.78
+          },
+          {
+            "bottom": 253.57,
+            "text": "outcome,",
+            "top": 243.57,
+            "x0": 311.56,
+            "x1": 352.69
+          },
+          {
+            "bottom": 253.57,
+            "text": "at",
+            "top": 243.57,
+            "x0": 355.47,
+            "x1": 363.81
+          },
+          {
+            "bottom": 253.57,
+            "text": "reduced",
+            "top": 243.57,
+            "x0": 366.59,
+            "x1": 402.72
+          },
+          {
+            "bottom": 253.57,
+            "text": "scope",
+            "top": 243.57,
+            "x0": 405.5,
+            "x1": 432.18
+          },
+          {
+            "bottom": 253.57,
+            "text": "if",
+            "top": 243.57,
+            "x0": 434.96,
+            "x1": 439.96
+          },
+          {
+            "bottom": 253.57,
+            "text": "necessary.",
+            "top": 243.57,
+            "x0": 442.74,
+            "x1": 491.09
+          },
+          {
+            "bottom": 757.656,
+            "text": "Confidential",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 114.24
+          },
+          {
+            "bottom": 757.656,
+            "text": "draft",
+            "top": 749.656,
+            "x0": 116.464,
+            "x1": 132.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "for",
+            "top": 749.656,
+            "x0": 134.696,
+            "x1": 144.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "trustees",
+            "top": 749.656,
+            "x0": 146.256,
+            "x1": 174.712
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 176.936,
+            "x1": 179.6
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 181.824,
+            "x1": 213.392
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 215.616,
+            "x1": 237.4
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "3",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "4",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "3",
+          "4:",
+          "2028",
+          "4",
+          "4"
+        ],
+        "page_index": 3,
+        "reading_text": "Alder Grange Estate Trust - Restoration Programme Report Draft 3\nSection 4: Recommendations\nThe trustees are asked to approve the programme in principle, to\nconfirm the roof works as the first phase, and to adopt the\nsurvey's recommend-\nations as the basis for the grant application.\nSubject to approval, the quantity surveyor will tender the roof programme in the spring, with work on site\nfrom June. The estate team will move the walled-garden nursery under cover in May, and the east wing\nwill remain closed to visitors through the 2028 season.\nThe next trustees' meeting will review tender returns. This draft was prepared for fixture use; names,\nfigures, and findings are fictional.\nConfidential draft for trustees - synthetic fixture Page 4 of 4",
+        "rotation": 0,
+        "tokens": [
+          "Alder",
+          "Grange",
+          "Estate",
+          "Trust",
+          "-",
+          "Restoration",
+          "Programme",
+          "Report",
+          "Draft",
+          "3",
+          "Section",
+          "4:",
+          "Recommendations",
+          "The",
+          "trustees",
+          "are",
+          "asked",
+          "to",
+          "approve",
+          "the",
+          "programme",
+          "in",
+          "principle,",
+          "to",
+          "confirm",
+          "the",
+          "roof",
+          "works",
+          "as",
+          "the",
+          "first",
+          "phase,",
+          "and",
+          "to",
+          "adopt",
+          "the",
+          "survey's",
+          "recommend-",
+          "ations",
+          "as",
+          "the",
+          "basis",
+          "for",
+          "the",
+          "grant",
+          "application.",
+          "Subject",
+          "to",
+          "approval,",
+          "the",
+          "quantity",
+          "surveyor",
+          "will",
+          "tender",
+          "the",
+          "roof",
+          "programme",
+          "in",
+          "the",
+          "spring,",
+          "with",
+          "work",
+          "on",
+          "site",
+          "from",
+          "June.",
+          "The",
+          "estate",
+          "team",
+          "will",
+          "move",
+          "the",
+          "walled-garden",
+          "nursery",
+          "under",
+          "cover",
+          "in",
+          "May,",
+          "and",
+          "the",
+          "east",
+          "wing",
+          "will",
+          "remain",
+          "closed",
+          "to",
+          "visitors",
+          "through",
+          "the",
+          "2028",
+          "season.",
+          "The",
+          "next",
+          "trustees'",
+          "meeting",
+          "will",
+          "review",
+          "tender",
+          "returns.",
+          "This",
+          "draft",
+          "was",
+          "prepared",
+          "for",
+          "fixture",
+          "use;",
+          "names,",
+          "figures,",
+          "and",
+          "findings",
+          "are",
+          "fictional.",
+          "Confidential",
+          "draft",
+          "for",
+          "trustees",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "4",
+          "of",
+          "4"
+        ],
+        "words": [
+          {
+            "bottom": 41.76,
+            "text": "Alder",
+            "top": 33.26,
+            "x0": 72.0,
+            "x1": 93.726
+          },
+          {
+            "bottom": 41.76,
+            "text": "Grange",
+            "top": 33.26,
+            "x0": 96.089,
+            "x1": 125.847
+          },
+          {
+            "bottom": 41.76,
+            "text": "Estate",
+            "top": 33.26,
+            "x0": 128.21,
+            "x1": 153.719
+          },
+          {
+            "bottom": 41.76,
+            "text": "Trust",
+            "top": 33.26,
+            "x0": 156.082,
+            "x1": 177.332
+          },
+          {
+            "bottom": 41.76,
+            "text": "-",
+            "top": 33.26,
+            "x0": 179.695,
+            "x1": 182.525
+          },
+          {
+            "bottom": 41.76,
+            "text": "Restoration",
+            "top": 33.26,
+            "x0": 184.888,
+            "x1": 232.114
+          },
+          {
+            "bottom": 41.76,
+            "text": "Programme",
+            "top": 33.26,
+            "x0": 234.477,
+            "x1": 281.712
+          },
+          {
+            "bottom": 41.76,
+            "text": "Report",
+            "top": 33.26,
+            "x0": 284.075,
+            "x1": 311.462
+          },
+          {
+            "bottom": 41.76,
+            "text": "Draft",
+            "top": 33.26,
+            "x0": 514.491,
+            "x1": 532.911
+          },
+          {
+            "bottom": 41.76,
+            "text": "3",
+            "top": 33.26,
+            "x0": 535.274,
+            "x1": 540.0
+          },
+          {
+            "bottom": 90.484,
+            "text": "Section",
+            "top": 78.484,
+            "x0": 72.0,
+            "x1": 115.344
+          },
+          {
+            "bottom": 90.484,
+            "text": "4:",
+            "top": 78.484,
+            "x0": 118.68,
+            "x1": 129.348
+          },
+          {
+            "bottom": 90.484,
+            "text": "Recommendations",
+            "top": 78.484,
+            "x0": 132.684,
+            "x1": 240.036
+          },
+          {
+            "bottom": 110.279,
+            "text": "The",
+            "top": 99.779,
+            "x0": 72.0,
+            "x1": 88.328
+          },
+          {
+            "bottom": 110.279,
+            "text": "trustees",
+            "top": 99.779,
+            "x0": 90.953,
+            "x1": 123.03
+          },
+          {
+            "bottom": 110.279,
+            "text": "are",
+            "top": 99.779,
+            "x0": 125.655,
+            "x1": 138.475
+          },
+          {
+            "bottom": 110.279,
+            "text": "asked",
+            "top": 99.779,
+            "x0": 141.101,
+            "x1": 165.009
+          },
+          {
+            "bottom": 110.279,
+            "text": "to",
+            "top": 99.779,
+            "x0": 167.634,
+            "x1": 175.803
+          },
+          {
+            "bottom": 110.279,
+            "text": "approve",
+            "top": 99.779,
+            "x0": 178.428,
+            "x1": 212.249
+          },
+          {
+            "bottom": 110.279,
+            "text": "the",
+            "top": 99.779,
+            "x0": 214.874,
+            "x1": 227.705
+          },
+          {
+            "bottom": 110.279,
+            "text": "programme",
+            "top": 99.779,
+            "x0": 230.33,
+            "x1": 278.735
+          },
+          {
+            "bottom": 110.279,
+            "text": "in",
+            "top": 99.779,
+            "x0": 281.36,
+            "x1": 289.529
+          },
+          {
+            "bottom": 110.279,
+            "text": "principle,",
+            "top": 99.779,
+            "x0": 292.154,
+            "x1": 332.106
+          },
+          {
+            "bottom": 110.279,
+            "text": "to",
+            "top": 99.779,
+            "x0": 334.731,
+            "x1": 342.9
+          },
+          {
+            "bottom": 123.279,
+            "text": "confirm",
+            "top": 112.779,
+            "x0": 72.0,
+            "x1": 105.243
+          },
+          {
+            "bottom": 123.279,
+            "text": "the",
+            "top": 112.779,
+            "x0": 107.868,
+            "x1": 120.699
+          },
+          {
+            "bottom": 123.279,
+            "text": "roof",
+            "top": 112.779,
+            "x0": 123.324,
+            "x1": 140.817
+          },
+          {
+            "bottom": 123.279,
+            "text": "works",
+            "top": 112.779,
+            "x0": 143.442,
+            "x1": 169.104
+          },
+          {
+            "bottom": 123.279,
+            "text": "as",
+            "top": 112.779,
+            "x0": 171.729,
+            "x1": 180.476
+          },
+          {
+            "bottom": 123.279,
+            "text": "the",
+            "top": 112.779,
+            "x0": 183.101,
+            "x1": 195.932
+          },
+          {
+            "bottom": 123.279,
+            "text": "first",
+            "top": 112.779,
+            "x0": 198.557,
+            "x1": 215.472
+          },
+          {
+            "bottom": 123.279,
+            "text": "phase,",
+            "top": 112.779,
+            "x0": 218.097,
+            "x1": 244.631
+          },
+          {
+            "bottom": 123.279,
+            "text": "and",
+            "top": 112.779,
+            "x0": 247.256,
+            "x1": 262.418
+          },
+          {
+            "bottom": 123.279,
+            "text": "to",
+            "top": 112.779,
+            "x0": 265.043,
+            "x1": 273.212
+          },
+          {
+            "bottom": 123.279,
+            "text": "adopt",
+            "top": 112.779,
+            "x0": 275.837,
+            "x1": 299.168
+          },
+          {
+            "bottom": 123.279,
+            "text": "the",
+            "top": 112.779,
+            "x0": 301.793,
+            "x1": 314.624
+          },
+          {
+            "bottom": 136.279,
+            "text": "survey's",
+            "top": 125.779,
+            "x0": 72.0,
+            "x1": 105.968
+          },
+          {
+            "bottom": 136.279,
+            "text": "recommend-",
+            "top": 125.779,
+            "x0": 108.593,
+            "x1": 161.66
+          },
+          {
+            "bottom": 149.279,
+            "text": "ations",
+            "top": 138.779,
+            "x0": 72.0,
+            "x1": 97.085
+          },
+          {
+            "bottom": 149.279,
+            "text": "as",
+            "top": 138.779,
+            "x0": 99.709,
+            "x1": 108.456
+          },
+          {
+            "bottom": 149.279,
+            "text": "the",
+            "top": 138.779,
+            "x0": 111.081,
+            "x1": 123.912
+          },
+          {
+            "bottom": 149.279,
+            "text": "basis",
+            "top": 138.779,
+            "x0": 126.537,
+            "x1": 147.537
+          },
+          {
+            "bottom": 149.279,
+            "text": "for",
+            "top": 138.779,
+            "x0": 150.162,
+            "x1": 162.405
+          },
+          {
+            "bottom": 149.279,
+            "text": "the",
+            "top": 138.779,
+            "x0": 165.03,
+            "x1": 177.861
+          },
+          {
+            "bottom": 149.279,
+            "text": "grant",
+            "top": 138.779,
+            "x0": 180.486,
+            "x1": 202.064
+          },
+          {
+            "bottom": 149.279,
+            "text": "application.",
+            "top": 138.779,
+            "x0": 204.689,
+            "x1": 253.976
+          },
+          {
+            "bottom": 170.07,
+            "text": "Subject",
+            "top": 160.07,
+            "x0": 72.0,
+            "x1": 105.35
+          },
+          {
+            "bottom": 170.07,
+            "text": "to",
+            "top": 160.07,
+            "x0": 108.13,
+            "x1": 116.47
+          },
+          {
+            "bottom": 170.07,
+            "text": "approval,",
+            "top": 160.07,
+            "x0": 119.25,
+            "x1": 160.38
+          },
+          {
+            "bottom": 170.07,
+            "text": "the",
+            "top": 160.07,
+            "x0": 163.16,
+            "x1": 177.06
+          },
+          {
+            "bottom": 170.07,
+            "text": "quantity",
+            "top": 160.07,
+            "x0": 179.84,
+            "x1": 214.86
+          },
+          {
+            "bottom": 170.07,
+            "text": "surveyor",
+            "top": 160.07,
+            "x0": 217.64,
+            "x1": 255.98
+          },
+          {
+            "bottom": 170.07,
+            "text": "will",
+            "top": 160.07,
+            "x0": 258.76,
+            "x1": 272.64
+          },
+          {
+            "bottom": 170.07,
+            "text": "tender",
+            "top": 160.07,
+            "x0": 275.42,
+            "x1": 303.77
+          },
+          {
+            "bottom": 170.07,
+            "text": "the",
+            "top": 160.07,
+            "x0": 306.55,
+            "x1": 320.45
+          },
+          {
+            "bottom": 170.07,
+            "text": "roof",
+            "top": 160.07,
+            "x0": 323.23,
+            "x1": 340.46
+          },
+          {
+            "bottom": 170.07,
+            "text": "programme",
+            "top": 160.07,
+            "x0": 343.24,
+            "x1": 394.36
+          },
+          {
+            "bottom": 170.07,
+            "text": "in",
+            "top": 160.07,
+            "x0": 397.14,
+            "x1": 404.92
+          },
+          {
+            "bottom": 170.07,
+            "text": "the",
+            "top": 160.07,
+            "x0": 407.7,
+            "x1": 421.6
+          },
+          {
+            "bottom": 170.07,
+            "text": "spring,",
+            "top": 160.07,
+            "x0": 424.38,
+            "x1": 454.39
+          },
+          {
+            "bottom": 170.07,
+            "text": "with",
+            "top": 160.07,
+            "x0": 457.17,
+            "x1": 474.95
+          },
+          {
+            "bottom": 170.07,
+            "text": "work",
+            "top": 160.07,
+            "x0": 477.73,
+            "x1": 498.84
+          },
+          {
+            "bottom": 170.07,
+            "text": "on",
+            "top": 160.07,
+            "x0": 501.62,
+            "x1": 512.74
+          },
+          {
+            "bottom": 170.07,
+            "text": "site",
+            "top": 160.07,
+            "x0": 515.52,
+            "x1": 531.08
+          },
+          {
+            "bottom": 182.57,
+            "text": "from",
+            "top": 172.57,
+            "x0": 72.0,
+            "x1": 92.0
+          },
+          {
+            "bottom": 182.57,
+            "text": "June.",
+            "top": 172.57,
+            "x0": 94.78,
+            "x1": 119.24
+          },
+          {
+            "bottom": 182.57,
+            "text": "The",
+            "top": 172.57,
+            "x0": 122.02,
+            "x1": 139.25
+          },
+          {
+            "bottom": 182.57,
+            "text": "estate",
+            "top": 172.57,
+            "x0": 142.03,
+            "x1": 169.27
+          },
+          {
+            "bottom": 182.57,
+            "text": "team",
+            "top": 172.57,
+            "x0": 172.05,
+            "x1": 194.28
+          },
+          {
+            "bottom": 182.57,
+            "text": "will",
+            "top": 172.57,
+            "x0": 197.06,
+            "x1": 210.94
+          },
+          {
+            "bottom": 182.57,
+            "text": "move",
+            "top": 172.57,
+            "x0": 213.72,
+            "x1": 238.17
+          },
+          {
+            "bottom": 182.57,
+            "text": "the",
+            "top": 172.57,
+            "x0": 240.95,
+            "x1": 254.85
+          },
+          {
+            "bottom": 182.57,
+            "text": "walled-garden",
+            "top": 172.57,
+            "x0": 257.63,
+            "x1": 320.43
+          },
+          {
+            "bottom": 182.57,
+            "text": "nursery",
+            "top": 172.57,
+            "x0": 323.21,
+            "x1": 356.55
+          },
+          {
+            "bottom": 182.57,
+            "text": "under",
+            "top": 172.57,
+            "x0": 359.33,
+            "x1": 384.9
+          },
+          {
+            "bottom": 182.57,
+            "text": "cover",
+            "top": 172.57,
+            "x0": 387.68,
+            "x1": 412.13
+          },
+          {
+            "bottom": 182.57,
+            "text": "in",
+            "top": 172.57,
+            "x0": 414.91,
+            "x1": 422.69
+          },
+          {
+            "bottom": 182.57,
+            "text": "May,",
+            "top": 172.57,
+            "x0": 425.47,
+            "x1": 447.14
+          },
+          {
+            "bottom": 182.57,
+            "text": "and",
+            "top": 172.57,
+            "x0": 449.92,
+            "x1": 466.6
+          },
+          {
+            "bottom": 182.57,
+            "text": "the",
+            "top": 172.57,
+            "x0": 469.38,
+            "x1": 483.28
+          },
+          {
+            "bottom": 182.57,
+            "text": "east",
+            "top": 172.57,
+            "x0": 486.06,
+            "x1": 504.96
+          },
+          {
+            "bottom": 182.57,
+            "text": "wing",
+            "top": 172.57,
+            "x0": 507.74,
+            "x1": 528.3
+          },
+          {
+            "bottom": 195.07,
+            "text": "will",
+            "top": 185.07,
+            "x0": 72.0,
+            "x1": 85.88
+          },
+          {
+            "bottom": 195.07,
+            "text": "remain",
+            "top": 185.07,
+            "x0": 88.66,
+            "x1": 119.22
+          },
+          {
+            "bottom": 195.07,
+            "text": "closed",
+            "top": 185.07,
+            "x0": 122.0,
+            "x1": 150.9
+          },
+          {
+            "bottom": 195.07,
+            "text": "to",
+            "top": 185.07,
+            "x0": 153.68,
+            "x1": 162.02
+          },
+          {
+            "bottom": 195.07,
+            "text": "visitors",
+            "top": 185.07,
+            "x0": 164.8,
+            "x1": 195.91
+          },
+          {
+            "bottom": 195.07,
+            "text": "through",
+            "top": 185.07,
+            "x0": 198.69,
+            "x1": 232.6
+          },
+          {
+            "bottom": 195.07,
+            "text": "the",
+            "top": 185.07,
+            "x0": 235.38,
+            "x1": 249.28
+          },
+          {
+            "bottom": 195.07,
+            "text": "2028",
+            "top": 185.07,
+            "x0": 252.06,
+            "x1": 274.3
+          },
+          {
+            "bottom": 195.07,
+            "text": "season.",
+            "top": 185.07,
+            "x0": 277.08,
+            "x1": 312.1
+          },
+          {
+            "bottom": 215.57,
+            "text": "The",
+            "top": 205.57,
+            "x0": 72.0,
+            "x1": 89.23
+          },
+          {
+            "bottom": 215.57,
+            "text": "next",
+            "top": 205.57,
+            "x0": 92.01,
+            "x1": 110.91
+          },
+          {
+            "bottom": 215.57,
+            "text": "trustees'",
+            "top": 205.57,
+            "x0": 113.69,
+            "x1": 151.17
+          },
+          {
+            "bottom": 215.57,
+            "text": "meeting",
+            "top": 205.57,
+            "x0": 153.95,
+            "x1": 189.52
+          },
+          {
+            "bottom": 215.57,
+            "text": "will",
+            "top": 205.57,
+            "x0": 192.3,
+            "x1": 206.18
+          },
+          {
+            "bottom": 215.57,
+            "text": "review",
+            "top": 205.57,
+            "x0": 208.96,
+            "x1": 237.85
+          },
+          {
+            "bottom": 215.57,
+            "text": "tender",
+            "top": 205.57,
+            "x0": 240.63,
+            "x1": 268.98
+          },
+          {
+            "bottom": 215.57,
+            "text": "returns.",
+            "top": 205.57,
+            "x0": 271.76,
+            "x1": 305.66
+          },
+          {
+            "bottom": 215.57,
+            "text": "This",
+            "top": 205.57,
+            "x0": 308.44,
+            "x1": 327.33
+          },
+          {
+            "bottom": 215.57,
+            "text": "draft",
+            "top": 205.57,
+            "x0": 330.11,
+            "x1": 350.12
+          },
+          {
+            "bottom": 215.57,
+            "text": "was",
+            "top": 205.57,
+            "x0": 352.9,
+            "x1": 370.68
+          },
+          {
+            "bottom": 215.57,
+            "text": "prepared",
+            "top": 205.57,
+            "x0": 373.46,
+            "x1": 413.48
+          },
+          {
+            "bottom": 215.57,
+            "text": "for",
+            "top": 205.57,
+            "x0": 416.26,
+            "x1": 427.93
+          },
+          {
+            "bottom": 215.57,
+            "text": "fixture",
+            "top": 205.57,
+            "x0": 430.71,
+            "x1": 457.94
+          },
+          {
+            "bottom": 215.57,
+            "text": "use;",
+            "top": 205.57,
+            "x0": 460.72,
+            "x1": 479.62
+          },
+          {
+            "bottom": 215.57,
+            "text": "names,",
+            "top": 205.57,
+            "x0": 482.4,
+            "x1": 515.19
+          },
+          {
+            "bottom": 228.07,
+            "text": "figures,",
+            "top": 218.07,
+            "x0": 72.0,
+            "x1": 104.79
+          },
+          {
+            "bottom": 228.07,
+            "text": "and",
+            "top": 218.07,
+            "x0": 107.57,
+            "x1": 124.25
+          },
+          {
+            "bottom": 228.07,
+            "text": "findings",
+            "top": 218.07,
+            "x0": 127.03,
+            "x1": 161.49
+          },
+          {
+            "bottom": 228.07,
+            "text": "are",
+            "top": 218.07,
+            "x0": 164.27,
+            "x1": 178.72
+          },
+          {
+            "bottom": 228.07,
+            "text": "fictional.",
+            "top": 218.07,
+            "x0": 181.5,
+            "x1": 218.18
+          },
+          {
+            "bottom": 757.656,
+            "text": "Confidential",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 114.24
+          },
+          {
+            "bottom": 757.656,
+            "text": "draft",
+            "top": 749.656,
+            "x0": 116.464,
+            "x1": 132.472
+          },
+          {
+            "bottom": 757.656,
+            "text": "for",
+            "top": 749.656,
+            "x0": 134.696,
+            "x1": 144.032
+          },
+          {
+            "bottom": 757.656,
+            "text": "trustees",
+            "top": 749.656,
+            "x0": 146.256,
+            "x1": 174.712
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 176.936,
+            "x1": 179.6
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 181.824,
+            "x1": 213.392
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 215.616,
+            "x1": 237.4
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "4",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "4",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 6969,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 21,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 122
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 229
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 341
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 449
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 644
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 839
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 948
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1143
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1338
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1429
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1853
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1927
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 2029
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 2150
+        },
+        {
+          "generation": 0,
+          "object": 16,
+          "offset": 2264
+        },
+        {
+          "generation": 0,
+          "object": 17,
+          "offset": 2371
+        },
+        {
+          "generation": 0,
+          "object": 18,
+          "offset": 2449
+        },
+        {
+          "generation": 0,
+          "object": 19,
+          "offset": 3175
+        },
+        {
+          "generation": 0,
+          "object": 20,
+          "offset": 4433
+        },
+        {
+          "generation": 0,
+          "object": 21,
+          "offset": 5458
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 0,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F07-dense-report.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "9021c2194f106e5ba2b5c38b423985d96b90377e5f61305f8fbddf859d790503"
+    },
+    "source_sha256": "9021c2194f106e5ba2b5c38b423985d96b90377e5f61305f8fbddf859d790503",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_MULTI_COLUMN",
+    "document_id": "F07",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 4,
+      "page_order": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "region_ids": [
+            "p0-body",
+            "p1-body",
+            "p2-body",
+            "p3-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 4,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      }
+    ],
+    "page_mapping": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 21,
+            "source_sha256": "9021c2194f106e5ba2b5c38b423985d96b90377e5f61305f8fbddf859d790503"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max_fraction": 0.0,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 4,
+            "source": 4
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [
+              {
+                "level": 1,
+                "title": "Section 1: Background"
+              },
+              {
+                "level": 1,
+                "title": "Section 2: Condition survey"
+              },
+              {
+                "level": 1,
+                "title": "Section 3: Cost plan"
+              },
+              {
+                "level": 1,
+                "title": "Section 4: Recommendations"
+              }
+            ],
+            "pdfminer_source": [
+              {
+                "level": 1,
+                "title": "Section 1: Background"
+              },
+              {
+                "level": 1,
+                "title": "Section 2: Condition survey"
+              },
+              {
+                "level": 1,
+                "title": "Section 3: Cost plan"
+              },
+              {
+                "level": 1,
+                "title": "Section 4: Recommendations"
+              }
+            ],
+            "scanner_both_empty": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "classifier_conflict": false,
+            "decisive": false
+          }
+        ],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 6969,
+              "OBJECT_COUNT": 31,
+              "OUTPUT_BYTES": 14804,
+              "PAGE_COUNT": 4
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}
