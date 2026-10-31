@@ -1,0 +1,1164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:zcode:lane-02-cdrr-receipts:cdrr-schema:1.0.0",
+  "title": "Common Document Reconstruction Record (CDRR) - text-native vertical slice",
+  "description": "Frozen record-keeping contract (lane 02-cdrr-receipts, wave A) for one document run through the text-native pipeline: intake -> preflight -> extract -> plan -> apply -> verify -> dispose. Authority order: inputs/FINAL-RECONCILIATION.md, ASSIGNMENT.md, inputs/MAIN-GLM-SYNTHESIS.md.\n\nCore semantics frozen here:\n1. NOT_EXERCISED and ERROR are first-class states. Uncertainty lives in envelope 'status' fields (EXERCISED / NOT_EXERCISED / ERROR); closed-vocabulary enums (rotation, gate ids, operation names, refusal families) stay pure and never carry uncertainty markers. NOT_EXERCISED is never counted as PASS (INV-08).\n2. A CDRR for a REFUSED document (which is never extracted) is schema-valid: every section object is REQUIRED and carries status NOT_EXERCISED with an empty records array - empty and NOT_EXERCISED, never missing keys (INV-22, enforced by the root if/then clause).\n3. The final disposition (ACCEPT | REVIEW | REFUSE | NOT_VERIFIABLE) is machine-derived only from recorded inputs: document class + per-gate statuses + the fired precedence rule from the frozen disposition spec (lane 01). Report/summary code can never choose ACCEPT; ACCEPT only derives from verification records (INV-20). Run-level INVALID_EXPERIMENT is NOT a document disposition; it lives in RECEIPT-SCHEMA.json ExperimentRunReceipt and overrides all document dispositions in the run (INV-23).\n4. The CDRR legitimately contains extracted document text (spans, cell strings, bookmark titles); the output-redaction invariant (INV-13) applies to refusal messages and human-readable summaries, not to these evidence records.\n5. Schema validity is necessary, not sufficient: a schema-valid ACCEPT example is not a protocol-claim; class-by-gate requirements are frozen in lane 01 DISPOSITION-SPEC.json and consumed by the disposition engine, not restated here.\n\nGate ids G01-G12 mirror inputs/MAIN-GLM-SYNTHESIS.md verification chain; G12 (human A/B usability) is experiment-closure-level per FINAL-RECONCILIATION correction item 4 and is never part of the per-document mechanical acceptance predicate. The frozen allowed operation set mirrors the Phase 0 tidy set (ten operations; page order, page count and page boundaries immutable).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_kind",
+    "schema_version",
+    "cdrr_id",
+    "experiment_id",
+    "run_id",
+    "fixture_id",
+    "created_at",
+    "generated_by",
+    "document_identity",
+    "source_inventory",
+    "classification",
+    "refusal_scan",
+    "pages",
+    "text_spans",
+    "structure",
+    "reading_order",
+    "tables",
+    "navigation",
+    "visible_ink",
+    "operation_plan",
+    "applied_operations",
+    "delta_reconciliation",
+    "verifier_results",
+    "disposition"
+  ],
+  "properties": {
+    "record_kind": {
+      "const": "CDRR",
+      "description": "Discriminator. Always CDRR for this schema."
+    },
+    "schema_version": {
+      "enum": ["1.0.0"],
+      "description": "Frozen for this experiment. A bump requires an explicit re-freeze; silently writing a different version is INVALID_EXPERIMENT (INV-24)."
+    },
+    "cdrr_id": {
+      "type": "string",
+      "pattern": "^CDRR-[0-9a-zA-Z._-]{1,80}$",
+      "description": "Stable identifier of this reconstruction record."
+    },
+    "experiment_id": {
+      "$ref": "#/$defs/LooseId",
+      "description": "Experiment-level identifier shared by all runs of this guarded build."
+    },
+    "run_id": {
+      "$ref": "#/$defs/LooseId",
+      "description": "Per-document run identifier. One run processes exactly one document with private temp state (INV-11)."
+    },
+    "fixture_id": {
+      "$ref": "#/$defs/LooseId",
+      "description": "Sealed fixture identifier from lanes/03-fixtures-oracles/FIXTURE-MANIFEST.json. Synthetic sample records use FIX-SYNTH-* ids and contain no real document data."
+    },
+    "created_at": {
+      "$ref": "#/$defs/IsoTimestampUtc",
+      "description": "UTC timestamp of CDRR finalization."
+    },
+    "generated_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tool_name", "tool_version", "lane_id"],
+      "properties": {
+        "tool_name": { "type": "string", "minLength": 1 },
+        "tool_version": { "type": "string", "minLength": 1 },
+        "lane_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Producing lane, for provenance preservation (INV-14)."
+        }
+      },
+      "description": "Builder tool + version + producing lane (INV-07, INV-14)."
+    },
+    "document_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["original_filename", "mime_detected", "byte_size", "sha256", "sealed_fixture_manifest_ref"],
+      "properties": {
+        "original_filename": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Filename of the sealed input as recorded at intake."
+        },
+        "mime_detected": {
+          "enum": ["application/pdf", "NOT_EXERCISED", "ERROR"],
+          "description": "MIME detected from bytes, never from extension (frozen intake rule)."
+        },
+        "byte_size": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Exact byte size at intake. INV-01: this value and the sha256 must be identical before and after every run and at experiment close."
+        },
+        "sha256": {
+          "$ref": "#/$defs/Sha256",
+          "description": "Immutable source hash of the original file bytes (INV-01)."
+        },
+        "sealed_fixture_manifest_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Pointer into the sealed fixture manifest binding this hash to the fixture id (INV-15 provenance)."
+        }
+      }
+    },
+    "source_inventory": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hash_algorithm", "object_count", "inventory_digest", "summary"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "hash_algorithm": {
+          "const": "sha256",
+          "description": "Frozen hash algorithm for every hash in this record."
+        },
+        "object_count": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Count of indirect objects in the source as seen by the conservative parser; null when NOT_EXERCISED/ERROR."
+        },
+        "inventory_digest": {
+          "type": ["string", "null"],
+          "description": "sha256 over the serialized per-object inventory (object number, type, byte length). Full inventory lives with the builder artifact; the CDRR carries the digest plus summary (INV-16)."
+        },
+        "summary": {
+          "type": "string",
+          "description": "Per-object inventory summary (counts by object type). Templated/statistical only - never a dump of document strings (INV-13)."
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "class_label", "classifier_tool", "classifier_evidence"],
+      "properties": {
+        "status": {
+          "enum": ["CLASSIFIED", "NOT_EXERCISED", "ERROR"],
+          "description": "First-class uncertainty: a crashed classifier is ERROR, a document refused before classification is NOT_EXERCISED."
+        },
+        "class_label": {
+          "enum": [
+            "TEXT_NATIVE_SINGLE_COLUMN",
+            "TEXT_NATIVE_MULTI_COLUMN",
+            "TEXT_NATIVE_TABLED",
+            "TEXT_NATIVE_ACROFORM",
+            "UNSUPPORTED",
+            "UNKNOWN"
+          ],
+          "description": "Document class label. Sized to the text-native slice: classes outside it are recorded as UNSUPPORTED (with refusal_scan.refusal_family giving the precise Phase-0 family). UNKNOWN only with status NOT_EXERCISED/ERROR."
+        },
+        "classifier_tool": { "$ref": "#/$defs/ToolRef" },
+        "classifier_evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["evidence_type", "detail", "page_index"],
+            "properties": {
+              "evidence_type": {
+                "enum": [
+                  "PAGE_TEXT_LAYER_PRESENT",
+                  "FONT_CATALOG",
+                  "LAYOUT_ANALYSIS",
+                  "FORM_DETECTED",
+                  "ENCRYPTION_FLAG",
+                  "SIGNATURE_DETECTED",
+                  "XFA_DETECTED",
+                  "JAVASCRIPT_DETECTED",
+                  "EMBEDDED_FILE_DETECTED",
+                  "RASTER_COVERAGE",
+                  "RTL_OR_BIDI_DETECTED",
+                  "OPTIONAL_CONTENT_DETECTED",
+                  "PARSER_FAILURE",
+                  "OTHER_RECORDED"
+                ]
+              },
+              "detail": {
+                "type": "string",
+                "description": "Templated reason text plus page/region identifiers only; never raw document text (INV-13)."
+              },
+              "page_index": { "type": ["integer", "null"], "minimum": 0 }
+            }
+          }
+        }
+      }
+    },
+    "refusal_scan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "outcome", "refusal_family", "scan_tool", "evidence_anchors"],
+      "properties": {
+        "status": {
+          "enum": ["COMPLETED", "NOT_EXERCISED", "ERROR"],
+          "description": "Phase-0 refusal scan execution status."
+        },
+        "outcome": {
+          "enum": ["NOT_REFUSED", "REFUSED", "NOT_EXERCISED", "ERROR"],
+          "description": "Phase-0 outcome. REFUSED means the document never enters extraction; its CDRR then has all extraction sections NOT_EXERCISED and empty (INV-22)."
+        },
+        "refusal_family": {
+          "$ref": "#/$defs/RefusalFamily",
+          "description": "Required and meaningful only when outcome is REFUSED; NOT_APPLICABLE otherwise."
+        },
+        "scan_tool": { "$ref": "#/$defs/ToolRef" },
+        "evidence_anchors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["page_index", "object_number", "detail"],
+            "properties": {
+              "page_index": { "type": ["integer", "null"], "minimum": 0 },
+              "object_number": { "type": ["integer", "null"], "minimum": 0 },
+              "detail": {
+                "type": "string",
+                "description": "Templated refusal reason family + page/region identifiers; no raw document text (INV-13)."
+              }
+            }
+          }
+        }
+      }
+    },
+    "pages": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/PageRecord" },
+          "description": "One record per source page, in source page order. INV-02: candidate page count must equal len(records) (page count invariance). INV-03: MediaBox/CropBox are page boundaries and are immutable. INV-04: this array's order is the immutable page order."
+        }
+      }
+    },
+    "text_spans": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/TextSpanRecord" }
+        }
+      }
+    },
+    "structure": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/StructureElementRecord" },
+          "description": "Headings with explicit levels, paragraphs, list items, notices, captions, figures (text-native elements: figures are represented by their text content and bbox anchors only; there is no raster in this slice)."
+        }
+      }
+    },
+    "reading_order": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["derivation_method", "confidence", "ordered_element_ids"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "derivation_method": {
+          "enum": ["SOURCE_ORDER", "EXPLICIT_STRUCTURE_TREE", "GEOMETRIC_RECONSTRUCTION", "MANUAL_FROZEN", "NOT_EXERCISED", "ERROR"]
+        },
+        "confidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["band", "score"],
+          "properties": {
+            "band": { "enum": ["HIGH", "MEDIUM", "LOW", "NOT_EXERCISED", "ERROR"] },
+            "score": {
+              "type": ["number", "null"],
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Numeric confidence in [0,1]; null when NOT_EXERCISED/ERROR."
+            }
+          }
+        },
+        "ordered_element_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/ElementId" },
+          "description": "Element ids in the derived reading order. INV-05: any source-vs-candidate reading-order difference must correspond to exactly one planned+applied SET_VERIFIED_READING_ORDER operation; any other reading-order change is a material failure."
+        }
+      }
+    },
+    "tables": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/TableRecord" },
+          "description": "Empty when the document class has no tables or when the section was not exercised. Cell identity is (table_id, row_anchor, column_anchor) where table_id comes from the enclosing TableRecord. Parsed numbers are verification-only and never replace displayed strings."
+        }
+      }
+    },
+    "navigation": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bookmarks", "toc_entries", "internal_links"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "bookmarks": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/BookmarkRecord" },
+          "description": "Bookmark/outline entries. INV-18 kill-condition coverage: bookmark loss must be detectable by gate G06."
+        },
+        "toc_entries": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/TocEntryRecord" }
+        },
+        "internal_links": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/LinkRecord" }
+        }
+      }
+    },
+    "visible_ink": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["per_page_anchors"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "per_page_anchors": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/InkAnchorRecord" },
+          "description": "Page-level ink coverage anchors consumed by gates G04 (visible/text agreement) and G09 (independent renderer ink accounting). Full bitmaps live in render artifacts, never in the CDRR."
+        }
+      }
+    },
+    "operation_plan": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/PlannedOperationRecord" },
+          "description": "Every planned operation. INV-15 (frozen operation-set closure): operation_name must be one of the ten frozen allowed operations; anything else is INVALID_EXPERIMENT (condition E15)."
+        }
+      }
+    },
+    "applied_operations": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/AppliedOperationRecord" },
+          "description": "What was actually applied, with tool + version. INV-07: the applying tool is a builder-path component, never a verifier component (verifier-never-repairs, INV-06)."
+        }
+      }
+    },
+    "delta_reconciliation": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/DeltaReconciliationRecord" },
+          "description": "Expected-vs-observed delta reconciliation per applied operation (INV-21). The authoritative per-operation receipts are OperationRecords in RECEIPT-SCHEMA.json; this inline copy must agree with them."
+        }
+      }
+    },
+    "verifier_results": {
+      "allOf": [{ "$ref": "#/$defs/SectionEnvelope" }],
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["records"],
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": { "type": ["string", "null"] },
+        "records": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/VerifierGateResult" },
+          "description": "One result per gate execution. NOT_EXERCISED and ERROR are first-class statuses; a NOT_EXERCISED gate must carry a reason code and is never counted as PASS (INV-08). The authoritative records are VerifierRecords in RECEIPT-SCHEMA.json; this inline copy must agree with them (INV-24)."
+        }
+      }
+    },
+    "disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "final_disposition",
+        "derivation",
+        "refusal_family",
+        "human_confirmation_ref"
+      ],
+      "properties": {
+        "final_disposition": {
+          "enum": ["ACCEPT", "REVIEW", "REFUSE", "NOT_VERIFIABLE"],
+          "description": "Mechanically derived document disposition. Run-level INVALID_EXPERIMENT is NOT a document disposition; it is recorded in the ExperimentRunReceipt and overrides every document disposition in the run (INV-23)."
+        },
+        "derivation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "document_class",
+            "gate_statuses",
+            "required_gate_matrix_version",
+            "fired_precedence_rule_id",
+            "disposition_engine",
+            "derived_from_records_only"
+          ],
+          "properties": {
+            "document_class": {
+              "enum": [
+                "TEXT_NATIVE_SINGLE_COLUMN",
+                "TEXT_NATIVE_MULTI_COLUMN",
+                "TEXT_NATIVE_TABLED",
+                "TEXT_NATIVE_ACROFORM",
+                "UNSUPPORTED",
+                "UNKNOWN"
+              ],
+              "description": "Echo of classification.class_label - a machine-derivation input."
+            },
+            "gate_statuses": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["gate_id", "gate_status"],
+                "properties": {
+                  "gate_id": { "$ref": "#/$defs/GateId" },
+                  "gate_status": { "$ref": "#/$defs/GateStatus" }
+                }
+              },
+              "description": "Echo of the per-gate statuses consumed by the disposition engine (machine-derivation inputs; INV-08 applies to these values verbatim)."
+            },
+            "required_gate_matrix_version": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Version/hash of the frozen class-by-gate matrix from lane 01 DISPOSITION-SPEC.json that the engine applied."
+            },
+            "fired_precedence_rule_id": {
+              "type": "string",
+              "pattern": "^PR-[A-Z0-9-]{1,40}$",
+              "description": "Identifier of the precedence rule from the frozen disposition spec (lane 01) that decided the outcome."
+            },
+            "disposition_engine": { "$ref": "#/$defs/ToolRef" },
+            "derived_from_records_only": {
+              "const": true,
+              "description": "Mechanical declaration that ACCEPT (and every disposition) derives only from verification records and the frozen decision rules; report/summary code has no authority to set it (INV-20)."
+            }
+          }
+        },
+        "refusal_family": {
+          "type": ["string", "null"],
+          "description": "Echo of refusal_scan.refusal_family when final_disposition is REFUSE; null otherwise."
+        },
+        "human_confirmation_ref": {
+          "type": ["string", "null"],
+          "description": "Reference to a human-confirmation record for REVIEW replay, or null. The effect of CONFIRM on replay is frozen in lane 01; this field only anchors it."
+        }
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "disposition": {
+        "properties": {
+          "final_disposition": { "const": "REFUSE" }
+        },
+        "required": ["final_disposition"]
+      }
+    },
+    "required": ["disposition"]
+  },
+  "then": {
+    "description": "INV-22 refuse-shape completeness: a REFUSED document is never extracted, so every extraction section must be explicitly NOT_EXERCISED (or ERROR, if the refuser crashed mid-write) with empty records - present, never missing.",
+    "properties": {
+      "source_inventory": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "pages": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "text_spans": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "structure": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "reading_order": {
+        "type": "object",
+        "required": ["status"],
+        "properties": {
+          "status": { "enum": ["NOT_EXERCISED", "ERROR"] },
+          "derivation_method": { "enum": ["NOT_EXERCISED", "ERROR"] },
+          "ordered_element_ids": { "maxItems": 0 }
+        }
+      },
+      "tables": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "navigation": {
+        "type": "object",
+        "required": ["status"],
+        "properties": {
+          "status": { "enum": ["NOT_EXERCISED", "ERROR"] },
+          "bookmarks": { "maxItems": 0 },
+          "toc_entries": { "maxItems": 0 },
+          "internal_links": { "maxItems": 0 }
+        }
+      },
+      "visible_ink": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "operation_plan": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "applied_operations": { "$ref": "#/$defs/RefusedSectionConstraint" },
+      "delta_reconciliation": { "$ref": "#/$defs/RefusedSectionConstraint" }
+    },
+    "required": [
+      "source_inventory",
+      "pages",
+      "text_spans",
+      "structure",
+      "reading_order",
+      "tables",
+      "navigation",
+      "visible_ink",
+      "operation_plan",
+      "applied_operations",
+      "delta_reconciliation"
+    ]
+  },
+  "$defs": {
+    "RefusalFamily": {
+      "enum": [
+        "NOT_APPLICABLE",
+        "ENCRYPTED",
+        "SIGNED_OR_CERTIFIED",
+        "XFA_OR_HYBRID_XFA",
+        "ACTIVE_CONTENT_OR_JAVASCRIPT",
+        "EMBEDDED_FILE_OR_EXECUTABLE_TARGET",
+        "PENDING_REDACTION",
+        "CONSERVATIVE_PARSER_FAILURE",
+        "RESOURCE_BUDGET_EXCEEDED",
+        "MATERIAL_RTL_BIDI",
+        "OPTIONAL_CONTENT_DEPENDENCE",
+        "UNVERIFIED_GLYPH_MAPPING",
+        "LIVE_TEXT_UNDER_OPAQUE_INK",
+        "SECURITY_VERIFICATION_NOT_RUN",
+        "MIME_NOT_PDF",
+        "OTHER_RECORDED"
+      ],
+      "description": "Frozen Phase-0 refusal families (templated; refusal messages never echo document text, INV-13/E13)."
+    },
+    "Sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Lowercase 64-hex-character SHA-256 digest (INV-16)."
+    },
+    "IsoTimestampUtc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$",
+      "description": "UTC ISO-8601 timestamp."
+    },
+    "LooseId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$",
+      "description": "Identifier whose exact format is owned by another frozen lane (fixture ids by lane 03, run ids by the integrator)."
+    },
+    "ElementId": {
+      "type": "string",
+      "pattern": "^EL-[A-Za-z0-9]{1,16}$"
+    },
+    "SpanId": {
+      "type": "string",
+      "pattern": "^SP-[A-Za-z0-9]{1,16}$"
+    },
+    "OperationId": {
+      "type": "string",
+      "pattern": "^OP-[A-Za-z0-9]{1,16}$"
+    },
+    "ToolRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 }
+      },
+      "description": "Named tool + version. Versions must be the versions actually used (INV-07/INV-14 provenance)."
+    },
+    "SectionStatus": {
+      "enum": ["EXERCISED", "NOT_EXERCISED", "ERROR"],
+      "description": "Envelope status for every CDRR section. NOT_EXERCISED means the pipeline stage never ran (e.g. refused before extraction); ERROR means it ran and failed. NOT_EXERCISED is never counted as success (INV-08)."
+    },
+    "SectionEnvelope": {
+      "type": "object",
+      "properties": {
+        "status": { "$ref": "#/$defs/SectionStatus" },
+        "not_exercised_reason": {
+          "type": ["string", "null"],
+          "description": "Templated reason when status is NOT_EXERCISED (e.g. REFUSED_BEFORE_EXTRACTION); null otherwise."
+        }
+      },
+      "required": ["status"]
+    },
+    "RefusedSectionConstraint": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["NOT_EXERCISED", "ERROR"] },
+        "records": { "maxItems": 0 }
+      },
+      "description": "Applied via root if/then: when final_disposition is REFUSE, extraction sections must carry status NOT_EXERCISED (or ERROR) and empty records arrays (INV-22)."
+    },
+    "PointBox": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x0", "y0", "x1", "y1", "units"],
+      "properties": {
+        "x0": { "type": "number" },
+        "y0": { "type": "number" },
+        "x1": { "type": "number" },
+        "y1": { "type": "number" },
+        "units": {
+          "const": "pt",
+          "description": "Canonical PDF points (1/72 inch), device-independent coordinates as emitted by the extractor."
+        }
+      },
+      "description": "Axis-aligned rectangle in canonical points. Cross-field orientation checks belong to gate G02, not to this schema."
+    },
+    "PageRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_index", "media_box", "crop_box", "rotation", "source_page_hash", "object_count"],
+      "properties": {
+        "page_index": { "type": "integer", "minimum": 0 },
+        "media_box": { "$ref": "#/$defs/PointBox" },
+        "crop_box": { "$ref": "#/$defs/PointBox" },
+        "rotation": {
+          "enum": [0, 90, 180, 270],
+          "description": "Source page /Rotate value in degrees."
+        },
+        "source_page_hash": {
+          "$ref": "#/$defs/Sha256",
+          "description": "sha256 over the serialized raw page-object bytes as emitted by the conservative parser; must be reproducible from the immutable source (INV-01/INV-16)."
+        },
+        "object_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Indirect objects reachable from this page."
+        }
+      }
+    },
+    "TextSpanRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["span_id", "page_index", "bbox", "unicode_text", "font_name", "font_size", "glyph_mapping_status"],
+      "properties": {
+        "span_id": { "$ref": "#/$defs/SpanId" },
+        "page_index": { "type": "integer", "minimum": 0 },
+        "bbox": { "$ref": "#/$defs/PointBox" },
+        "unicode_text": {
+          "type": "string",
+          "description": "Unicode text of the span as extracted. (Evidence record: the CDRR stores extracted content by design; INV-13 redaction applies to refusal messages and summaries, not here.)"
+        },
+        "font_name": { "type": "string", "minLength": 1 },
+        "font_size": { "type": "number", "exclusiveMinimum": 0 },
+        "glyph_mapping_status": {
+          "enum": ["VERIFIED", "PARTIAL", "UNVERIFIED", "NOT_APPLICABLE", "NOT_EXERCISED", "ERROR"],
+          "description": "Glyph-to-unicode mapping status. Material text without a verified glyph mapping is a Phase-0 refusal family; NORMALIZE_TYPOGRAPHY is only allowed over spans with VERIFIED mapping (INV-17)."
+        }
+      }
+    },
+    "StructureElementRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["element_id", "element_type", "heading_level", "span_ids", "list_marker_type", "notice_kind", "figure_kind"],
+      "properties": {
+        "element_id": { "$ref": "#/$defs/ElementId" },
+        "element_type": {
+          "enum": ["HEADING", "PARAGRAPH", "LIST_ITEM", "NOTICE", "CAPTION", "FIGURE"]
+        },
+        "heading_level": {
+          "type": ["integer", "null"],
+          "description": "Explicit heading level; must be an integer 1..6 when element_type is HEADING (enforced by if/then below), null otherwise."
+        },
+        "span_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/SpanId" }
+        },
+        "list_marker_type": {
+          "enum": ["BULLET", "NUMBERED", "NONE", "UNKNOWN", "NOT_EXERCISED", "ERROR"]
+        },
+        "notice_kind": {
+          "enum": ["WARNING", "CAUTION", "NOTE", "LEGAL", "OTHER_RECORDED", "NONE", "NOT_EXERCISED", "ERROR"]
+        },
+        "figure_kind": {
+          "enum": ["TEXT_FIGURE", "CHART_LABEL_TEXT", "OTHER_RECORDED", "NONE", "NOT_EXERCISED", "ERROR"]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "element_type": { "const": "HEADING" } },
+            "required": ["element_type"]
+          },
+          "then": {
+            "required": ["heading_level"],
+            "properties": {
+              "heading_level": { "type": "integer", "minimum": 1, "maximum": 6 }
+            }
+          }
+        }
+      ]
+    },
+    "NumericLexeme": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lexeme", "parsed_value", "unit"],
+      "properties": {
+        "lexeme": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact numeric substring as displayed (leading zeroes, precision, signs, parentheses, dashes preserved). Parsed values never replace displayed strings."
+        },
+        "parsed_value": {
+          "type": ["number", "null"],
+          "description": "Verification-only parse; null when the lexeme is not machine-parseable. Arithmetic checks detect divergence, they never correct the document."
+        },
+        "unit": {
+          "type": ["string", "null"],
+          "description": "Unit token attached to this lexeme, or null; external declarations live in TableRecord.external_unit_declarations."
+        }
+      }
+    },
+    "TableCellRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["row_anchor", "column_anchor", "displayed_string", "numeric_lexemes", "header_relationship", "col_span", "row_span"],
+      "properties": {
+        "row_anchor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable source-derived row identity anchor (not page order)."
+        },
+        "column_anchor": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable source-derived column identity anchor (not page order)."
+        },
+        "displayed_string": {
+          "type": "string",
+          "description": "Exact displayed cell string; preserved verbatim through every allowed operation."
+        },
+        "numeric_lexemes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/NumericLexeme" }
+        },
+        "header_relationship": {
+          "enum": ["COLUMN_HEADER", "ROW_HEADER", "BOTH", "DATA", "STUB", "NOT_APPLICABLE", "NOT_EXERCISED", "ERROR"]
+        },
+        "col_span": { "type": "integer", "minimum": 1 },
+        "row_span": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "TableRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["table_id", "page_index", "grid_row_count", "grid_column_count", "cells", "external_unit_declarations"],
+      "properties": {
+        "table_id": {
+          "type": "string",
+          "pattern": "^TBL-[A-Za-z0-9]{1,16}$",
+          "description": "First component of cell identity (table_id, row_anchor, column_anchor)."
+        },
+        "page_index": { "type": "integer", "minimum": 0 },
+        "grid_row_count": { "type": "integer", "minimum": 0 },
+        "grid_column_count": { "type": "integer", "minimum": 0 },
+        "cells": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/TableCellRecord" }
+        },
+        "external_unit_declarations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["anchor_element_id", "declaration"],
+            "properties": {
+              "anchor_element_id": { "$ref": "#/$defs/ElementId" },
+              "declaration": {
+                "type": "string",
+                "description": "External unit declaration text (e.g. 'in thousands') anchored to its source element; preserved verbatim."
+              }
+            }
+          }
+        }
+      }
+    },
+    "DestinationRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "page_index", "coordinates", "named_dest"],
+      "properties": {
+        "kind": {
+          "enum": ["PAGE", "NAMED_DEST", "XYZ", "NOT_APPLICABLE", "NOT_EXERCISED", "ERROR"]
+        },
+        "page_index": { "type": ["integer", "null"], "minimum": 0 },
+        "coordinates": { "type": ["object", "null"], "description": "Destination point/box in canonical points when kind is XYZ; shape owned by the extractor." },
+        "named_dest": { "type": ["string", "null"] }
+      }
+    },
+    "BookmarkRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bookmark_id", "title_text", "destination", "parent_bookmark_id"],
+      "properties": {
+        "bookmark_id": { "type": "string", "pattern": "^BM-[A-Za-z0-9]{1,16}$" },
+        "title_text": { "type": "string" },
+        "destination": { "$ref": "#/$defs/DestinationRef" },
+        "parent_bookmark_id": { "type": ["string", "null"], "pattern": "^BM-[A-Za-z0-9]{1,16}$" }
+      }
+    },
+    "TocEntryRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entry_text", "target_page_index", "confidence"],
+      "properties": {
+        "entry_text": { "type": "string" },
+        "target_page_index": { "type": ["integer", "null"], "minimum": 0 },
+        "confidence": { "enum": ["HIGH", "MEDIUM", "LOW", "NOT_EXERCISED", "ERROR"] }
+      }
+    },
+    "LinkRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["link_id", "source_page_index", "source_bbox", "destination", "target_independently_established"],
+      "properties": {
+        "link_id": { "type": "string", "pattern": "^LN-[A-Za-z0-9]{1,16}$" },
+        "source_page_index": { "type": "integer", "minimum": 0 },
+        "source_bbox": { "$ref": "#/$defs/PointBox" },
+        "destination": { "$ref": "#/$defs/DestinationRef" },
+        "target_independently_established": {
+          "type": "boolean",
+          "description": "REPAIR_INTERNAL_NAVIGATION may only target a link whose destination was independently established (frozen Phase-0 rule); false targets are out of scope for repair."
+        }
+      }
+    },
+    "InkAnchorRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["page_index", "ink_coverage_ratio", "ink_anchor_digest", "renderer"],
+      "properties": {
+        "page_index": { "type": "integer", "minimum": 0 },
+        "ink_coverage_ratio": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Fraction of page area with visible ink per independent renderer at the frozen resolution."
+        },
+        "ink_anchor_digest": {
+          "$ref": "#/$defs/Sha256",
+          "description": "sha256 over the rendered ink bitmap at the frozen resolution; anchor for visible/text agreement (gates G04/G09)."
+        },
+        "renderer": { "$ref": "#/$defs/ToolRef" }
+      }
+    },
+    "Anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "page_index", "element_id", "span_id", "bbox"],
+      "properties": {
+        "kind": {
+          "enum": ["PAGE", "TEXT_SPAN", "STRUCTURE_ELEMENT", "TABLE_CELL", "BOOKMARK", "LINK", "OUTLINE_ENTRY"]
+        },
+        "page_index": { "type": ["integer", "null"], "minimum": 0 },
+        "element_id": { "type": ["string", "null"], "pattern": "^EL-[A-Za-z0-9]{1,16}$" },
+        "span_id": { "type": ["string", "null"], "pattern": "^SP-[A-Za-z0-9]{1,16}$" },
+        "bbox": { "type": ["object", "null"], "description": "PointBox-shaped location when applicable." }
+      }
+    },
+    "DeltaObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["delta_type", "scope", "magnitude", "material_change"],
+      "properties": {
+        "delta_type": {
+          "enum": [
+            "WHITESPACE_ONLY",
+            "COORDINATE_SHIFT",
+            "GLYPH_SUBSTITUTION",
+            "TEXT_JOIN_HYPHEN",
+            "DUPLICATE_SUPPRESSION",
+            "METADATA_ONLY",
+            "STRUCTURE_TAG_ADDITION",
+            "READING_ORDER_ANNOTATION",
+            "NAVIGATION_ADDITION",
+            "PAGE_ROTATION",
+            "NO_TEXT_DELTA"
+          ]
+        },
+        "scope": { "enum": ["SPAN", "ELEMENT", "PAGE", "DOCUMENT"] },
+        "magnitude": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["metric", "value", "tolerance"],
+          "properties": {
+            "metric": { "enum": ["CHAR_COUNT", "POINTS", "PIXELS", "COUNT", "RATIO", "DEGREES"] },
+            "value": { "type": "number" },
+            "tolerance": { "type": ["number", "null"] }
+          }
+        },
+        "material_change": {
+          "type": "boolean",
+          "description": "Must be false for every allowed Phase-0 operation except ROTATE_PAGE, which is REVIEW-only. Declaring a material change inside the automatic path is a protocol violation recorded for the disposition engine."
+        }
+      }
+    },
+    "FrozenOperationName": {
+      "enum": [
+        "NORMALIZE_SPACING",
+        "NORMALIZE_ALIGNMENT",
+        "NORMALIZE_TYPOGRAPHY",
+        "JOIN_DECLARED_HYPHENATION",
+        "NORMALIZE_REPEATED_HEADER_FOOTER",
+        "ADD_OR_REPAIR_STRUCTURE_TAGS",
+        "SET_VERIFIED_READING_ORDER",
+        "ADD_OR_REPAIR_BOOKMARKS",
+        "REPAIR_INTERNAL_NAVIGATION",
+        "ROTATE_PAGE"
+      ],
+      "description": "The frozen Phase-0 allowed operation set (inputs/MAIN-GLM-SYNTHESIS.md). No other operation name is valid anywhere in this experiment (INV-15 of INVARIANTS.md); page order, page count and page boundaries are immutable."
+    },
+    "JustificationCode": {
+      "enum": [
+        "SPACING_IRREGULAR",
+        "ALIGNMENT_IRREGULAR",
+        "TYPOGRAPHY_NONSTANDARD_GLYPH_VERIFIED",
+        "DECLARED_LINE_END_HYPHENATION",
+        "REPEATED_HEADER_FOOTER_PRESENT",
+        "STRUCTURE_TAGS_MISSING",
+        "READING_ORDER_UNVERIFIED",
+        "BOOKMARKS_MISSING_OR_BROKEN",
+        "INTERNAL_LINK_DEST_INDEPENDENTLY_ESTABLISHED",
+        "PAGE_ROTATION_REVIEW_REQUIRED"
+      ]
+    },
+    "PlannedOperationRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "operation_name",
+        "source_anchors",
+        "justification_code",
+        "justification_note",
+        "expected_delta",
+        "requires_glyph_verification",
+        "review_only"
+      ],
+      "properties": {
+        "operation_id": { "$ref": "#/$defs/OperationId" },
+        "operation_name": { "$ref": "#/$defs/FrozenOperationName" },
+        "source_anchors": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Anchor" }
+        },
+        "justification_code": { "$ref": "#/$defs/JustificationCode" },
+        "justification_note": {
+          "type": ["string", "null"],
+          "description": "Optional builder note; templated identifiers only, no raw document text (INV-13)."
+        },
+        "expected_delta": { "$ref": "#/$defs/DeltaObservation" },
+        "requires_glyph_verification": {
+          "type": "boolean",
+          "description": "Must be true for NORMALIZE_TYPOGRAPHY (INV-17)."
+        },
+        "review_only": {
+          "type": "boolean",
+          "description": "Must be true for ROTATE_PAGE (the only REVIEW-only operation in the frozen set); false for everything else."
+        }
+      }
+    },
+    "AppliedOperationRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "applied_status", "applied_at", "tool", "observed_delta", "candidate_artifact_ref"],
+      "properties": {
+        "operation_id": { "$ref": "#/$defs/OperationId" },
+        "applied_status": {
+          "enum": ["APPLIED", "SKIPPED", "PARTIAL", "FAILED", "NOT_EXERCISED", "ERROR"]
+        },
+        "applied_at": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$" },
+        "tool": { "type": ["object", "null"], "description": "ToolRef-shaped: name + version of the builder tool that applied the operation (INV-06/INV-07)." },
+        "observed_delta": { "type": ["object", "null"], "description": "DeltaObservation-shaped observation of what actually changed; null when not applied." },
+        "candidate_artifact_ref": {
+          "type": ["string", "null"],
+          "description": "Reference to the candidate artifact produced by this application."
+        }
+      }
+    },
+    "DeltaReconciliationRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "reconciliation_status", "evidence_refs"],
+      "properties": {
+        "operation_id": { "$ref": "#/$defs/OperationId" },
+        "reconciliation_status": {
+          "enum": ["RECONCILED", "DIVERGED", "PENDING", "NOT_EXERCISED", "ERROR"],
+          "description": "Expected-vs-observed delta outcome per operation (INV-21). DIVERGED on a material delta blocks ACCEPT."
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "References to verifier evidence (VerifierRecord ids or artifact paths)."
+        }
+      }
+    },
+    "GateId": {
+      "enum": [
+        "G01_SOURCE_HASH_INVENTORY",
+        "G02_PAGE_GEOMETRY_RECONCILIATION",
+        "G03_TEXT_IDENTITY",
+        "G04_VISIBLE_TEXT_AGREEMENT",
+        "G05_READING_ORDER_HIERARCHY",
+        "G06_NAVIGATION_INTEGRITY",
+        "G07_TABLE_IDENTITY_NUMERIC",
+        "G08_ACROFORM_ROUNDTRIP",
+        "G09_INDEPENDENT_RENDER_INK",
+        "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+        "G11_RESOURCE_BUDGET_NO_NETWORK",
+        "G12_HUMAN_AB_USABILITY_CLOSURE"
+      ],
+      "description": "Frozen gate ids mirroring the synthesis verification chain. G12 is experiment-closure-level (FINAL-RECONCILIATION correction item 4) and is never part of the per-document mechanical acceptance predicate."
+    },
+    "GateStatus": {
+      "enum": ["PASS", "FAIL", "NOT_EXERCISED", "ERROR"],
+      "description": "Frozen gate statuses. NOT_EXERCISED is a first-class state and is never counted as PASS (INV-08)."
+    },
+    "NotExercisedReasonCode": {
+      "enum": [
+        "GATE_NOT_REQUIRED_FOR_CLASS",
+        "DOCUMENT_REFUSED_BEFORE_GATE",
+        "UPSTREAM_GATE_FAILED",
+        "TOOL_UNAVAILABLE",
+        "BUDGET_TRIP_BEFORE_GATE",
+        "CLOSURE_LEVEL_GATE",
+        "RUN_INVALIDATED",
+        "OTHER_RECORDED"
+      ],
+      "description": "Frozen reason codes required whenever a gate is NOT_EXERCISED."
+    },
+    "IndependenceClass": {
+      "enum": ["INDEPENDENT_IMPLEMENTATION", "SAME_LIBRARY_DIFFERENT_PATH", "SHARED_CODE_WITH_BUILDER", "NOT_EXERCISED", "ERROR"],
+      "description": "Mechanical independence declaration for the tool that executed a gate. Same-engine extraction and verification do not count as independence (frozen synthesis rule). A decisive gate not declared INDEPENDENT_IMPLEMENTATION may not contribute to ACCEPT (INV-07)."
+    },
+    "VerifierGateResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gate_id",
+        "gate_status",
+        "evidence_refs",
+        "independence_declaration",
+        "started_at",
+        "finished_at",
+        "not_exercised_reason_code"
+      ],
+      "properties": {
+        "gate_id": { "$ref": "#/$defs/GateId" },
+        "gate_status": { "$ref": "#/$defs/GateStatus" },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "References to evidence artifacts (hashes, digests, verifier record ids, artifact paths)."
+        },
+        "independence_declaration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tool_name", "tool_version", "independence_class", "decisive"],
+          "properties": {
+            "tool_name": { "type": "string", "minLength": 1 },
+            "tool_version": { "type": "string", "minLength": 1 },
+            "independence_class": { "$ref": "#/$defs/IndependenceClass" },
+            "decisive": {
+              "type": "boolean",
+              "description": "Whether this gate is decisive for the disposition under the frozen class-by-gate matrix."
+            }
+          }
+        },
+        "started_at": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$" },
+        "finished_at": { "type": ["string", "null"], "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$" },
+        "not_exercised_reason_code": {
+          "type": ["string", "null"],
+          "description": "Must be one of NotExercisedReasonCode when gate_status is NOT_EXERCISED (if/then below); null otherwise."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "gate_status": { "const": "NOT_EXERCISED" } },
+            "required": ["gate_status"]
+          },
+          "then": {
+            "required": ["not_exercised_reason_code"],
+            "properties": {
+              "not_exercised_reason_code": { "$ref": "#/$defs/NotExercisedReasonCode" }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "x-invariants-registry": {
+    "description": "Cross-reference: every invariant id frozen in INVARIANTS.md (lane 02-cdrr-receipts). Mechanical check methods and violation semantics live in INVARIANTS.md; this registry makes each id findable inside the schema record (checked by validate.py).",
+    "invariants": {
+      "INV-01": "Original source byte-immutability: sha256/byte size identical before and after every run (E01).",
+      "INV-02": "Page count invariance between source and candidate; silent change is E10.",
+      "INV-03": "Page boundary invariance: MediaBox/CropBox per page unchanged; silent change is E10.",
+      "INV-04": "Page order invariance; silent change is E10.",
+      "INV-05": "Reading order changed only via a named frozen SET_VERIFIED_READING_ORDER operation.",
+      "INV-06": "Verifier never repairs the candidate it evaluates (E03).",
+      "INV-07": "Builder/verifier separation points named; decisive gates need INDEPENDENT_IMPLEMENTATION.",
+      "INV-08": "NOT_EXERCISED never counted as PASS (E04).",
+      "INV-09": "Receipts written for every run including refusals and crashes (E11).",
+      "INV-10": "Outputs written atomically (temp path then rename) (E12).",
+      "INV-11": "Private temp lifecycle: per-document, removed, never reused (E07).",
+      "INV-12": "No network during processing (E06).",
+      "INV-13": "All outputs redacted to templated reasons; no document text echoed in refusal messages (E13).",
+      "INV-14": "Provenance preservation: every integrated artifact traceable to its lane (E14).",
+      "INV-15": "Frozen operation-set closure; any non-frozen operation is E15.",
+      "INV-16": "Hash format integrity: every hash field is 64-char lowercase hex and recomputable.",
+      "INV-17": "Glyph-mapping prerequisite for NORMALIZE_TYPOGRAPHY.",
+      "INV-18": "Refusal precision: refusal families recorded with evidence anchors; benign controls not refused.",
+      "INV-19": "Determinism: rerun from clean temp reproduces candidate hash modulo declared variable fields.",
+      "INV-20": "ACCEPT derives only from verification records; report/summary code can never choose ACCEPT (E05).",
+      "INV-21": "Expected-delta reconciliation per applied operation; material divergence blocks ACCEPT.",
+      "INV-22": "Refuse-shape completeness: REFUSED CDRR keeps all sections present, NOT_EXERCISED, empty.",
+      "INV-23": "Run-level INVALID_EXPERIMENT overrides all document dispositions of the run.",
+      "INV-24": "Records are append-only; corrections supersede, never rewrite."
+    }
+  }
+}
