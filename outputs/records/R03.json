@@ -1,0 +1,175 @@
+{
+  "build": null,
+  "disposition": {
+    "disposition": "REFUSE",
+    "rule": "PR-01"
+  },
+  "document_id": "R03",
+  "intake": {
+    "class_label": "REFUSE_XFA",
+    "document_id": "R03",
+    "evidence": [
+      {
+        "refusal_markers": [
+          "/XFA\\b"
+        ]
+      }
+    ],
+    "file_bytes": 1861,
+    "filename": "R03-xfa.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 1
+    },
+    "object_count": 11,
+    "page_count": 0,
+    "pages": [],
+    "refusal_family": "xfa",
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 1861,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 11,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 15
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 54
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 113
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 195
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 384
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 900
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 941
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1048
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1160
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1181
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1392
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 1,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 1
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 1
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/R03-xfa.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": true
+      },
+      "sha256": "977ec97893ca54e35d2b3c3fb4d9c13fa4b6aa797eb7b9144b062d916855fcd6"
+    },
+    "source_sha256": "977ec97893ca54e35d2b3c3fb4d9c13fa4b6aa797eb7b9144b062d916855fcd6",
+    "status": "REFUSED"
+  },
+  "plan": null,
+  "refusal": {
+    "family": "xfa",
+    "summary": "refused before extraction"
+  },
+  "schema": 1,
+  "verification": {
+    "gates": {
+      "G1": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G10": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G2": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G3": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G4": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G5": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G6": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G7": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G9": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      }
+    }
+  }
+}

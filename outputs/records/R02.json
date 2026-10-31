@@ -1,0 +1,182 @@
+{
+  "build": null,
+  "disposition": {
+    "disposition": "REFUSE",
+    "rule": "PR-01"
+  },
+  "document_id": "R02",
+  "intake": {
+    "class_label": "REFUSE_SIGNED",
+    "document_id": "R02",
+    "evidence": [
+      {
+        "refusal_markers": [
+          "/FT\\s*/Sig\\b",
+          "/Type\\s*/Sig\\b",
+          "/ByteRange\\b"
+        ]
+      }
+    ],
+    "file_bytes": 2314,
+    "filename": "R02-signed.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 1
+    },
+    "object_count": 12,
+    "page_count": 0,
+    "pages": [],
+    "refusal_family": "signed",
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 2314,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 12,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 15
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 54
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 113
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 195
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 403
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 926
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 967
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1074
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1186
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1207
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1714
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1833
+        }
+      ],
+      "markers": {
+        "annotations": 1,
+        "byte_range": 1,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 1,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 2,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 1
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/R02-signed.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": true,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "838ae03261655403fd5421337d2e5d33eee853f6999e55709c06cab2d3f735c7"
+    },
+    "source_sha256": "838ae03261655403fd5421337d2e5d33eee853f6999e55709c06cab2d3f735c7",
+    "status": "REFUSED"
+  },
+  "plan": null,
+  "refusal": {
+    "family": "signed",
+    "summary": "refused before extraction"
+  },
+  "schema": 1,
+  "verification": {
+    "gates": {
+      "G1": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G10": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G2": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G3": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G4": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G5": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G6": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G7": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G9": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      }
+    }
+  }
+}
