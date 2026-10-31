@@ -1,0 +1,2060 @@
+{
+  "build": {
+    "candidate_bytes": 7873,
+    "candidate_sha256": "eedeaa1f7d25e5eb16837fe1e68b84a24a325e2b72e63ada8f7cad68a934c0ce",
+    "document_id": "F03",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS"
+    ],
+    "page_count": 2,
+    "source_sha256": "54b84a8b39562705b6c9bf77f8a4cb22619d49298f944bb3533bafc04acda683",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F03-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F03",
+  "intake": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F03",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 4396,
+    "filename": "F03-report.pdf",
+    "navigation": {
+      "destination_marker_count": 4,
+      "link_annotation_count": 0,
+      "outline_marker_count": 2
+    },
+    "object_count": 18,
+    "page_count": 2,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "1.",
+          "2.",
+          "118",
+          "42",
+          ") 4,250",
+          "36%",
+          "11,300",
+          "1",
+          "2"
+        ],
+        "page_index": 0,
+        "reading_text": "Quarterly Review: Larkspur Community Grants Program\n1. Summary\nThe grants program closed its third quarter with a full pipeline and a modest surplus. Overall demand\nstayed close to the forecast prepared in April, and the committee approved every award on the schedule\npublished in June.\n2. Grant activity\nActivity was steady through the quarter. Two review panels met twice each, and the second panel\ncleared the backlog of appeals that had accumulated since the spring cycle.\nApplications received 118\nAwards approved 42\nMedian award (USD) 4,250\nSuccess rate 36%\nUncommitted balance 11,300\nLarkspur grants quarterly review - synthetic fixture Page 1 of 2",
+        "rotation": 0,
+        "tokens": [
+          "Quarterly",
+          "Review:",
+          "Larkspur",
+          "Community",
+          "Grants",
+          "Program",
+          "1.",
+          "Summary",
+          "The",
+          "grants",
+          "program",
+          "closed",
+          "its",
+          "third",
+          "quarter",
+          "with",
+          "a",
+          "full",
+          "pipeline",
+          "and",
+          "a",
+          "modest",
+          "surplus.",
+          "Overall",
+          "demand",
+          "stayed",
+          "close",
+          "to",
+          "the",
+          "forecast",
+          "prepared",
+          "in",
+          "April,",
+          "and",
+          "the",
+          "committee",
+          "approved",
+          "every",
+          "award",
+          "on",
+          "the",
+          "schedule",
+          "published",
+          "in",
+          "June.",
+          "2.",
+          "Grant",
+          "activity",
+          "Activity",
+          "was",
+          "steady",
+          "through",
+          "the",
+          "quarter.",
+          "Two",
+          "review",
+          "panels",
+          "met",
+          "twice",
+          "each,",
+          "and",
+          "the",
+          "second",
+          "panel",
+          "cleared",
+          "the",
+          "backlog",
+          "of",
+          "appeals",
+          "that",
+          "had",
+          "accumulated",
+          "since",
+          "the",
+          "spring",
+          "cycle.",
+          "Applications",
+          "received",
+          "118",
+          "Awards",
+          "approved",
+          "42",
+          "Median",
+          "award",
+          "(USD)",
+          "4,250",
+          "Success",
+          "rate",
+          "36%",
+          "Uncommitted",
+          "balance",
+          "11,300",
+          "Larkspur",
+          "grants",
+          "quarterly",
+          "review",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "1",
+          "of",
+          "2"
+        ],
+        "words": [
+          {
+            "bottom": 91.038,
+            "text": "Quarterly",
+            "top": 77.038,
+            "x0": 72.0,
+            "x1": 131.878
+          },
+          {
+            "bottom": 91.038,
+            "text": "Review:",
+            "top": 77.038,
+            "x0": 135.378,
+            "x1": 183.58
+          },
+          {
+            "bottom": 91.038,
+            "text": "Larkspur",
+            "top": 77.038,
+            "x0": 187.08,
+            "x1": 244.648
+          },
+          {
+            "bottom": 91.038,
+            "text": "Community",
+            "top": 77.038,
+            "x0": 248.148,
+            "x1": 319.702
+          },
+          {
+            "bottom": 91.038,
+            "text": "Grants",
+            "top": 77.038,
+            "x0": 323.202,
+            "x1": 365.202
+          },
+          {
+            "bottom": 91.038,
+            "text": "Program",
+            "top": 77.038,
+            "x0": 368.702,
+            "x1": 422.35
+          },
+          {
+            "bottom": 120.38,
+            "text": "1.",
+            "top": 108.88,
+            "x0": 72.0,
+            "x1": 81.591
+          },
+          {
+            "bottom": 120.38,
+            "text": "Summary",
+            "top": 108.88,
+            "x0": 84.788,
+            "x1": 137.194
+          },
+          {
+            "bottom": 139.07,
+            "text": "The",
+            "top": 129.07,
+            "x0": 72.0,
+            "x1": 89.23
+          },
+          {
+            "bottom": 139.07,
+            "text": "grants",
+            "top": 129.07,
+            "x0": 92.01,
+            "x1": 119.8
+          },
+          {
+            "bottom": 139.07,
+            "text": "program",
+            "top": 129.07,
+            "x0": 122.58,
+            "x1": 159.81
+          },
+          {
+            "bottom": 139.07,
+            "text": "closed",
+            "top": 129.07,
+            "x0": 162.59,
+            "x1": 191.49
+          },
+          {
+            "bottom": 139.07,
+            "text": "its",
+            "top": 129.07,
+            "x0": 194.27,
+            "x1": 204.27
+          },
+          {
+            "bottom": 139.07,
+            "text": "third",
+            "top": 129.07,
+            "x0": 207.05,
+            "x1": 226.5
+          },
+          {
+            "bottom": 139.07,
+            "text": "quarter",
+            "top": 129.07,
+            "x0": 229.28,
+            "x1": 260.96
+          },
+          {
+            "bottom": 139.07,
+            "text": "with",
+            "top": 129.07,
+            "x0": 263.74,
+            "x1": 281.52
+          },
+          {
+            "bottom": 139.07,
+            "text": "a",
+            "top": 129.07,
+            "x0": 284.3,
+            "x1": 289.86
+          },
+          {
+            "bottom": 139.07,
+            "text": "full",
+            "top": 129.07,
+            "x0": 292.64,
+            "x1": 305.42
+          },
+          {
+            "bottom": 139.07,
+            "text": "pipeline",
+            "top": 129.07,
+            "x0": 308.2,
+            "x1": 342.66
+          },
+          {
+            "bottom": 139.07,
+            "text": "and",
+            "top": 129.07,
+            "x0": 345.44,
+            "x1": 362.12
+          },
+          {
+            "bottom": 139.07,
+            "text": "a",
+            "top": 129.07,
+            "x0": 364.9,
+            "x1": 370.46
+          },
+          {
+            "bottom": 139.07,
+            "text": "modest",
+            "top": 129.07,
+            "x0": 373.24,
+            "x1": 406.03
+          },
+          {
+            "bottom": 139.07,
+            "text": "surplus.",
+            "top": 129.07,
+            "x0": 408.81,
+            "x1": 443.82
+          },
+          {
+            "bottom": 139.07,
+            "text": "Overall",
+            "top": 129.07,
+            "x0": 446.6,
+            "x1": 478.27
+          },
+          {
+            "bottom": 139.07,
+            "text": "demand",
+            "top": 129.07,
+            "x0": 481.05,
+            "x1": 517.18
+          },
+          {
+            "bottom": 151.07,
+            "text": "stayed",
+            "top": 141.07,
+            "x0": 72.0,
+            "x1": 101.46
+          },
+          {
+            "bottom": 151.07,
+            "text": "close",
+            "top": 141.07,
+            "x0": 104.24,
+            "x1": 127.58
+          },
+          {
+            "bottom": 151.07,
+            "text": "to",
+            "top": 141.07,
+            "x0": 130.36,
+            "x1": 138.7
+          },
+          {
+            "bottom": 151.07,
+            "text": "the",
+            "top": 141.07,
+            "x0": 141.48,
+            "x1": 155.38
+          },
+          {
+            "bottom": 151.07,
+            "text": "forecast",
+            "top": 141.07,
+            "x0": 158.16,
+            "x1": 193.73
+          },
+          {
+            "bottom": 151.07,
+            "text": "prepared",
+            "top": 141.07,
+            "x0": 196.51,
+            "x1": 236.53
+          },
+          {
+            "bottom": 151.07,
+            "text": "in",
+            "top": 141.07,
+            "x0": 239.31,
+            "x1": 247.09
+          },
+          {
+            "bottom": 151.07,
+            "text": "April,",
+            "top": 141.07,
+            "x0": 249.87,
+            "x1": 272.65
+          },
+          {
+            "bottom": 151.07,
+            "text": "and",
+            "top": 141.07,
+            "x0": 275.43,
+            "x1": 292.11
+          },
+          {
+            "bottom": 151.07,
+            "text": "the",
+            "top": 141.07,
+            "x0": 294.89,
+            "x1": 308.79
+          },
+          {
+            "bottom": 151.07,
+            "text": "committee",
+            "top": 141.07,
+            "x0": 311.57,
+            "x1": 357.69
+          },
+          {
+            "bottom": 151.07,
+            "text": "approved",
+            "top": 141.07,
+            "x0": 360.47,
+            "x1": 402.16
+          },
+          {
+            "bottom": 151.07,
+            "text": "every",
+            "top": 141.07,
+            "x0": 404.94,
+            "x1": 429.39
+          },
+          {
+            "bottom": 151.07,
+            "text": "award",
+            "top": 141.07,
+            "x0": 432.17,
+            "x1": 459.4
+          },
+          {
+            "bottom": 151.07,
+            "text": "on",
+            "top": 141.07,
+            "x0": 462.18,
+            "x1": 473.3
+          },
+          {
+            "bottom": 151.07,
+            "text": "the",
+            "top": 141.07,
+            "x0": 476.08,
+            "x1": 489.98
+          },
+          {
+            "bottom": 151.07,
+            "text": "schedule",
+            "top": 141.07,
+            "x0": 492.76,
+            "x1": 532.78
+          },
+          {
+            "bottom": 163.07,
+            "text": "published",
+            "top": 153.07,
+            "x0": 72.0,
+            "x1": 114.8
+          },
+          {
+            "bottom": 163.07,
+            "text": "in",
+            "top": 153.07,
+            "x0": 117.58,
+            "x1": 125.36
+          },
+          {
+            "bottom": 163.07,
+            "text": "June.",
+            "top": 153.07,
+            "x0": 128.14,
+            "x1": 152.6
+          },
+          {
+            "bottom": 185.38,
+            "text": "2.",
+            "top": 173.88,
+            "x0": 72.0,
+            "x1": 81.591
+          },
+          {
+            "bottom": 185.38,
+            "text": "Grant",
+            "top": 173.88,
+            "x0": 84.788,
+            "x1": 115.458
+          },
+          {
+            "bottom": 185.38,
+            "text": "activity",
+            "top": 173.88,
+            "x0": 118.656,
+            "x1": 158.285
+          },
+          {
+            "bottom": 204.07,
+            "text": "Activity",
+            "top": 194.07,
+            "x0": 78.0,
+            "x1": 109.67
+          },
+          {
+            "bottom": 204.07,
+            "text": "was",
+            "top": 194.07,
+            "x0": 112.45,
+            "x1": 130.23
+          },
+          {
+            "bottom": 204.07,
+            "text": "steady",
+            "top": 194.07,
+            "x0": 133.01,
+            "x1": 162.47
+          },
+          {
+            "bottom": 204.07,
+            "text": "through",
+            "top": 194.07,
+            "x0": 165.25,
+            "x1": 199.16
+          },
+          {
+            "bottom": 204.07,
+            "text": "the",
+            "top": 194.07,
+            "x0": 201.94,
+            "x1": 215.84
+          },
+          {
+            "bottom": 204.07,
+            "text": "quarter.",
+            "top": 194.07,
+            "x0": 218.62,
+            "x1": 253.08
+          },
+          {
+            "bottom": 204.07,
+            "text": "Two",
+            "top": 194.07,
+            "x0": 255.86,
+            "x1": 274.75
+          },
+          {
+            "bottom": 204.07,
+            "text": "review",
+            "top": 194.07,
+            "x0": 277.53,
+            "x1": 306.42
+          },
+          {
+            "bottom": 204.07,
+            "text": "panels",
+            "top": 194.07,
+            "x0": 309.2,
+            "x1": 338.66
+          },
+          {
+            "bottom": 204.07,
+            "text": "met",
+            "top": 194.07,
+            "x0": 341.44,
+            "x1": 358.11
+          },
+          {
+            "bottom": 204.07,
+            "text": "twice",
+            "top": 194.07,
+            "x0": 360.89,
+            "x1": 383.67
+          },
+          {
+            "bottom": 204.07,
+            "text": "each,",
+            "top": 194.07,
+            "x0": 386.45,
+            "x1": 410.91
+          },
+          {
+            "bottom": 204.07,
+            "text": "and",
+            "top": 194.07,
+            "x0": 413.69,
+            "x1": 430.37
+          },
+          {
+            "bottom": 204.07,
+            "text": "the",
+            "top": 194.07,
+            "x0": 433.15,
+            "x1": 447.05
+          },
+          {
+            "bottom": 204.07,
+            "text": "second",
+            "top": 194.07,
+            "x0": 449.83,
+            "x1": 482.07
+          },
+          {
+            "bottom": 204.07,
+            "text": "panel",
+            "top": 194.07,
+            "x0": 484.85,
+            "x1": 509.31
+          },
+          {
+            "bottom": 216.07,
+            "text": "cleared",
+            "top": 206.07,
+            "x0": 78.0,
+            "x1": 110.79
+          },
+          {
+            "bottom": 216.07,
+            "text": "the",
+            "top": 206.07,
+            "x0": 113.57,
+            "x1": 127.47
+          },
+          {
+            "bottom": 216.07,
+            "text": "backlog",
+            "top": 206.07,
+            "x0": 130.25,
+            "x1": 164.71
+          },
+          {
+            "bottom": 216.07,
+            "text": "of",
+            "top": 206.07,
+            "x0": 167.49,
+            "x1": 175.83
+          },
+          {
+            "bottom": 216.07,
+            "text": "appeals",
+            "top": 206.07,
+            "x0": 178.61,
+            "x1": 213.63
+          },
+          {
+            "bottom": 216.07,
+            "text": "that",
+            "top": 206.07,
+            "x0": 216.41,
+            "x1": 233.09
+          },
+          {
+            "bottom": 216.07,
+            "text": "had",
+            "top": 206.07,
+            "x0": 235.87,
+            "x1": 252.55
+          },
+          {
+            "bottom": 216.07,
+            "text": "accumulated",
+            "top": 206.07,
+            "x0": 255.33,
+            "x1": 312.02
+          },
+          {
+            "bottom": 216.07,
+            "text": "since",
+            "top": 206.07,
+            "x0": 314.8,
+            "x1": 338.14
+          },
+          {
+            "bottom": 216.07,
+            "text": "the",
+            "top": 206.07,
+            "x0": 340.92,
+            "x1": 354.82
+          },
+          {
+            "bottom": 216.07,
+            "text": "spring",
+            "top": 206.07,
+            "x0": 357.6,
+            "x1": 384.83
+          },
+          {
+            "bottom": 216.07,
+            "text": "cycle.",
+            "top": 206.07,
+            "x0": 387.61,
+            "x1": 413.17
+          },
+          {
+            "bottom": 235.843,
+            "text": "118",
+            "top": 226.343,
+            "x0": 522.9,
+            "x1": 540.0
+          },
+          {
+            "bottom": 235.966,
+            "text": "Applications",
+            "top": 226.466,
+            "x0": 78.0,
+            "x1": 129.214
+          },
+          {
+            "bottom": 235.966,
+            "text": "received",
+            "top": 226.466,
+            "x0": 131.856,
+            "x1": 167.756
+          },
+          {
+            "bottom": 248.843,
+            "text": "42",
+            "top": 239.343,
+            "x0": 528.6,
+            "x1": 540.0
+          },
+          {
+            "bottom": 248.966,
+            "text": "Awards",
+            "top": 239.466,
+            "x0": 78.0,
+            "x1": 109.673
+          },
+          {
+            "bottom": 248.966,
+            "text": "approved",
+            "top": 239.466,
+            "x0": 112.314,
+            "x1": 151.919
+          },
+          {
+            "bottom": 261.843,
+            "text": "4,250",
+            "top": 252.343,
+            "x0": 511.5,
+            "x1": 540.0
+          },
+          {
+            "bottom": 261.966,
+            "text": "Median",
+            "top": 252.466,
+            "x0": 78.0,
+            "x1": 109.15
+          },
+          {
+            "bottom": 261.966,
+            "text": "award",
+            "top": 252.466,
+            "x0": 111.791,
+            "x1": 137.66
+          },
+          {
+            "bottom": 261.966,
+            "text": "(USD)",
+            "top": 252.466,
+            "x0": 140.301,
+            "x1": 166.683
+          },
+          {
+            "bottom": 274.843,
+            "text": "36%",
+            "top": 265.343,
+            "x0": 522.9,
+            "x1": 540.0
+          },
+          {
+            "bottom": 274.966,
+            "text": "Success",
+            "top": 265.466,
+            "x0": 78.0,
+            "x1": 113.9
+          },
+          {
+            "bottom": 274.966,
+            "text": "rate",
+            "top": 265.466,
+            "x0": 116.541,
+            "x1": 132.91
+          },
+          {
+            "bottom": 287.843,
+            "text": "11,300",
+            "top": 278.343,
+            "x0": 505.8,
+            "x1": 540.0
+          },
+          {
+            "bottom": 287.966,
+            "text": "Uncommitted",
+            "top": 278.466,
+            "x0": 78.0,
+            "x1": 133.955
+          },
+          {
+            "bottom": 287.966,
+            "text": "balance",
+            "top": 278.466,
+            "x0": 136.596,
+            "x1": 169.865
+          },
+          {
+            "bottom": 757.656,
+            "text": "Larkspur",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 103.12
+          },
+          {
+            "bottom": 757.656,
+            "text": "grants",
+            "top": 749.656,
+            "x0": 105.344,
+            "x1": 127.576
+          },
+          {
+            "bottom": 757.656,
+            "text": "quarterly",
+            "top": 749.656,
+            "x0": 129.8,
+            "x1": 160.92
+          },
+          {
+            "bottom": 757.656,
+            "text": "review",
+            "top": 749.656,
+            "x0": 163.144,
+            "x1": 186.256
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 188.48,
+            "x1": 191.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 193.368,
+            "x1": 224.936
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 227.16,
+            "x1": 248.944
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "3.",
+          "4.",
+          "1:",
+          "1",
+          "30",
+          "2026.",
+          "2",
+          "2"
+        ],
+        "page_index": 1,
+        "reading_text": "3. Observations\nThe committee observed that smaller grants were processed faster\nthan large ones, mostly because large applications required an\nexternal assess-\nment before the panel could vote. That step adds roughly three\nweeks to the timetable and should be scheduled in advance.\n4. Recommended actions\nThe panel recommends appointing a second assessor for the winter cycle and publishing the\nassessment criteria with the application form.\nNote 1: The success rate counts withdrawn applications as received but not assessed. Figures cover 1 July to 30\nSeptember 2026.\nLarkspur grants quarterly review - synthetic fixture Page 2 of 2",
+        "rotation": 0,
+        "tokens": [
+          "3.",
+          "Observations",
+          "The",
+          "committee",
+          "observed",
+          "that",
+          "smaller",
+          "grants",
+          "were",
+          "processed",
+          "faster",
+          "than",
+          "large",
+          "ones,",
+          "mostly",
+          "because",
+          "large",
+          "applications",
+          "required",
+          "an",
+          "external",
+          "assess-",
+          "ment",
+          "before",
+          "the",
+          "panel",
+          "could",
+          "vote.",
+          "That",
+          "step",
+          "adds",
+          "roughly",
+          "three",
+          "weeks",
+          "to",
+          "the",
+          "timetable",
+          "and",
+          "should",
+          "be",
+          "scheduled",
+          "in",
+          "advance.",
+          "4.",
+          "Recommended",
+          "actions",
+          "The",
+          "panel",
+          "recommends",
+          "appointing",
+          "a",
+          "second",
+          "assessor",
+          "for",
+          "the",
+          "winter",
+          "cycle",
+          "and",
+          "publishing",
+          "the",
+          "assessment",
+          "criteria",
+          "with",
+          "the",
+          "application",
+          "form.",
+          "Note",
+          "1:",
+          "The",
+          "success",
+          "rate",
+          "counts",
+          "withdrawn",
+          "applications",
+          "as",
+          "received",
+          "but",
+          "not",
+          "assessed.",
+          "Figures",
+          "cover",
+          "1",
+          "July",
+          "to",
+          "30",
+          "September",
+          "2026.",
+          "Larkspur",
+          "grants",
+          "quarterly",
+          "review",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "2",
+          "of",
+          "2"
+        ],
+        "words": [
+          {
+            "bottom": 90.38,
+            "text": "3.",
+            "top": 78.88,
+            "x0": 72.0,
+            "x1": 81.591
+          },
+          {
+            "bottom": 90.38,
+            "text": "Observations",
+            "top": 78.88,
+            "x0": 84.788,
+            "x1": 158.284
+          },
+          {
+            "bottom": 109.279,
+            "text": "The",
+            "top": 98.779,
+            "x0": 72.0,
+            "x1": 88.328
+          },
+          {
+            "bottom": 109.279,
+            "text": "committee",
+            "top": 98.779,
+            "x0": 90.953,
+            "x1": 135.284
+          },
+          {
+            "bottom": 109.279,
+            "text": "observed",
+            "top": 98.779,
+            "x0": 137.909,
+            "x1": 175.814
+          },
+          {
+            "bottom": 109.279,
+            "text": "that",
+            "top": 98.779,
+            "x0": 178.439,
+            "x1": 194.189
+          },
+          {
+            "bottom": 109.279,
+            "text": "smaller",
+            "top": 98.779,
+            "x0": 196.814,
+            "x1": 227.726
+          },
+          {
+            "bottom": 109.279,
+            "text": "grants",
+            "top": 98.779,
+            "x0": 230.351,
+            "x1": 256.013
+          },
+          {
+            "bottom": 109.279,
+            "text": "were",
+            "top": 98.779,
+            "x0": 258.638,
+            "x1": 279.039
+          },
+          {
+            "bottom": 109.279,
+            "text": "processed",
+            "top": 98.779,
+            "x0": 281.664,
+            "x1": 323.066
+          },
+          {
+            "bottom": 109.279,
+            "text": "faster",
+            "top": 98.779,
+            "x0": 325.691,
+            "x1": 349.011
+          },
+          {
+            "bottom": 122.279,
+            "text": "than",
+            "top": 111.779,
+            "x0": 72.0,
+            "x1": 90.081
+          },
+          {
+            "bottom": 122.279,
+            "text": "large",
+            "top": 111.779,
+            "x0": 92.706,
+            "x1": 113.696
+          },
+          {
+            "bottom": 122.279,
+            "text": "ones,",
+            "top": 111.779,
+            "x0": 116.321,
+            "x1": 138.192
+          },
+          {
+            "bottom": 122.279,
+            "text": "mostly",
+            "top": 111.779,
+            "x0": 140.817,
+            "x1": 169.409
+          },
+          {
+            "bottom": 122.279,
+            "text": "because",
+            "top": 111.779,
+            "x0": 172.034,
+            "x1": 205.266
+          },
+          {
+            "bottom": 122.279,
+            "text": "large",
+            "top": 111.779,
+            "x0": 207.891,
+            "x1": 228.881
+          },
+          {
+            "bottom": 122.279,
+            "text": "applications",
+            "top": 111.779,
+            "x0": 231.506,
+            "x1": 282.252
+          },
+          {
+            "bottom": 122.279,
+            "text": "required",
+            "top": 111.779,
+            "x0": 284.877,
+            "x1": 319.863
+          },
+          {
+            "bottom": 122.279,
+            "text": "an",
+            "top": 111.779,
+            "x0": 322.488,
+            "x1": 332.4
+          },
+          {
+            "bottom": 135.279,
+            "text": "external",
+            "top": 124.779,
+            "x0": 72.0,
+            "x1": 105.82
+          },
+          {
+            "bottom": 135.279,
+            "text": "assess-",
+            "top": 124.779,
+            "x0": 108.445,
+            "x1": 137.604
+          },
+          {
+            "bottom": 148.279,
+            "text": "ment",
+            "top": 137.779,
+            "x0": 72.0,
+            "x1": 93.0
+          },
+          {
+            "bottom": 148.279,
+            "text": "before",
+            "top": 137.779,
+            "x0": 95.625,
+            "x1": 122.442
+          },
+          {
+            "bottom": 148.279,
+            "text": "the",
+            "top": 137.779,
+            "x0": 125.067,
+            "x1": 137.898
+          },
+          {
+            "bottom": 148.279,
+            "text": "panel",
+            "top": 137.779,
+            "x0": 140.523,
+            "x1": 163.266
+          },
+          {
+            "bottom": 148.279,
+            "text": "could",
+            "top": 137.779,
+            "x0": 165.891,
+            "x1": 189.222
+          },
+          {
+            "bottom": 148.279,
+            "text": "vote.",
+            "top": 137.779,
+            "x0": 191.847,
+            "x1": 212.553
+          },
+          {
+            "bottom": 148.279,
+            "text": "That",
+            "top": 137.779,
+            "x0": 215.178,
+            "x1": 234.425
+          },
+          {
+            "bottom": 148.279,
+            "text": "step",
+            "top": 137.779,
+            "x0": 237.05,
+            "x1": 253.965
+          },
+          {
+            "bottom": 148.279,
+            "text": "adds",
+            "top": 137.779,
+            "x0": 256.59,
+            "x1": 275.837
+          },
+          {
+            "bottom": 148.279,
+            "text": "roughly",
+            "top": 137.779,
+            "x0": 278.462,
+            "x1": 311.127
+          },
+          {
+            "bottom": 148.279,
+            "text": "three",
+            "top": 137.779,
+            "x0": 313.752,
+            "x1": 334.742
+          },
+          {
+            "bottom": 161.279,
+            "text": "weeks",
+            "top": 150.779,
+            "x0": 72.0,
+            "x1": 98.24
+          },
+          {
+            "bottom": 161.279,
+            "text": "to",
+            "top": 150.779,
+            "x0": 100.864,
+            "x1": 109.034
+          },
+          {
+            "bottom": 161.279,
+            "text": "the",
+            "top": 150.779,
+            "x0": 111.659,
+            "x1": 124.49
+          },
+          {
+            "bottom": 161.279,
+            "text": "timetable",
+            "top": 150.779,
+            "x0": 127.114,
+            "x1": 166.196
+          },
+          {
+            "bottom": 161.279,
+            "text": "and",
+            "top": 150.779,
+            "x0": 168.821,
+            "x1": 183.983
+          },
+          {
+            "bottom": 161.279,
+            "text": "should",
+            "top": 150.779,
+            "x0": 186.608,
+            "x1": 214.611
+          },
+          {
+            "bottom": 161.279,
+            "text": "be",
+            "top": 150.779,
+            "x0": 217.236,
+            "x1": 227.148
+          },
+          {
+            "bottom": 161.279,
+            "text": "scheduled",
+            "top": 150.779,
+            "x0": 229.773,
+            "x1": 271.763
+          },
+          {
+            "bottom": 161.279,
+            "text": "in",
+            "top": 150.779,
+            "x0": 274.388,
+            "x1": 282.557
+          },
+          {
+            "bottom": 161.279,
+            "text": "advance.",
+            "top": 150.779,
+            "x0": 285.182,
+            "x1": 322.205
+          },
+          {
+            "bottom": 184.38,
+            "text": "4.",
+            "top": 172.88,
+            "x0": 72.0,
+            "x1": 81.591
+          },
+          {
+            "bottom": 184.38,
+            "text": "Recommended",
+            "top": 172.88,
+            "x0": 84.788,
+            "x1": 167.22
+          },
+          {
+            "bottom": 184.38,
+            "text": "actions",
+            "top": 172.88,
+            "x0": 170.417,
+            "x1": 210.679
+          },
+          {
+            "bottom": 203.07,
+            "text": "The",
+            "top": 193.07,
+            "x0": 84.0,
+            "x1": 101.23
+          },
+          {
+            "bottom": 203.07,
+            "text": "panel",
+            "top": 193.07,
+            "x0": 104.01,
+            "x1": 128.47
+          },
+          {
+            "bottom": 203.07,
+            "text": "recommends",
+            "top": 193.07,
+            "x0": 131.25,
+            "x1": 189.04
+          },
+          {
+            "bottom": 203.07,
+            "text": "appointing",
+            "top": 193.07,
+            "x0": 191.82,
+            "x1": 237.96
+          },
+          {
+            "bottom": 203.07,
+            "text": "a",
+            "top": 193.07,
+            "x0": 240.74,
+            "x1": 246.3
+          },
+          {
+            "bottom": 203.07,
+            "text": "second",
+            "top": 193.07,
+            "x0": 249.08,
+            "x1": 281.32
+          },
+          {
+            "bottom": 203.07,
+            "text": "assessor",
+            "top": 193.07,
+            "x0": 284.1,
+            "x1": 324.11
+          },
+          {
+            "bottom": 203.07,
+            "text": "for",
+            "top": 193.07,
+            "x0": 326.89,
+            "x1": 338.56
+          },
+          {
+            "bottom": 203.07,
+            "text": "the",
+            "top": 193.07,
+            "x0": 341.34,
+            "x1": 355.24
+          },
+          {
+            "bottom": 203.07,
+            "text": "winter",
+            "top": 193.07,
+            "x0": 358.02,
+            "x1": 384.69
+          },
+          {
+            "bottom": 203.07,
+            "text": "cycle",
+            "top": 193.07,
+            "x0": 387.47,
+            "x1": 410.25
+          },
+          {
+            "bottom": 203.07,
+            "text": "and",
+            "top": 193.07,
+            "x0": 413.03,
+            "x1": 429.71
+          },
+          {
+            "bottom": 203.07,
+            "text": "publishing",
+            "top": 193.07,
+            "x0": 432.49,
+            "x1": 477.51
+          },
+          {
+            "bottom": 203.07,
+            "text": "the",
+            "top": 193.07,
+            "x0": 480.29,
+            "x1": 494.19
+          },
+          {
+            "bottom": 215.07,
+            "text": "assessment",
+            "top": 205.07,
+            "x0": 84.0,
+            "x1": 137.35
+          },
+          {
+            "bottom": 215.07,
+            "text": "criteria",
+            "top": 205.07,
+            "x0": 140.13,
+            "x1": 170.13
+          },
+          {
+            "bottom": 215.07,
+            "text": "with",
+            "top": 205.07,
+            "x0": 172.91,
+            "x1": 190.69
+          },
+          {
+            "bottom": 215.07,
+            "text": "the",
+            "top": 205.07,
+            "x0": 193.47,
+            "x1": 207.37
+          },
+          {
+            "bottom": 215.07,
+            "text": "application",
+            "top": 205.07,
+            "x0": 210.15,
+            "x1": 257.95
+          },
+          {
+            "bottom": 215.07,
+            "text": "form.",
+            "top": 205.07,
+            "x0": 260.73,
+            "x1": 283.51
+          },
+          {
+            "bottom": 242.76,
+            "text": "Note",
+            "top": 234.26,
+            "x0": 72.0,
+            "x1": 89.952
+          },
+          {
+            "bottom": 242.76,
+            "text": "1:",
+            "top": 234.26,
+            "x0": 92.315,
+            "x1": 99.404
+          },
+          {
+            "bottom": 242.76,
+            "text": "The",
+            "top": 234.26,
+            "x0": 101.767,
+            "x1": 116.412
+          },
+          {
+            "bottom": 242.76,
+            "text": "success",
+            "top": 234.26,
+            "x0": 118.775,
+            "x1": 149.477
+          },
+          {
+            "bottom": 242.76,
+            "text": "rate",
+            "top": 234.26,
+            "x0": 151.84,
+            "x1": 166.486
+          },
+          {
+            "bottom": 242.76,
+            "text": "counts",
+            "top": 234.26,
+            "x0": 168.849,
+            "x1": 193.89
+          },
+          {
+            "bottom": 242.76,
+            "text": "withdrawn",
+            "top": 234.26,
+            "x0": 196.253,
+            "x1": 234.511
+          },
+          {
+            "bottom": 242.76,
+            "text": "applications",
+            "top": 234.26,
+            "x0": 236.874,
+            "x1": 281.755
+          },
+          {
+            "bottom": 242.76,
+            "text": "as",
+            "top": 234.26,
+            "x0": 284.117,
+            "x1": 293.093
+          },
+          {
+            "bottom": 242.76,
+            "text": "received",
+            "top": 234.26,
+            "x0": 295.457,
+            "x1": 327.578
+          },
+          {
+            "bottom": 242.76,
+            "text": "but",
+            "top": 234.26,
+            "x0": 329.941,
+            "x1": 341.756
+          },
+          {
+            "bottom": 242.76,
+            "text": "not",
+            "top": 234.26,
+            "x0": 344.119,
+            "x1": 355.934
+          },
+          {
+            "bottom": 242.76,
+            "text": "assessed.",
+            "top": 234.26,
+            "x0": 358.297,
+            "x1": 396.564
+          },
+          {
+            "bottom": 242.76,
+            "text": "Figures",
+            "top": 234.26,
+            "x0": 398.927,
+            "x1": 427.266
+          },
+          {
+            "bottom": 242.76,
+            "text": "cover",
+            "top": 234.26,
+            "x0": 429.629,
+            "x1": 450.411
+          },
+          {
+            "bottom": 242.76,
+            "text": "1",
+            "top": 234.26,
+            "x0": 452.774,
+            "x1": 457.5
+          },
+          {
+            "bottom": 242.76,
+            "text": "July",
+            "top": 234.26,
+            "x0": 459.863,
+            "x1": 474.976
+          },
+          {
+            "bottom": 242.76,
+            "text": "to",
+            "top": 234.26,
+            "x0": 477.339,
+            "x1": 484.428
+          },
+          {
+            "bottom": 242.76,
+            "text": "30",
+            "top": 234.26,
+            "x0": 486.791,
+            "x1": 496.243
+          },
+          {
+            "bottom": 253.26,
+            "text": "September",
+            "top": 244.76,
+            "x0": 72.0,
+            "x1": 113.573
+          },
+          {
+            "bottom": 253.26,
+            "text": "2026.",
+            "top": 244.76,
+            "x0": 115.936,
+            "x1": 137.203
+          },
+          {
+            "bottom": 757.656,
+            "text": "Larkspur",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 103.12
+          },
+          {
+            "bottom": 757.656,
+            "text": "grants",
+            "top": 749.656,
+            "x0": 105.344,
+            "x1": 127.576
+          },
+          {
+            "bottom": 757.656,
+            "text": "quarterly",
+            "top": 749.656,
+            "x0": 129.8,
+            "x1": 160.92
+          },
+          {
+            "bottom": 757.656,
+            "text": "review",
+            "top": 749.656,
+            "x0": 163.144,
+            "x1": 186.256
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 188.48,
+            "x1": 191.144
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 193.368,
+            "x1": 224.936
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 227.16,
+            "x1": 248.944
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 4396,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 18,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 132
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 239
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 347
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 459
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 564
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 759
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 868
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1063
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1149
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1560
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1634
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1722
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 1830
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 1936
+        },
+        {
+          "generation": 0,
+          "object": 16,
+          "offset": 2036
+        },
+        {
+          "generation": 0,
+          "object": 17,
+          "offset": 2102
+        },
+        {
+          "generation": 0,
+          "object": 18,
+          "offset": 2984
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 0,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F03-report.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "54b84a8b39562705b6c9bf77f8a4cb22619d49298f944bb3533bafc04acda683"
+    },
+    "source_sha256": "54b84a8b39562705b6c9bf77f8a4cb22619d49298f944bb3533bafc04acda683",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F03",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 2,
+      "page_order": [
+        0,
+        1
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0,
+            1
+          ],
+          "region_ids": [
+            "p0-body",
+            "p1-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 2,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0,
+              1
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      }
+    ],
+    "page_mapping": [
+      0,
+      1
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 18,
+            "source_sha256": "54b84a8b39562705b6c9bf77f8a4cb22619d49298f944bb3533bafc04acda683"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0,
+              0.0
+            ],
+            "max_fraction": 0.0,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 2,
+            "source": 2
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [
+              {
+                "level": 1,
+                "title": "Summary"
+              },
+              {
+                "level": 1,
+                "title": "Grant activity"
+              },
+              {
+                "level": 1,
+                "title": "Observations"
+              },
+              {
+                "level": 1,
+                "title": "Recommended actions"
+              }
+            ],
+            "pdfminer_source": [
+              {
+                "level": 1,
+                "title": "Summary"
+              },
+              {
+                "level": 1,
+                "title": "Grant activity"
+              },
+              {
+                "level": 1,
+                "title": "Observations"
+              },
+              {
+                "level": 1,
+                "title": "Recommended actions"
+              }
+            ],
+            "scanner_both_empty": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "classifier_conflict": false,
+            "decisive": false
+          }
+        ],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 4396,
+              "OBJECT_COUNT": 24,
+              "OUTPUT_BYTES": 7873,
+              "PAGE_COUNT": 2
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0,
+            1
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}
