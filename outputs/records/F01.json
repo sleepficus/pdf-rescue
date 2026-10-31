@@ -1,0 +1,2190 @@
+{
+  "build": {
+    "candidate_bytes": 7475,
+    "candidate_sha256": "369633157961a295ac6c00980dd7952d778928a964e2f3051e12462a8bfffb87",
+    "document_id": "F01",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS"
+    ],
+    "page_count": 2,
+    "source_sha256": "203f751515606c543d1d730e707345ef3f3d270a23e1fedc53dc12d147a50ec7",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F01-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F01",
+  "intake": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F01",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 3762,
+    "filename": "F01-memo.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 0
+    },
+    "object_count": 12,
+    "page_count": 2,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "-2027-014",
+          ": 14",
+          "2027",
+          "3-4",
+          "28",
+          "2027.",
+          "1",
+          "2"
+        ],
+        "page_index": 0,
+        "reading_text": "INTERNAL MEMO REF: HL-2027-014 Harborview Logistics\nMEMORANDUM\nTo: Warehouse Operations Leads\nFrom: D. Okafor, Operations Manager\nDate: 14 January 2027\nSubject: Pallet scanning rollout, phase two\nThis memo confirms the second phase of the pallet scanning rollout. The first phase covered\nreceiving docks three and four; the second phase extends the same configuration to the overflow\naisles, where scan rates dropped last quarter.\nWe expect the change to be small in scope but visible in daily\nreporting. As an exam-\nple, the overflow aisles will appear as separate lines in the\nnightly summary once the new scan points are registered, which\naffects how operations leads read the weekly trend.\nEach session runs forty minutes and covers the revised scan points, the exception queue, and the\nescalation contact.\nRollout checkpoint: docks 3-4 complete; overflow aisles\npending; go/no-go review 28 January 2027.\nHarborview Logistics - internal use only Page 1 of 2",
+        "rotation": 0,
+        "tokens": [
+          "INTERNAL",
+          "MEMO",
+          "REF:",
+          "HL-2027-014",
+          "Harborview",
+          "Logistics",
+          "MEMORANDUM",
+          "To:",
+          "Warehouse",
+          "Operations",
+          "Leads",
+          "From:",
+          "D.",
+          "Okafor,",
+          "Operations",
+          "Manager",
+          "Date:",
+          "14",
+          "January",
+          "2027",
+          "Subject:",
+          "Pallet",
+          "scanning",
+          "rollout,",
+          "phase",
+          "two",
+          "This",
+          "memo",
+          "confirms",
+          "the",
+          "second",
+          "phase",
+          "of",
+          "the",
+          "pallet",
+          "scanning",
+          "rollout.",
+          "The",
+          "first",
+          "phase",
+          "covered",
+          "receiving",
+          "docks",
+          "three",
+          "and",
+          "four;",
+          "the",
+          "second",
+          "phase",
+          "extends",
+          "the",
+          "same",
+          "configuration",
+          "to",
+          "the",
+          "overflow",
+          "aisles,",
+          "where",
+          "scan",
+          "rates",
+          "dropped",
+          "last",
+          "quarter.",
+          "We",
+          "expect",
+          "the",
+          "change",
+          "to",
+          "be",
+          "small",
+          "in",
+          "scope",
+          "but",
+          "visible",
+          "in",
+          "daily",
+          "reporting.",
+          "As",
+          "an",
+          "exam-",
+          "ple,",
+          "the",
+          "overflow",
+          "aisles",
+          "will",
+          "appear",
+          "as",
+          "separate",
+          "lines",
+          "in",
+          "the",
+          "nightly",
+          "summary",
+          "once",
+          "the",
+          "new",
+          "scan",
+          "points",
+          "are",
+          "registered,",
+          "which",
+          "affects",
+          "how",
+          "operations",
+          "leads",
+          "read",
+          "the",
+          "weekly",
+          "trend.",
+          "Each",
+          "session",
+          "runs",
+          "forty",
+          "minutes",
+          "and",
+          "covers",
+          "the",
+          "revised",
+          "scan",
+          "points,",
+          "the",
+          "exception",
+          "queue,",
+          "and",
+          "the",
+          "escalation",
+          "contact.",
+          "Rollout",
+          "checkpoint:",
+          "docks",
+          "3-4",
+          "complete;",
+          "overflow",
+          "aisles",
+          "pending;",
+          "go/no-go",
+          "review",
+          "28",
+          "January",
+          "2027.",
+          "Harborview",
+          "Logistics",
+          "-",
+          "internal",
+          "use",
+          "only",
+          "Page",
+          "1",
+          "of",
+          "2"
+        ],
+        "words": [
+          {
+            "bottom": 41.863,
+            "text": "INTERNAL",
+            "top": 32.863,
+            "x0": 72.0,
+            "x1": 117.495
+          },
+          {
+            "bottom": 41.863,
+            "text": "MEMO",
+            "top": 32.863,
+            "x0": 119.997,
+            "x1": 147.996
+          },
+          {
+            "bottom": 41.863,
+            "text": "REF:",
+            "top": 32.863,
+            "x0": 153.0,
+            "x1": 173.997
+          },
+          {
+            "bottom": 41.863,
+            "text": "HL-2027-014",
+            "top": 32.863,
+            "x0": 176.499,
+            "x1": 229.518
+          },
+          {
+            "bottom": 41.863,
+            "text": "Harborview",
+            "top": 32.863,
+            "x0": 456.984,
+            "x1": 502.488
+          },
+          {
+            "bottom": 41.863,
+            "text": "Logistics",
+            "top": 32.863,
+            "x0": 504.99,
+            "x1": 540.0
+          },
+          {
+            "bottom": 90.898,
+            "text": "MEMORANDUM",
+            "top": 76.898,
+            "x0": 253.122,
+            "x1": 358.878
+          },
+          {
+            "bottom": 122.173,
+            "text": "To:",
+            "top": 111.673,
+            "x0": 72.0,
+            "x1": 87.172
+          },
+          {
+            "bottom": 122.173,
+            "text": "Warehouse",
+            "top": 111.673,
+            "x0": 93.011,
+            "x1": 146.697
+          },
+          {
+            "bottom": 122.173,
+            "text": "Operations",
+            "top": 111.673,
+            "x0": 149.616,
+            "x1": 200.971
+          },
+          {
+            "bottom": 122.173,
+            "text": "Leads",
+            "top": 111.673,
+            "x0": 203.89,
+            "x1": 232.492
+          },
+          {
+            "bottom": 137.673,
+            "text": "From:",
+            "top": 127.173,
+            "x0": 72.0,
+            "x1": 99.415
+          },
+          {
+            "bottom": 137.673,
+            "text": "D.",
+            "top": 127.173,
+            "x0": 105.254,
+            "x1": 115.754
+          },
+          {
+            "bottom": 137.673,
+            "text": "Okafor,",
+            "top": 127.173,
+            "x0": 118.672,
+            "x1": 153.102
+          },
+          {
+            "bottom": 137.673,
+            "text": "Operations",
+            "top": 127.173,
+            "x0": 156.021,
+            "x1": 207.376
+          },
+          {
+            "bottom": 137.673,
+            "text": "Manager",
+            "top": 127.173,
+            "x0": 210.295,
+            "x1": 251.728
+          },
+          {
+            "bottom": 153.173,
+            "text": "Date:",
+            "top": 142.673,
+            "x0": 72.0,
+            "x1": 97.095
+          },
+          {
+            "bottom": 153.173,
+            "text": "14",
+            "top": 142.673,
+            "x0": 102.933,
+            "x1": 114.609
+          },
+          {
+            "bottom": 153.173,
+            "text": "January",
+            "top": 142.673,
+            "x0": 117.528,
+            "x1": 154.876
+          },
+          {
+            "bottom": 153.173,
+            "text": "2027",
+            "top": 142.673,
+            "x0": 157.796,
+            "x1": 181.147
+          },
+          {
+            "bottom": 168.673,
+            "text": "Subject:",
+            "top": 158.173,
+            "x0": 72.0,
+            "x1": 109.936
+          },
+          {
+            "bottom": 168.673,
+            "text": "Pallet",
+            "top": 158.173,
+            "x0": 115.774,
+            "x1": 142.035
+          },
+          {
+            "bottom": 168.673,
+            "text": "scanning",
+            "top": 158.173,
+            "x0": 144.954,
+            "x1": 186.975
+          },
+          {
+            "bottom": 168.673,
+            "text": "rollout,",
+            "top": 158.173,
+            "x0": 189.894,
+            "x1": 221.404
+          },
+          {
+            "bottom": 168.673,
+            "text": "phase",
+            "top": 158.173,
+            "x0": 224.323,
+            "x1": 252.925
+          },
+          {
+            "bottom": 168.673,
+            "text": "two",
+            "top": 158.173,
+            "x0": 255.844,
+            "x1": 272.183
+          },
+          {
+            "bottom": 194.173,
+            "text": "This",
+            "top": 183.673,
+            "x0": 72.0,
+            "x1": 91.835
+          },
+          {
+            "bottom": 194.173,
+            "text": "memo",
+            "top": 183.673,
+            "x0": 94.754,
+            "x1": 123.922
+          },
+          {
+            "bottom": 194.173,
+            "text": "confirms",
+            "top": 183.673,
+            "x0": 126.841,
+            "x1": 166.51
+          },
+          {
+            "bottom": 194.173,
+            "text": "the",
+            "top": 183.673,
+            "x0": 169.429,
+            "x1": 184.024
+          },
+          {
+            "bottom": 194.173,
+            "text": "second",
+            "top": 183.673,
+            "x0": 186.943,
+            "x1": 220.795
+          },
+          {
+            "bottom": 194.173,
+            "text": "phase",
+            "top": 183.673,
+            "x0": 223.714,
+            "x1": 252.316
+          },
+          {
+            "bottom": 194.173,
+            "text": "of",
+            "top": 183.673,
+            "x0": 255.235,
+            "x1": 263.992
+          },
+          {
+            "bottom": 194.173,
+            "text": "the",
+            "top": 183.673,
+            "x0": 266.911,
+            "x1": 281.507
+          },
+          {
+            "bottom": 194.173,
+            "text": "pallet",
+            "top": 183.673,
+            "x0": 284.425,
+            "x1": 309.52
+          },
+          {
+            "bottom": 194.173,
+            "text": "scanning",
+            "top": 183.673,
+            "x0": 312.439,
+            "x1": 354.461
+          },
+          {
+            "bottom": 194.173,
+            "text": "rollout.",
+            "top": 183.673,
+            "x0": 357.38,
+            "x1": 388.89
+          },
+          {
+            "bottom": 194.173,
+            "text": "The",
+            "top": 183.673,
+            "x0": 391.809,
+            "x1": 409.901
+          },
+          {
+            "bottom": 194.173,
+            "text": "first",
+            "top": 183.673,
+            "x0": 412.82,
+            "x1": 429.735
+          },
+          {
+            "bottom": 194.173,
+            "text": "phase",
+            "top": 183.673,
+            "x0": 432.654,
+            "x1": 461.256
+          },
+          {
+            "bottom": 194.173,
+            "text": "covered",
+            "top": 183.673,
+            "x0": 464.175,
+            "x1": 501.524
+          },
+          {
+            "bottom": 207.173,
+            "text": "receiving",
+            "top": 196.673,
+            "x0": 72.0,
+            "x1": 114.011
+          },
+          {
+            "bottom": 207.173,
+            "text": "docks",
+            "top": 196.673,
+            "x0": 116.93,
+            "x1": 144.356
+          },
+          {
+            "bottom": 207.173,
+            "text": "three",
+            "top": 196.673,
+            "x0": 147.274,
+            "x1": 171.204
+          },
+          {
+            "bottom": 207.173,
+            "text": "and",
+            "top": 196.673,
+            "x0": 174.123,
+            "x1": 191.637
+          },
+          {
+            "bottom": 207.173,
+            "text": "four;",
+            "top": 196.673,
+            "x0": 194.556,
+            "x1": 215.566
+          },
+          {
+            "bottom": 207.173,
+            "text": "the",
+            "top": 196.673,
+            "x0": 218.485,
+            "x1": 233.08
+          },
+          {
+            "bottom": 207.173,
+            "text": "second",
+            "top": 196.673,
+            "x0": 235.999,
+            "x1": 269.851
+          },
+          {
+            "bottom": 207.173,
+            "text": "phase",
+            "top": 196.673,
+            "x0": 272.77,
+            "x1": 301.373
+          },
+          {
+            "bottom": 207.173,
+            "text": "extends",
+            "top": 196.673,
+            "x0": 304.291,
+            "x1": 341.062
+          },
+          {
+            "bottom": 207.173,
+            "text": "the",
+            "top": 196.673,
+            "x0": 343.981,
+            "x1": 358.577
+          },
+          {
+            "bottom": 207.173,
+            "text": "same",
+            "top": 196.673,
+            "x0": 361.495,
+            "x1": 387.168
+          },
+          {
+            "bottom": 207.173,
+            "text": "configuration",
+            "top": 196.673,
+            "x0": 390.087,
+            "x1": 450.2
+          },
+          {
+            "bottom": 207.173,
+            "text": "to",
+            "top": 196.673,
+            "x0": 453.119,
+            "x1": 461.876
+          },
+          {
+            "bottom": 207.173,
+            "text": "the",
+            "top": 196.673,
+            "x0": 464.795,
+            "x1": 479.39
+          },
+          {
+            "bottom": 207.173,
+            "text": "overflow",
+            "top": 196.673,
+            "x0": 482.309,
+            "x1": 521.4
+          },
+          {
+            "bottom": 220.173,
+            "text": "aisles,",
+            "top": 209.673,
+            "x0": 72.0,
+            "x1": 101.757
+          },
+          {
+            "bottom": 220.173,
+            "text": "where",
+            "top": 209.673,
+            "x0": 104.676,
+            "x1": 133.268
+          },
+          {
+            "bottom": 220.173,
+            "text": "scan",
+            "top": 209.673,
+            "x0": 136.187,
+            "x1": 158.363
+          },
+          {
+            "bottom": 220.173,
+            "text": "rates",
+            "top": 209.673,
+            "x0": 161.281,
+            "x1": 184.623
+          },
+          {
+            "bottom": 220.173,
+            "text": "dropped",
+            "top": 209.673,
+            "x0": 187.542,
+            "x1": 226.066
+          },
+          {
+            "bottom": 220.173,
+            "text": "last",
+            "top": 209.673,
+            "x0": 228.986,
+            "x1": 245.323
+          },
+          {
+            "bottom": 220.173,
+            "text": "quarter.",
+            "top": 209.673,
+            "x0": 248.243,
+            "x1": 284.425
+          },
+          {
+            "bottom": 247.387,
+            "text": "We",
+            "top": 236.387,
+            "x0": 90.0,
+            "x1": 105.268
+          },
+          {
+            "bottom": 247.387,
+            "text": "expect",
+            "top": 236.387,
+            "x0": 108.018,
+            "x1": 136.728
+          },
+          {
+            "bottom": 247.387,
+            "text": "the",
+            "top": 236.387,
+            "x0": 139.478,
+            "x1": 152.92
+          },
+          {
+            "bottom": 247.387,
+            "text": "change",
+            "top": 236.387,
+            "x0": 155.67,
+            "x1": 186.822
+          },
+          {
+            "bottom": 247.387,
+            "text": "to",
+            "top": 236.387,
+            "x0": 189.572,
+            "x1": 198.13
+          },
+          {
+            "bottom": 247.387,
+            "text": "be",
+            "top": 236.387,
+            "x0": 200.88,
+            "x1": 211.264
+          },
+          {
+            "bottom": 247.387,
+            "text": "small",
+            "top": 236.387,
+            "x0": 214.014,
+            "x1": 237.851
+          },
+          {
+            "bottom": 247.387,
+            "text": "in",
+            "top": 236.387,
+            "x0": 240.601,
+            "x1": 249.159
+          },
+          {
+            "bottom": 247.387,
+            "text": "scope",
+            "top": 236.387,
+            "x0": 251.909,
+            "x1": 276.956
+          },
+          {
+            "bottom": 247.387,
+            "text": "but",
+            "top": 236.387,
+            "x0": 279.706,
+            "x1": 293.764
+          },
+          {
+            "bottom": 247.387,
+            "text": "visible",
+            "top": 236.387,
+            "x0": 296.514,
+            "x1": 325.851
+          },
+          {
+            "bottom": 247.387,
+            "text": "in",
+            "top": 236.387,
+            "x0": 328.601,
+            "x1": 337.159
+          },
+          {
+            "bottom": 247.387,
+            "text": "daily",
+            "top": 236.387,
+            "x0": 339.909,
+            "x1": 361.909
+          },
+          {
+            "bottom": 260.887,
+            "text": "reporting.",
+            "top": 249.887,
+            "x0": 90.0,
+            "x1": 133.076
+          },
+          {
+            "bottom": 260.887,
+            "text": "As",
+            "top": 249.887,
+            "x0": 135.826,
+            "x1": 148.047
+          },
+          {
+            "bottom": 260.887,
+            "text": "an",
+            "top": 249.887,
+            "x0": 150.797,
+            "x1": 161.181
+          },
+          {
+            "bottom": 260.887,
+            "text": "exam-",
+            "top": 249.887,
+            "x0": 163.931,
+            "x1": 191.42
+          },
+          {
+            "bottom": 274.387,
+            "text": "ple,",
+            "top": 263.387,
+            "x0": 90.0,
+            "x1": 106.192
+          },
+          {
+            "bottom": 274.387,
+            "text": "the",
+            "top": 263.387,
+            "x0": 108.942,
+            "x1": 122.384
+          },
+          {
+            "bottom": 274.387,
+            "text": "overflow",
+            "top": 263.387,
+            "x0": 125.134,
+            "x1": 164.844
+          },
+          {
+            "bottom": 274.387,
+            "text": "aisles",
+            "top": 263.387,
+            "x0": 167.594,
+            "x1": 192.036
+          },
+          {
+            "bottom": 274.387,
+            "text": "will",
+            "top": 263.387,
+            "x0": 194.786,
+            "x1": 211.902
+          },
+          {
+            "bottom": 274.387,
+            "text": "appear",
+            "top": 263.387,
+            "x0": 214.652,
+            "x1": 243.967
+          },
+          {
+            "bottom": 274.387,
+            "text": "as",
+            "top": 263.387,
+            "x0": 246.717,
+            "x1": 255.88
+          },
+          {
+            "bottom": 274.387,
+            "text": "separate",
+            "top": 263.387,
+            "x0": 258.63,
+            "x1": 294.666
+          },
+          {
+            "bottom": 274.387,
+            "text": "lines",
+            "top": 263.387,
+            "x0": 297.416,
+            "x1": 318.195
+          },
+          {
+            "bottom": 274.387,
+            "text": "in",
+            "top": 263.387,
+            "x0": 320.945,
+            "x1": 329.503
+          },
+          {
+            "bottom": 274.387,
+            "text": "the",
+            "top": 263.387,
+            "x0": 332.253,
+            "x1": 345.695
+          },
+          {
+            "bottom": 287.887,
+            "text": "nightly",
+            "top": 276.887,
+            "x0": 90.0,
+            "x1": 121.174
+          },
+          {
+            "bottom": 287.887,
+            "text": "summary",
+            "top": 276.887,
+            "x0": 123.924,
+            "x1": 164.866
+          },
+          {
+            "bottom": 287.887,
+            "text": "once",
+            "top": 276.887,
+            "x0": 167.616,
+            "x1": 188.384
+          },
+          {
+            "bottom": 287.887,
+            "text": "the",
+            "top": 276.887,
+            "x0": 191.134,
+            "x1": 204.576
+          },
+          {
+            "bottom": 287.887,
+            "text": "new",
+            "top": 276.887,
+            "x0": 207.326,
+            "x1": 225.652
+          },
+          {
+            "bottom": 287.887,
+            "text": "scan",
+            "top": 276.887,
+            "x0": 228.402,
+            "x1": 247.949
+          },
+          {
+            "bottom": 287.887,
+            "text": "points",
+            "top": 276.887,
+            "x0": 250.699,
+            "x1": 277.594
+          },
+          {
+            "bottom": 287.887,
+            "text": "are",
+            "top": 276.887,
+            "x0": 280.344,
+            "x1": 293.775
+          },
+          {
+            "bottom": 287.887,
+            "text": "registered,",
+            "top": 276.887,
+            "x0": 296.525,
+            "x1": 342.648
+          },
+          {
+            "bottom": 287.887,
+            "text": "which",
+            "top": 276.887,
+            "x0": 345.398,
+            "x1": 372.282
+          },
+          {
+            "bottom": 301.387,
+            "text": "affects",
+            "top": 290.387,
+            "x0": 90.0,
+            "x1": 119.315
+          },
+          {
+            "bottom": 301.387,
+            "text": "how",
+            "top": 290.387,
+            "x0": 122.065,
+            "x1": 141.007
+          },
+          {
+            "bottom": 301.387,
+            "text": "operations",
+            "top": 290.387,
+            "x0": 143.757,
+            "x1": 189.583
+          },
+          {
+            "bottom": 301.387,
+            "text": "leads",
+            "top": 290.387,
+            "x0": 192.333,
+            "x1": 214.938
+          },
+          {
+            "bottom": 301.387,
+            "text": "read",
+            "top": 290.387,
+            "x0": 217.688,
+            "x1": 236.619
+          },
+          {
+            "bottom": 301.387,
+            "text": "the",
+            "top": 290.387,
+            "x0": 239.369,
+            "x1": 252.811
+          },
+          {
+            "bottom": 301.387,
+            "text": "weekly",
+            "top": 290.387,
+            "x0": 255.561,
+            "x1": 287.329
+          },
+          {
+            "bottom": 301.387,
+            "text": "trend.",
+            "top": 290.387,
+            "x0": 290.079,
+            "x1": 315.434
+          },
+          {
+            "bottom": 322.673,
+            "text": "Each",
+            "top": 312.173,
+            "x0": 72.0,
+            "x1": 95.929
+          },
+          {
+            "bottom": 322.673,
+            "text": "session",
+            "top": 312.173,
+            "x0": 98.849,
+            "x1": 134.444
+          },
+          {
+            "bottom": 322.673,
+            "text": "runs",
+            "top": 312.173,
+            "x0": 137.363,
+            "x1": 157.785
+          },
+          {
+            "bottom": 322.673,
+            "text": "forty",
+            "top": 312.173,
+            "x0": 160.704,
+            "x1": 181.126
+          },
+          {
+            "bottom": 322.673,
+            "text": "minutes",
+            "top": 312.173,
+            "x0": 184.045,
+            "x1": 220.806
+          },
+          {
+            "bottom": 322.673,
+            "text": "and",
+            "top": 312.173,
+            "x0": 223.725,
+            "x1": 241.239
+          },
+          {
+            "bottom": 322.673,
+            "text": "covers",
+            "top": 312.173,
+            "x0": 244.158,
+            "x1": 275.08
+          },
+          {
+            "bottom": 322.673,
+            "text": "the",
+            "top": 312.173,
+            "x0": 278.0,
+            "x1": 292.594
+          },
+          {
+            "bottom": 322.673,
+            "text": "revised",
+            "top": 312.173,
+            "x0": 295.514,
+            "x1": 329.355
+          },
+          {
+            "bottom": 322.673,
+            "text": "scan",
+            "top": 312.173,
+            "x0": 332.274,
+            "x1": 354.45
+          },
+          {
+            "bottom": 322.673,
+            "text": "points,",
+            "top": 312.173,
+            "x0": 357.369,
+            "x1": 388.302
+          },
+          {
+            "bottom": 322.673,
+            "text": "the",
+            "top": 312.173,
+            "x0": 391.221,
+            "x1": 405.816
+          },
+          {
+            "bottom": 322.673,
+            "text": "exception",
+            "top": 312.173,
+            "x0": 408.735,
+            "x1": 453.675
+          },
+          {
+            "bottom": 322.673,
+            "text": "queue,",
+            "top": 312.173,
+            "x0": 456.594,
+            "x1": 488.703
+          },
+          {
+            "bottom": 322.673,
+            "text": "and",
+            "top": 312.173,
+            "x0": 491.622,
+            "x1": 509.136
+          },
+          {
+            "bottom": 322.673,
+            "text": "the",
+            "top": 312.173,
+            "x0": 512.055,
+            "x1": 526.65
+          },
+          {
+            "bottom": 335.673,
+            "text": "escalation",
+            "top": 325.173,
+            "x0": 72.0,
+            "x1": 119.271
+          },
+          {
+            "bottom": 335.673,
+            "text": "contact.",
+            "top": 325.173,
+            "x0": 122.19,
+            "x1": 158.961
+          },
+          {
+            "bottom": 362.343,
+            "text": "Rollout",
+            "top": 352.843,
+            "x0": 96.0,
+            "x1": 135.9
+          },
+          {
+            "bottom": 362.343,
+            "text": "checkpoint:",
+            "top": 352.843,
+            "x0": 141.6,
+            "x1": 204.3
+          },
+          {
+            "bottom": 362.343,
+            "text": "docks",
+            "top": 352.843,
+            "x0": 210.0,
+            "x1": 238.5
+          },
+          {
+            "bottom": 362.343,
+            "text": "3-4",
+            "top": 352.843,
+            "x0": 244.2,
+            "x1": 261.3
+          },
+          {
+            "bottom": 362.343,
+            "text": "complete;",
+            "top": 352.843,
+            "x0": 267.0,
+            "x1": 318.3
+          },
+          {
+            "bottom": 362.343,
+            "text": "overflow",
+            "top": 352.843,
+            "x0": 324.0,
+            "x1": 369.6
+          },
+          {
+            "bottom": 362.343,
+            "text": "aisles",
+            "top": 352.843,
+            "x0": 375.3,
+            "x1": 409.5
+          },
+          {
+            "bottom": 374.343,
+            "text": "pending;",
+            "top": 364.843,
+            "x0": 96.0,
+            "x1": 141.6
+          },
+          {
+            "bottom": 374.343,
+            "text": "go/no-go",
+            "top": 364.843,
+            "x0": 147.3,
+            "x1": 192.9
+          },
+          {
+            "bottom": 374.343,
+            "text": "review",
+            "top": 364.843,
+            "x0": 198.6,
+            "x1": 232.8
+          },
+          {
+            "bottom": 374.343,
+            "text": "28",
+            "top": 364.843,
+            "x0": 238.5,
+            "x1": 249.9
+          },
+          {
+            "bottom": 374.343,
+            "text": "January",
+            "top": 364.843,
+            "x0": 255.6,
+            "x1": 295.5
+          },
+          {
+            "bottom": 374.343,
+            "text": "2027.",
+            "top": 364.843,
+            "x0": 301.2,
+            "x1": 329.7
+          },
+          {
+            "bottom": 757.656,
+            "text": "Harborview",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 112.448
+          },
+          {
+            "bottom": 757.656,
+            "text": "Logistics",
+            "top": 749.656,
+            "x0": 114.672,
+            "x1": 145.792
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 148.016,
+            "x1": 150.68
+          },
+          {
+            "bottom": 757.656,
+            "text": "internal",
+            "top": 749.656,
+            "x0": 152.904,
+            "x1": 179.136
+          },
+          {
+            "bottom": 757.656,
+            "text": "use",
+            "top": 749.656,
+            "x0": 181.36,
+            "x1": 194.256
+          },
+          {
+            "bottom": 757.656,
+            "text": "only",
+            "top": 749.656,
+            "x0": 196.48,
+            "x1": 211.152
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "-2027-014",
+          "2",
+          "2"
+        ],
+        "page_index": 1,
+        "reading_text": "INTERNAL MEMO REF: HL-2027-014 Harborview Logistics\nSupervisors should update the aisle maps before the first shift\nends, because the oper-\nations summary splits overflow scans from dock scans from that\nevening onward.\nQuestions about the exception queue workflow go to the duty supervisor, not to the project\nmailbox.\nPlease acknowledge receipt of this memo by replying in the ops channel.\nD. Okafor\nOperations Manager\nHarborview Logistics\nHarborview Logistics - internal use only Page 2 of 2",
+        "rotation": 0,
+        "tokens": [
+          "INTERNAL",
+          "MEMO",
+          "REF:",
+          "HL-2027-014",
+          "Harborview",
+          "Logistics",
+          "Supervisors",
+          "should",
+          "update",
+          "the",
+          "aisle",
+          "maps",
+          "before",
+          "the",
+          "first",
+          "shift",
+          "ends,",
+          "because",
+          "the",
+          "oper-",
+          "ations",
+          "summary",
+          "splits",
+          "overflow",
+          "scans",
+          "from",
+          "dock",
+          "scans",
+          "from",
+          "that",
+          "evening",
+          "onward.",
+          "Questions",
+          "about",
+          "the",
+          "exception",
+          "queue",
+          "workflow",
+          "go",
+          "to",
+          "the",
+          "duty",
+          "supervisor,",
+          "not",
+          "to",
+          "the",
+          "project",
+          "mailbox.",
+          "Please",
+          "acknowledge",
+          "receipt",
+          "of",
+          "this",
+          "memo",
+          "by",
+          "replying",
+          "in",
+          "the",
+          "ops",
+          "channel.",
+          "D.",
+          "Okafor",
+          "Operations",
+          "Manager",
+          "Harborview",
+          "Logistics",
+          "Harborview",
+          "Logistics",
+          "-",
+          "internal",
+          "use",
+          "only",
+          "Page",
+          "2",
+          "of",
+          "2"
+        ],
+        "words": [
+          {
+            "bottom": 41.863,
+            "text": "INTERNAL",
+            "top": 32.863,
+            "x0": 72.0,
+            "x1": 117.495
+          },
+          {
+            "bottom": 41.863,
+            "text": "MEMO",
+            "top": 32.863,
+            "x0": 119.997,
+            "x1": 147.996
+          },
+          {
+            "bottom": 41.863,
+            "text": "REF:",
+            "top": 32.863,
+            "x0": 153.0,
+            "x1": 173.997
+          },
+          {
+            "bottom": 41.863,
+            "text": "HL-2027-014",
+            "top": 32.863,
+            "x0": 176.499,
+            "x1": 229.518
+          },
+          {
+            "bottom": 41.863,
+            "text": "Harborview",
+            "top": 32.863,
+            "x0": 456.984,
+            "x1": 502.488
+          },
+          {
+            "bottom": 41.863,
+            "text": "Logistics",
+            "top": 32.863,
+            "x0": 504.99,
+            "x1": 540.0
+          },
+          {
+            "bottom": 90.387,
+            "text": "Supervisors",
+            "top": 79.387,
+            "x0": 72.0,
+            "x1": 123.942
+          },
+          {
+            "bottom": 90.387,
+            "text": "should",
+            "top": 79.387,
+            "x0": 126.692,
+            "x1": 156.029
+          },
+          {
+            "bottom": 90.387,
+            "text": "update",
+            "top": 79.387,
+            "x0": 158.779,
+            "x1": 188.105
+          },
+          {
+            "bottom": 90.387,
+            "text": "the",
+            "top": 79.387,
+            "x0": 190.855,
+            "x1": 204.297
+          },
+          {
+            "bottom": 90.387,
+            "text": "aisle",
+            "top": 79.387,
+            "x0": 207.047,
+            "x1": 227.21
+          },
+          {
+            "bottom": 90.387,
+            "text": "maps",
+            "top": 79.387,
+            "x0": 229.96,
+            "x1": 253.181
+          },
+          {
+            "bottom": 90.387,
+            "text": "before",
+            "top": 79.387,
+            "x0": 255.931,
+            "x1": 284.025
+          },
+          {
+            "bottom": 90.387,
+            "text": "the",
+            "top": 79.387,
+            "x0": 286.775,
+            "x1": 300.217
+          },
+          {
+            "bottom": 90.387,
+            "text": "first",
+            "top": 79.387,
+            "x0": 302.967,
+            "x1": 320.688
+          },
+          {
+            "bottom": 90.387,
+            "text": "shift",
+            "top": 79.387,
+            "x0": 323.438,
+            "x1": 342.996
+          },
+          {
+            "bottom": 103.887,
+            "text": "ends,",
+            "top": 92.887,
+            "x0": 72.0,
+            "x1": 94.913
+          },
+          {
+            "bottom": 103.887,
+            "text": "because",
+            "top": 92.887,
+            "x0": 97.663,
+            "x1": 132.478
+          },
+          {
+            "bottom": 103.887,
+            "text": "the",
+            "top": 92.887,
+            "x0": 135.228,
+            "x1": 148.67
+          },
+          {
+            "bottom": 103.887,
+            "text": "oper-",
+            "top": 92.887,
+            "x0": 151.42,
+            "x1": 174.63
+          },
+          {
+            "bottom": 117.387,
+            "text": "ations",
+            "top": 106.387,
+            "x0": 72.0,
+            "x1": 98.279
+          },
+          {
+            "bottom": 117.387,
+            "text": "summary",
+            "top": 106.387,
+            "x0": 101.029,
+            "x1": 141.971
+          },
+          {
+            "bottom": 117.387,
+            "text": "splits",
+            "top": 106.387,
+            "x0": 144.721,
+            "x1": 167.953
+          },
+          {
+            "bottom": 117.387,
+            "text": "overflow",
+            "top": 106.387,
+            "x0": 170.703,
+            "x1": 210.413
+          },
+          {
+            "bottom": 117.387,
+            "text": "scans",
+            "top": 106.387,
+            "x0": 213.163,
+            "x1": 236.989
+          },
+          {
+            "bottom": 117.387,
+            "text": "from",
+            "top": 106.387,
+            "x0": 239.739,
+            "x1": 261.123
+          },
+          {
+            "bottom": 117.387,
+            "text": "dock",
+            "top": 106.387,
+            "x0": 263.873,
+            "x1": 285.257
+          },
+          {
+            "bottom": 117.387,
+            "text": "scans",
+            "top": 106.387,
+            "x0": 288.007,
+            "x1": 311.833
+          },
+          {
+            "bottom": 117.387,
+            "text": "from",
+            "top": 106.387,
+            "x0": 314.583,
+            "x1": 335.967
+          },
+          {
+            "bottom": 117.387,
+            "text": "that",
+            "top": 106.387,
+            "x0": 338.717,
+            "x1": 355.217
+          },
+          {
+            "bottom": 130.887,
+            "text": "evening",
+            "top": 119.887,
+            "x0": 72.0,
+            "x1": 106.826
+          },
+          {
+            "bottom": 130.887,
+            "text": "onward.",
+            "top": 119.887,
+            "x0": 109.576,
+            "x1": 145.315
+          },
+          {
+            "bottom": 154.173,
+            "text": "Questions",
+            "top": 143.673,
+            "x0": 84.0,
+            "x1": 131.271
+          },
+          {
+            "bottom": 154.173,
+            "text": "about",
+            "top": 143.673,
+            "x0": 134.19,
+            "x1": 160.461
+          },
+          {
+            "bottom": 154.173,
+            "text": "the",
+            "top": 143.673,
+            "x0": 163.38,
+            "x1": 177.975
+          },
+          {
+            "bottom": 154.173,
+            "text": "exception",
+            "top": 143.673,
+            "x0": 180.894,
+            "x1": 225.834
+          },
+          {
+            "bottom": 154.173,
+            "text": "queue",
+            "top": 143.673,
+            "x0": 228.753,
+            "x1": 257.943
+          },
+          {
+            "bottom": 154.173,
+            "text": "workflow",
+            "top": 143.673,
+            "x0": 260.862,
+            "x1": 301.696
+          },
+          {
+            "bottom": 154.173,
+            "text": "go",
+            "top": 143.673,
+            "x0": 304.615,
+            "x1": 316.291
+          },
+          {
+            "bottom": 154.173,
+            "text": "to",
+            "top": 143.673,
+            "x0": 319.21,
+            "x1": 327.967
+          },
+          {
+            "bottom": 154.173,
+            "text": "the",
+            "top": 143.673,
+            "x0": 330.886,
+            "x1": 345.481
+          },
+          {
+            "bottom": 154.173,
+            "text": "duty",
+            "top": 143.673,
+            "x0": 348.4,
+            "x1": 368.245
+          },
+          {
+            "bottom": 154.173,
+            "text": "supervisor,",
+            "top": 143.673,
+            "x0": 371.164,
+            "x1": 422.51
+          },
+          {
+            "bottom": 154.173,
+            "text": "not",
+            "top": 143.673,
+            "x0": 425.429,
+            "x1": 440.024
+          },
+          {
+            "bottom": 154.173,
+            "text": "to",
+            "top": 143.673,
+            "x0": 442.943,
+            "x1": 451.7
+          },
+          {
+            "bottom": 154.173,
+            "text": "the",
+            "top": 143.673,
+            "x0": 454.619,
+            "x1": 469.214
+          },
+          {
+            "bottom": 154.173,
+            "text": "project",
+            "top": 143.673,
+            "x0": 472.133,
+            "x1": 503.643
+          },
+          {
+            "bottom": 167.173,
+            "text": "mailbox.",
+            "top": 156.673,
+            "x0": 84.0,
+            "x1": 123.091
+          },
+          {
+            "bottom": 196.173,
+            "text": "Please",
+            "top": 185.673,
+            "x0": 72.0,
+            "x1": 104.099
+          },
+          {
+            "bottom": 196.173,
+            "text": "acknowledge",
+            "top": 185.673,
+            "x0": 107.017,
+            "x1": 168.295
+          },
+          {
+            "bottom": 196.173,
+            "text": "receipt",
+            "top": 185.673,
+            "x0": 171.214,
+            "x1": 202.725
+          },
+          {
+            "bottom": 196.173,
+            "text": "of",
+            "top": 185.673,
+            "x0": 205.644,
+            "x1": 214.401
+          },
+          {
+            "bottom": 196.173,
+            "text": "this",
+            "top": 185.673,
+            "x0": 217.32,
+            "x1": 233.658
+          },
+          {
+            "bottom": 196.173,
+            "text": "memo",
+            "top": 185.673,
+            "x0": 236.577,
+            "x1": 265.746
+          },
+          {
+            "bottom": 196.173,
+            "text": "by",
+            "top": 185.673,
+            "x0": 268.665,
+            "x1": 279.753
+          },
+          {
+            "bottom": 196.173,
+            "text": "replying",
+            "top": 185.673,
+            "x0": 282.672,
+            "x1": 319.433
+          },
+          {
+            "bottom": 196.173,
+            "text": "in",
+            "top": 185.673,
+            "x0": 322.351,
+            "x1": 330.521
+          },
+          {
+            "bottom": 196.173,
+            "text": "the",
+            "top": 185.673,
+            "x0": 333.439,
+            "x1": 348.034
+          },
+          {
+            "bottom": 196.173,
+            "text": "ops",
+            "top": 185.673,
+            "x0": 350.953,
+            "x1": 367.88
+          },
+          {
+            "bottom": 196.173,
+            "text": "channel.",
+            "top": 185.673,
+            "x0": 370.798,
+            "x1": 410.489
+          },
+          {
+            "bottom": 229.387,
+            "text": "D.",
+            "top": 218.387,
+            "x0": 72.0,
+            "x1": 82.692
+          },
+          {
+            "bottom": 229.387,
+            "text": "Okafor",
+            "top": 218.387,
+            "x0": 85.442,
+            "x1": 116.594
+          },
+          {
+            "bottom": 244.887,
+            "text": "Operations",
+            "top": 233.887,
+            "x0": 72.0,
+            "x1": 120.268
+          },
+          {
+            "bottom": 244.887,
+            "text": "Manager",
+            "top": 233.887,
+            "x0": 123.018,
+            "x1": 162.112
+          },
+          {
+            "bottom": 260.387,
+            "text": "Harborview",
+            "top": 249.387,
+            "x0": 72.0,
+            "x1": 124.536
+          },
+          {
+            "bottom": 260.387,
+            "text": "Logistics",
+            "top": 249.387,
+            "x0": 127.286,
+            "x1": 167.623
+          },
+          {
+            "bottom": 757.656,
+            "text": "Harborview",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 112.448
+          },
+          {
+            "bottom": 757.656,
+            "text": "Logistics",
+            "top": 749.656,
+            "x0": 114.672,
+            "x1": 145.792
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 148.016,
+            "x1": 150.68
+          },
+          {
+            "bottom": 757.656,
+            "text": "internal",
+            "top": 749.656,
+            "x0": 152.904,
+            "x1": 179.136
+          },
+          {
+            "bottom": 757.656,
+            "text": "use",
+            "top": 749.656,
+            "x0": 181.36,
+            "x1": 194.256
+          },
+          {
+            "bottom": 757.656,
+            "text": "only",
+            "top": 749.656,
+            "x0": 196.48,
+            "x1": 211.152
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 3762,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 12,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 122
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 229
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 341
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 450
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 555
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 750
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 945
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1014
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1413
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1479
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 2581
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F01-memo.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "203f751515606c543d1d730e707345ef3f3d270a23e1fedc53dc12d147a50ec7"
+    },
+    "source_sha256": "203f751515606c543d1d730e707345ef3f3d270a23e1fedc53dc12d147a50ec7",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F01",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 2,
+      "page_order": [
+        0,
+        1
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0,
+            1
+          ],
+          "region_ids": [
+            "p0-body",
+            "p1-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 2,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0,
+              1
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      }
+    ],
+    "page_mapping": [
+      0,
+      1
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 12,
+            "source_sha256": "203f751515606c543d1d730e707345ef3f3d270a23e1fedc53dc12d147a50ec7"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0,
+              0.0
+            ],
+            "max_fraction": 0.0,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 2,
+            "source": 2
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [],
+            "pdfminer_source": [],
+            "scanner_both_empty": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "classifier_conflict": false,
+            "decisive": false
+          }
+        ],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 3762,
+              "OBJECT_COUNT": 18,
+              "OUTPUT_BYTES": 7475,
+              "PAGE_COUNT": 2
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0,
+            1
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}

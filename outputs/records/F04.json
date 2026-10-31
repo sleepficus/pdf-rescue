@@ -1,0 +1,1367 @@
+{
+  "build": {
+    "candidate_bytes": 4587,
+    "candidate_sha256": "b5c5717b63a7258c49c4d940af7d3d982453f5c74a02da522cb316628cbece89",
+    "document_id": "F04",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS"
+    ],
+    "page_count": 1,
+    "source_sha256": "46e1e1ab8b415ffc1b38188ba0f948d617f83c084d1d852136d68e0c5fca4def",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F04-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F04",
+  "intake": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F04",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 2719,
+    "filename": "F04-agenda.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 0
+    },
+    "object_count": 10,
+    "page_count": 1,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "11",
+          "2027, 19:00",
+          "1.",
+          "2.",
+          "14",
+          "2027",
+          "3.",
+          "4.",
+          "5.",
+          "6.",
+          "1",
+          "1"
+        ],
+        "page_index": 0,
+        "reading_text": "AGENDA - Cedar Hollow Residents Committee\nVillage hall, main room - Thursday 11 March 2027, 19:00\n1. Welcome and apologies\n2. Minutes of the meeting held on 14 January 2027\n3. Matters arising: footpath lighting; notice board repairs\n4. Treasurer's report\n5. Grant request: youth football equipment\n6. Any other business\nChair: M. Aldana Secretary: P. Lindqvist\nNOTICES\nThe hall kitchen remains closed for repairs until further notice. Rubbish collection moves to Tuesday from the first\nweek of April. Contact the secretary to book the hall for private events.\nA refuse sack was left in the main room after the February meeting; the hall keeper asks that the last person out\nchecks the corners of the room.\nCedar Hollow Residents Committee - synthetic fixture Page 1 of 1",
+        "rotation": 0,
+        "tokens": [
+          "AGENDA",
+          "-",
+          "Cedar",
+          "Hollow",
+          "Residents",
+          "Committee",
+          "Village",
+          "hall,",
+          "main",
+          "room",
+          "-",
+          "Thursday",
+          "11",
+          "March",
+          "2027,",
+          "19:00",
+          "1.",
+          "Welcome",
+          "and",
+          "apologies",
+          "2.",
+          "Minutes",
+          "of",
+          "the",
+          "meeting",
+          "held",
+          "on",
+          "14",
+          "January",
+          "2027",
+          "3.",
+          "Matters",
+          "arising:",
+          "footpath",
+          "lighting;",
+          "notice",
+          "board",
+          "repairs",
+          "4.",
+          "Treasurer's",
+          "report",
+          "5.",
+          "Grant",
+          "request:",
+          "youth",
+          "football",
+          "equipment",
+          "6.",
+          "Any",
+          "other",
+          "business",
+          "Chair:",
+          "M.",
+          "Aldana",
+          "Secretary:",
+          "P.",
+          "Lindqvist",
+          "NOTICES",
+          "The",
+          "hall",
+          "kitchen",
+          "remains",
+          "closed",
+          "for",
+          "repairs",
+          "until",
+          "further",
+          "notice.",
+          "Rubbish",
+          "collection",
+          "moves",
+          "to",
+          "Tuesday",
+          "from",
+          "the",
+          "first",
+          "week",
+          "of",
+          "April.",
+          "Contact",
+          "the",
+          "secretary",
+          "to",
+          "book",
+          "the",
+          "hall",
+          "for",
+          "private",
+          "events.",
+          "A",
+          "refuse",
+          "sack",
+          "was",
+          "left",
+          "in",
+          "the",
+          "main",
+          "room",
+          "after",
+          "the",
+          "February",
+          "meeting;",
+          "the",
+          "hall",
+          "keeper",
+          "asks",
+          "that",
+          "the",
+          "last",
+          "person",
+          "out",
+          "checks",
+          "the",
+          "corners",
+          "of",
+          "the",
+          "room.",
+          "Cedar",
+          "Hollow",
+          "Residents",
+          "Committee",
+          "-",
+          "synthetic",
+          "fixture",
+          "Page",
+          "1",
+          "of",
+          "1"
+        ],
+        "words": [
+          {
+            "bottom": 90.821,
+            "text": "AGENDA",
+            "top": 77.821,
+            "x0": 172.952,
+            "x1": 229.28
+          },
+          {
+            "bottom": 90.821,
+            "text": "-",
+            "top": 77.821,
+            "x0": 232.531,
+            "x1": 236.86
+          },
+          {
+            "bottom": 90.821,
+            "text": "Cedar",
+            "top": 77.821,
+            "x0": 240.109,
+            "x1": 274.767
+          },
+          {
+            "bottom": 90.821,
+            "text": "Hollow",
+            "top": 77.821,
+            "x0": 278.017,
+            "x1": 317.746
+          },
+          {
+            "bottom": 90.821,
+            "text": "Residents",
+            "top": 77.821,
+            "x0": 320.995,
+            "x1": 374.438
+          },
+          {
+            "bottom": 90.821,
+            "text": "Committee",
+            "top": 77.821,
+            "x0": 377.688,
+            "x1": 439.048
+          },
+          {
+            "bottom": 107.062,
+            "text": "Village",
+            "top": 97.562,
+            "x0": 195.311,
+            "x1": 223.279
+          },
+          {
+            "bottom": 107.062,
+            "text": "hall,",
+            "top": 97.562,
+            "x0": 225.654,
+            "x1": 242.279
+          },
+          {
+            "bottom": 107.062,
+            "text": "main",
+            "top": 97.562,
+            "x0": 244.654,
+            "x1": 263.654
+          },
+          {
+            "bottom": 107.062,
+            "text": "room",
+            "top": 97.562,
+            "x0": 266.029,
+            "x1": 286.083
+          },
+          {
+            "bottom": 107.062,
+            "text": "-",
+            "top": 97.562,
+            "x0": 288.458,
+            "x1": 291.622
+          },
+          {
+            "bottom": 107.062,
+            "text": "Thursday",
+            "top": 97.562,
+            "x0": 293.997,
+            "x1": 329.878
+          },
+          {
+            "bottom": 107.062,
+            "text": "11",
+            "top": 97.562,
+            "x0": 332.253,
+            "x1": 341.753
+          },
+          {
+            "bottom": 107.062,
+            "text": "March",
+            "top": 97.562,
+            "x0": 344.128,
+            "x1": 368.923
+          },
+          {
+            "bottom": 107.062,
+            "text": "2027,",
+            "top": 97.562,
+            "x0": 371.298,
+            "x1": 392.673
+          },
+          {
+            "bottom": 107.062,
+            "text": "19:00",
+            "top": 97.562,
+            "x0": 395.048,
+            "x1": 416.689
+          },
+          {
+            "bottom": 133.173,
+            "text": "1.",
+            "top": 122.673,
+            "x0": 72.0,
+            "x1": 80.757
+          },
+          {
+            "bottom": 133.173,
+            "text": "Welcome",
+            "top": 122.673,
+            "x0": 83.676,
+            "x1": 127.429
+          },
+          {
+            "bottom": 133.173,
+            "text": "and",
+            "top": 122.673,
+            "x0": 130.349,
+            "x1": 147.862
+          },
+          {
+            "bottom": 133.173,
+            "text": "apologies",
+            "top": 122.673,
+            "x0": 150.781,
+            "x1": 195.721
+          },
+          {
+            "bottom": 150.673,
+            "text": "2.",
+            "top": 140.173,
+            "x0": 78.0,
+            "x1": 86.757
+          },
+          {
+            "bottom": 150.673,
+            "text": "Minutes",
+            "top": 140.173,
+            "x0": 89.676,
+            "x1": 126.436
+          },
+          {
+            "bottom": 150.673,
+            "text": "of",
+            "top": 140.173,
+            "x0": 129.356,
+            "x1": 138.113
+          },
+          {
+            "bottom": 150.673,
+            "text": "the",
+            "top": 140.173,
+            "x0": 141.031,
+            "x1": 155.626
+          },
+          {
+            "bottom": 150.673,
+            "text": "meeting",
+            "top": 140.173,
+            "x0": 158.546,
+            "x1": 195.894
+          },
+          {
+            "bottom": 150.673,
+            "text": "held",
+            "top": 140.173,
+            "x0": 198.813,
+            "x1": 218.658
+          },
+          {
+            "bottom": 150.673,
+            "text": "on",
+            "top": 140.173,
+            "x0": 221.577,
+            "x1": 233.253
+          },
+          {
+            "bottom": 150.673,
+            "text": "14",
+            "top": 140.173,
+            "x0": 236.172,
+            "x1": 247.848
+          },
+          {
+            "bottom": 150.673,
+            "text": "January",
+            "top": 140.173,
+            "x0": 250.767,
+            "x1": 288.115
+          },
+          {
+            "bottom": 150.673,
+            "text": "2027",
+            "top": 140.173,
+            "x0": 291.034,
+            "x1": 314.386
+          },
+          {
+            "bottom": 168.173,
+            "text": "3.",
+            "top": 157.673,
+            "x0": 84.0,
+            "x1": 92.757
+          },
+          {
+            "bottom": 168.173,
+            "text": "Matters",
+            "top": 157.673,
+            "x0": 95.676,
+            "x1": 130.683
+          },
+          {
+            "bottom": 168.173,
+            "text": "arising:",
+            "top": 157.673,
+            "x0": 133.602,
+            "x1": 167.444
+          },
+          {
+            "bottom": 168.173,
+            "text": "footpath",
+            "top": 157.673,
+            "x0": 170.363,
+            "x1": 208.309
+          },
+          {
+            "bottom": 168.173,
+            "text": "lighting;",
+            "top": 157.673,
+            "x0": 211.228,
+            "x1": 247.411
+          },
+          {
+            "bottom": 168.173,
+            "text": "notice",
+            "top": 157.673,
+            "x0": 253.25,
+            "x1": 281.264
+          },
+          {
+            "bottom": 168.173,
+            "text": "board",
+            "top": 157.673,
+            "x0": 284.183,
+            "x1": 311.031
+          },
+          {
+            "bottom": 168.173,
+            "text": "repairs",
+            "top": 157.673,
+            "x0": 313.95,
+            "x1": 346.038
+          },
+          {
+            "bottom": 185.673,
+            "text": "4.",
+            "top": 175.173,
+            "x0": 72.0,
+            "x1": 80.757
+          },
+          {
+            "bottom": 185.673,
+            "text": "Treasurer's",
+            "top": 175.173,
+            "x0": 83.676,
+            "x1": 136.439
+          },
+          {
+            "bottom": 185.673,
+            "text": "report",
+            "top": 175.173,
+            "x0": 139.358,
+            "x1": 166.784
+          },
+          {
+            "bottom": 203.173,
+            "text": "5.",
+            "top": 192.673,
+            "x0": 90.0,
+            "x1": 98.757
+          },
+          {
+            "bottom": 203.173,
+            "text": "Grant",
+            "top": 192.673,
+            "x0": 101.676,
+            "x1": 127.937
+          },
+          {
+            "bottom": 203.173,
+            "text": "request:",
+            "top": 192.673,
+            "x0": 130.856,
+            "x1": 168.792
+          },
+          {
+            "bottom": 203.173,
+            "text": "youth",
+            "top": 192.673,
+            "x0": 171.711,
+            "x1": 197.394
+          },
+          {
+            "bottom": 203.173,
+            "text": "football",
+            "top": 192.673,
+            "x0": 200.313,
+            "x1": 234.165
+          },
+          {
+            "bottom": 203.173,
+            "text": "equipment",
+            "top": 192.673,
+            "x0": 237.084,
+            "x1": 286.108
+          },
+          {
+            "bottom": 220.673,
+            "text": "6.",
+            "top": 210.173,
+            "x0": 78.0,
+            "x1": 86.757
+          },
+          {
+            "bottom": 220.673,
+            "text": "Any",
+            "top": 210.173,
+            "x0": 89.676,
+            "x1": 107.768
+          },
+          {
+            "bottom": 220.673,
+            "text": "other",
+            "top": 210.173,
+            "x0": 110.687,
+            "x1": 134.616
+          },
+          {
+            "bottom": 220.673,
+            "text": "business",
+            "top": 210.173,
+            "x0": 137.535,
+            "x1": 178.968
+          },
+          {
+            "bottom": 245.966,
+            "text": "Chair:",
+            "top": 236.466,
+            "x0": 366.293,
+            "x1": 391.629
+          },
+          {
+            "bottom": 245.966,
+            "text": "M.",
+            "top": 236.466,
+            "x0": 394.27,
+            "x1": 404.825
+          },
+          {
+            "bottom": 245.966,
+            "text": "Aldana",
+            "top": 236.466,
+            "x0": 407.466,
+            "x1": 437.039
+          },
+          {
+            "bottom": 245.966,
+            "text": "Secretary:",
+            "top": 236.466,
+            "x0": 444.962,
+            "x1": 488.254
+          },
+          {
+            "bottom": 245.966,
+            "text": "P.",
+            "top": 236.466,
+            "x0": 490.894,
+            "x1": 499.872
+          },
+          {
+            "bottom": 245.966,
+            "text": "Lindqvist",
+            "top": 236.466,
+            "x0": 502.513,
+            "x1": 540.0
+          },
+          {
+            "bottom": 274.07,
+            "text": "NOTICES",
+            "top": 264.07,
+            "x0": 72.0,
+            "x1": 116.45
+          },
+          {
+            "bottom": 289.863,
+            "text": "The",
+            "top": 280.863,
+            "x0": 72.0,
+            "x1": 87.507
+          },
+          {
+            "bottom": 289.863,
+            "text": "hall",
+            "top": 280.863,
+            "x0": 90.009,
+            "x1": 104.013
+          },
+          {
+            "bottom": 289.863,
+            "text": "kitchen",
+            "top": 280.863,
+            "x0": 106.515,
+            "x1": 135.027
+          },
+          {
+            "bottom": 289.863,
+            "text": "remains",
+            "top": 280.863,
+            "x0": 137.529,
+            "x1": 169.533
+          },
+          {
+            "bottom": 289.863,
+            "text": "closed",
+            "top": 280.863,
+            "x0": 172.035,
+            "x1": 198.045
+          },
+          {
+            "bottom": 289.863,
+            "text": "for",
+            "top": 280.863,
+            "x0": 200.547,
+            "x1": 211.05
+          },
+          {
+            "bottom": 289.863,
+            "text": "repairs",
+            "top": 280.863,
+            "x0": 213.552,
+            "x1": 241.056
+          },
+          {
+            "bottom": 289.863,
+            "text": "until",
+            "top": 280.863,
+            "x0": 243.558,
+            "x1": 260.064
+          },
+          {
+            "bottom": 289.863,
+            "text": "further",
+            "top": 280.863,
+            "x0": 262.566,
+            "x1": 288.576
+          },
+          {
+            "bottom": 289.863,
+            "text": "notice.",
+            "top": 280.863,
+            "x0": 291.078,
+            "x1": 317.592
+          },
+          {
+            "bottom": 289.863,
+            "text": "Rubbish",
+            "top": 280.863,
+            "x0": 320.094,
+            "x1": 353.106
+          },
+          {
+            "bottom": 289.863,
+            "text": "collection",
+            "top": 280.863,
+            "x0": 355.608,
+            "x1": 393.12
+          },
+          {
+            "bottom": 289.863,
+            "text": "moves",
+            "top": 280.863,
+            "x0": 395.622,
+            "x1": 422.127
+          },
+          {
+            "bottom": 289.863,
+            "text": "to",
+            "top": 280.863,
+            "x0": 424.629,
+            "x1": 432.135
+          },
+          {
+            "bottom": 289.863,
+            "text": "Tuesday",
+            "top": 280.863,
+            "x0": 434.637,
+            "x1": 469.152
+          },
+          {
+            "bottom": 289.863,
+            "text": "from",
+            "top": 280.863,
+            "x0": 471.654,
+            "x1": 489.654
+          },
+          {
+            "bottom": 289.863,
+            "text": "the",
+            "top": 280.863,
+            "x0": 492.156,
+            "x1": 504.666
+          },
+          {
+            "bottom": 289.863,
+            "text": "first",
+            "top": 280.863,
+            "x0": 507.168,
+            "x1": 521.667
+          },
+          {
+            "bottom": 300.863,
+            "text": "week",
+            "top": 291.863,
+            "x0": 72.0,
+            "x1": 93.006
+          },
+          {
+            "bottom": 300.863,
+            "text": "of",
+            "top": 291.863,
+            "x0": 95.508,
+            "x1": 103.014
+          },
+          {
+            "bottom": 300.863,
+            "text": "April.",
+            "top": 291.863,
+            "x0": 105.516,
+            "x1": 126.018
+          },
+          {
+            "bottom": 300.863,
+            "text": "Contact",
+            "top": 291.863,
+            "x0": 128.52,
+            "x1": 159.534
+          },
+          {
+            "bottom": 300.863,
+            "text": "the",
+            "top": 291.863,
+            "x0": 162.036,
+            "x1": 174.546
+          },
+          {
+            "bottom": 300.863,
+            "text": "secretary",
+            "top": 291.863,
+            "x0": 177.048,
+            "x1": 214.056
+          },
+          {
+            "bottom": 300.863,
+            "text": "to",
+            "top": 291.863,
+            "x0": 216.558,
+            "x1": 224.064
+          },
+          {
+            "bottom": 300.863,
+            "text": "book",
+            "top": 291.863,
+            "x0": 226.566,
+            "x1": 246.078
+          },
+          {
+            "bottom": 300.863,
+            "text": "the",
+            "top": 291.863,
+            "x0": 248.58,
+            "x1": 261.09
+          },
+          {
+            "bottom": 300.863,
+            "text": "hall",
+            "top": 291.863,
+            "x0": 263.592,
+            "x1": 277.596
+          },
+          {
+            "bottom": 300.863,
+            "text": "for",
+            "top": 291.863,
+            "x0": 280.098,
+            "x1": 290.601
+          },
+          {
+            "bottom": 300.863,
+            "text": "private",
+            "top": 291.863,
+            "x0": 293.103,
+            "x1": 320.112
+          },
+          {
+            "bottom": 300.863,
+            "text": "events.",
+            "top": 291.863,
+            "x0": 322.614,
+            "x1": 351.63
+          },
+          {
+            "bottom": 317.863,
+            "text": "A",
+            "top": 308.863,
+            "x0": 72.0,
+            "x1": 78.003
+          },
+          {
+            "bottom": 317.863,
+            "text": "refuse",
+            "top": 308.863,
+            "x0": 80.505,
+            "x1": 105.516
+          },
+          {
+            "bottom": 317.863,
+            "text": "sack",
+            "top": 308.863,
+            "x0": 108.018,
+            "x1": 126.522
+          },
+          {
+            "bottom": 317.863,
+            "text": "was",
+            "top": 308.863,
+            "x0": 129.024,
+            "x1": 145.026
+          },
+          {
+            "bottom": 317.863,
+            "text": "left",
+            "top": 308.863,
+            "x0": 147.528,
+            "x1": 159.534
+          },
+          {
+            "bottom": 317.863,
+            "text": "in",
+            "top": 308.863,
+            "x0": 162.036,
+            "x1": 169.038
+          },
+          {
+            "bottom": 317.863,
+            "text": "the",
+            "top": 308.863,
+            "x0": 171.54,
+            "x1": 184.05
+          },
+          {
+            "bottom": 317.863,
+            "text": "main",
+            "top": 308.863,
+            "x0": 186.552,
+            "x1": 206.055
+          },
+          {
+            "bottom": 317.863,
+            "text": "room",
+            "top": 308.863,
+            "x0": 208.557,
+            "x1": 229.059
+          },
+          {
+            "bottom": 317.863,
+            "text": "after",
+            "top": 308.863,
+            "x0": 231.561,
+            "x1": 249.57
+          },
+          {
+            "bottom": 317.863,
+            "text": "the",
+            "top": 308.863,
+            "x0": 252.072,
+            "x1": 264.582
+          },
+          {
+            "bottom": 317.863,
+            "text": "February",
+            "top": 308.863,
+            "x0": 267.084,
+            "x1": 303.093
+          },
+          {
+            "bottom": 317.863,
+            "text": "meeting;",
+            "top": 308.863,
+            "x0": 305.595,
+            "x1": 340.11
+          },
+          {
+            "bottom": 317.863,
+            "text": "the",
+            "top": 308.863,
+            "x0": 342.612,
+            "x1": 355.122
+          },
+          {
+            "bottom": 317.863,
+            "text": "hall",
+            "top": 308.863,
+            "x0": 357.624,
+            "x1": 371.628
+          },
+          {
+            "bottom": 317.863,
+            "text": "keeper",
+            "top": 308.863,
+            "x0": 374.13,
+            "x1": 401.643
+          },
+          {
+            "bottom": 317.863,
+            "text": "asks",
+            "top": 308.863,
+            "x0": 404.145,
+            "x1": 422.649
+          },
+          {
+            "bottom": 317.863,
+            "text": "that",
+            "top": 308.863,
+            "x0": 425.151,
+            "x1": 440.163
+          },
+          {
+            "bottom": 317.863,
+            "text": "the",
+            "top": 308.863,
+            "x0": 442.665,
+            "x1": 455.175
+          },
+          {
+            "bottom": 317.863,
+            "text": "last",
+            "top": 308.863,
+            "x0": 457.677,
+            "x1": 471.681
+          },
+          {
+            "bottom": 317.863,
+            "text": "person",
+            "top": 308.863,
+            "x0": 474.183,
+            "x1": 501.696
+          },
+          {
+            "bottom": 317.863,
+            "text": "out",
+            "top": 308.863,
+            "x0": 504.198,
+            "x1": 516.708
+          },
+          {
+            "bottom": 328.863,
+            "text": "checks",
+            "top": 319.863,
+            "x0": 72.0,
+            "x1": 100.008
+          },
+          {
+            "bottom": 328.863,
+            "text": "the",
+            "top": 319.863,
+            "x0": 102.51,
+            "x1": 115.02
+          },
+          {
+            "bottom": 328.863,
+            "text": "corners",
+            "top": 319.863,
+            "x0": 117.522,
+            "x1": 147.528
+          },
+          {
+            "bottom": 328.863,
+            "text": "of",
+            "top": 319.863,
+            "x0": 150.03,
+            "x1": 157.536
+          },
+          {
+            "bottom": 328.863,
+            "text": "the",
+            "top": 319.863,
+            "x0": 160.038,
+            "x1": 172.548
+          },
+          {
+            "bottom": 328.863,
+            "text": "room.",
+            "top": 319.863,
+            "x0": 175.05,
+            "x1": 198.054
+          },
+          {
+            "bottom": 757.656,
+            "text": "Cedar",
+            "top": 749.656,
+            "x0": 72.0,
+            "x1": 93.784
+          },
+          {
+            "bottom": 757.656,
+            "text": "Hollow",
+            "top": 749.656,
+            "x0": 96.008,
+            "x1": 120.008
+          },
+          {
+            "bottom": 757.656,
+            "text": "Residents",
+            "top": 749.656,
+            "x0": 122.232,
+            "x1": 157.8
+          },
+          {
+            "bottom": 757.656,
+            "text": "Committee",
+            "top": 749.656,
+            "x0": 160.024,
+            "x1": 198.696
+          },
+          {
+            "bottom": 757.656,
+            "text": "-",
+            "top": 749.656,
+            "x0": 200.92,
+            "x1": 203.584
+          },
+          {
+            "bottom": 757.656,
+            "text": "synthetic",
+            "top": 749.656,
+            "x0": 205.808,
+            "x1": 237.376
+          },
+          {
+            "bottom": 757.656,
+            "text": "fixture",
+            "top": 749.656,
+            "x0": 239.6,
+            "x1": 261.384
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 2719,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 10,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 122
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 229
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 337
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 446
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 558
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 752
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 820
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1247
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1306
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F04-agenda.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "46e1e1ab8b415ffc1b38188ba0f948d617f83c084d1d852136d68e0c5fca4def"
+    },
+    "source_sha256": "46e1e1ab8b415ffc1b38188ba0f948d617f83c084d1d852136d68e0c5fca4def",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F04",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 1,
+      "page_order": [
+        0
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0
+          ],
+          "region_ids": [
+            "p0-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 1,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      }
+    ],
+    "page_mapping": [
+      0
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 10,
+            "source_sha256": "46e1e1ab8b415ffc1b38188ba0f948d617f83c084d1d852136d68e0c5fca4def"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0
+            ],
+            "max_fraction": 0.0,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 1,
+            "source": 1
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [],
+            "pdfminer_source": [],
+            "scanner_both_empty": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "classifier_conflict": false,
+            "decisive": false
+          }
+        ],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 2719,
+              "OBJECT_COUNT": 14,
+              "OUTPUT_BYTES": 4587,
+              "PAGE_COUNT": 1
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}

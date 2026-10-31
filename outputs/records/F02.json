@@ -1,0 +1,1657 @@
+{
+  "build": {
+    "candidate_bytes": 5198,
+    "candidate_sha256": "0742185104cf0c5f52ae8fd18abed069c52612ce6f464e6eead806b5dfebe1db",
+    "document_id": "F02",
+    "operations_applied": [
+      "OP_STRUCTURE_TAGS",
+      "OP_SPACING_NORMALIZE"
+    ],
+    "page_count": 1,
+    "source_sha256": "bbe15b2e7fa10f213f9876699db55513d9b66cebd59a3b5e1054e6f3621171ea",
+    "temp_path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/workspace/.tmp/primary/F02-a.pdf"
+  },
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "PR-13"
+  },
+  "document_id": "F02",
+  "intake": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F02",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 2721,
+    "filename": "F02-letter.pdf",
+    "navigation": {
+      "destination_marker_count": 0,
+      "link_annotation_count": 0,
+      "outline_marker_count": 0
+    },
+    "object_count": 9,
+    "page_count": 1,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "22",
+          "1 2",
+          "9",
+          "2027",
+          "12",
+          "2 8",
+          "1",
+          "2027"
+        ],
+        "page_index": 0,
+        "reading_text": "CEDAR & VANE LTD\n22 Quartermaster Row, Portsmouth PO1 2AF\n9 February 2027\nMs. R. Whitfield\nFacilities Director\nAlder Court Estates\n12 Beacon Terrace, Portsmouth PO2 8LL\nDear Ms. Whitfield,\nThank you for meeting our site team last Thursday. The visit confirmed that the planned\nmaintenance schedule for Alder Court can begin in March without disturbing tenants.\nEnclosed with this letter are the signed service invoice and the receipt for the replacement valve\nassembly.\nOur engineers will arrive before eight in the morning, so the loading bay should be clear the\nevening before. If the parking permit for the service van has expired, please tell the front desk\nand we will issue a new one the same day.\nThe revised contract rate applies from 1 March 2027 and is fixed for twelve months. No other\nterms change.\nYours sincerely,\nT. Marsh\nClient Services Lead\nCedar & Vane Ltd\ncc: Building manager file\nCedar & Vane Ltd - registered in England (fictional entity)",
+        "rotation": 0,
+        "tokens": [
+          "CEDAR",
+          "&",
+          "VANE",
+          "LTD",
+          "22",
+          "Quartermaster",
+          "Row,",
+          "Portsmouth",
+          "PO1",
+          "2AF",
+          "9",
+          "February",
+          "2027",
+          "Ms.",
+          "R.",
+          "Whitfield",
+          "Facilities",
+          "Director",
+          "Alder",
+          "Court",
+          "Estates",
+          "12",
+          "Beacon",
+          "Terrace,",
+          "Portsmouth",
+          "PO2",
+          "8LL",
+          "Dear",
+          "Ms.",
+          "Whitfield,",
+          "Thank",
+          "you",
+          "for",
+          "meeting",
+          "our",
+          "site",
+          "team",
+          "last",
+          "Thursday.",
+          "The",
+          "visit",
+          "confirmed",
+          "that",
+          "the",
+          "planned",
+          "maintenance",
+          "schedule",
+          "for",
+          "Alder",
+          "Court",
+          "can",
+          "begin",
+          "in",
+          "March",
+          "without",
+          "disturbing",
+          "tenants.",
+          "Enclosed",
+          "with",
+          "this",
+          "letter",
+          "are",
+          "the",
+          "signed",
+          "service",
+          "invoice",
+          "and",
+          "the",
+          "receipt",
+          "for",
+          "the",
+          "replacement",
+          "valve",
+          "assembly.",
+          "Our",
+          "engineers",
+          "will",
+          "arrive",
+          "before",
+          "eight",
+          "in",
+          "the",
+          "morning,",
+          "so",
+          "the",
+          "loading",
+          "bay",
+          "should",
+          "be",
+          "clear",
+          "the",
+          "evening",
+          "before.",
+          "If",
+          "the",
+          "parking",
+          "permit",
+          "for",
+          "the",
+          "service",
+          "van",
+          "has",
+          "expired,",
+          "please",
+          "tell",
+          "the",
+          "front",
+          "desk",
+          "and",
+          "we",
+          "will",
+          "issue",
+          "a",
+          "new",
+          "one",
+          "the",
+          "same",
+          "day.",
+          "The",
+          "revised",
+          "contract",
+          "rate",
+          "applies",
+          "from",
+          "1",
+          "March",
+          "2027",
+          "and",
+          "is",
+          "fixed",
+          "for",
+          "twelve",
+          "months.",
+          "No",
+          "other",
+          "terms",
+          "change.",
+          "Yours",
+          "sincerely,",
+          "T.",
+          "Marsh",
+          "Client",
+          "Services",
+          "Lead",
+          "Cedar",
+          "&",
+          "Vane",
+          "Ltd",
+          "cc:",
+          "Building",
+          "manager",
+          "file",
+          "Cedar",
+          "&",
+          "Vane",
+          "Ltd",
+          "-",
+          "registered",
+          "in",
+          "England",
+          "(fictional",
+          "entity)"
+        ],
+        "words": [
+          {
+            "bottom": 91.038,
+            "text": "CEDAR",
+            "top": 77.038,
+            "x0": 235.811,
+            "x1": 285.581
+          },
+          {
+            "bottom": 91.038,
+            "text": "&",
+            "top": 77.038,
+            "x0": 289.081,
+            "x1": 300.743
+          },
+          {
+            "bottom": 91.038,
+            "text": "VANE",
+            "top": 77.038,
+            "x0": 304.243,
+            "x1": 343.905
+          },
+          {
+            "bottom": 91.038,
+            "text": "LTD",
+            "top": 77.038,
+            "x0": 347.405,
+            "x1": 376.189
+          },
+          {
+            "bottom": 108.062,
+            "text": "22",
+            "top": 98.562,
+            "x0": 219.184,
+            "x1": 228.684
+          },
+          {
+            "bottom": 108.062,
+            "text": "Quartermaster",
+            "top": 98.562,
+            "x0": 231.059,
+            "x1": 285.399
+          },
+          {
+            "bottom": 108.062,
+            "text": "Row,",
+            "top": 98.562,
+            "x0": 287.774,
+            "x1": 308.095
+          },
+          {
+            "bottom": 108.062,
+            "text": "Portsmouth",
+            "top": 98.562,
+            "x0": 310.47,
+            "x1": 354.284
+          },
+          {
+            "bottom": 108.062,
+            "text": "PO1",
+            "top": 98.562,
+            "x0": 356.659,
+            "x1": 373.55
+          },
+          {
+            "bottom": 108.062,
+            "text": "2AF",
+            "top": 98.562,
+            "x0": 375.925,
+            "x1": 392.816
+          },
+          {
+            "bottom": 138.173,
+            "text": "9",
+            "top": 127.673,
+            "x0": 462.962,
+            "x1": 468.8
+          },
+          {
+            "bottom": 138.173,
+            "text": "February",
+            "top": 127.673,
+            "x0": 471.719,
+            "x1": 513.729
+          },
+          {
+            "bottom": 138.173,
+            "text": "2027",
+            "top": 127.673,
+            "x0": 516.648,
+            "x1": 540.0
+          },
+          {
+            "bottom": 163.173,
+            "text": "Ms.",
+            "top": 152.673,
+            "x0": 72.0,
+            "x1": 88.915
+          },
+          {
+            "bottom": 163.173,
+            "text": "R.",
+            "top": 152.673,
+            "x0": 91.835,
+            "x1": 102.335
+          },
+          {
+            "bottom": 163.173,
+            "text": "Whitfield",
+            "top": 152.673,
+            "x0": 105.254,
+            "x1": 145.511
+          },
+          {
+            "bottom": 178.173,
+            "text": "Facilities",
+            "top": 167.673,
+            "x0": 72.0,
+            "x1": 112.835
+          },
+          {
+            "bottom": 178.173,
+            "text": "Director",
+            "top": 167.673,
+            "x0": 115.754,
+            "x1": 152.504
+          },
+          {
+            "bottom": 193.173,
+            "text": "Alder",
+            "top": 182.673,
+            "x0": 72.0,
+            "x1": 96.507
+          },
+          {
+            "bottom": 193.173,
+            "text": "Court",
+            "top": 182.673,
+            "x0": 99.426,
+            "x1": 125.099
+          },
+          {
+            "bottom": 193.173,
+            "text": "Estates",
+            "top": 182.673,
+            "x0": 128.017,
+            "x1": 163.035
+          },
+          {
+            "bottom": 208.173,
+            "text": "12",
+            "top": 197.673,
+            "x0": 72.0,
+            "x1": 83.676
+          },
+          {
+            "bottom": 208.173,
+            "text": "Beacon",
+            "top": 197.673,
+            "x0": 86.595,
+            "x1": 122.201
+          },
+          {
+            "bottom": 208.173,
+            "text": "Terrace,",
+            "top": 197.673,
+            "x0": 125.12,
+            "x1": 164.211
+          },
+          {
+            "bottom": 208.173,
+            "text": "Portsmouth",
+            "top": 197.673,
+            "x0": 167.13,
+            "x1": 220.816
+          },
+          {
+            "bottom": 208.173,
+            "text": "PO2",
+            "top": 197.673,
+            "x0": 223.736,
+            "x1": 244.746
+          },
+          {
+            "bottom": 208.173,
+            "text": "8LL",
+            "top": 197.673,
+            "x0": 247.665,
+            "x1": 265.179
+          },
+          {
+            "bottom": 233.277,
+            "text": "Dear",
+            "top": 222.277,
+            "x0": 72.0,
+            "x1": 95.837
+          },
+          {
+            "bottom": 233.277,
+            "text": "Ms.",
+            "top": 222.277,
+            "x0": 98.895,
+            "x1": 116.616
+          },
+          {
+            "bottom": 233.277,
+            "text": "Whitfield,",
+            "top": 222.277,
+            "x0": 119.674,
+            "x1": 164.906
+          },
+          {
+            "bottom": 254.777,
+            "text": "Thank",
+            "top": 243.777,
+            "x0": 72.0,
+            "x1": 102.569
+          },
+          {
+            "bottom": 254.777,
+            "text": "you",
+            "top": 243.777,
+            "x0": 105.627,
+            "x1": 123.359
+          },
+          {
+            "bottom": 254.777,
+            "text": "for",
+            "top": 243.777,
+            "x0": 126.417,
+            "x1": 139.254
+          },
+          {
+            "bottom": 254.777,
+            "text": "meeting",
+            "top": 243.777,
+            "x0": 142.312,
+            "x1": 181.439
+          },
+          {
+            "bottom": 254.777,
+            "text": "our",
+            "top": 243.777,
+            "x0": 184.497,
+            "x1": 200.392
+          },
+          {
+            "bottom": 254.777,
+            "text": "site",
+            "top": 243.777,
+            "x0": 203.45,
+            "x1": 220.566
+          },
+          {
+            "bottom": 254.777,
+            "text": "team",
+            "top": 243.777,
+            "x0": 223.624,
+            "x1": 248.077
+          },
+          {
+            "bottom": 254.777,
+            "text": "last",
+            "top": 243.777,
+            "x0": 251.135,
+            "x1": 268.251
+          },
+          {
+            "bottom": 254.777,
+            "text": "Thursday.",
+            "top": 243.777,
+            "x0": 271.309,
+            "x1": 320.215
+          },
+          {
+            "bottom": 254.777,
+            "text": "The",
+            "top": 243.777,
+            "x0": 323.273,
+            "x1": 342.226
+          },
+          {
+            "bottom": 254.777,
+            "text": "visit",
+            "top": 243.777,
+            "x0": 345.284,
+            "x1": 364.226
+          },
+          {
+            "bottom": 254.777,
+            "text": "confirmed",
+            "top": 243.777,
+            "x0": 367.284,
+            "x1": 415.574
+          },
+          {
+            "bottom": 254.777,
+            "text": "that",
+            "top": 243.777,
+            "x0": 418.632,
+            "x1": 436.98
+          },
+          {
+            "bottom": 254.777,
+            "text": "the",
+            "top": 243.777,
+            "x0": 440.038,
+            "x1": 455.328
+          },
+          {
+            "bottom": 254.777,
+            "text": "planned",
+            "top": 243.777,
+            "x0": 458.386,
+            "x1": 497.524
+          },
+          {
+            "bottom": 268.277,
+            "text": "maintenance",
+            "top": 257.277,
+            "x0": 72.0,
+            "x1": 134.975
+          },
+          {
+            "bottom": 268.277,
+            "text": "schedule",
+            "top": 257.277,
+            "x0": 138.033,
+            "x1": 182.055
+          },
+          {
+            "bottom": 268.277,
+            "text": "for",
+            "top": 257.277,
+            "x0": 185.113,
+            "x1": 197.95
+          },
+          {
+            "bottom": 268.277,
+            "text": "Alder",
+            "top": 257.277,
+            "x0": 201.008,
+            "x1": 226.682
+          },
+          {
+            "bottom": 268.277,
+            "text": "Court",
+            "top": 257.277,
+            "x0": 229.74,
+            "x1": 256.635
+          },
+          {
+            "bottom": 268.277,
+            "text": "can",
+            "top": 257.277,
+            "x0": 259.693,
+            "x1": 277.425
+          },
+          {
+            "bottom": 268.277,
+            "text": "begin",
+            "top": 257.277,
+            "x0": 280.483,
+            "x1": 307.389
+          },
+          {
+            "bottom": 268.277,
+            "text": "in",
+            "top": 257.277,
+            "x0": 310.447,
+            "x1": 319.005
+          },
+          {
+            "bottom": 268.277,
+            "text": "March",
+            "top": 257.277,
+            "x0": 322.063,
+            "x1": 352.621
+          },
+          {
+            "bottom": 268.277,
+            "text": "without",
+            "top": 257.277,
+            "x0": 355.679,
+            "x1": 390.527
+          },
+          {
+            "bottom": 268.277,
+            "text": "disturbing",
+            "top": 257.277,
+            "x0": 393.585,
+            "x1": 441.27
+          },
+          {
+            "bottom": 268.277,
+            "text": "tenants.",
+            "top": 257.277,
+            "x0": 444.328,
+            "x1": 483.466
+          },
+          {
+            "bottom": 293.777,
+            "text": "Enclosed",
+            "top": 282.777,
+            "x0": 72.0,
+            "x1": 117.243
+          },
+          {
+            "bottom": 293.777,
+            "text": "with",
+            "top": 282.777,
+            "x0": 120.301,
+            "x1": 139.859
+          },
+          {
+            "bottom": 293.777,
+            "text": "this",
+            "top": 282.777,
+            "x0": 142.917,
+            "x1": 160.033
+          },
+          {
+            "bottom": 293.777,
+            "text": "letter",
+            "top": 282.777,
+            "x0": 163.091,
+            "x1": 187.544
+          },
+          {
+            "bottom": 293.777,
+            "text": "are",
+            "top": 282.777,
+            "x0": 190.602,
+            "x1": 206.497
+          },
+          {
+            "bottom": 293.777,
+            "text": "the",
+            "top": 282.777,
+            "x0": 209.555,
+            "x1": 224.845
+          },
+          {
+            "bottom": 293.777,
+            "text": "signed",
+            "top": 282.777,
+            "x0": 227.903,
+            "x1": 260.309
+          },
+          {
+            "bottom": 293.777,
+            "text": "service",
+            "top": 282.777,
+            "x0": 263.367,
+            "x1": 298.204
+          },
+          {
+            "bottom": 293.777,
+            "text": "invoice",
+            "top": 282.777,
+            "x0": 301.262,
+            "x1": 335.494
+          },
+          {
+            "bottom": 293.777,
+            "text": "and",
+            "top": 282.777,
+            "x0": 338.552,
+            "x1": 356.9
+          },
+          {
+            "bottom": 293.777,
+            "text": "the",
+            "top": 282.777,
+            "x0": 359.958,
+            "x1": 375.248
+          },
+          {
+            "bottom": 293.777,
+            "text": "receipt",
+            "top": 282.777,
+            "x0": 378.306,
+            "x1": 411.317
+          },
+          {
+            "bottom": 293.777,
+            "text": "for",
+            "top": 282.777,
+            "x0": 414.375,
+            "x1": 427.212
+          },
+          {
+            "bottom": 293.777,
+            "text": "the",
+            "top": 282.777,
+            "x0": 430.27,
+            "x1": 445.56
+          },
+          {
+            "bottom": 293.777,
+            "text": "replacement",
+            "top": 282.777,
+            "x0": 448.618,
+            "x1": 509.14
+          },
+          {
+            "bottom": 293.777,
+            "text": "valve",
+            "top": 282.777,
+            "x0": 512.198,
+            "x1": 537.872
+          },
+          {
+            "bottom": 307.277,
+            "text": "assembly.",
+            "top": 296.277,
+            "x0": 72.0,
+            "x1": 121.511
+          },
+          {
+            "bottom": 326.777,
+            "text": "Our",
+            "top": 315.777,
+            "x0": 72.0,
+            "x1": 90.337
+          },
+          {
+            "bottom": 326.777,
+            "text": "engineers",
+            "top": 315.777,
+            "x0": 93.395,
+            "x1": 141.696
+          },
+          {
+            "bottom": 326.777,
+            "text": "will",
+            "top": 315.777,
+            "x0": 144.754,
+            "x1": 160.022
+          },
+          {
+            "bottom": 326.777,
+            "text": "arrive",
+            "top": 315.777,
+            "x0": 166.138,
+            "x1": 193.638
+          },
+          {
+            "bottom": 326.777,
+            "text": "before",
+            "top": 315.777,
+            "x0": 196.696,
+            "x1": 227.881
+          },
+          {
+            "bottom": 326.777,
+            "text": "eight",
+            "top": 315.777,
+            "x0": 230.939,
+            "x1": 254.787
+          },
+          {
+            "bottom": 326.777,
+            "text": "in",
+            "top": 315.777,
+            "x0": 257.845,
+            "x1": 266.403
+          },
+          {
+            "bottom": 326.777,
+            "text": "the",
+            "top": 315.777,
+            "x0": 269.461,
+            "x1": 284.751
+          },
+          {
+            "bottom": 326.777,
+            "text": "morning,",
+            "top": 315.777,
+            "x0": 287.809,
+            "x1": 330.599
+          },
+          {
+            "bottom": 326.777,
+            "text": "so",
+            "top": 315.777,
+            "x0": 333.657,
+            "x1": 345.273
+          },
+          {
+            "bottom": 326.777,
+            "text": "the",
+            "top": 315.777,
+            "x0": 348.331,
+            "x1": 363.621
+          },
+          {
+            "bottom": 326.777,
+            "text": "loading",
+            "top": 315.777,
+            "x0": 366.679,
+            "x1": 402.143
+          },
+          {
+            "bottom": 326.777,
+            "text": "bay",
+            "top": 315.777,
+            "x0": 405.201,
+            "x1": 422.933
+          },
+          {
+            "bottom": 326.777,
+            "text": "should",
+            "top": 315.777,
+            "x0": 425.991,
+            "x1": 458.397
+          },
+          {
+            "bottom": 326.777,
+            "text": "be",
+            "top": 315.777,
+            "x0": 461.455,
+            "x1": 473.687
+          },
+          {
+            "bottom": 326.777,
+            "text": "clear",
+            "top": 315.777,
+            "x0": 476.745,
+            "x1": 500.582
+          },
+          {
+            "bottom": 326.777,
+            "text": "the",
+            "top": 315.777,
+            "x0": 503.64,
+            "x1": 518.93
+          },
+          {
+            "bottom": 340.277,
+            "text": "evening",
+            "top": 329.277,
+            "x0": 72.0,
+            "x1": 110.522
+          },
+          {
+            "bottom": 340.277,
+            "text": "before.",
+            "top": 329.277,
+            "x0": 113.58,
+            "x1": 147.823
+          },
+          {
+            "bottom": 340.277,
+            "text": "If",
+            "top": 329.277,
+            "x0": 150.881,
+            "x1": 156.997
+          },
+          {
+            "bottom": 340.277,
+            "text": "the",
+            "top": 329.277,
+            "x0": 160.055,
+            "x1": 175.345
+          },
+          {
+            "bottom": 340.277,
+            "text": "parking",
+            "top": 329.277,
+            "x0": 178.403,
+            "x1": 214.472
+          },
+          {
+            "bottom": 340.277,
+            "text": "permit",
+            "top": 329.277,
+            "x0": 217.53,
+            "x1": 248.088
+          },
+          {
+            "bottom": 340.277,
+            "text": "for",
+            "top": 329.277,
+            "x0": 251.146,
+            "x1": 263.983
+          },
+          {
+            "bottom": 340.277,
+            "text": "the",
+            "top": 329.277,
+            "x0": 267.041,
+            "x1": 282.331
+          },
+          {
+            "bottom": 340.277,
+            "text": "service",
+            "top": 329.277,
+            "x0": 285.389,
+            "x1": 320.226
+          },
+          {
+            "bottom": 340.277,
+            "text": "van",
+            "top": 329.277,
+            "x0": 323.284,
+            "x1": 341.016
+          },
+          {
+            "bottom": 340.277,
+            "text": "has",
+            "top": 329.277,
+            "x0": 344.074,
+            "x1": 361.806
+          },
+          {
+            "bottom": 340.277,
+            "text": "expired,",
+            "top": 329.277,
+            "x0": 364.864,
+            "x1": 403.991
+          },
+          {
+            "bottom": 340.277,
+            "text": "please",
+            "top": 329.277,
+            "x0": 407.049,
+            "x1": 439.455
+          },
+          {
+            "bottom": 340.277,
+            "text": "tell",
+            "top": 329.277,
+            "x0": 442.513,
+            "x1": 456.571
+          },
+          {
+            "bottom": 340.277,
+            "text": "the",
+            "top": 329.277,
+            "x0": 459.629,
+            "x1": 474.919
+          },
+          {
+            "bottom": 340.277,
+            "text": "front",
+            "top": 329.277,
+            "x0": 477.977,
+            "x1": 499.988
+          },
+          {
+            "bottom": 340.277,
+            "text": "desk",
+            "top": 329.277,
+            "x0": 503.046,
+            "x1": 526.278
+          },
+          {
+            "bottom": 353.777,
+            "text": "and",
+            "top": 342.777,
+            "x0": 72.0,
+            "x1": 90.348
+          },
+          {
+            "bottom": 353.777,
+            "text": "we",
+            "top": 342.777,
+            "x0": 93.406,
+            "x1": 107.464
+          },
+          {
+            "bottom": 353.777,
+            "text": "will",
+            "top": 342.777,
+            "x0": 110.522,
+            "x1": 125.79
+          },
+          {
+            "bottom": 353.777,
+            "text": "issue",
+            "top": 342.777,
+            "x0": 128.848,
+            "x1": 154.522
+          },
+          {
+            "bottom": 353.777,
+            "text": "a",
+            "top": 342.777,
+            "x0": 157.58,
+            "x1": 163.696
+          },
+          {
+            "bottom": 353.777,
+            "text": "new",
+            "top": 342.777,
+            "x0": 166.754,
+            "x1": 186.928
+          },
+          {
+            "bottom": 353.777,
+            "text": "one",
+            "top": 342.777,
+            "x0": 189.986,
+            "x1": 208.334
+          },
+          {
+            "bottom": 353.777,
+            "text": "the",
+            "top": 342.777,
+            "x0": 211.392,
+            "x1": 226.682
+          },
+          {
+            "bottom": 353.777,
+            "text": "same",
+            "top": 342.777,
+            "x0": 229.74,
+            "x1": 256.635
+          },
+          {
+            "bottom": 353.777,
+            "text": "day.",
+            "top": 342.777,
+            "x0": 259.693,
+            "x1": 280.483
+          },
+          {
+            "bottom": 379.277,
+            "text": "The",
+            "top": 368.277,
+            "x0": 72.0,
+            "x1": 90.953
+          },
+          {
+            "bottom": 379.277,
+            "text": "revised",
+            "top": 368.277,
+            "x0": 94.011,
+            "x1": 129.464
+          },
+          {
+            "bottom": 379.277,
+            "text": "contract",
+            "top": 368.277,
+            "x0": 132.522,
+            "x1": 171.649
+          },
+          {
+            "bottom": 379.277,
+            "text": "rate",
+            "top": 368.277,
+            "x0": 174.707,
+            "x1": 193.66
+          },
+          {
+            "bottom": 379.277,
+            "text": "applies",
+            "top": 368.277,
+            "x0": 196.718,
+            "x1": 231.566
+          },
+          {
+            "bottom": 379.277,
+            "text": "from",
+            "top": 368.277,
+            "x0": 234.624,
+            "x1": 256.624
+          },
+          {
+            "bottom": 379.277,
+            "text": "1",
+            "top": 368.277,
+            "x0": 259.682,
+            "x1": 265.798
+          },
+          {
+            "bottom": 379.277,
+            "text": "March",
+            "top": 368.277,
+            "x0": 268.856,
+            "x1": 299.414
+          },
+          {
+            "bottom": 379.277,
+            "text": "2027",
+            "top": 368.277,
+            "x0": 302.472,
+            "x1": 326.936
+          },
+          {
+            "bottom": 379.277,
+            "text": "and",
+            "top": 368.277,
+            "x0": 329.994,
+            "x1": 348.342
+          },
+          {
+            "bottom": 379.277,
+            "text": "is",
+            "top": 368.277,
+            "x0": 351.4,
+            "x1": 359.342
+          },
+          {
+            "bottom": 379.277,
+            "text": "fixed",
+            "top": 368.277,
+            "x0": 362.4,
+            "x1": 385.632
+          },
+          {
+            "bottom": 379.277,
+            "text": "for",
+            "top": 368.277,
+            "x0": 388.69,
+            "x1": 401.527
+          },
+          {
+            "bottom": 379.277,
+            "text": "twelve",
+            "top": 368.277,
+            "x0": 404.585,
+            "x1": 435.759
+          },
+          {
+            "bottom": 379.277,
+            "text": "months.",
+            "top": 368.277,
+            "x0": 438.817,
+            "x1": 477.944
+          },
+          {
+            "bottom": 379.277,
+            "text": "No",
+            "top": 368.277,
+            "x0": 481.002,
+            "x1": 495.06
+          },
+          {
+            "bottom": 379.277,
+            "text": "other",
+            "top": 368.277,
+            "x0": 498.118,
+            "x1": 523.187
+          },
+          {
+            "bottom": 392.777,
+            "text": "terms",
+            "top": 381.777,
+            "x0": 72.0,
+            "x1": 99.5
+          },
+          {
+            "bottom": 392.777,
+            "text": "change.",
+            "top": 381.777,
+            "x0": 102.558,
+            "x1": 141.696
+          },
+          {
+            "bottom": 420.277,
+            "text": "Yours",
+            "top": 409.277,
+            "x0": 72.0,
+            "x1": 100.732
+          },
+          {
+            "bottom": 420.277,
+            "text": "sincerely,",
+            "top": 409.277,
+            "x0": 103.79,
+            "x1": 150.243
+          },
+          {
+            "bottom": 451.673,
+            "text": "T.",
+            "top": 441.173,
+            "x0": 72.0,
+            "x1": 81.334
+          },
+          {
+            "bottom": 451.673,
+            "text": "Marsh",
+            "top": 441.173,
+            "x0": 84.254,
+            "x1": 113.423
+          },
+          {
+            "bottom": 466.673,
+            "text": "Client",
+            "top": 456.173,
+            "x0": 72.0,
+            "x1": 98.838
+          },
+          {
+            "bottom": 466.673,
+            "text": "Services",
+            "top": 456.173,
+            "x0": 101.757,
+            "x1": 142.014
+          },
+          {
+            "bottom": 466.673,
+            "text": "Lead",
+            "top": 456.173,
+            "x0": 144.933,
+            "x1": 168.285
+          },
+          {
+            "bottom": 481.673,
+            "text": "Cedar",
+            "top": 471.173,
+            "x0": 72.0,
+            "x1": 100.591
+          },
+          {
+            "bottom": 481.673,
+            "text": "&",
+            "top": 471.173,
+            "x0": 103.511,
+            "x1": 110.514
+          },
+          {
+            "bottom": 481.673,
+            "text": "Vane",
+            "top": 471.173,
+            "x0": 113.433,
+            "x1": 137.951
+          },
+          {
+            "bottom": 481.673,
+            "text": "Ltd",
+            "top": 471.173,
+            "x0": 140.87,
+            "x1": 155.465
+          },
+          {
+            "bottom": 510.363,
+            "text": "cc:",
+            "top": 501.363,
+            "x0": 72.0,
+            "x1": 83.502
+          },
+          {
+            "bottom": 510.363,
+            "text": "Building",
+            "top": 501.363,
+            "x0": 86.004,
+            "x1": 118.017
+          },
+          {
+            "bottom": 510.363,
+            "text": "manager",
+            "top": 501.363,
+            "x0": 120.519,
+            "x1": 156.033
+          },
+          {
+            "bottom": 510.363,
+            "text": "file",
+            "top": 501.363,
+            "x0": 158.535,
+            "x1": 170.037
+          },
+          {
+            "bottom": 521.156,
+            "text": "Cedar",
+            "top": 513.156,
+            "x0": 72.0,
+            "x1": 93.784
+          },
+          {
+            "bottom": 521.156,
+            "text": "&",
+            "top": 513.156,
+            "x0": 96.008,
+            "x1": 101.344
+          },
+          {
+            "bottom": 521.156,
+            "text": "Vane",
+            "top": 513.156,
+            "x0": 103.568,
+            "x1": 122.248
+          },
+          {
+            "bottom": 521.156,
+            "text": "Ltd",
+            "top": 513.156,
+            "x0": 124.472,
+            "x1": 135.592
+          },
+          {
+            "bottom": 521.156,
+            "text": "-",
+            "top": 513.156,
+            "x0": 137.816,
+            "x1": 140.48
+          },
+          {
+            "bottom": 521.156,
+            "text": "registered",
+            "top": 513.156,
+            "x0": 142.704,
+            "x1": 178.272
+          },
+          {
+            "bottom": 521.156,
+            "text": "in",
+            "top": 513.156,
+            "x0": 180.496,
+            "x1": 186.72
+          },
+          {
+            "bottom": 521.156,
+            "text": "England",
+            "top": 513.156,
+            "x0": 188.944,
+            "x1": 218.296
+          },
+          {
+            "bottom": 521.156,
+            "text": "(fictional",
+            "top": 513.156,
+            "x0": 220.52,
+            "x1": 250.304
+          },
+          {
+            "bottom": 521.156,
+            "text": "entity)",
+            "top": 513.156,
+            "x0": 252.528,
+            "x1": 274.312
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 2721,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 9,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 112
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 219
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 327
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 436
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 629
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 697
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1103
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1162
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 0,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 0,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 0,
+        "link_annotation_count": 0,
+        "outline_marker_count": 0
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/F02-letter.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "bbe15b2e7fa10f213f9876699db55513d9b66cebd59a3b5e1054e6f3621171ea"
+    },
+    "source_sha256": "bbe15b2e7fa10f213f9876699db55513d9b66cebd59a3b5e1054e6f3621171ea",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "TEXT_SINGLE_COLUMN",
+    "document_id": "F02",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 1,
+      "page_order": [
+        0
+      ]
+    },
+    "operations": [
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0
+          ],
+          "region_ids": [
+            "p0-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.0,
+            "max_affected_regions": 1,
+            "max_affected_tokens": 0
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0
+            ]
+          },
+          "type": "STRUCTURE_TAG_ADD"
+        },
+        "op_type": "OP_STRUCTURE_TAGS"
+      },
+      {
+        "anchor": {
+          "element_ids": [],
+          "pages": [
+            0
+          ],
+          "region_ids": [
+            "p0-body"
+          ]
+        },
+        "expected_delta": {
+          "bounded_magnitude": {
+            "max_affected_area_fraction": 0.005,
+            "max_affected_regions": 32,
+            "max_affected_tokens": 32
+          },
+          "scope": {
+            "element_ids": [],
+            "pages": [
+              0
+            ]
+          },
+          "type": "SPACING_COLLAPSE"
+        },
+        "op_type": "OP_SPACING_NORMALIZE"
+      }
+    ],
+    "page_mapping": [
+      0
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "c2_structure_probe": {
+      "derived": true,
+      "marked": true,
+      "parent_tree": true,
+      "status": "PASS",
+      "struct_tree": true
+    },
+    "gates": {
+      "G1": {
+        "evidence": [
+          {
+            "objects": 9,
+            "source_sha256": "bbe15b2e7fa10f213f9876699db55513d9b66cebd59a3b5e1054e6f3621171ea"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G10": {
+        "evidence": [
+          {
+            "fractions": [
+              0.0033140819964349376
+            ],
+            "max_fraction": 0.0033140819964349376,
+            "status": "PASS"
+          }
+        ],
+        "status": "PASS"
+      },
+      "G2": {
+        "evidence": [
+          {
+            "candidate": 1,
+            "source": 1
+          }
+        ],
+        "status": "PASS"
+      },
+      "G3": {
+        "evidence": [
+          {
+            "numeric_equal": true,
+            "text_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G4": {
+        "evidence": [
+          {
+            "anomaly_kind": null,
+            "hidden_render_mode_3": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G5": {
+        "evidence": [
+          {
+            "derived": true,
+            "marked": true,
+            "parent_tree": true,
+            "status": "PASS",
+            "struct_tree": true,
+            "structure_planned": true,
+            "text_order_equal": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G6": {
+        "evidence": [
+          {
+            "pdfminer_candidate": [],
+            "pdfminer_source": [],
+            "scanner_both_empty": true
+          }
+        ],
+        "status": "PASS"
+      },
+      "G7": {
+        "evidence": [
+          {
+            "classifier_conflict": false,
+            "decisive": false
+          }
+        ],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [
+          {
+            "active_content": false,
+            "encrypted": false,
+            "signed_or_certified": false,
+            "xfa_or_hybrid_xfa": false
+          }
+        ],
+        "status": "PASS"
+      },
+      "G9": {
+        "evidence": [
+          {
+            "measured": {
+              "FILE_BYTES": 2721,
+              "OBJECT_COUNT": 13,
+              "OUTPUT_BYTES": 5198,
+              "PAGE_COUNT": 1
+            },
+            "no_network_observed": true
+          }
+        ],
+        "status": "PASS"
+      }
+    },
+    "independence": "builder writer not imported",
+    "no_network_scope": "socket connect/create_connection blocked in harness; child renderer receives local paths only",
+    "observed_deltas": [
+      {
+        "scope": {
+          "pages": [
+            0
+          ]
+        },
+        "type": "STRUCTURE_TAG_ADD"
+      }
+    ],
+    "runtime_versions": {
+      "Pillow": "12.3.0",
+      "pdfminer": "20251230",
+      "pdfplumber": "0.11.9",
+      "pypdf": "6.10.0",
+      "python": "3.12.14",
+      "reportlab": "4.4.9"
+    }
+  }
+}
