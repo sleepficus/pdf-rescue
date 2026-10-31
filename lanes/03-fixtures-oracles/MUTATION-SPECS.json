@@ -1,0 +1,97 @@
+{
+  "kind": "lane03-mutation-specs",
+  "schema": 1,
+  "frozen_date": "2026-09-29",
+  "seed_record": {
+    "rng": "none",
+    "mode": "deterministic no-RNG content-model edits; nominal seeds are for the record only",
+    "nominal_seed_base": 20260929
+  },
+  "provenance": "Frozen by lane 03 before any sealed fixture was generated. The generator implements each spec as a named deterministic mode (--mutate). Lane 09 may run the generator in mutation mode or implement the equivalent edit on the sealed PDF bytes; either way the edit is exactly what is specified here.",
+  "gate_vocabulary": {
+    "G1": "source hash integrity",
+    "G2": "page geometry",
+    "G3": "text identity",
+    "G4": "visible/text agreement (incl. hidden text)",
+    "G5": "reading order",
+    "G6": "navigation integrity",
+    "G7": "table/numeric lexeme identity",
+    "G8": "refusal scan",
+    "G9": "budget/no-network",
+    "G10": "render accounting"
+  },
+  "mutations": [
+    {
+      "id": "M01",
+      "ability": "seeded token deletion",
+      "target_fixture": "F01",
+      "nominal_seed": 2026092901,
+      "rng": "none",
+      "exact_edit": "In the sentence on F01 page 1 body paragraph 3, frozen as: 'Each session runs forty minutes and covers the revised scan points, the exception queue, and the escalation contact.' delete exactly the token 'exception' and one following space, yielding '... the revised scan points, the queue, and the escalation contact.' All other bytes of the content model are unchanged and the document is re-rendered by the same deterministic generator.",
+      "byte_level_equivalent": "Decode the page 1 content stream (FlateDecode), locate the Tj string containing 'the exception queue', remove the substring 'exception ' from it, re-encode.",
+      "expected_failing_gate": "G3",
+      "expected_verifier_outcome": "FAIL G3 (text identity); disposition must not be ACCEPT",
+      "expected_text_signature": "whitespace-normalized extraction of the mutant page-1 sentence reads '... the revised scan points, the queue, and the escalation contact.'; the unrelated page-2 phrase 'the exception queue workflow' is intentionally unchanged"
+    },
+    {
+      "id": "M02",
+      "ability": "seeded token transposition",
+      "target_fixture": "F02",
+      "nominal_seed": 2026092902,
+      "rng": "none",
+      "exact_edit": "In the frozen sentence 'Enclosed with this letter are the signed service invoice and the receipt for the replacement valve assembly.' swap the two material tokens 'invoice' and 'receipt', yielding '... the signed service receipt and the invoice for the replacement valve assembly.'",
+      "byte_level_equivalent": "Decode the page 1 content stream, in the Tj string containing 'service invoice' swap the substrings 'invoice' and 'receipt' keeping all other characters fixed.",
+      "expected_failing_gate": "G3",
+      "expected_verifier_outcome": "FAIL G3 (text identity); disposition must not be ACCEPT",
+      "expected_text_signature": "mutant contains 'the signed service receipt and the invoice for' ; source contains 'the signed service invoice and the receipt for'"
+    },
+    {
+      "id": "M03",
+      "ability": "wrong reading order",
+      "target_fixture": "F05",
+      "nominal_seed": 2026092903,
+      "rng": "none",
+      "exact_edit": "On F05 page 1 only, reverse the column draw order: render the right column text block before the left column text block. Page geometry, fonts, strings, and page count are unchanged; only the content-stream order of the two column blocks changes.",
+      "byte_level_equivalent": "In the page 1 content stream, move the right-column BT..ET text block before the left-column BT..ET text block.",
+      "expected_failing_gate": "G5",
+      "expected_verifier_outcome": "FAIL G5 (reading order); disposition must not be ACCEPT",
+      "expected_text_signature": "raw content-stream order places 'right column' text before 'left column' text on page 1; an order-sensitive extractor sees right-column content before left-column content"
+    },
+    {
+      "id": "M04",
+      "ability": "numeric reassignment",
+      "target_fixture": "F08",
+      "nominal_seed": 2026092904,
+      "rng": "none",
+      "exact_edit": "In the F08 table row 'Consolidated freight', change the Unit Price cell from '$1,234.50' to '$1,238.50' (same digit shape, one digit changed). The Amount cell '$1,234.50' and all other cells are unchanged.",
+      "byte_level_equivalent": "Decode the page content stream containing the 'Consolidated freight' row, replace the Tj string '$1,234.50' that appears in the Unit Price cell position with '$1,238.50'.",
+      "expected_failing_gate": "G7",
+      "expected_verifier_outcome": "FAIL G7 (table/numeric lexeme identity); G3 is expected to co-fail; the primary asserted gate is G7; disposition must not be ACCEPT",
+      "expected_text_signature": "mutant table contains '$1,238.50' as the Unit Price of the 'Consolidated freight' row; the Amount cell correctly remains '$1,234.50', so the document-wide count of '$1,234.50' drops from 2 (sealed) to 1 (mutant)"
+    },
+    {
+      "id": "M05",
+      "ability": "bookmark loss",
+      "target_fixture": "F07",
+      "nominal_seed": 2026092905,
+      "rng": "none",
+      "exact_edit": "Remove the outline entry titled 'Section 3: Cost plan' from the F07 document outline. The other three flat outline entries ('Section 1: Background', 'Section 2: Condition survey', 'Section 4: Recommendations'), all visible text, and page geometry are unchanged.",
+      "byte_level_equivalent": "Delete the corresponding outline item node from the /Outlines tree (remove the node and re-link its siblings/parent /Count).",
+      "expected_failing_gate": "G6",
+      "expected_verifier_outcome": "FAIL G6 (navigation integrity); disposition must not be ACCEPT",
+      "expected_text_signature": "mutant outline has 3 top-level entries; sealed F07 outline has 4, including 'Section 3: Cost plan'"
+    },
+    {
+      "id": "M06",
+      "ability": "hidden-text poison",
+      "target_fixture": "F04",
+      "nominal_seed": 2026092906,
+      "rng": "none",
+      "exact_edit": "On F04 page 1, insert invisible text with render mode 3: append the content-stream ops 'BT /Helv 10 Tf 3 Tr 72 770 Td (CONFIDENTIAL DRAFT DO NOT DISTRIBUTE) Tj ET' (using any Helvetica base-14 font resource present in the page /Resources, adding one named /Helv if absent) so the string 'CONFIDENTIAL DRAFT DO NOT DISTRIBUTE' exists in the text layer at the empty top margin (72, 770) but renders no visible ink. Visible content is otherwise unchanged. [Position revised 648 -> 770 before sealing so every extractor sees the full string as its own line; edit content unchanged.]",
+      "byte_level_equivalent": "Decode page 1 content stream, append the BT..ET block above, re-encode.",
+      "expected_failing_gate": "G4",
+      "expected_verifier_outcome": "FAIL G4 (visible/text agreement incl. hidden text); disposition must not be ACCEPT",
+      "expected_text_signature": "the full string 'CONFIDENTIAL DRAFT DO NOT DISTRIBUTE' is present in the mutant text layer (pdftotext and pypdf both extract it as its own line) while rendering page 1 (pdftoppm) produces no ink for it; the sealed F04 contains no such string"
+    }
+  ]
+}

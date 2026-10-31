@@ -1,0 +1,175 @@
+{
+  "kind": "lane03-expected-dispositions",
+  "schema": 1,
+  "frozen_date": "2026-09-29",
+  "independence_guarantee": "This manifest was authored by lane 03 (fixtures/oracles) by hand, from the frozen fixture content and the frozen gate vocabulary G1-G10 only. NO builder code existed at authoring time (lanes 07/08/09 were empty); no builder was consulted and no builder output was read. This is the independence guarantee required by inputs/FINAL-RECONCILIATION.md item 11. If any builder's behaviour disagrees with this manifest, the disagreement is a finding, not something either side may patch away.",
+  "gate_vocabulary": {
+    "G1": "source hash integrity",
+    "G2": "page geometry",
+    "G3": "text identity",
+    "G4": "visible/text agreement (incl. hidden text)",
+    "G5": "reading order",
+    "G6": "navigation integrity (bookmarks/outline/TOC/links)",
+    "G7": "table/numeric lexeme identity",
+    "G8": "refusal scan (encryption/signature/XFA/active content)",
+    "G9": "budget/no-network",
+    "G10": "render accounting"
+  },
+  "interpretation_rules": [
+    "expected_final_disposition is the mechanical result of the class-by-gate matrix applied to each fixture's features; a verifier/builder that reaches a different disposition has a defect or a protocol divergence to report.",
+    "NOT_EXERCISED is not PASS: gates listed in gates_not_exercised have no object to check in this fixture and carry no verdict.",
+    "For dev fixtures ACCEPT is expected only if every gate listed in gates_exercised passes; any single material failure blocks ACCEPT regardless of everything else (worst material element governs).",
+    "Refusal controls must be refused at intake/Phase 0; processing must not proceed past the refusal scan.",
+    "Benign controls must need zero (B01) or zero-to-near-zero (B02) operations and must end ACCEPT; an over-strict verifier that mutates a clean document to 'improve' it fails these controls."
+  ],
+  "documents": [
+    {
+      "id": "F01",
+      "filename": "F01-memo.pdf",
+      "expected_class": "TEXT_SINGLE_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize literal double spaces and irregular paragraph gaps; normalize mixed body typography to one family/size (glyph-verified); join declared line-end hyphenation (exam-/ple, oper-/ations); normalize repeated header/footer; add outline entries for the two pages. Page count (2), page order, and page boundaries unchanged.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "G6 is exercised because the plan is expected to add bookmarks; if a builder adds no outline entries, G6 may be NOT_EXERCISED with a recorded reason and ACCEPT may still stand on the remaining gates. G7 covers the numeric lexemes HL-2027-014, 3, 4, 14, 28, 2027, 3-4."
+    },
+    {
+      "id": "F02",
+      "filename": "F02-letter.pdf",
+      "expected_class": "TEXT_SINGLE_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize the literal double-spaced sentence and irregular gaps; normalize typography sizes; unify the layout blocks. Single page: no reflow, page count (1) unchanged.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": ["G6"],
+      "notes": "No bookmarks, TOC, or links exist in the source, so G6 has nothing to check unless the plan adds outline entries (then G6 must be exercised and pass). The tokens 'invoice' and 'receipt' are material text; mutation M02 swaps them and must fail G3."
+    },
+    {
+      "id": "F03",
+      "filename": "F03-report.pdf",
+      "expected_class": "TEXT_SINGLE_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize spacing/typography; join the declared assess-/ment hyphenation; repair the flat outline into a hierarchy matching the four headings; optionally give the inline numeric row set tabular alignment without changing values. Page count (2) unchanged.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "The inline numeric row set (118 / 42 / 4,250 / 36% / 11,300) must round-trip as displayed strings under G7; reformatting values (e.g. 4,250 -> 4250) would be a G7 failure, not a tidy operation."
+    },
+    {
+      "id": "F04",
+      "filename": "F04-agenda.pdf",
+      "expected_class": "TEXT_SINGLE_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize the varying agenda indents to a consistent scheme; normalize spacing and typography. Single page; hidden-text scan must come back clean.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": ["G6"],
+      "notes": "G6 has nothing to check unless outline entries are added. G4 (visible/text agreement) is the gate that catches the M06 hidden-text poison mutant."
+    },
+    {
+      "id": "F05",
+      "filename": "F05-article.pdf",
+      "expected_class": "TEXT_MULTI_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize spacing/typography; join declared hyphenation (back-/log, condi-/tion); add outline entries; preserve the two-column layout and its reading order exactly (left column then right column per page). Page count (3) unchanged.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "G5 is the critical gate: automatic ACCEPT for a two-column document requires independent reading-order agreement (left-then-right per page). M03 swaps the page-1 column draw order and must fail G5."
+    },
+    {
+      "id": "F06",
+      "filename": "F06-column-report.pdf",
+      "expected_class": "TEXT_MULTI_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize spacing/typography; add outline entries; reproduce the four numeric lexemes verbatim (1,234.50 / (500) / 12% / $0.75) with row labels attached; preserve reading order. Page count (3) unchanged.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "The four table rows have deliberately differing bases (documented in ORACLE-NOTES.md); arithmetic reconciliation must not be attempted and displayed strings must round-trip exactly under G7. The units sentence 'no arithmetic relationship ... is asserted' is content and must be preserved."
+    },
+    {
+      "id": "F07",
+      "filename": "F07-dense-report.pdf",
+      "expected_class": "TEXT_MULTI_COLUMN",
+      "expected_plan_outcome": "Tidy operations expected: normalize the repeated header/footer; normalize spacing/typography; join declared hyphenation (main-/tenance, recommend-/ations); repair the flat outline (nesting may be added but every existing entry target must survive); keep the TOC list accurate; keep the cross-reference phrase intact. Page count (4) unchanged.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "G6 checks the four bookmarks, the TOC page numbers (2/2/3/4), and the cross-reference phrase; M05 drops one bookmark and must fail G6."
+    },
+    {
+      "id": "F08",
+      "filename": "F08-statement.pdf",
+      "expected_class": "TEXT_TABLE",
+      "expected_plan_outcome": "Tidy operations expected at most: normalize the sub-header block spacing/typography; add outline entries. The table grid must be preserved: cell identity (row anchor x column anchor), displayed strings, row/column order, the repeated header row, the TOTAL row, and both units sentences. Page count (3) unchanged; no row/column changes, no reflow.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "G7 is the decisive gate: every displayed numeric string (including $1,234.50, ($250.00), $0.75, $878.75) must round-trip exactly; parsed numbers never replace rendered strings. The TOTAL row is arithmetically consistent in the source; that consistency is descriptive, not an obligation, and arithmetic divergence must be reported, never corrected. M04 changes one Unit Price digit and must fail G7."
+    },
+    {
+      "id": "R01",
+      "filename": "R01-encrypted.pdf",
+      "expected_class": "REFUSE_ENCRYPTED",
+      "expected_plan_outcome": "No tidy processing. Intake detects /Encrypt and stops at the refusal scan with the encrypted reason family.",
+      "expected_final_disposition": "REFUSE",
+      "refusing_gate": "G8",
+      "refusal_reason_family": "encrypted",
+      "gates_exercised": ["G1", "G8"],
+      "gates_not_exercised": ["G2", "G3", "G4", "G5", "G6", "G7", "G9", "G10"],
+      "notes": "Encrypted with RC4-128 and the frozen dummy password recorded in the generator; apparent decryptability must not change the refusal."
+    },
+    {
+      "id": "R02",
+      "filename": "R02-signed.pdf",
+      "expected_class": "REFUSE_SIGNED",
+      "expected_plan_outcome": "No tidy processing. Intake detects the /Sig signature field (/SigFlags 3, /ByteRange signature dictionary) and stops with the signed reason family.",
+      "expected_final_disposition": "REFUSE",
+      "refusing_gate": "G8",
+      "refusal_reason_family": "signed",
+      "gates_exercised": ["G1", "G8"],
+      "gates_not_exercised": ["G2", "G3", "G4", "G5", "G6", "G7", "G9", "G10"],
+      "notes": "The signature is a synthetic dummy (Contents of hex zeros); it signs nothing. Refusal is about the presence of a signature field, not its validity."
+    },
+    {
+      "id": "R03",
+      "filename": "R03-xfa.pdf",
+      "expected_class": "REFUSE_XFA",
+      "expected_plan_outcome": "No tidy processing. Intake detects /XFA on the AcroForm and stops with the XFA reason family.",
+      "expected_final_disposition": "REFUSE",
+      "refusing_gate": "G8",
+      "refusal_reason_family": "xfa",
+      "gates_exercised": ["G1", "G8"],
+      "gates_not_exercised": ["G2", "G3", "G4", "G5", "G6", "G7", "G9", "G10"],
+      "notes": "Hybrid XFA would be refused identically; only plain XFA is exercised here."
+    },
+    {
+      "id": "R04",
+      "filename": "R04-active.pdf",
+      "expected_class": "REFUSE_ACTIVE",
+      "expected_plan_outcome": "No tidy processing. Intake detects the /OpenAction /JavaScript action and the page /AA additional action and stops with the active-content reason family.",
+      "expected_final_disposition": "REFUSE",
+      "refusing_gate": "G8",
+      "refusal_reason_family": "active-content",
+      "gates_exercised": ["G1", "G8"],
+      "gates_not_exercised": ["G2", "G3", "G4", "G5", "G6", "G7", "G9", "G10"],
+      "notes": "The JS strings are inert synthetic text; refusal is about the presence of active actions. /Launch and /EmbeddedFile were not exercised in this control."
+    },
+    {
+      "id": "B01",
+      "filename": "B01-clean.pdf",
+      "expected_class": "BENIGN",
+      "expected_plan_outcome": "Zero operations: consistent spacing/typography, correct hierarchical bookmarks, nothing to tidy. Candidate equals a metadata-normalized copy of the source at most.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "Positive control against over-strictness: any operation that changes visible content, or any failed gate, proves the verifier or planner is over-strict. Hierarchical bookmarks (1 top-level, 3 children) must survive unchanged under G6."
+    },
+    {
+      "id": "B02",
+      "filename": "B02-clean-navigation.pdf",
+      "expected_class": "BENIGN",
+      "expected_plan_outcome": "Zero or near-zero operations (at most metadata normalization). The internal GoTo link annotation on page 1 (rect over 'See the attendance list on page 2.') must keep targeting page 2; hierarchical bookmarks must survive.",
+      "expected_final_disposition": "ACCEPT",
+      "gates_exercised": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10"],
+      "gates_not_exercised": [],
+      "notes": "Navigation positive control: G6 must verify the link resolves to page 2 and the bookmark hierarchy is intact. Dropping or retargeting the link is a G6 failure."
+    }
+  ]
+}
