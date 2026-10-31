@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "kind": "online-pdf-reconstruction-lane-index",
+  "lanes": [
+    {"lane": "01-protocol-disposition", "status": "COMPLETE", "owner": "Wave A worker", "outputs": ["PROTOCOL.md", "DISPOSITION-SPEC.json", "SCENARIOS.json"]},
+    {"lane": "02-cdrr-receipts", "status": "COMPLETE", "owner": "Wave A worker", "outputs": ["CDRR-SCHEMA.json", "RECEIPT-SCHEMA.json", "INVARIANTS.md"]},
+    {"lane": "03-fixtures-oracles", "status": "COMPLETE", "owner": "Wave A worker", "outputs": ["FIXTURE-MANIFEST.json", "EXPECTED-DISPOSITIONS.json", "MUTATION-SPECS.json", "fixtures/"]},
+    {"lane": "04-dependencies-independence", "status": "COMPLETE", "owner": "Wave A worker plus bounded correction", "outputs": ["DEPENDENCY-SPIKE.md", "TOOLCHAIN.json", "LICENSE-NOTES.md", "C3-VALIDATION.json"]},
+    {"lane": "05-safety-budgets", "status": "COMPLETE", "owner": "Wave A worker plus bounded correction", "outputs": ["SAFETY-SPEC.md", "BUDGETS.json", "TRIP-CASES.json"]},
+    {"lane": "06-independent-prebuild-review", "status": "COMPLETE", "owner": "independent Wave A review and re-break", "outputs": ["PREBUILD-VERDICT.md", "CONTRADICTIONS.json", "REBREAK.json", "REBREAK.md"]},
+    {"lane": "07-intake-extract", "status": "COMPLETE_WITH_PROVIDER_LIMIT", "owner": "Main after two exact FlashX no-final-text attempts", "outputs": ["intake.py", "test_intake.py"]},
+    {"lane": "08-plan-apply", "status": "COMPLETE_WITH_PROVIDER_LIMIT", "owner": "Main after two exact FlashX no-final-text attempts", "outputs": ["planner.py", "builder.py", "test_builder.py"]},
+    {"lane": "09-independent-verify", "status": "COMPLETE_WITH_PROVIDER_LIMIT", "owner": "Main after two exact FlashX no-final-text attempts", "outputs": ["verifier.py", "disposition.py", "test_verifier.py"]},
+    {"lane": "10-closure-breaker", "status": "COMPLETE_MAIN_CLOSURE", "owner": "Main; no third FlashX wave after repeated adapter failure", "outputs": ["CLOSURE.md", "FAILURES.json", "RENDER-REVIEW.md"]}
+  ]
+}
