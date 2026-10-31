@@ -1,0 +1,83 @@
+{
+  "artifact": "GATE-A-MECHANICAL-CHECKS.json",
+  "checks": [
+    {
+      "check_id": "GA-01-FIXTURE-HASHES",
+      "detail": "14 fixture files equal authoritative manifest hashes",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-02-SEALED-TABLE",
+      "detail": "sealed_rows=14 manifest_rows=14",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-03-EXPECTED-ID-COVERAGE",
+      "detail": "missing=[] extra=[]",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-04-MAPS",
+      "detail": "required=['gate_id_map', 'class_map', 'refusal_family_map', 'operation_name_map', 'delta_type_map']",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-05-DISAMBIGUATIONS",
+      "detail": "G6/G5/B01-B02 rules present",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-06-C3",
+      "detail": "C3 status=PASS",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-07-BUDGET-ID-SET",
+      "detail": "ids=['CPU_SECONDS', 'FILE_BYTES', 'OBJECT_COUNT', 'OUTPUT_BYTES', 'PAGE_COUNT', 'PIXELS', 'TEMP_STORAGE_BYTES', 'WALL_SECONDS']",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-08-BUDGET-SHAPE",
+      "detail": "all budgets carry limit/unit/<=/measurement points",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-09-BUDGET-HEADROOM",
+      "detail": "all measured/derived limits exceed baselines; measured limits >=2x",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-10-FROZEN-CONSTANTS",
+      "detail": "1275x1650=2103750, 150 DPI, US Letter points",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-11-TRIP-SHAPE",
+      "detail": "trip_cases=14",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-12-TRIP-TARGETS",
+      "detail": "each trip targets a budget or allowed audit E-condition",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-13-DISPOSITION-CITATIONS",
+      "detail": "PR-08/PR-14 and receipt enums resolve",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-14-NO-EXTERNAL-ACTION",
+      "detail": "unsafe_tokens=[] absolute_paths=[]",
+      "status": "PASS"
+    },
+    {
+      "check_id": "GA-15-TC09-FAMILY",
+      "detail": "network E06 is not mislabeled as a resource budget trip",
+      "status": "PASS"
+    }
+  ],
+  "generated_at": "2026-09-29T18:12:32.822191+00:00",
+  "scope": "Mechanical correction-batch checks only; lane 06 remains the independent readiness authority.",
+  "status": "PASS"
+}
