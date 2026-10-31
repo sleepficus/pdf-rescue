@@ -1,0 +1,48 @@
+{
+  "artifact": "REBREAK.json",
+  "seat_id": "seat-01",
+  "stage": "lane-06-rebreak",
+  "date": "2026-09-29",
+  "verdict": "READY_FOR_VERTICAL_SLICE",
+  "verdict_meaning": "Authorizes Main to begin Wave B (lanes 07-09) under wave_b_conditions; not a success prediction.",
+  "basis": {
+    "prior_corrections_recorded": 6,
+    "mechanical_checks": "15/15 PASS (GATE-A-MECHANICAL-CHECKS.json GA-01..GA-15)",
+    "new_blocking_contradictions": 0,
+    "fail_closed_remaining_items": [
+      "full Draft-2020-12 validation NOT_EXERCISED",
+      "C2 structure-tree probe pending post-build (failure => G5 NOT_EXERCISED => NOT_VERIFIABLE via PR-08)",
+      "runtime trip execution NOT_EXERCISED"
+    ]
+  },
+  "prior_findings": {
+    "X-01": "CLOSED",
+    "X-02": "CLOSED",
+    "X-03": "CLOSED",
+    "X-04": "CLOSED",
+    "X-05": "CLOSED",
+    "X-06": "CLOSED",
+    "X-07": "ACCEPTED_WITH_DISCLOSED_LIMIT",
+    "X-08": "CLOSED",
+    "X-09": "CLOSED",
+    "X-10": "CLOSED",
+    "X-11": "CLOSED"
+  },
+  "new_findings": [
+    {"id": "N-01", "severity": "MINOR_NON_BLOCKING", "kind": "SUPERSEDED_TEXT_RESIDUAL", "summary": "L03-EXPECTED-DISPOSITIONS.json F01 G6 note and F02/F04 gates_not_exercised=['G6'] superseded by PREBUILD-GATE disambiguations.G6_REQUIRED; dispositions unchanged."},
+    {"id": "N-02", "severity": "MINOR_NON_BLOCKING", "kind": "HYGIENE", "summary": "L04-C3-VALIDATION.json embeds absolute sealing-machine paths; provenance only; no rule violated."}
+  ],
+  "wave_b_conditions": [
+    "C2 post-build probe fail-closed (G5 NOT_EXERCISED => NOT_VERIFIABLE via PR-08) on failure",
+    "every candidate carries a structure tree via OP_STRUCTURE_TAGS",
+    "G6 REQUIRED vacuous-PASS rule; L03 F01/F02/F04 G6 notes superseded",
+    "B01/B02 zero operations; metadata normalization => E15",
+    "ESC-01 detection pass decisive=false; conflicts => PR-03",
+    "lane01 delta id/anchor/scope/magnitude authoritative in evidence refs; lane02 echoes lossy",
+    "VERIFIED_NO_NETWORK receipts must cite worker audit evidence and disclose unaudited Poppler children; observed network event => E06",
+    "receipts record actual runtime versions; mutation checks target spec semantics + expected_text_signature, not byte identity",
+    "Draft-2020-12 stays NOT_EXERCISED; schema-invalid records blocked at closure (INV-16/INV-24)",
+    "runtime trip execution in Wave B/C; post-hoc G9 FAIL => PR-14 NOT_VERIFIABLE",
+    "INV-08: NOT_EXERCISED never PASS; ERROR worse than FAIL"
+  ]
+}
