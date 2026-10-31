@@ -1,0 +1,129 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/Outlines 9 0 R
+/AcroForm 12 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+/Annots [ 11 0 R ]
+>>
+endobj
+5 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 432
+>>
+stream
+Gas2FbAMqd&4Q?hMS![@V*OXNe5\"V;PgO"I__<o9Ed=0-7OH%_;lc9,!nCS^7;`T+[IYL'!AeHhD.32'-o$4'$2n4,5]<*[ZGfUP\sB8@];;\9Ws\)hh1G6H.Hq6p784WXms]fpkmOIA3^*&lfWME8_Z4."^DtJ""pXaK/N;JWZ@cp_b\XrlFnG%Tp9[m*L+C@G'7Y,K*1uX$6ASoo"?949Q_Kk3DoEC1X$\>De9Ga?j1>legNIFq!\ie`d.YIP+aP7Z.lbqgD-46MeL%X.1TpCQ<UBB&=U?);eQ=-1X9%E=_Ba/281RIJPFl(94MTaU)D\6l?;Y?FLdIR4a3FJF:?khr/]N;J!#i3poHH64N1/GY<ik"TO6-\=2LDGQ)6KPXONhYmuZ"+Km0J[&,&a_KX`UIRMpWk<cQFa)upb(7;L`/~>
+endstream
+endobj
+6 0 obj
+<<
+/F1 7 0 R
+/F2 8 0 R
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+>>
+endobj
+10 0 obj
+<<
+/Type /Sig
+/Filter /Adobe.PPKLite
+/SubFilter /adbe.pkcs7.detached
+/ByteRange [ 0 180 360 180 ]
+/Contents <3030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030>
+/M (D\07220260101000000Z)
+/Name (Synthetic Fixture Signer)
+/Reason (Synthetic fixture control \055 not a real signature)
+>>
+endobj
+11 0 obj
+<<
+/Type /Annot
+/Subtype /Widget
+/FT /Sig
+/T (Signature1)
+/Rect [ 72 600 272 620 ]
+/V 10 0 R
+/F 132
+>>
+endobj
+12 0 obj
+<<
+/Fields [ 11 0 R ]
+/SigFlags 3
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000195 00000 n 
+0000000403 00000 n 
+0000000926 00000 n 
+0000000967 00000 n 
+0000001074 00000 n 
+0000001186 00000 n 
+0000001207 00000 n 
+0000001714 00000 n 
+0000001833 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 1 0 R
+/ID [ <6c616e6530332d7230322d66697865642d6964> <6c616e6530332d7230322d66697865642d6964> ]
+>>
+startxref
+1886
+%%EOF
