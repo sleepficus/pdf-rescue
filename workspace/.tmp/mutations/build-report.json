@@ -1,0 +1,63 @@
+{
+  "files": [
+    {
+      "bytes": 3752,
+      "filename": "F01-M01-mutant.pdf",
+      "id": "F01",
+      "mutant_of": "M01",
+      "pages": 2,
+      "sha256": "beb43e69621f05bd014d3857b93f0459b0f839aaa67983e67bb8d83c69d77c50"
+    },
+    {
+      "bytes": 2723,
+      "filename": "F02-M02-mutant.pdf",
+      "id": "F02",
+      "mutant_of": "M02",
+      "pages": 1,
+      "sha256": "ebc4a8bb340b836a8fd70dedd875f6709c80fb55f2f1829e5dcfea22a7876a86"
+    },
+    {
+      "bytes": 5333,
+      "filename": "F05-M03-mutant.pdf",
+      "id": "F05",
+      "mutant_of": "M03",
+      "pages": 3,
+      "sha256": "e061395bc604116731db0a62e6c013a38858fc143a22fe5f8287ed71a9be7e90"
+    },
+    {
+      "bytes": 4209,
+      "filename": "F08-M04-mutant.pdf",
+      "id": "F08",
+      "mutant_of": "M04",
+      "pages": 3,
+      "sha256": "a39bdf0630156a1469bfe0e9c467b1eab2428c02fab2a201813877a919150e3c"
+    },
+    {
+      "bytes": 6835,
+      "filename": "F07-M05-mutant.pdf",
+      "id": "F07",
+      "mutant_of": "M05",
+      "pages": 4,
+      "sha256": "db0583e7c21ce784a09e0ffaa06341d162cda85fc524f6aa5530a3471c492cf3"
+    },
+    {
+      "bytes": 2772,
+      "filename": "F04-M06-mutant.pdf",
+      "id": "F04",
+      "mutant_of": "M06",
+      "pages": 1,
+      "sha256": "6a45dee1c47f4c2f6705d79e7095ca077ad8a529ae78ab0e65b90fa0fea91c40"
+    }
+  ],
+  "generator": "lane03-fixture-generator",
+  "seed_record": {
+    "mode": "deterministic no-RNG; invariant=1; pinned /ID",
+    "nominal_seed": 20260929,
+    "rng": "none"
+  },
+  "versions": {
+    "pypdf": "6.10.0",
+    "python": "3.12.14",
+    "reportlab": "4.4.9"
+  }
+}
