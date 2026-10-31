@@ -1,0 +1,19 @@
+{
+  "kind": "online-pdf-reconstruction-zcode-build-status",
+  "schema": 1,
+  "date": "2026-09-29",
+  "state": "VERTICAL_SLICE_VERIFIED",
+  "source_investigation": "../ONLINE-PDF-RECONSTRUCTION-INVESTIGATION-2026-09-29",
+  "source_verdict": "NOT_READY_FOR_BUILD",
+  "authorized_scope": "guarded protocol-fixture-toolchain freeze followed by an eight-document text-native vertical slice only if Gate A passes",
+  "subagents_requested": 10,
+  "max_concurrency": 3,
+  "install_authorized": false,
+  "deployment_authorized": false,
+  "network_authorized": false,
+  "gate_a": "READY_FOR_VERTICAL_SLICE",
+  "development_candidates_accepted": 8,
+  "hostile_mutations_detected": 6,
+  "provider_limit": "Two exact glm-5.3-flashx Wave B attempts returned HTTP 200 with no final text; Main completed and closed the frozen local slice without a third provider wave.",
+  "next_action": "Preserve this as a verified synthetic vertical slice. Any real-document pilot, broader PDF class, install, deployment, or Composer-wide automatic-canary integration requires a separate scope."
+}
