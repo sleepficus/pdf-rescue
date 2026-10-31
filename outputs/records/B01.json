@@ -1,0 +1,1680 @@
+{
+  "build": null,
+  "disposition": {
+    "disposition": "ACCEPT",
+    "rule": "CONTROL-NO-BUILD"
+  },
+  "document_id": "B01",
+  "intake": {
+    "class_label": "BENIGN",
+    "document_id": "B01",
+    "evidence": [
+      "sealed-class assertion applied"
+    ],
+    "file_bytes": 3623,
+    "filename": "B01-clean.pdf",
+    "navigation": {
+      "destination_marker_count": 4,
+      "link_annotation_count": 0,
+      "outline_marker_count": 2
+    },
+    "object_count": 15,
+    "page_count": 2,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "14",
+          "2027",
+          "18:30.",
+          "11",
+          "2027",
+          "1",
+          "2"
+        ],
+        "page_index": 0,
+        "reading_text": "Riverside Reading Group - Meeting Summary\nHeld on 14 March 2027 at the community library, starting 18:30.\nAttendance\nNine members attended: A. Bennett, C. Osei, D. Farrell, H. Nakamura, J. Iyer, L. Moreau, M.\nSantos, P. Whitcombe, and R. Adjei. Two apologies were received.\nDiscussion\nThe group discussed the March title and agreed a mixed reception: six members finished it, and two\nstopped after the first hundred pages. The conversation covered the pacing of the middle chapters\nand the reliability of the narrator.\nThe April title was chosen by ballot. The group will meet on 11 April 2027 at the same venue, and H.\nNakamura will prepare the questions.\nPage 1 of 2",
+        "rotation": 0,
+        "tokens": [
+          "Riverside",
+          "Reading",
+          "Group",
+          "-",
+          "Meeting",
+          "Summary",
+          "Held",
+          "on",
+          "14",
+          "March",
+          "2027",
+          "at",
+          "the",
+          "community",
+          "library,",
+          "starting",
+          "18:30.",
+          "Attendance",
+          "Nine",
+          "members",
+          "attended:",
+          "A.",
+          "Bennett,",
+          "C.",
+          "Osei,",
+          "D.",
+          "Farrell,",
+          "H.",
+          "Nakamura,",
+          "J.",
+          "Iyer,",
+          "L.",
+          "Moreau,",
+          "M.",
+          "Santos,",
+          "P.",
+          "Whitcombe,",
+          "and",
+          "R.",
+          "Adjei.",
+          "Two",
+          "apologies",
+          "were",
+          "received.",
+          "Discussion",
+          "The",
+          "group",
+          "discussed",
+          "the",
+          "March",
+          "title",
+          "and",
+          "agreed",
+          "a",
+          "mixed",
+          "reception:",
+          "six",
+          "members",
+          "finished",
+          "it,",
+          "and",
+          "two",
+          "stopped",
+          "after",
+          "the",
+          "first",
+          "hundred",
+          "pages.",
+          "The",
+          "conversation",
+          "covered",
+          "the",
+          "pacing",
+          "of",
+          "the",
+          "middle",
+          "chapters",
+          "and",
+          "the",
+          "reliability",
+          "of",
+          "the",
+          "narrator.",
+          "The",
+          "April",
+          "title",
+          "was",
+          "chosen",
+          "by",
+          "ballot.",
+          "The",
+          "group",
+          "will",
+          "meet",
+          "on",
+          "11",
+          "April",
+          "2027",
+          "at",
+          "the",
+          "same",
+          "venue,",
+          "and",
+          "H.",
+          "Nakamura",
+          "will",
+          "prepare",
+          "the",
+          "questions.",
+          "Page",
+          "1",
+          "of",
+          "2"
+        ],
+        "words": [
+          {
+            "bottom": 90.691,
+            "text": "Riverside",
+            "top": 77.691,
+            "x0": 72.0,
+            "x1": 130.526
+          },
+          {
+            "bottom": 90.691,
+            "text": "Reading",
+            "top": 77.691,
+            "x0": 134.14,
+            "x1": 185.425
+          },
+          {
+            "bottom": 90.691,
+            "text": "Group",
+            "top": 77.691,
+            "x0": 189.039,
+            "x1": 228.039
+          },
+          {
+            "bottom": 90.691,
+            "text": "-",
+            "top": 77.691,
+            "x0": 231.653,
+            "x1": 235.982
+          },
+          {
+            "bottom": 90.691,
+            "text": "Meeting",
+            "top": 77.691,
+            "x0": 239.596,
+            "x1": 288.71
+          },
+          {
+            "bottom": 90.691,
+            "text": "Summary",
+            "top": 77.691,
+            "x0": 292.324,
+            "x1": 351.565
+          },
+          {
+            "bottom": 107.173,
+            "text": "Held",
+            "top": 96.673,
+            "x0": 72.0,
+            "x1": 93.588
+          },
+          {
+            "bottom": 107.173,
+            "text": "on",
+            "top": 96.673,
+            "x0": 96.507,
+            "x1": 108.183
+          },
+          {
+            "bottom": 107.173,
+            "text": "14",
+            "top": 96.673,
+            "x0": 111.102,
+            "x1": 122.778
+          },
+          {
+            "bottom": 107.173,
+            "text": "March",
+            "top": 96.673,
+            "x0": 125.697,
+            "x1": 154.866
+          },
+          {
+            "bottom": 107.173,
+            "text": "2027",
+            "top": 96.673,
+            "x0": 157.785,
+            "x1": 181.137
+          },
+          {
+            "bottom": 107.173,
+            "text": "at",
+            "top": 96.673,
+            "x0": 184.056,
+            "x1": 192.813
+          },
+          {
+            "bottom": 107.173,
+            "text": "the",
+            "top": 96.673,
+            "x0": 195.732,
+            "x1": 210.327
+          },
+          {
+            "bottom": 107.173,
+            "text": "community",
+            "top": 96.673,
+            "x0": 213.246,
+            "x1": 264.003
+          },
+          {
+            "bottom": 107.173,
+            "text": "library,",
+            "top": 96.673,
+            "x0": 266.922,
+            "x1": 298.422
+          },
+          {
+            "bottom": 107.173,
+            "text": "starting",
+            "top": 96.673,
+            "x0": 301.341,
+            "x1": 335.77
+          },
+          {
+            "bottom": 107.173,
+            "text": "18:30.",
+            "top": 96.673,
+            "x0": 338.689,
+            "x1": 367.88
+          },
+          {
+            "bottom": 126.277,
+            "text": "Attendance",
+            "top": 115.277,
+            "x0": 72.0,
+            "x1": 131.895
+          },
+          {
+            "bottom": 144.173,
+            "text": "Nine",
+            "top": 133.673,
+            "x0": 72.0,
+            "x1": 93.588
+          },
+          {
+            "bottom": 144.173,
+            "text": "members",
+            "top": 133.673,
+            "x0": 96.507,
+            "x1": 140.261
+          },
+          {
+            "bottom": 144.173,
+            "text": "attended:",
+            "top": 133.673,
+            "x0": 143.18,
+            "x1": 186.964
+          },
+          {
+            "bottom": 144.173,
+            "text": "A.",
+            "top": 133.673,
+            "x0": 189.883,
+            "x1": 199.806
+          },
+          {
+            "bottom": 144.173,
+            "text": "Bennett,",
+            "top": 133.673,
+            "x0": 202.725,
+            "x1": 241.837
+          },
+          {
+            "bottom": 144.173,
+            "text": "C.",
+            "top": 133.673,
+            "x0": 244.756,
+            "x1": 255.256
+          },
+          {
+            "bottom": 144.173,
+            "text": "Osei,",
+            "top": 133.673,
+            "x0": 258.175,
+            "x1": 282.683
+          },
+          {
+            "bottom": 144.173,
+            "text": "D.",
+            "top": 133.673,
+            "x0": 285.601,
+            "x1": 296.101
+          },
+          {
+            "bottom": 144.173,
+            "text": "Farrell,",
+            "top": 133.673,
+            "x0": 299.021,
+            "x1": 331.686
+          },
+          {
+            "bottom": 144.173,
+            "text": "H.",
+            "top": 133.673,
+            "x0": 334.605,
+            "x1": 345.105
+          },
+          {
+            "bottom": 144.173,
+            "text": "Nakamura,",
+            "top": 133.673,
+            "x0": 348.024,
+            "x1": 399.369
+          },
+          {
+            "bottom": 144.173,
+            "text": "J.",
+            "top": 133.673,
+            "x0": 402.288,
+            "x1": 410.457
+          },
+          {
+            "bottom": 144.173,
+            "text": "Iyer,",
+            "top": 133.673,
+            "x0": 413.376,
+            "x1": 433.799
+          },
+          {
+            "bottom": 144.173,
+            "text": "L.",
+            "top": 133.673,
+            "x0": 436.718,
+            "x1": 445.475
+          },
+          {
+            "bottom": 144.173,
+            "text": "Moreau,",
+            "top": 133.673,
+            "x0": 448.394,
+            "x1": 486.908
+          },
+          {
+            "bottom": 144.173,
+            "text": "M.",
+            "top": 133.673,
+            "x0": 489.827,
+            "x1": 501.492
+          },
+          {
+            "bottom": 157.173,
+            "text": "Santos,",
+            "top": 146.673,
+            "x0": 72.0,
+            "x1": 107.606
+          },
+          {
+            "bottom": 157.173,
+            "text": "P.",
+            "top": 146.673,
+            "x0": 110.525,
+            "x1": 120.447
+          },
+          {
+            "bottom": 157.173,
+            "text": "Whitcombe,",
+            "top": 146.673,
+            "x0": 123.366,
+            "x1": 178.796
+          },
+          {
+            "bottom": 157.173,
+            "text": "and",
+            "top": 146.673,
+            "x0": 181.714,
+            "x1": 199.228
+          },
+          {
+            "bottom": 157.173,
+            "text": "R.",
+            "top": 146.673,
+            "x0": 202.147,
+            "x1": 212.647
+          },
+          {
+            "bottom": 157.173,
+            "text": "Adjei.",
+            "top": 146.673,
+            "x0": 215.566,
+            "x1": 241.827
+          },
+          {
+            "bottom": 157.173,
+            "text": "Two",
+            "top": 146.673,
+            "x0": 244.746,
+            "x1": 264.58
+          },
+          {
+            "bottom": 157.173,
+            "text": "apologies",
+            "top": 146.673,
+            "x0": 267.5,
+            "x1": 312.439
+          },
+          {
+            "bottom": 157.173,
+            "text": "were",
+            "top": 146.673,
+            "x0": 315.358,
+            "x1": 338.112
+          },
+          {
+            "bottom": 157.173,
+            "text": "received.",
+            "top": 146.673,
+            "x0": 341.031,
+            "x1": 383.63
+          },
+          {
+            "bottom": 176.277,
+            "text": "Discussion",
+            "top": 165.277,
+            "x0": 72.0,
+            "x1": 130.685
+          },
+          {
+            "bottom": 194.173,
+            "text": "The",
+            "top": 183.673,
+            "x0": 72.0,
+            "x1": 90.091
+          },
+          {
+            "bottom": 194.173,
+            "text": "group",
+            "top": 183.673,
+            "x0": 93.011,
+            "x1": 119.859
+          },
+          {
+            "bottom": 194.173,
+            "text": "discussed",
+            "top": 183.673,
+            "x0": 122.778,
+            "x1": 169.461
+          },
+          {
+            "bottom": 194.173,
+            "text": "the",
+            "top": 183.673,
+            "x0": 172.38,
+            "x1": 186.975
+          },
+          {
+            "bottom": 194.173,
+            "text": "March",
+            "top": 183.673,
+            "x0": 189.894,
+            "x1": 219.063
+          },
+          {
+            "bottom": 194.173,
+            "text": "title",
+            "top": 183.673,
+            "x0": 221.982,
+            "x1": 238.32
+          },
+          {
+            "bottom": 194.173,
+            "text": "and",
+            "top": 183.673,
+            "x0": 241.239,
+            "x1": 258.753
+          },
+          {
+            "bottom": 194.173,
+            "text": "agreed",
+            "top": 183.673,
+            "x0": 261.672,
+            "x1": 294.358
+          },
+          {
+            "bottom": 194.173,
+            "text": "a",
+            "top": 183.673,
+            "x0": 297.277,
+            "x1": 303.115
+          },
+          {
+            "bottom": 194.173,
+            "text": "mixed",
+            "top": 183.673,
+            "x0": 306.034,
+            "x1": 334.038
+          },
+          {
+            "bottom": 194.173,
+            "text": "reception:",
+            "top": 183.673,
+            "x0": 336.957,
+            "x1": 383.063
+          },
+          {
+            "bottom": 194.173,
+            "text": "six",
+            "top": 183.673,
+            "x0": 385.982,
+            "x1": 398.813
+          },
+          {
+            "bottom": 194.173,
+            "text": "members",
+            "top": 183.673,
+            "x0": 401.732,
+            "x1": 445.485
+          },
+          {
+            "bottom": 194.173,
+            "text": "finished",
+            "top": 183.673,
+            "x0": 448.404,
+            "x1": 484.587
+          },
+          {
+            "bottom": 194.173,
+            "text": "it,",
+            "top": 183.673,
+            "x0": 487.506,
+            "x1": 495.675
+          },
+          {
+            "bottom": 194.173,
+            "text": "and",
+            "top": 183.673,
+            "x0": 498.594,
+            "x1": 516.108
+          },
+          {
+            "bottom": 194.173,
+            "text": "two",
+            "top": 183.673,
+            "x0": 519.027,
+            "x1": 535.365
+          },
+          {
+            "bottom": 207.173,
+            "text": "stopped",
+            "top": 196.673,
+            "x0": 72.0,
+            "x1": 109.359
+          },
+          {
+            "bottom": 207.173,
+            "text": "after",
+            "top": 196.673,
+            "x0": 112.278,
+            "x1": 133.288
+          },
+          {
+            "bottom": 207.173,
+            "text": "the",
+            "top": 196.673,
+            "x0": 136.208,
+            "x1": 150.803
+          },
+          {
+            "bottom": 207.173,
+            "text": "first",
+            "top": 196.673,
+            "x0": 153.721,
+            "x1": 170.637
+          },
+          {
+            "bottom": 207.173,
+            "text": "hundred",
+            "top": 196.673,
+            "x0": 173.556,
+            "x1": 212.08
+          },
+          {
+            "bottom": 207.173,
+            "text": "pages.",
+            "top": 196.673,
+            "x0": 214.999,
+            "x1": 246.52
+          },
+          {
+            "bottom": 207.173,
+            "text": "The",
+            "top": 196.673,
+            "x0": 249.439,
+            "x1": 267.531
+          },
+          {
+            "bottom": 207.173,
+            "text": "conversation",
+            "top": 196.673,
+            "x0": 270.45,
+            "x1": 329.974
+          },
+          {
+            "bottom": 207.173,
+            "text": "covered",
+            "top": 196.673,
+            "x0": 332.893,
+            "x1": 370.242
+          },
+          {
+            "bottom": 207.173,
+            "text": "the",
+            "top": 196.673,
+            "x0": 373.161,
+            "x1": 387.756
+          },
+          {
+            "bottom": 207.173,
+            "text": "pacing",
+            "top": 196.673,
+            "x0": 390.675,
+            "x1": 421.608
+          },
+          {
+            "bottom": 207.173,
+            "text": "of",
+            "top": 196.673,
+            "x0": 424.527,
+            "x1": 433.284
+          },
+          {
+            "bottom": 207.173,
+            "text": "the",
+            "top": 196.673,
+            "x0": 436.203,
+            "x1": 450.798
+          },
+          {
+            "bottom": 207.173,
+            "text": "middle",
+            "top": 196.673,
+            "x0": 453.717,
+            "x1": 484.64
+          },
+          {
+            "bottom": 207.173,
+            "text": "chapters",
+            "top": 196.673,
+            "x0": 487.559,
+            "x1": 527.826
+          },
+          {
+            "bottom": 220.173,
+            "text": "and",
+            "top": 209.673,
+            "x0": 72.0,
+            "x1": 89.514
+          },
+          {
+            "bottom": 220.173,
+            "text": "the",
+            "top": 209.673,
+            "x0": 92.433,
+            "x1": 107.028
+          },
+          {
+            "bottom": 220.173,
+            "text": "reliability",
+            "top": 209.673,
+            "x0": 109.947,
+            "x1": 150.781
+          },
+          {
+            "bottom": 220.173,
+            "text": "of",
+            "top": 209.673,
+            "x0": 153.701,
+            "x1": 162.458
+          },
+          {
+            "bottom": 220.173,
+            "text": "the",
+            "top": 209.673,
+            "x0": 165.376,
+            "x1": 179.971
+          },
+          {
+            "bottom": 220.173,
+            "text": "narrator.",
+            "top": 209.673,
+            "x0": 182.89,
+            "x1": 222.57
+          },
+          {
+            "bottom": 239.173,
+            "text": "The",
+            "top": 228.673,
+            "x0": 72.0,
+            "x1": 90.091
+          },
+          {
+            "bottom": 239.173,
+            "text": "April",
+            "top": 228.673,
+            "x0": 93.011,
+            "x1": 114.011
+          },
+          {
+            "bottom": 239.173,
+            "text": "title",
+            "top": 228.673,
+            "x0": 116.93,
+            "x1": 133.268
+          },
+          {
+            "bottom": 239.173,
+            "text": "was",
+            "top": 228.673,
+            "x0": 136.187,
+            "x1": 154.856
+          },
+          {
+            "bottom": 239.173,
+            "text": "chosen",
+            "top": 228.673,
+            "x0": 157.774,
+            "x1": 191.626
+          },
+          {
+            "bottom": 239.173,
+            "text": "by",
+            "top": 228.673,
+            "x0": 194.546,
+            "x1": 205.633
+          },
+          {
+            "bottom": 239.173,
+            "text": "ballot.",
+            "top": 228.673,
+            "x0": 208.553,
+            "x1": 236.566
+          },
+          {
+            "bottom": 239.173,
+            "text": "The",
+            "top": 228.673,
+            "x0": 239.486,
+            "x1": 257.577
+          },
+          {
+            "bottom": 239.173,
+            "text": "group",
+            "top": 228.673,
+            "x0": 260.496,
+            "x1": 287.344
+          },
+          {
+            "bottom": 239.173,
+            "text": "will",
+            "top": 228.673,
+            "x0": 290.264,
+            "x1": 304.837
+          },
+          {
+            "bottom": 239.173,
+            "text": "meet",
+            "top": 228.673,
+            "x0": 307.756,
+            "x1": 331.098
+          },
+          {
+            "bottom": 239.173,
+            "text": "on",
+            "top": 228.673,
+            "x0": 334.017,
+            "x1": 345.693
+          },
+          {
+            "bottom": 239.173,
+            "text": "11",
+            "top": 228.673,
+            "x0": 348.612,
+            "x1": 360.288
+          },
+          {
+            "bottom": 239.173,
+            "text": "April",
+            "top": 228.673,
+            "x0": 363.207,
+            "x1": 384.207
+          },
+          {
+            "bottom": 239.173,
+            "text": "2027",
+            "top": 228.673,
+            "x0": 387.126,
+            "x1": 410.478
+          },
+          {
+            "bottom": 239.173,
+            "text": "at",
+            "top": 228.673,
+            "x0": 413.397,
+            "x1": 422.154
+          },
+          {
+            "bottom": 239.173,
+            "text": "the",
+            "top": 228.673,
+            "x0": 425.073,
+            "x1": 439.668
+          },
+          {
+            "bottom": 239.173,
+            "text": "same",
+            "top": 228.673,
+            "x0": 442.587,
+            "x1": 468.26
+          },
+          {
+            "bottom": 239.173,
+            "text": "venue,",
+            "top": 228.673,
+            "x0": 471.179,
+            "x1": 502.7
+          },
+          {
+            "bottom": 239.173,
+            "text": "and",
+            "top": 228.673,
+            "x0": 505.619,
+            "x1": 523.133
+          },
+          {
+            "bottom": 239.173,
+            "text": "H.",
+            "top": 228.673,
+            "x0": 526.052,
+            "x1": 536.552
+          },
+          {
+            "bottom": 252.173,
+            "text": "Nakamura",
+            "top": 241.673,
+            "x0": 72.0,
+            "x1": 120.426
+          },
+          {
+            "bottom": 252.173,
+            "text": "will",
+            "top": 241.673,
+            "x0": 123.345,
+            "x1": 137.919
+          },
+          {
+            "bottom": 252.173,
+            "text": "prepare",
+            "top": 241.673,
+            "x0": 140.838,
+            "x1": 177.021
+          },
+          {
+            "bottom": 252.173,
+            "text": "the",
+            "top": 241.673,
+            "x0": 179.94,
+            "x1": 194.535
+          },
+          {
+            "bottom": 252.173,
+            "text": "questions.",
+            "top": 241.673,
+            "x0": 197.454,
+            "x1": 245.313
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "1",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "numeric_lexemes": [
+          "1",
+          "11",
+          "2027",
+          "18:30",
+          "2",
+          "2"
+        ],
+        "page_index": 1,
+        "reading_text": "Two housekeeping points were settled. The shared reading list moves to the library noticeboard, and\nthe deposit for the summer venue is refunded if the booking is cancelled before 1 June.\nNext meeting\nThe next meeting is on 11 April 2027 at 18:30 in the community library meeting room. L. Moreau will\nbring the ballot box and the reading list.\nPage 2 of 2",
+        "rotation": 0,
+        "tokens": [
+          "Two",
+          "housekeeping",
+          "points",
+          "were",
+          "settled.",
+          "The",
+          "shared",
+          "reading",
+          "list",
+          "moves",
+          "to",
+          "the",
+          "library",
+          "noticeboard,",
+          "and",
+          "the",
+          "deposit",
+          "for",
+          "the",
+          "summer",
+          "venue",
+          "is",
+          "refunded",
+          "if",
+          "the",
+          "booking",
+          "is",
+          "cancelled",
+          "before",
+          "1",
+          "June.",
+          "Next",
+          "meeting",
+          "The",
+          "next",
+          "meeting",
+          "is",
+          "on",
+          "11",
+          "April",
+          "2027",
+          "at",
+          "18:30",
+          "in",
+          "the",
+          "community",
+          "library",
+          "meeting",
+          "room.",
+          "L.",
+          "Moreau",
+          "will",
+          "bring",
+          "the",
+          "ballot",
+          "box",
+          "and",
+          "the",
+          "reading",
+          "list.",
+          "Page",
+          "2",
+          "of",
+          "2"
+        ],
+        "words": [
+          {
+            "bottom": 90.173,
+            "text": "Two",
+            "top": 79.673,
+            "x0": 72.0,
+            "x1": 91.834
+          },
+          {
+            "bottom": 90.173,
+            "text": "housekeeping",
+            "top": 79.673,
+            "x0": 94.754,
+            "x1": 160.127
+          },
+          {
+            "bottom": 90.173,
+            "text": "points",
+            "top": 79.673,
+            "x0": 163.046,
+            "x1": 191.06
+          },
+          {
+            "bottom": 90.173,
+            "text": "were",
+            "top": 79.673,
+            "x0": 193.979,
+            "x1": 216.732
+          },
+          {
+            "bottom": 90.173,
+            "text": "settled.",
+            "top": 79.673,
+            "x0": 219.651,
+            "x1": 253.503
+          },
+          {
+            "bottom": 90.173,
+            "text": "The",
+            "top": 79.673,
+            "x0": 256.422,
+            "x1": 274.514
+          },
+          {
+            "bottom": 90.173,
+            "text": "shared",
+            "top": 79.673,
+            "x0": 277.433,
+            "x1": 309.531
+          },
+          {
+            "bottom": 90.173,
+            "text": "reading",
+            "top": 79.673,
+            "x0": 312.45,
+            "x1": 347.468
+          },
+          {
+            "bottom": 90.173,
+            "text": "list",
+            "top": 79.673,
+            "x0": 350.387,
+            "x1": 363.218
+          },
+          {
+            "bottom": 90.173,
+            "text": "moves",
+            "top": 79.673,
+            "x0": 366.137,
+            "x1": 397.059
+          },
+          {
+            "bottom": 90.173,
+            "text": "to",
+            "top": 79.673,
+            "x0": 399.978,
+            "x1": 408.735
+          },
+          {
+            "bottom": 90.173,
+            "text": "the",
+            "top": 79.673,
+            "x0": 411.654,
+            "x1": 426.249
+          },
+          {
+            "bottom": 90.173,
+            "text": "library",
+            "top": 79.673,
+            "x0": 429.168,
+            "x1": 457.749
+          },
+          {
+            "bottom": 90.173,
+            "text": "noticeboard,",
+            "top": 79.673,
+            "x0": 460.668,
+            "x1": 518.45
+          },
+          {
+            "bottom": 90.173,
+            "text": "and",
+            "top": 79.673,
+            "x0": 521.369,
+            "x1": 538.883
+          },
+          {
+            "bottom": 103.173,
+            "text": "the",
+            "top": 92.673,
+            "x0": 72.0,
+            "x1": 86.595
+          },
+          {
+            "bottom": 103.173,
+            "text": "deposit",
+            "top": 92.673,
+            "x0": 89.514,
+            "x1": 123.366
+          },
+          {
+            "bottom": 103.173,
+            "text": "for",
+            "top": 92.673,
+            "x0": 126.285,
+            "x1": 138.538
+          },
+          {
+            "bottom": 103.173,
+            "text": "the",
+            "top": 92.673,
+            "x0": 141.458,
+            "x1": 156.053
+          },
+          {
+            "bottom": 103.173,
+            "text": "summer",
+            "top": 92.673,
+            "x0": 158.971,
+            "x1": 196.887
+          },
+          {
+            "bottom": 103.173,
+            "text": "venue",
+            "top": 92.673,
+            "x0": 199.806,
+            "x1": 228.408
+          },
+          {
+            "bottom": 103.173,
+            "text": "is",
+            "top": 92.673,
+            "x0": 231.327,
+            "x1": 238.908
+          },
+          {
+            "bottom": 103.173,
+            "text": "refunded",
+            "top": 92.673,
+            "x0": 241.827,
+            "x1": 283.27
+          },
+          {
+            "bottom": 103.173,
+            "text": "if",
+            "top": 92.673,
+            "x0": 286.189,
+            "x1": 291.439
+          },
+          {
+            "bottom": 103.173,
+            "text": "the",
+            "top": 92.673,
+            "x0": 294.358,
+            "x1": 308.954
+          },
+          {
+            "bottom": 103.173,
+            "text": "booking",
+            "top": 92.673,
+            "x0": 311.872,
+            "x1": 348.644
+          },
+          {
+            "bottom": 103.173,
+            "text": "is",
+            "top": 92.673,
+            "x0": 351.562,
+            "x1": 359.144
+          },
+          {
+            "bottom": 103.173,
+            "text": "cancelled",
+            "top": 92.673,
+            "x0": 362.062,
+            "x1": 406.415
+          },
+          {
+            "bottom": 103.173,
+            "text": "before",
+            "top": 92.673,
+            "x0": 409.334,
+            "x1": 439.101
+          },
+          {
+            "bottom": 103.173,
+            "text": "1",
+            "top": 92.673,
+            "x0": 442.02,
+            "x1": 447.858
+          },
+          {
+            "bottom": 103.173,
+            "text": "June.",
+            "top": 92.673,
+            "x0": 450.777,
+            "x1": 476.46
+          },
+          {
+            "bottom": 122.277,
+            "text": "Next",
+            "top": 111.277,
+            "x0": 72.0,
+            "x1": 95.837
+          },
+          {
+            "bottom": 122.277,
+            "text": "meeting",
+            "top": 111.277,
+            "x0": 98.895,
+            "x1": 141.069
+          },
+          {
+            "bottom": 140.173,
+            "text": "The",
+            "top": 129.673,
+            "x0": 72.0,
+            "x1": 90.091
+          },
+          {
+            "bottom": 140.173,
+            "text": "next",
+            "top": 129.673,
+            "x0": 93.011,
+            "x1": 112.856
+          },
+          {
+            "bottom": 140.173,
+            "text": "meeting",
+            "top": 129.673,
+            "x0": 115.775,
+            "x1": 153.123
+          },
+          {
+            "bottom": 140.173,
+            "text": "is",
+            "top": 129.673,
+            "x0": 156.042,
+            "x1": 163.623
+          },
+          {
+            "bottom": 140.173,
+            "text": "on",
+            "top": 129.673,
+            "x0": 166.542,
+            "x1": 178.218
+          },
+          {
+            "bottom": 140.173,
+            "text": "11",
+            "top": 129.673,
+            "x0": 181.137,
+            "x1": 192.813
+          },
+          {
+            "bottom": 140.173,
+            "text": "April",
+            "top": 129.673,
+            "x0": 195.732,
+            "x1": 216.732
+          },
+          {
+            "bottom": 140.173,
+            "text": "2027",
+            "top": 129.673,
+            "x0": 219.651,
+            "x1": 243.003
+          },
+          {
+            "bottom": 140.173,
+            "text": "at",
+            "top": 129.673,
+            "x0": 245.922,
+            "x1": 254.679
+          },
+          {
+            "bottom": 140.173,
+            "text": "18:30",
+            "top": 129.673,
+            "x0": 257.598,
+            "x1": 283.869
+          },
+          {
+            "bottom": 140.173,
+            "text": "in",
+            "top": 129.673,
+            "x0": 286.788,
+            "x1": 294.957
+          },
+          {
+            "bottom": 140.173,
+            "text": "the",
+            "top": 129.673,
+            "x0": 297.876,
+            "x1": 312.471
+          },
+          {
+            "bottom": 140.173,
+            "text": "community",
+            "top": 129.673,
+            "x0": 315.39,
+            "x1": 366.147
+          },
+          {
+            "bottom": 140.173,
+            "text": "library",
+            "top": 129.673,
+            "x0": 369.066,
+            "x1": 397.647
+          },
+          {
+            "bottom": 140.173,
+            "text": "meeting",
+            "top": 129.673,
+            "x0": 400.566,
+            "x1": 437.915
+          },
+          {
+            "bottom": 140.173,
+            "text": "room.",
+            "top": 129.673,
+            "x0": 440.834,
+            "x1": 467.672
+          },
+          {
+            "bottom": 140.173,
+            "text": "L.",
+            "top": 129.673,
+            "x0": 470.591,
+            "x1": 479.348
+          },
+          {
+            "bottom": 140.173,
+            "text": "Moreau",
+            "top": 129.673,
+            "x0": 482.267,
+            "x1": 517.862
+          },
+          {
+            "bottom": 140.173,
+            "text": "will",
+            "top": 129.673,
+            "x0": 520.781,
+            "x1": 535.355
+          },
+          {
+            "bottom": 153.173,
+            "text": "bring",
+            "top": 142.673,
+            "x0": 72.0,
+            "x1": 95.341
+          },
+          {
+            "bottom": 153.173,
+            "text": "the",
+            "top": 142.673,
+            "x0": 98.261,
+            "x1": 112.856
+          },
+          {
+            "bottom": 153.173,
+            "text": "ballot",
+            "top": 142.673,
+            "x0": 115.775,
+            "x1": 140.87
+          },
+          {
+            "bottom": 153.173,
+            "text": "box",
+            "top": 142.673,
+            "x0": 143.788,
+            "x1": 160.714
+          },
+          {
+            "bottom": 153.173,
+            "text": "and",
+            "top": 142.673,
+            "x0": 163.633,
+            "x1": 181.147
+          },
+          {
+            "bottom": 153.173,
+            "text": "the",
+            "top": 142.673,
+            "x0": 184.066,
+            "x1": 198.661
+          },
+          {
+            "bottom": 153.173,
+            "text": "reading",
+            "top": 142.673,
+            "x0": 201.58,
+            "x1": 236.598
+          },
+          {
+            "bottom": 153.173,
+            "text": "list.",
+            "top": 142.673,
+            "x0": 239.517,
+            "x1": 255.267
+          },
+          {
+            "bottom": 757.656,
+            "text": "Page",
+            "top": 749.656,
+            "x0": 499.08,
+            "x1": 517.76
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 519.984,
+            "x1": 524.432
+          },
+          {
+            "bottom": 757.656,
+            "text": "of",
+            "top": 749.656,
+            "x0": 526.656,
+            "x1": 533.328
+          },
+          {
+            "bottom": 757.656,
+            "text": "2",
+            "top": 749.656,
+            "x0": 535.552,
+            "x1": 540.0
+          }
+        ]
+      }
+    ],
+    "refusal_family": null,
+    "runtime_versions": {},
+    "security_scan": {
+      "bytes": 3623,
+      "eof_marker_present": true,
+      "header_is_pdf": true,
+      "indirect_object_count": 15,
+      "indirect_objects": [
+        {
+          "generation": 0,
+          "object": 1,
+          "offset": 61
+        },
+        {
+          "generation": 0,
+          "object": 2,
+          "offset": 102
+        },
+        {
+          "generation": 0,
+          "object": 3,
+          "offset": 209
+        },
+        {
+          "generation": 0,
+          "object": 4,
+          "offset": 321
+        },
+        {
+          "generation": 0,
+          "object": 5,
+          "offset": 516
+        },
+        {
+          "generation": 0,
+          "object": 6,
+          "offset": 711
+        },
+        {
+          "generation": 0,
+          "object": 7,
+          "offset": 800
+        },
+        {
+          "generation": 0,
+          "object": 8,
+          "offset": 1218
+        },
+        {
+          "generation": 0,
+          "object": 9,
+          "offset": 1289
+        },
+        {
+          "generation": 0,
+          "object": 10,
+          "offset": 1406
+        },
+        {
+          "generation": 0,
+          "object": 11,
+          "offset": 1496
+        },
+        {
+          "generation": 0,
+          "object": 12,
+          "offset": 1599
+        },
+        {
+          "generation": 0,
+          "object": 13,
+          "offset": 1691
+        },
+        {
+          "generation": 0,
+          "object": 14,
+          "offset": 1757
+        },
+        {
+          "generation": 0,
+          "object": 15,
+          "offset": 2567
+        }
+      ],
+      "markers": {
+        "annotations": 0,
+        "byte_range": 0,
+        "destinations": 4,
+        "embedded_file": 0,
+        "encrypt": 0,
+        "javascript": 0,
+        "launch": 0,
+        "link_annotations": 0,
+        "names": 0,
+        "outlines": 2,
+        "redact": 0,
+        "remote_goto": 0,
+        "signature_field": 0,
+        "xfa": 0
+      },
+      "navigation_inventory": {
+        "destination_marker_count": 4,
+        "link_annotation_count": 0,
+        "outline_marker_count": 2
+      },
+      "path": "/Users/carrie/Documents/ChatGPT/Backtesting/ONLINE-PDF-RECONSTRUCTION-ZCODE-BUILD-2026-09-29/lanes/03-fixtures-oracles/fixtures/B01-clean.pdf",
+      "refusal_detection": {
+        "active_content": false,
+        "encrypted": false,
+        "signed_or_certified": false,
+        "xfa_or_hybrid_xfa": false
+      },
+      "sha256": "1fad93c654fdb14c205719ac8bea7eddecc895b0461736ca2e103dc4e0e611ca"
+    },
+    "source_sha256": "1fad93c654fdb14c205719ac8bea7eddecc895b0461736ca2e103dc4e0e611ca",
+    "status": "READY"
+  },
+  "plan": {
+    "class_label": "BENIGN",
+    "document_id": "B01",
+    "forced_review": false,
+    "immutable": {
+      "page_count": 2,
+      "page_order": [
+        0,
+        1
+      ]
+    },
+    "operations": [],
+    "page_mapping": [
+      0,
+      1
+    ]
+  },
+  "refusal": null,
+  "schema": 1,
+  "verification": {
+    "gates": {
+      "G1": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G10": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G2": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G3": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G4": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G5": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G6": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G7": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G8": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      },
+      "G9": {
+        "evidence": [],
+        "status": "NOT_EXERCISED"
+      }
+    }
+  }
+}
