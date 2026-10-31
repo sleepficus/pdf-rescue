@@ -1,0 +1,889 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:zcode:lane-02-cdrr-receipts:receipt-schema:1.0.0",
+  "title": "Receipt schemas - operation, verifier, run, experiment run",
+  "description": "Frozen receipt contract (lane 02-cdrr-receipts, wave A). Four record types, discriminated by 'record_kind'; a receipt document validates against exactly one $defs branch.\n\nWHO WRITES WHAT, AND WHEN (authoritative separation note):\n- OperationRecord (record_kind=OPERATION_RECORD) - written by the BUILDER: expected delta at plan time, observed delta and tool at apply time; the builder copies the verifier's published reconciliation verdict into reconciliation_status and must cite the verifier's records in reconciliation_evidence_refs. Never authored by the verifier about its own repairs - the verifier repairs nothing (INV-06).\n- VerifierRecord (record_kind=VERIFIER_RECORD) - written by the VERIFIER (independent lane/process, read-only w.r.t. the candidate) immediately after each gate execution, PASS/FAIL/NOT_EXERCISED/ERROR alike. The verifier never writes to the candidate or to builder artifacts (INV-06/INV-07).\n- RunReceipt (record_kind=RUN_RECEIPT) - written by the INTEGRATOR at the end of every per-document run - accepted, reviewed, refused, not-verifiable, budget-tripped, or crashed (INV-09). It is written atomically (INV-10) after temp disposal (or, on crash, with crash_evidence and preserved hashes).\n- ExperimentRunReceipt (record_kind=EXPERIMENT_RUN_RECEIPT) - written once per experiment run by the INTEGRATOR after all document runs, aggregating per-document receipt hashes, determinism, mutation-check, refusal-control and benign-control evidence, and carrying run-level INVALID_EXPERIMENT semantics.\n\nACCEPT AUTHORITY: report/summary code can never choose ACCEPT. ACCEPT appears only as the output of the frozen disposition derivation over verification records (CDRR disposition block + fired precedence rule from lane 01). Any ACCEPT found in a receipt without a matching verification-derived derivation is condition E05 -> run-level INVALID_EXPERIMENT (INV-20).\n\nUNCERTAINTY RULE: every enum that can express uncertainty carries NOT_EXERCISED and ERROR as first-class values; envelope/status fields carry the uncertainty while closed-vocabulary enums (gate ids, refusal families, budget ids, E-condition ids) stay pure. NOT_EXERCISED is never counted as PASS (INV-08).",
+  "oneOf": [
+    { "$ref": "#/$defs/OperationRecord" },
+    { "$ref": "#/$defs/VerifierRecord" },
+    { "$ref": "#/$defs/RunReceipt" },
+    { "$ref": "#/$defs/ExperimentRunReceipt" }
+  ],
+  "$defs": {
+    "Sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "Lowercase 64-hex-character SHA-256 digest (INV-16)."
+    },
+    "IsoTimestampUtc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+    },
+    "LooseId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,79}$",
+      "description": "Identifier whose exact format is owned by another frozen lane or the integrator."
+    },
+    "ToolRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 }
+      }
+    },
+    "GateId": {
+      "enum": [
+        "G01_SOURCE_HASH_INVENTORY",
+        "G02_PAGE_GEOMETRY_RECONCILIATION",
+        "G03_TEXT_IDENTITY",
+        "G04_VISIBLE_TEXT_AGREEMENT",
+        "G05_READING_ORDER_HIERARCHY",
+        "G06_NAVIGATION_INTEGRITY",
+        "G07_TABLE_IDENTITY_NUMERIC",
+        "G08_ACROFORM_ROUNDTRIP",
+        "G09_INDEPENDENT_RENDER_INK",
+        "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+        "G11_RESOURCE_BUDGET_NO_NETWORK",
+        "G12_HUMAN_AB_USABILITY_CLOSURE"
+      ],
+      "description": "Frozen gate ids; G12 is experiment-closure-level and never part of the per-document acceptance predicate."
+    },
+    "GateStatus": {
+      "enum": ["PASS", "FAIL", "NOT_EXERCISED", "ERROR"],
+      "description": "NOT_EXERCISED is first-class and never counted as PASS (INV-08)."
+    },
+    "NotExercisedReasonCode": {
+      "enum": [
+        "GATE_NOT_REQUIRED_FOR_CLASS",
+        "DOCUMENT_REFUSED_BEFORE_GATE",
+        "UPSTREAM_GATE_FAILED",
+        "TOOL_UNAVAILABLE",
+        "BUDGET_TRIP_BEFORE_GATE",
+        "CLOSURE_LEVEL_GATE",
+        "RUN_INVALIDATED",
+        "OTHER_RECORDED"
+      ]
+    },
+    "IndependenceClass": {
+      "enum": ["INDEPENDENT_IMPLEMENTATION", "SAME_LIBRARY_DIFFERENT_PATH", "SHARED_CODE_WITH_BUILDER", "NOT_EXERCISED", "ERROR"],
+      "description": "Same-engine extraction and verification do not count as independence. A decisive gate not declared INDEPENDENT_IMPLEMENTATION may not contribute to ACCEPT (INV-07)."
+    },
+    "FrozenOperationName": {
+      "enum": [
+        "NORMALIZE_SPACING",
+        "NORMALIZE_ALIGNMENT",
+        "NORMALIZE_TYPOGRAPHY",
+        "JOIN_DECLARED_HYPHENATION",
+        "NORMALIZE_REPEATED_HEADER_FOOTER",
+        "ADD_OR_REPAIR_STRUCTURE_TAGS",
+        "SET_VERIFIED_READING_ORDER",
+        "ADD_OR_REPAIR_BOOKMARKS",
+        "REPAIR_INTERNAL_NAVIGATION",
+        "ROTATE_PAGE"
+      ],
+      "description": "The frozen Phase-0 allowed operation set; closure is invariant INV-15 (violation E15)."
+    },
+    "RefusalFamily": {
+      "enum": [
+        "NOT_APPLICABLE",
+        "ENCRYPTED",
+        "SIGNED_OR_CERTIFIED",
+        "XFA_OR_HYBRID_XFA",
+        "ACTIVE_CONTENT_OR_JAVASCRIPT",
+        "EMBEDDED_FILE_OR_EXECUTABLE_TARGET",
+        "PENDING_REDACTION",
+        "CONSERVATIVE_PARSER_FAILURE",
+        "RESOURCE_BUDGET_EXCEEDED",
+        "MATERIAL_RTL_BIDI",
+        "OPTIONAL_CONTENT_DEPENDENCE",
+        "UNVERIFIED_GLYPH_MAPPING",
+        "LIVE_TEXT_UNDER_OPAQUE_INK",
+        "SECURITY_VERIFICATION_NOT_RUN",
+        "MIME_NOT_PDF",
+        "OTHER_RECORDED"
+      ],
+      "description": "Frozen Phase-0 refusal families (templated; refusal messages never echo document text, INV-13/E13)."
+    },
+    "DocumentDisposition": {
+      "enum": ["ACCEPT", "REVIEW", "REFUSE", "NOT_VERIFIABLE", "NOT_EXERCISED", "ERROR"],
+      "description": "Document-level disposition as recorded in receipts. NOT_EXERCISED/ERROR occur only in crash/partial receipts, must be resolved before experiment closure, and are never substitutes for ACCEPT (INV-08/INV-20). Run-level INVALID_EXPERIMENT is not a document disposition; it lives in ExperimentRunReceipt.run_outcome and overrides all document dispositions in the run (INV-23)."
+    },
+    "Anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "page_index", "element_id", "span_id", "bbox"],
+      "properties": {
+        "kind": { "enum": ["PAGE", "TEXT_SPAN", "STRUCTURE_ELEMENT", "TABLE_CELL", "BOOKMARK", "LINK", "OUTLINE_ENTRY"] },
+        "page_index": { "type": ["integer", "null"], "minimum": 0 },
+        "element_id": { "type": ["string", "null"], "pattern": "^EL-[A-Za-z0-9]{1,16}$" },
+        "span_id": { "type": ["string", "null"], "pattern": "^SP-[A-Za-z0-9]{1,16}$" },
+        "bbox": { "type": ["object", "null"] }
+      }
+    },
+    "DeltaObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["delta_type", "scope", "magnitude", "material_change"],
+      "properties": {
+        "delta_type": {
+          "enum": [
+            "WHITESPACE_ONLY",
+            "COORDINATE_SHIFT",
+            "GLYPH_SUBSTITUTION",
+            "TEXT_JOIN_HYPHEN",
+            "DUPLICATE_SUPPRESSION",
+            "METADATA_ONLY",
+            "STRUCTURE_TAG_ADDITION",
+            "READING_ORDER_ANNOTATION",
+            "NAVIGATION_ADDITION",
+            "PAGE_ROTATION",
+            "NO_TEXT_DELTA"
+          ]
+        },
+        "scope": { "enum": ["SPAN", "ELEMENT", "PAGE", "DOCUMENT"] },
+        "magnitude": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["metric", "value", "tolerance"],
+          "properties": {
+            "metric": { "enum": ["CHAR_COUNT", "POINTS", "PIXELS", "COUNT", "RATIO", "DEGREES"] },
+            "value": { "type": "number" },
+            "tolerance": { "type": ["number", "null"] }
+          }
+        },
+        "material_change": { "type": "boolean" }
+      }
+    },
+    "JustificationCode": {
+      "enum": [
+        "SPACING_IRREGULAR",
+        "ALIGNMENT_IRREGULAR",
+        "TYPOGRAPHY_NONSTANDARD_GLYPH_VERIFIED",
+        "DECLARED_LINE_END_HYPHENATION",
+        "REPEATED_HEADER_FOOTER_PRESENT",
+        "STRUCTURE_TAGS_MISSING",
+        "READING_ORDER_UNVERIFIED",
+        "BOOKMARKS_MISSING_OR_BROKEN",
+        "INTERNAL_LINK_DEST_INDEPENDENTLY_ESTABLISHED",
+        "PAGE_ROTATION_REVIEW_REQUIRED"
+      ]
+    },
+    "OperationRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_kind",
+        "receipt_id",
+        "experiment_id",
+        "run_id",
+        "fixture_id",
+        "cdrr_ref",
+        "written_by",
+        "created_at",
+        "operation_id",
+        "operation_name",
+        "source_anchors",
+        "justification_code",
+        "justification_note",
+        "expected_delta",
+        "observed_delta",
+        "applied",
+        "applied_at",
+        "tool",
+        "reconciliation_status",
+        "reconciliation_evidence_refs"
+      ],
+      "properties": {
+        "record_kind": { "const": "OPERATION_RECORD" },
+        "receipt_id": { "type": "string", "pattern": "^RCPT-[0-9a-zA-Z._-]{1,80}$" },
+        "experiment_id": { "$ref": "#/$defs/LooseId" },
+        "run_id": { "$ref": "#/$defs/LooseId" },
+        "fixture_id": { "$ref": "#/$defs/LooseId" },
+        "cdrr_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "CDRR id + hash this operation belongs to (provenance, INV-14)."
+        },
+        "written_by": {
+          "const": "BUILDER",
+          "description": "Operation records are builder records; the reconciliation verdict copied here must cite verifier evidence."
+        },
+        "created_at": { "$ref": "#/$defs/IsoTimestampUtc" },
+        "operation_id": { "type": "string", "pattern": "^OP-[A-Za-z0-9]{1,16}$" },
+        "operation_name": { "$ref": "#/$defs/FrozenOperationName" },
+        "source_anchors": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/Anchor" }
+        },
+        "justification_code": { "$ref": "#/$defs/JustificationCode" },
+        "justification_note": {
+          "type": ["string", "null"],
+          "description": "Templated identifiers only; no raw document text (INV-13)."
+        },
+        "expected_delta": { "$ref": "#/$defs/DeltaObservation" },
+        "observed_delta": {
+          "type": ["object", "null"],
+          "description": "DeltaObservation-shaped; null until applied. INV-21: expected vs observed is reconciled per operation; material divergence blocks ACCEPT."
+        },
+        "applied": { "type": "boolean" },
+        "applied_at": { "type": ["string", "null"], "$comment": "IsoTimestampUtc when applied" },
+        "tool": {
+          "type": ["object", "null"],
+          "description": "ToolRef-shaped (name+version) of the builder tool that applied the operation; null until applied."
+        },
+        "reconciliation_status": {
+          "enum": ["PENDING", "RECONCILED", "DIVERGED", "NOT_EXERCISED", "ERROR"]
+        },
+        "reconciliation_evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "VerifierRecord ids / verifier artifact references backing the reconciliation verdict."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "reconciliation_status": { "enum": ["RECONCILED", "DIVERGED"] } },
+            "required": ["reconciliation_status"]
+          },
+          "then": {
+            "required": ["reconciliation_evidence_refs"],
+            "properties": {
+              "reconciliation_evidence_refs": { "minItems": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "applied": { "const": true } },
+            "required": ["applied"]
+          },
+          "then": {
+            "required": ["applied_at", "tool", "observed_delta"],
+            "properties": {
+              "applied_at": { "type": "string" },
+              "tool": { "type": "object" },
+              "observed_delta": { "type": "object" }
+            }
+          }
+        }
+      ]
+    },
+    "VerifierRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_kind",
+        "receipt_id",
+        "experiment_id",
+        "run_id",
+        "fixture_id",
+        "cdrr_ref",
+        "written_by",
+        "gate_id",
+        "gate_status",
+        "tool",
+        "independence_class",
+        "decisive",
+        "evidence_refs",
+        "started_at",
+        "finished_at",
+        "duration_ms",
+        "not_exercised_reason_code",
+        "failure_detail"
+      ],
+      "properties": {
+        "record_kind": { "const": "VERIFIER_RECORD" },
+        "receipt_id": { "type": "string", "pattern": "^RCPT-[0-9a-zA-Z._-]{1,80}$" },
+        "experiment_id": { "$ref": "#/$defs/LooseId" },
+        "run_id": { "$ref": "#/$defs/LooseId" },
+        "fixture_id": { "$ref": "#/$defs/LooseId" },
+        "cdrr_ref": { "type": "string", "minLength": 1 },
+        "written_by": {
+          "const": "VERIFIER",
+          "description": "Verifier records come only from the independent verifier path; the verifier is read-only w.r.t. the candidate (INV-06)."
+        },
+        "gate_id": { "$ref": "#/$defs/GateId" },
+        "gate_status": { "$ref": "#/$defs/GateStatus" },
+        "tool": { "$ref": "#/$defs/ToolRef" },
+        "independence_class": { "$ref": "#/$defs/IndependenceClass" },
+        "decisive": {
+          "type": "boolean",
+          "description": "Whether this gate is decisive for the disposition under the frozen class-by-gate matrix (lane 01)."
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Hashes, digests, artifact paths supporting the verdict."
+        },
+        "started_at": { "type": ["string", "null"], "$comment": "IsoTimestampUtc when the gate ran" },
+        "finished_at": { "type": ["string", "null"], "$comment": "IsoTimestampUtc when the gate ran" },
+        "duration_ms": { "type": ["integer", "null"], "minimum": 0 },
+        "not_exercised_reason_code": {
+          "type": ["string", "null"],
+          "description": "Required (frozen reason code) when gate_status is NOT_EXERCISED; null otherwise."
+        },
+        "failure_detail": {
+          "type": ["string", "null"],
+          "description": "Templated failure detail + page/region identifiers when gate_status is FAIL; never raw document text (INV-13)."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "gate_status": { "const": "NOT_EXERCISED" } },
+            "required": ["gate_status"]
+          },
+          "then": {
+            "required": ["not_exercised_reason_code"],
+            "properties": {
+              "not_exercised_reason_code": { "$ref": "#/$defs/NotExercisedReasonCode" }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "gate_status": { "const": "FAIL" } },
+            "required": ["gate_status"]
+          },
+          "then": {
+            "required": ["failure_detail"],
+            "properties": {
+              "failure_detail": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
+    },
+    "RunReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_kind",
+        "receipt_id",
+        "experiment_id",
+        "run_id",
+        "fixture_id",
+        "written_by",
+        "created_at",
+        "input_identity",
+        "toolchain",
+        "budgets",
+        "temp_directory_lifecycle",
+        "no_network_evidence",
+        "candidate",
+        "crash_evidence",
+        "disposition",
+        "records"
+      ],
+      "properties": {
+        "record_kind": { "const": "RUN_RECEIPT" },
+        "receipt_id": { "type": "string", "pattern": "^RCPT-[0-9a-zA-Z._-]{1,80}$" },
+        "experiment_id": { "$ref": "#/$defs/LooseId" },
+        "run_id": { "$ref": "#/$defs/LooseId" },
+        "fixture_id": { "$ref": "#/$defs/LooseId" },
+        "written_by": { "const": "INTEGRATOR" },
+        "created_at": { "$ref": "#/$defs/IsoTimestampUtc" },
+        "input_identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["original_filename", "byte_size", "sha256", "sealed_fixture_manifest_ref"],
+          "properties": {
+            "original_filename": { "type": "string", "minLength": 1 },
+            "byte_size": { "type": "integer", "minimum": 0 },
+            "sha256": { "$ref": "#/$defs/Sha256" },
+            "sealed_fixture_manifest_ref": { "type": "string", "minLength": 1 }
+          },
+          "description": "Must match document_identity of the referenced CDRR (INV-01: hash identical before/after the run)."
+        },
+        "toolchain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["component", "name", "version", "provenance_ref", "decisive_role"],
+            "properties": {
+              "component": {
+                "enum": [
+                  "INTAKE",
+                  "REFUSAL_SCANNER",
+                  "CLASSIFIER",
+                  "EXTRACTOR_PRIMARY",
+                  "EXTRACTOR_SECOND_INDEPENDENT",
+                  "BUILDER",
+                  "RENDERER",
+                  "RENDERER_INDEPENDENT",
+                  "DISPOSITION_ENGINE",
+                  "OTHER_RECORDED"
+                ]
+              },
+              "name": { "type": "string", "minLength": 1 },
+              "version": { "type": "string", "minLength": 1 },
+              "provenance_ref": {
+                "type": ["string", "null"],
+                "description": "Reference to the lane/dependency record this tool came from (INV-14)."
+              },
+              "decisive_role": {
+                "type": "boolean",
+                "description": "INV-07: builder and verifier decisive components must be distinct named tools on distinct paths."
+              }
+            }
+          }
+        },
+        "budgets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["budget_id", "observed", "limit", "status"],
+            "properties": {
+              "budget_id": {
+                "enum": [
+                  "PAGE_COUNT",
+                  "OBJECT_COUNT",
+                  "FILE_BYTES",
+                  "PIXELS",
+                  "CPU_SECONDS",
+                  "WALL_SECONDS",
+                  "TEMP_STORAGE_BYTES",
+                  "OUTPUT_BYTES"
+                ]
+              },
+              "observed": { "type": ["number", "null"] },
+              "limit": {
+                "type": ["number", "null"],
+                "description": "Frozen limit value from lanes/05-safety-budgets/BUDGETS.json; null when NOT_EXERCISED."
+              },
+              "status": { "enum": ["WITHIN_BUDGET", "EXCEEDED", "NOT_EXERCISED", "ERROR"] }
+            }
+          }
+        },
+        "temp_directory_lifecycle": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "path_prefix_templated", "created", "removed_after_run", "reused_across_documents", "removed_at", "removal_evidence_ref"],
+          "properties": {
+            "status": { "enum": ["CREATED_AND_REMOVED", "RETAINED_FOR_CRASH_EVIDENCE", "NOT_CREATED", "NOT_EXERCISED", "ERROR"] },
+            "path_prefix_templated": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Templated prefix only (no document-derived content, INV-13)."
+            },
+            "created": { "type": "boolean" },
+            "removed_after_run": { "type": "boolean" },
+            "reused_across_documents": {
+              "const": false,
+              "description": "Must be false. Private temp state is per-document and never reused (INV-11); recording true here is condition E07 -> INVALID_EXPERIMENT."
+            },
+            "removed_at": { "type": ["string", "null"], "$comment": "IsoTimestampUtc" },
+            "removal_evidence_ref": { "type": ["string", "null"] }
+          }
+        },
+        "no_network_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "method", "evidence_ref"],
+          "properties": {
+            "status": { "enum": ["VERIFIED_NO_NETWORK", "NOT_EXERCISED", "ERROR"] },
+            "method": { "enum": ["PROCESS_ISOLATION", "SOCKET_AUDIT", "ENVIRONMENT_GUARD", "OBSERVER_PROCESS", "OTHER_RECORDED", "NOT_EXERCISED", "ERROR"] },
+            "evidence_ref": { "type": ["string", "null"] }
+          },
+          "description": "INV-12: no network during processing; a run without VERIFIED_NO_NETWORK evidence may not yield ACCEPT."
+        },
+        "candidate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["written", "candidate_hash", "artifact_ref", "written_atomically", "temp_path_templated", "final_path"],
+          "properties": {
+            "written": { "type": "boolean" },
+            "candidate_hash": { "type": ["string", "null"], "$comment": "Sha256 when written" },
+            "artifact_ref": { "type": ["string", "null"] },
+            "written_atomically": {
+              "type": ["boolean", "null"],
+              "description": "INV-10: temp path then atomic rename; required true whenever written is true."
+            },
+            "temp_path_templated": { "type": ["string", "null"] },
+            "final_path": { "type": ["string", "null"] }
+          }
+        },
+        "crash_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["crashed", "stage_at_crash", "receipt_preserved"],
+          "properties": {
+            "crashed": { "type": "boolean" },
+            "stage_at_crash": {
+              "enum": ["INTAKE", "PREFLIGHT", "EXTRACT", "PLAN", "APPLY", "VERIFY", "DISPOSE", "NONE", "NOT_EXERCISED", "ERROR"]
+            },
+            "receipt_preserved": {
+              "type": "boolean",
+              "description": "INV-09: even a crashed run leaves its receipt; if crashed is true this must be true (if/then below)."
+            }
+          }
+        },
+        "disposition": { "$ref": "#/$defs/DocumentDisposition" },
+        "records": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["cdrr_sha256", "operation_record_refs", "verifier_record_refs", "render_artifact_refs"],
+          "properties": {
+            "cdrr_sha256": {
+              "type": ["string", "null"],
+              "description": "sha256 of the CDRR for this run; required non-null whenever the run reached a real disposition (if/then below)."
+            },
+            "operation_record_refs": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "OperationRecord receipt ids (or content hashes)."
+            },
+            "verifier_record_refs": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "VerifierRecord receipt ids (or content hashes)."
+            },
+            "render_artifact_refs": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Render artifact references (original + candidate page renders)."
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "candidate": { "properties": { "written": { "const": true } }, "required": ["written"] } },
+            "required": ["candidate"]
+          },
+          "then": {
+            "properties": {
+              "candidate": {
+                "required": ["candidate_hash", "written_atomically", "final_path"],
+                "properties": {
+                  "candidate_hash": { "type": "string" },
+                  "written_atomically": { "const": true },
+                  "final_path": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "crash_evidence": { "properties": { "crashed": { "const": true } }, "required": ["crashed"] } },
+            "required": ["crash_evidence"]
+          },
+          "then": {
+            "properties": {
+              "crash_evidence": {
+                "properties": { "receipt_preserved": { "const": true } }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "disposition": { "enum": ["ACCEPT", "REVIEW", "REFUSE", "NOT_VERIFIABLE"] }
+            },
+            "required": ["disposition"]
+          },
+          "then": {
+            "properties": {
+              "records": {
+                "required": ["cdrr_sha256"],
+                "properties": {
+                  "cdrr_sha256": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "disposition": { "enum": ["ACCEPT", "REVIEW", "NOT_VERIFIABLE"] } },
+            "required": ["disposition"]
+          },
+          "then": {
+            "properties": {
+              "no_network_evidence": {
+                "required": ["status"],
+                "properties": { "status": { "const": "VERIFIED_NO_NETWORK" } }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ExperimentRunReceipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_kind",
+        "receipt_id",
+        "experiment_id",
+        "run_id",
+        "written_by",
+        "created_at",
+        "per_document_receipts",
+        "determinism",
+        "mutation_checks",
+        "refusal_controls",
+        "benign_controls",
+        "run_outcome",
+        "invalidation_conditions",
+        "final_status"
+      ],
+      "properties": {
+        "record_kind": { "const": "EXPERIMENT_RUN_RECEIPT" },
+        "receipt_id": { "type": "string", "pattern": "^RCPT-[0-9a-zA-Z._-]{1,80}$" },
+        "experiment_id": { "$ref": "#/$defs/LooseId" },
+        "run_id": { "$ref": "#/$defs/LooseId" },
+        "written_by": { "const": "INTEGRATOR" },
+        "created_at": { "$ref": "#/$defs/IsoTimestampUtc" },
+        "per_document_receipts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["fixture_id", "run_id", "run_receipt_sha256", "disposition"],
+            "properties": {
+              "fixture_id": { "$ref": "#/$defs/LooseId" },
+              "run_id": { "$ref": "#/$defs/LooseId" },
+              "run_receipt_sha256": { "$ref": "#/$defs/Sha256" },
+              "disposition": { "$ref": "#/$defs/DocumentDisposition" }
+            }
+          },
+          "description": "Hash-anchored index of every per-document RunReceipt of this experiment run (INV-09: refusals and crashes included)."
+        },
+        "determinism": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["rerun_performed", "first_run_digest", "second_run_digest", "intentionally_variable_fields_declared", "match", "evidence_ref"],
+          "properties": {
+            "rerun_performed": { "type": "boolean" },
+            "first_run_digest": { "type": ["string", "null"] },
+            "second_run_digest": { "type": ["string", "null"] },
+            "intentionally_variable_fields_declared": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Field names whose variation is declared and excluded from the match (INV-19)."
+            },
+            "match": { "enum": ["DETERMINISTIC_MATCH", "MATCH_WITH_DECLARED_VARIABLES", "MISMATCH", "NOT_EXERCISED", "ERROR"] },
+            "evidence_ref": { "type": ["string", "null"] }
+          }
+        },
+        "mutation_checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["mutation_id", "mutation_spec_ref", "seed_ref", "expected_failing_gate", "observed_failing_gate", "detected", "expected_disposition", "observed_disposition"],
+            "properties": {
+              "mutation_id": { "$ref": "#/$defs/LooseId" },
+              "mutation_spec_ref": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Frozen mutation spec + seed record from lanes/03-fixtures-oracles."
+              },
+              "seed_ref": { "type": "string", "minLength": 1 },
+              "expected_failing_gate": { "$ref": "#/$defs/GateId" },
+              "observed_failing_gate": {
+                "enum": [
+                  "G01_SOURCE_HASH_INVENTORY",
+                  "G02_PAGE_GEOMETRY_RECONCILIATION",
+                  "G03_TEXT_IDENTITY",
+                  "G04_VISIBLE_TEXT_AGREEMENT",
+                  "G05_READING_ORDER_HIERARCHY",
+                  "G06_NAVIGATION_INTEGRITY",
+                  "G07_TABLE_IDENTITY_NUMERIC",
+                  "G08_ACROFORM_ROUNDTRIP",
+                  "G09_INDEPENDENT_RENDER_INK",
+                  "G10_ACTIVE_CONTENT_SECURITY_SCAN",
+                  "G11_RESOURCE_BUDGET_NO_NETWORK",
+                  "G12_HUMAN_AB_USABILITY_CLOSURE",
+                  "NOT_EXERCISED",
+                  "ERROR"
+                ],
+                "description": "Gate that actually failed; NOT_EXERCISED/ERROR are first-class and mean the mutation check did not complete (never counted as detection)."
+              },
+              "detected": {
+                "type": "boolean",
+                "description": "A seeded material mutation that survives undetected is a kill condition for the experiment."
+              },
+              "expected_disposition": { "$ref": "#/$defs/DocumentDisposition" },
+              "observed_disposition": { "$ref": "#/$defs/DocumentDisposition" }
+            }
+          }
+        },
+        "refusal_controls": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["control_id", "expected_refusal_family", "observed_refusal_family", "matched"],
+            "properties": {
+              "control_id": { "$ref": "#/$defs/LooseId" },
+              "expected_refusal_family": { "$ref": "#/$defs/RefusalFamily" },
+              "observed_refusal_family": {
+                "type": ["string", "null"],
+                "$comment": "RefusalFamily observed, or NOT_EXERCISED/ERROR sentinel recorded in matched=false flow"
+              },
+              "matched": { "type": "boolean" }
+            }
+          },
+          "description": "Refusal-control evidence: each sealed refusal control must be refused in its expected family (INV-18)."
+        },
+        "benign_controls": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["control_id", "expected_disposition", "observed_disposition", "matched"],
+            "properties": {
+              "control_id": { "$ref": "#/$defs/LooseId" },
+              "expected_disposition": { "$ref": "#/$defs/DocumentDisposition" },
+              "observed_disposition": { "$ref": "#/$defs/DocumentDisposition" },
+              "matched": { "type": "boolean" }
+            },
+            "description": "Benign controls prove the verifier is not simply over-strict (FINAL-RECONCILIATION fixture-pack item)."
+          }
+        },
+        "run_outcome": {
+          "enum": ["COMPLETED", "INVALID_EXPERIMENT"],
+          "description": "Run-level outcome. INVALID_EXPERIMENT means the run violated its own frozen protocol; it overrides every document disposition of this run (INV-23) and requires the triggering condition ids below."
+        },
+        "invalidation_conditions": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "E01_SOURCE_BYTES_MODIFIED",
+              "E02_HOLDOUT_OPENED_BEFORE_PROTOCOL_FREEZE",
+              "E03_VERIFIER_REPAIRED_CANDIDATE",
+              "E04_NOT_EXERCISED_COUNTED_AS_PASS",
+              "E05_REPORT_CODE_CHOSE_ACCEPT",
+              "E06_NETWORK_USED_DURING_PROCESSING",
+              "E07_TEMP_STATE_REUSED_ACROSS_DOCUMENTS",
+              "E08_ORIGINAL_NOT_PRESERVED",
+              "E09_UNSEALED_OR_UNHASHED_INPUT_SUBSTITUTED",
+              "E10_PAGE_COUNT_OR_ORDER_CHANGED_SILENTLY",
+              "E11_RECEIPT_MISSING_FOR_A_RUN",
+              "E12_NON_ATOMIC_OUTPUT_WRITE",
+              "E13_DOCUMENT_TEXT_ECHOED_IN_REFUSAL",
+              "E14_PROVENANCE_LOST",
+              "E15_SELF_REPAIR_OR_UNFROZEN_RETRY"
+            ]
+          },
+          "description": "Machine-checkable condition ids that triggered INVALID_EXPERIMENT; catalog with full semantics in x-invalidation-condition-catalog. Must be non-empty when run_outcome is INVALID_EXPERIMENT and empty when COMPLETED (if/then below)."
+        },
+        "final_status": {
+          "enum": ["VERTICAL_SLICE_VERIFIED", "VERTICAL_SLICE_FAILED", "NOT_READY", "INVALID_EXPERIMENT"],
+          "description": "Experiment-final status vocabulary from ASSIGNMENT.md."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "run_outcome": { "const": "INVALID_EXPERIMENT" } },
+            "required": ["run_outcome"]
+          },
+          "then": {
+            "required": ["invalidation_conditions"],
+            "properties": {
+              "invalidation_conditions": { "minItems": 1 }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "run_outcome": { "const": "COMPLETED" } },
+            "required": ["run_outcome"]
+          },
+          "then": {
+            "properties": {
+              "invalidation_conditions": { "maxItems": 0 }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "x-record-writing-matrix": {
+    "description": "Which record is written when, and by whom. Enforced by written_by consts inside each $defs branch.",
+    "rows": [
+      {
+        "record": "OperationRecord",
+        "written_by": "BUILDER",
+        "when": "At plan time (expected delta) and updated at apply time (observed delta, tool, applied_at); reconciliation_status is copied from published verifier evidence with reconciliation_evidence_refs citing VerifierRecords."
+      },
+      {
+        "record": "VerifierRecord",
+        "written_by": "VERIFIER",
+        "when": "Immediately after each gate execution (PASS, FAIL, NOT_EXERCISED, ERROR alike). The verifier is a read-only party w.r.t. the candidate (INV-06)."
+      },
+      {
+        "record": "RunReceipt",
+        "written_by": "INTEGRATOR",
+        "when": "At the end of every per-document run - accepted, reviewed, refused, not-verifiable, budget-tripped, or crashed (INV-09) - written atomically (INV-10)."
+      },
+      {
+        "record": "ExperimentRunReceipt",
+        "written_by": "INTEGRATOR",
+        "when": "Once per experiment run after all document runs; aggregates receipt hashes, determinism, mutation-check, refusal-control and benign-control evidence; carries run-level INVALID_EXPERIMENT semantics."
+      }
+    ],
+    "accept_authority": "Report/summary code can never choose ACCEPT; ACCEPT only derives from verification records and the frozen disposition rules (INV-20, E05)."
+  },
+  "x-invalidation-condition-catalog": {
+    "description": "Frozen condition list that triggers run-level INVALID_EXPERIMENT (ExperimentRunReceipt.run_outcome=INVALID_EXPERIMENT requires >=1 of these ids).",
+    "conditions": {
+      "E01_SOURCE_BYTES_MODIFIED": "Sealed source bytes changed during or after a run (INV-01).",
+      "E02_HOLDOUT_OPENED_BEFORE_PROTOCOL_FREEZE": "Holdout access occurred before protocol freeze (frozen fixture-pack rule).",
+      "E03_VERIFIER_REPAIRED_CANDIDATE": "Any code path from a verifier component to a candidate artifact (INV-06).",
+      "E04_NOT_EXERCISED_COUNTED_AS_PASS": "Any consumer treated NOT_EXERCISED as PASS (INV-08).",
+      "E05_REPORT_CODE_CHOSE_ACCEPT": "Report/summary code set a disposition instead of deriving it (INV-20).",
+      "E06_NETWORK_USED_DURING_PROCESSING": "Network used during processing despite the frozen guard (INV-12).",
+      "E07_TEMP_STATE_REUSED_ACROSS_DOCUMENTS": "Temporary state reused across documents or runs (INV-11).",
+      "E08_ORIGINAL_NOT_PRESERVED": "Original or failed-attempt artifacts deleted or overwritten (INV-01/INV-09).",
+      "E09_UNSEALED_OR_UNHASHED_INPUT_SUBSTITUTED": "Input substituted without sealed fixture provenance (INV-15/INV-16).",
+      "E10_PAGE_COUNT_OR_ORDER_CHANGED_SILENTLY": "Page count/order/box change not caught by its gate (INV-02/03/04).",
+      "E11_RECEIPT_MISSING_FOR_A_RUN": "A run - including refusal or crash - has no receipt (INV-09).",
+      "E12_NON_ATOMIC_OUTPUT_WRITE": "A persistent output bypassed temp-then-rename (INV-10).",
+      "E13_DOCUMENT_TEXT_ECHOED_IN_REFUSAL": "Refusal message or summary echoed raw document text (INV-13).",
+      "E14_PROVENANCE_LOST": "Integrated artifact not traceable to its producing lane (INV-14).",
+      "E15_SELF_REPAIR_OR_UNFROZEN_RETRY": "Self-repair, out-of-plan retry, or operation outside the frozen set (INV-15)."
+    }
+  },
+  "x-invariants-registry": {
+    "description": "Cross-reference: every invariant id frozen in INVARIANTS.md (lane 02-cdrr-receipts); mechanical check methods and violation semantics live in INVARIANTS.md (checked by validate.py).",
+    "invariants": {
+      "INV-01": "Original source byte-immutability: sha256/byte size identical before and after every run (E01).",
+      "INV-02": "Page count invariance between source and candidate; silent change is E10.",
+      "INV-03": "Page boundary invariance: MediaBox/CropBox per page unchanged; silent change is E10.",
+      "INV-04": "Page order invariance; silent change is E10.",
+      "INV-05": "Reading order changed only via a named frozen SET_VERIFIED_READING_ORDER operation.",
+      "INV-06": "Verifier never repairs the candidate it evaluates (E03).",
+      "INV-07": "Builder/verifier separation points named; decisive gates need INDEPENDENT_IMPLEMENTATION.",
+      "INV-08": "NOT_EXERCISED never counted as PASS (E04).",
+      "INV-09": "Receipts written for every run including refusals and crashes (E11).",
+      "INV-10": "Outputs written atomically (temp path then rename) (E12).",
+      "INV-11": "Private temp lifecycle: per-document, removed, never reused (E07).",
+      "INV-12": "No network during processing (E06).",
+      "INV-13": "All outputs redacted to templated reasons; no document text echoed in refusal messages (E13).",
+      "INV-14": "Provenance preservation: every integrated artifact traceable to its lane (E14).",
+      "INV-15": "Frozen operation-set closure; any non-frozen operation is E15.",
+      "INV-16": "Hash format integrity: every hash field is 64-char lowercase hex and recomputable.",
+      "INV-17": "Glyph-mapping prerequisite for NORMALIZE_TYPOGRAPHY.",
+      "INV-18": "Refusal precision: refusal families recorded with evidence anchors; benign controls not refused.",
+      "INV-19": "Determinism: rerun from clean temp reproduces candidate hash modulo declared variable fields.",
+      "INV-20": "ACCEPT derives only from verification records; report/summary code can never choose ACCEPT (E05).",
+      "INV-21": "Expected-delta reconciliation per applied operation; material divergence blocks ACCEPT.",
+      "INV-22": "Refuse-shape completeness: REFUSED CDRR keeps all sections present, NOT_EXERCISED, empty.",
+      "INV-23": "Run-level INVALID_EXPERIMENT overrides all document dispositions of the run.",
+      "INV-24": "Records are append-only; corrections supersede, never rewrite."
+    }
+  }
+}
