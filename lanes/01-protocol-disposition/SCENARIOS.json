@@ -1,0 +1,214 @@
+{
+  "spec_version": "1.0.0",
+  "date": "2026-09-29",
+  "lane": "01-protocol-disposition",
+  "note": "Six ambiguous scenarios where two reasonable builders could disagree. Each scenario freezes the outcome by citing the exact precedence rule of DISPOSITION-SPEC.json. evaluation_cases is the machine-checkable instantiation: each case is an exact dispose(class, gate_statuses, reconciliation, confirmed) context with its frozen expected disposition and fired rule, verified by validate.py. All ambiguous readings are conservative: never ACCEPT when a gate cannot decide.",
+  "scenarios": [
+    {
+      "id": "SCN-01",
+      "title": "Numeric precision differs, value is equal (\"100\" vs \"100.00\")",
+      "description": "A TEXT_TABLE document contains the numeric lexeme 100. The candidate renders 100.00. The parsed numeric value is identical; only the displayed precision changed.",
+      "reading_a": "The value is unchanged, so the change is benign formatting.",
+      "reading_b": "Numeric lexeme identity is the exact displayed string; precision is part of identity, so this is a material change.",
+      "frozen_outcome": {
+        "disposition": "REFUSE",
+        "fired_rule": "PR-07",
+        "gate_effect": "G3 and G7 FAIL (numeric lexeme sequence differs); reconciliation outcome UNDECLARED_MATERIAL_DELTA",
+        "also_holds": "If a builder declares this change, the operation is PLAN_ILLEGAL (no delta type may cover numeric lexemes) and PR-07 still refuses. Declared or undeclared, the outcome is REFUSE."
+      },
+      "evaluation_cases": [
+        {
+          "case_id": "primary-undeclared",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_TABLE",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "FAIL", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "FAIL", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "UNDECLARED_MATERIAL_DELTA", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        },
+        {
+          "case_id": "declared-attempt",
+          "kind": "declared_variant",
+          "class": "TEXT_TABLE",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "FAIL", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "FAIL", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "PLAN_ILLEGAL", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        }
+      ],
+      "rationale": "The synthesis freezes displayed-string identity for numerics: leading zeros, precision, signs, parentheses, currency and percent are part of identity, and numeric parsing is verification-only. Accepting value-equal-but-display-different numbers would let a builder silently restate financial precision. Conservative freeze: material, REFUSE."
+    },
+    {
+      "id": "SCN-02",
+      "title": "Whitespace-only difference beyond the whitelist (removed line break inside a paragraph)",
+      "description": "A line break inside a paragraph of a TEXT_SINGLE_COLUMN document is removed; the line count changes but the reading order and the word sequence are unchanged.",
+      "reading_a": "The break is presentational whitespace; the words and order are identical, so this is benign.",
+      "reading_b": "Whitespace-to-nothing is outside the whitelist, and line breaks inside a reading-order element are material structure in this slice (reflow is out of Phase 0); the line-count change makes the layout difference observable.",
+      "frozen_outcome": {
+        "disposition": "REFUSE",
+        "fired_rule": "PR-07",
+        "gate_effect": "G3 FAIL (token/line structure differs outside N-01..N-03); reconciliation outcome UNDECLARED_MATERIAL_DELTA",
+        "also_holds": "No allowed Phase 0 operation can declare a line-join delta (no reflow op exists), so even a declared attempt is PLAN_ILLEGAL and PR-07 still refuses."
+      },
+      "evaluation_cases": [
+        {
+          "case_id": "primary-undeclared",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "FAIL", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "UNDECLARED_MATERIAL_DELTA", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        },
+        {
+          "case_id": "declared-attempt",
+          "kind": "declared_variant",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "FAIL", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "PLAN_ILLEGAL", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        }
+      ],
+      "rationale": "The whitelist contains only N-01 (whitespace run to one space), N-02 (line-edge strip) and N-03 (declared hyphenation join). Whitespace-to-nothing is explicitly material. Line rejoining beyond hyphenation is a reflow-adjacent change outside the frozen operation set. Conservative freeze: material, REFUSE."
+    },
+    {
+      "id": "SCN-03",
+      "title": "Undeclared but benign-looking glyph substitution (straight vs curly quote)",
+      "description": "In a TEXT_MULTI_COLUMN document, straight quotes (\") are replaced by curly quotes in the candidate without any declared operation.",
+      "reading_a": "Quote style is cosmetic typography; the words are unchanged, so this is benign.",
+      "reading_b": "Quote variants are explicitly material by whitelist exclusion; typography substitution is allowed only as a declared, glyph-verified operation.",
+      "frozen_outcome": {
+        "disposition": "REFUSE",
+        "fired_rule": "PR-07",
+        "gate_effect": "G3 FAIL (token strings differ outside the whitelist); reconciliation outcome UNDECLARED_MATERIAL_DELTA",
+        "also_holds": "The declared path exists: a declared OP_TYPOGRAPHY_SUBSTITUTION with glyph verification, scope, and bounds reconciles to RECONCILED and can reach ACCEPT via PR-13 only after every required gate passes. Undeclared, it refuses."
+      },
+      "evaluation_cases": [
+        {
+          "case_id": "primary-undeclared",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_MULTI_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "FAIL", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "UNDECLARED_MATERIAL_DELTA", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        },
+        {
+          "case_id": "declared-glyph-verified",
+          "kind": "compliant_alternative",
+          "class": "TEXT_MULTI_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "PASS", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "RECONCILED", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "ACCEPT",
+          "expected_fired_rule": "PR-13"
+        }
+      ],
+      "rationale": "Materiality in this protocol is mechanical: everything outside the finite whitelist is material unless covered by a declared expected delta of an allowed operation. An undeclared substitution would make the verifier blind to any glyph-level edit. Conservative freeze: undeclared -> REFUSE; declared and glyph-verified -> gates decide."
+    },
+    {
+      "id": "SCN-04",
+      "title": "Bookmark title differs in case/whitespace, destination correct",
+      "description": "A TEXT_SINGLE_COLUMN document has a bookmark titled 'chapter ONE' (mixed case). The candidate preserves the destination exactly but the title now reads 'Chapter One'.",
+      "reading_a": "The destination is the load-bearing part of a navigation target; the title is cosmetic, so this is benign.",
+      "reading_b": "Navigation target identity includes title text under the whitelist; case folding is material, and BOOKMARK_DEST_REPAIR covers destinations only, never title text.",
+      "frozen_outcome": {
+        "disposition": "REFUSE",
+        "fired_rule": "PR-07",
+        "gate_effect": "G6 FAIL (title text change outside the whitelist, no covering declared delta); reconciliation outcome UNDECLARED_MATERIAL_DELTA",
+        "also_holds": "BOOKMARK_DEST_REPAIR's expected delta covers destination repair only; a declared attempt to rewrite the title is still UNDECLARED_MATERIAL_DELTA (no delta type covers title text) and PR-07 refuses."
+      },
+      "evaluation_cases": [
+        {
+          "case_id": "primary-undeclared",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "PASS", "G4": "PASS", "G5": "PASS", "G6": "FAIL", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "UNDECLARED_MATERIAL_DELTA", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        }
+      ],
+      "rationale": "Title text is content a reader sees and navigates by; allowing silent title edits would open a content-editing channel disguised as navigation repair. The destination being correct does not neutralize an undeclared material text change. Conservative freeze: material, REFUSE."
+    },
+    {
+      "id": "SCN-05",
+      "title": "Repeated footer appears on most but not all pages",
+      "description": "A TEXT_SINGLE_COLUMN document has the same footer on 23 of 24 pages; the last page has none. The builder's OP_HEADER_FOOTER_NORMALIZATION is applied uniformly to all 24 pages, touching the exceptional page too.",
+      "reading_a": "The footer is a repeating pattern; normalizing it document-wide, including assuming it on the exceptional page, is a benign cleanup.",
+      "reading_b": "The absent footer on the last page may be intentional unique content; normalization scope is per detected instance only, and the exceptional page is never modified.",
+      "frozen_outcome": {
+        "disposition": "REFUSE",
+        "fired_rule": "PR-07",
+        "gate_effect": "G3 FAIL (undeclared token change on the exceptional page, outside the operation's declared per-instance scope); reconciliation outcome UNDECLARED_MATERIAL_DELTA",
+        "also_holds": "The compliant reading is the only path to acceptance: normalizing only the 23 detected instances with per-page declared scope reconciles to RECONCILED and reaches ACCEPT via PR-13 when all required gates pass."
+      },
+      "evaluation_cases": [
+        {
+          "case_id": "primary-uniform-application",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "FAIL", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "UNDECLARED_MATERIAL_DELTA", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-07"
+        },
+        {
+          "case_id": "compliant-per-instance",
+          "kind": "compliant_alternative",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "PASS", "G4": "PASS", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "RECONCILED", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "ACCEPT",
+          "expected_fired_rule": "PR-13"
+        }
+      ],
+      "rationale": "The frozen rule 'normalize repeated headers and footers without deleting unique content' is made mechanical by per-instance scope: the expected-delta scope lists exactly the pages with detected instances, and any change outside that scope is an undeclared material delta. Guessing a footer onto the exceptional page is content invention. Conservative freeze: uniform application -> REFUSE; per-instance -> gates decide."
+    },
+    {
+      "id": "SCN-06",
+      "title": "Hidden text duplicating visible text verbatim vs true poison",
+      "description": "A TEXT_SINGLE_COLUMN document's text layer contains text with no ink at its location (hidden text). Two variants: (a) the hidden tokens duplicate the overlapped visible text verbatim; (b) the hidden tokens differ from the visible text (different values or words).",
+      "reading_a": "A verbatim duplicate is harmless (e.g., an extractor artifact); only divergent hidden text is poison.",
+      "reading_b": "Any hidden text breaks visible-layer vs text-layer agreement and must fail the document.",
+      "frozen_outcome": {
+        "disposition": "decided mechanically by anomaly_kind: REVIEW when DUPLICATE_VERBATIM, REFUSE when DIVERGENT; never ACCEPT",
+        "fired_rule": "PR-10 when anomaly_kind == DUPLICATE_VERBATIM; PR-06 when anomaly_kind == DIVERGENT",
+        "gate_effect": "G4 FAIL in both variants (visible-layer vs text-layer agreement broken); reconciliation outcome HIDDEN_TEXT_ANOMALY with anomaly_kind DUPLICATE_VERBATIM or DIVERGENT",
+        "decision_procedure": "G4 always FAILs on hidden text. The verifier classifies the anomaly: DUPLICATE_VERBATIM -> REVIEW via PR-10 (named uncertainty U-HIDDEN-TEXT, not confirmable, never auto-ACCEPT); DIVERGENT -> REFUSE via PR-06 (deceptive divergence from the visible layer)."
+      },
+      "evaluation_cases": [
+        {
+          "case_id": "variant-poison-duplicate",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "PASS", "G4": "FAIL", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "HIDDEN_TEXT_ANOMALY", "anomaly_kind": "DUPLICATE_VERBATIM", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REVIEW",
+          "expected_fired_rule": "PR-10"
+        },
+        {
+          "case_id": "variant-true-poison",
+          "kind": "primary_ambiguous_reading",
+          "class": "TEXT_SINGLE_COLUMN",
+          "gates": { "G1": "PASS", "G2": "PASS", "G3": "PASS", "G4": "FAIL", "G5": "PASS", "G6": "PASS", "G7": "NOT_EXERCISED", "G8": "PASS", "G9": "PASS", "G10": "PASS" },
+          "recon": { "outcome": "HIDDEN_TEXT_ANOMALY", "anomaly_kind": "DIVERGENT", "plan_forced_review": false },
+          "confirmed": false,
+          "expected_disposition": "REFUSE",
+          "expected_fired_rule": "PR-06"
+        }
+      ],
+      "rationale": "Distinguishing poison-duplicate from true poison mechanically is exactly what G4's anomaly classification does; the protocol refuses to declare either variant harmless automatically. The kill condition 'the independent visual/text comparison cannot distinguish hidden-text poison' is satisfied because the comparison gates both variants out of ACCEPT, with the harsher outcome for divergence. Conservative freeze: verbatim duplicate -> REVIEW (never confirmable, never ACCEPT); divergent -> REFUSE."
+    }
+  ]
+}

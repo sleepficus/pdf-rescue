@@ -1,0 +1,619 @@
+{
+  "spec_version": "1.0.0",
+  "spec_id": "phase0-text-native-disposition-spec",
+  "date": "2026-09-29",
+  "lane": "01-protocol-disposition",
+  "authority_order": [
+    "inputs/FINAL-RECONCILIATION.md",
+    "ASSIGNMENT.md",
+    "inputs/MAIN-GLM-SYNTHESIS.md",
+    "remaining receipts under inputs/"
+  ],
+  "slice_scope": {
+    "in_scope": "text-native, unsigned, unencrypted, non-active PDFs; allowed tidy operations only; page count, page order, and page boundaries immutable",
+    "out_of_scope": "forms, scans/OCR, RTL/bidi, active content, encryption, signatures, XFA, reflow, summarization, paraphrase, row/column changes, field semantic changes, page regrouping",
+    "out_of_scope_handling": "refusal classes are refused at intake; out-of-scope content discovered after classification refuses via PR-04; no pipeline is defined for out-of-scope classes"
+  },
+
+  "gate_statuses": {
+    "PASS": "gate ran to completion with its independence requirement met and evidenced, and every mechanical check passed",
+    "FAIL": "gate ran to completion and at least one named mechanical check failed (check id recorded)",
+    "NOT_EXERCISED": "gate did not run: out of scope for the class, or a prerequisite was missing (no candidate, missing independence evidence, missing budget file); never counts as PASS",
+    "ERROR": "gate was attempted but could not produce a verdict (crash, verifier-side budget exhaustion, dependency failure); treated worse than FAIL",
+    "rules": [
+      "NOT_EXERCISED never counts as PASS",
+      "ERROR is treated worse than FAIL",
+      "a gate run without recorded independence evidence (lane 04 TOOLCHAIN.json) must be recorded NOT_EXERCISED, never PASS"
+    ],
+    "enum": ["PASS", "FAIL", "NOT_EXERCISED", "ERROR"]
+  },
+
+  "document_dispositions": {
+    "enum": ["ACCEPT", "REVIEW", "REFUSE", "NOT_VERIFIABLE"],
+    "ACCEPT": "all required checks passed and no unresolved material hypothesis",
+    "REVIEW": "a named content uncertainty requiring human inspection; never auto-accepted",
+    "REFUSE": "the pipeline cannot safely process the file under the frozen policy",
+    "NOT_VERIFIABLE": "a required content proof could not be performed",
+    "INVALID_EXPERIMENT": "run-level only; never returned by dispose(); see run_level"
+  },
+
+  "document_classes": {
+    "TEXT_SINGLE_COLUMN": {
+      "in_scope": true,
+      "description": "text-native single-column document",
+      "mechanical_classifier": "refusal scan clean AND table detector finds 0 tables AND multi-column detector negative",
+      "expected_intake_gate_statuses": "all gates run per class_gate_matrix"
+    },
+    "TEXT_MULTI_COLUMN": {
+      "in_scope": true,
+      "description": "text-native multi-column document",
+      "mechanical_classifier": "refusal scan clean AND 0 tables AND multi-column detector positive",
+      "expected_intake_gate_statuses": "all gates run per class_gate_matrix; G5 requires two-derivation agreement"
+    },
+    "TEXT_TABLE": {
+      "in_scope": true,
+      "description": "text-native document containing at least one table",
+      "mechanical_classifier": "refusal scan clean AND >=1 table detected (>=2 rows x >=2 columns sharing >=3 column x-boundaries and >=3 row y-boundaries, tolerance 2pt, adjacent-cell gaps < 36pt)",
+      "expected_intake_gate_statuses": "all gates run per class_gate_matrix including G7"
+    },
+    "REFUSE_ENCRYPTED": {
+      "in_scope": false,
+      "description": "encrypted PDF",
+      "mechanical_classifier": "/Encrypt in trailer or any security handler present",
+      "refusal_reason_family": "refuse/encrypted",
+      "handling": "REFUSE at intake before any build; no candidate; all gates recorded NOT_EXERCISED"
+    },
+    "REFUSE_SIGNED": {
+      "in_scope": false,
+      "description": "signed or certified PDF",
+      "mechanical_classifier": "any signature dictionary: FT=/Sig field, /DocMDP, /Perms /Signatures, or covered /ByteRange",
+      "refusal_reason_family": "refuse/signed",
+      "handling": "REFUSE at intake before any build; no candidate; all gates recorded NOT_EXERCISED"
+    },
+    "REFUSE_XFA": {
+      "in_scope": false,
+      "description": "XFA or hybrid XFA PDF",
+      "mechanical_classifier": "/AcroForm with /XFA key (including dynamic/hybrid)",
+      "refusal_reason_family": "refuse/xfa",
+      "handling": "REFUSE at intake before any build; no candidate; all gates recorded NOT_EXERCISED"
+    },
+    "REFUSE_ACTIVE": {
+      "in_scope": false,
+      "description": "PDF with active content or pending redactions",
+      "mechanical_classifier": "/JavaScript, /JS, /Launch, /EmbeddedFile, /GoToR, /GoToE (including /OpenAction, name trees, annotations) or pending /Redact annotations",
+      "refusal_reason_family": "refuse/active",
+      "handling": "REFUSE at intake before any build; no candidate; all gates recorded NOT_EXERCISED"
+    },
+    "BENIGN": {
+      "in_scope": true,
+      "description": "in-scope text-native control with an empty operation plan, proving the verifier is not over-strict",
+      "mechanical_classifier": "content classifier result is single-column-clean AND plan.operations == [] (verified at classification)",
+      "expected_intake_gate_statuses": "all gates run per class_gate_matrix with zero declared deltas"
+    },
+    "UNRESOLVED": {
+      "in_scope": false,
+      "description": "classifier failure outcome; required for totality; not among the eight fixture classes",
+      "mechanical_classifier": "any classifier precondition fails (parse failure, decode error, undeterminable layout)",
+      "handling": "NOT_VERIFIABLE via PR-00; never built"
+    }
+  },
+
+  "classifier_precedence": [
+    "1. refuse scans in order: REFUSE_ENCRYPTED, REFUSE_SIGNED, REFUSE_XFA, REFUSE_ACTIVE",
+    "2. parse/classification failure -> UNRESOLVED",
+    "3. table detected -> TEXT_TABLE",
+    "4. multi-column detected -> TEXT_MULTI_COLUMN",
+    "5. single-column clean -> BENIGN if plan.operations == [] else TEXT_SINGLE_COLUMN"
+  ],
+
+  "escalations": [
+    {
+      "id": "ESC-01",
+      "rule": "G7's detection pass runs on every in-scope class; a table detected in any class other than TEXT_TABLE, or a non-empty operation plan in a BENIGN document, sets reconciliation outcome CLASSIFIER_CONFLICT -> NOT_VERIFIABLE via PR-03"
+    }
+  ],
+
+  "class_gate_matrix": {
+    "TEXT_SINGLE_COLUMN": {
+      "G1": "REQUIRED", "G2": "REQUIRED", "G3": "REQUIRED", "G4": "REQUIRED",
+      "G5": "REQUIRED", "G6": "REQUIRED", "G7": "OUT_OF_SCOPE",
+      "G8": "REQUIRED", "G9": "REQUIRED", "G10": "REQUIRED"
+    },
+    "TEXT_MULTI_COLUMN": {
+      "G1": "REQUIRED", "G2": "REQUIRED", "G3": "REQUIRED", "G4": "REQUIRED",
+      "G5": "REQUIRED", "G6": "REQUIRED", "G7": "OUT_OF_SCOPE",
+      "G8": "REQUIRED", "G9": "REQUIRED", "G10": "REQUIRED"
+    },
+    "TEXT_TABLE": {
+      "G1": "REQUIRED", "G2": "REQUIRED", "G3": "REQUIRED", "G4": "REQUIRED",
+      "G5": "REQUIRED", "G6": "REQUIRED", "G7": "REQUIRED",
+      "G8": "REQUIRED", "G9": "REQUIRED", "G10": "REQUIRED"
+    },
+    "BENIGN": {
+      "G1": "REQUIRED", "G2": "REQUIRED", "G3": "REQUIRED", "G4": "REQUIRED",
+      "G5": "REQUIRED", "G6": "REQUIRED", "G7": "OUT_OF_SCOPE",
+      "G8": "REQUIRED", "G9": "REQUIRED", "G10": "REQUIRED"
+    },
+    "REFUSE_ENCRYPTED": {
+      "G1": "NOT_REQUIRED", "G2": "OUT_OF_SCOPE", "G3": "OUT_OF_SCOPE",
+      "G4": "OUT_OF_SCOPE", "G5": "OUT_OF_SCOPE", "G6": "OUT_OF_SCOPE",
+      "G7": "OUT_OF_SCOPE", "G8": "NOT_REQUIRED", "G9": "OUT_OF_SCOPE",
+      "G10": "OUT_OF_SCOPE"
+    },
+    "REFUSE_SIGNED": {
+      "G1": "NOT_REQUIRED", "G2": "OUT_OF_SCOPE", "G3": "OUT_OF_SCOPE",
+      "G4": "OUT_OF_SCOPE", "G5": "OUT_OF_SCOPE", "G6": "OUT_OF_SCOPE",
+      "G7": "OUT_OF_SCOPE", "G8": "NOT_REQUIRED", "G9": "OUT_OF_SCOPE",
+      "G10": "OUT_OF_SCOPE"
+    },
+    "REFUSE_XFA": {
+      "G1": "NOT_REQUIRED", "G2": "OUT_OF_SCOPE", "G3": "OUT_OF_SCOPE",
+      "G4": "OUT_OF_SCOPE", "G5": "OUT_OF_SCOPE", "G6": "OUT_OF_SCOPE",
+      "G7": "OUT_OF_SCOPE", "G8": "NOT_REQUIRED", "G9": "OUT_OF_SCOPE",
+      "G10": "OUT_OF_SCOPE"
+    },
+    "REFUSE_ACTIVE": {
+      "G1": "NOT_REQUIRED", "G2": "OUT_OF_SCOPE", "G3": "OUT_OF_SCOPE",
+      "G4": "OUT_OF_SCOPE", "G5": "OUT_OF_SCOPE", "G6": "OUT_OF_SCOPE",
+      "G7": "OUT_OF_SCOPE", "G8": "NOT_REQUIRED", "G9": "OUT_OF_SCOPE",
+      "G10": "OUT_OF_SCOPE"
+    },
+    "UNRESOLVED": {
+      "G1": "OUT_OF_SCOPE", "G2": "OUT_OF_SCOPE", "G3": "OUT_OF_SCOPE",
+      "G4": "OUT_OF_SCOPE", "G5": "OUT_OF_SCOPE", "G6": "OUT_OF_SCOPE",
+      "G7": "OUT_OF_SCOPE", "G8": "OUT_OF_SCOPE", "G9": "OUT_OF_SCOPE",
+      "G10": "OUT_OF_SCOPE"
+    }
+  },
+
+  "gate_requirement_semantics": {
+    "REQUIRED": "must run; PASS required for ACCEPT; FAIL/NOT_EXERCISED/ERROR block ACCEPT per the precedence rules",
+    "NOT_REQUIRED": "may run and is recorded; does not constrain this class's disposition by itself",
+    "OUT_OF_SCOPE": "does not apply to this class; expected NOT_EXERCISED; ignored by the disposition function"
+  },
+
+  "gate_registry": {
+    "G1": {
+      "name": "source hash/inventory",
+      "checks": [
+        "SHA-256 of the immutable original re-verified at disposition time equals the intake record",
+        "raw object inventory (object count, page-tree nodes, per-page object refs) computed by the verifier parser equals the intake record"
+      ],
+      "fail_condition": "any mismatch (original mutated)",
+      "independence": "system sha256 utility plus the verifier's own parser; never the builder's writer or report"
+    },
+    "G2": {
+      "name": "page geometry reconciliation",
+      "checks": [
+        "page count identical",
+        "page order identical: pages outside every declared operation scope have identical normalized-text fingerprints; the plan's page mapping is the identity mapping",
+        "MediaBox and CropBox identical per page",
+        "/Rotate identical except where a declared PAGE_ROTATE_REVIEW op covers it (recorded as expected delta; forces REVIEW via PR-12)"
+      ],
+      "fail_condition": "any page count, page order, or box difference not covered by a declared PAGE_ROTATE_REVIEW delta",
+      "independence": "verifier's independent extractor computes geometry; not the builder"
+    },
+    "G3": {
+      "name": "text identity under normalization whitelist",
+      "checks": [
+        "per reading-order element, ordered token sequence equality under whitelist N-01..N-03 plus declared HYPHENATION_JOIN ops",
+        "per-page numeric lexeme sequences exactly equal (zero normalization)",
+        "per-page token multisets equal modulo declared deltas"
+      ],
+      "fail_condition": "any token or numeric lexeme difference outside the whitelist and outside declared deltas",
+      "independence": "second extractor of different lineage from the builder's writer and from the builder's planning-time extractor"
+    },
+    "G4": {
+      "name": "visible-layer vs text-layer agreement (incl. hidden-text poison detection)",
+      "checks": [
+        "every material text-layer token has visible ink at its span region (independent render)",
+        "no visible material glyph sequence lacks a text-layer counterpart",
+        "hidden-text detection: text-layer tokens with no ink at their location are anomalies, classified DUPLICATE_VERBATIM (identical to the overlapped visible sequence) or DIVERGENT"
+      ],
+      "fail_condition": "any anomaly or visible/text mismatch",
+      "independence": "independent renderer plus verifier extractor; not the builder's layout engine"
+    },
+    "G5": {
+      "name": "reading order/hierarchy validity",
+      "checks": [
+        "element sequence identity (page, type, level, normalized anchor tokens, ordinal) modulo declared READING_ORDER_SET ops",
+        "heading hierarchy validity: first heading level 1; each subsequent heading level <= previous heading level + 1",
+        "two independent reading-order derivations (layout-based and structure/tag-based, different tools) agree on the candidate wherever both are derivable"
+      ],
+      "fail_condition": "derivation disagreement, invalid hierarchy, or undeclared element change",
+      "independence": "two independent derivations from different tool lineages"
+    },
+    "G6": {
+      "name": "navigation integrity (bookmarks/outline/TOC/internal links)",
+      "checks": [
+        "every source navigation target preserved with identical resolved destination (page index + coordinates within 1.0pt) and title/anchor text equal under the whitelist",
+        "every added/repaired target declared in the plan, resolves (no dangling), and its destination was independently established by the verifier",
+        "zero undeclared targets"
+      ],
+      "fail_condition": "lost target, dangling destination, undeclared target, or title change outside the whitelist",
+      "independence": "navigation read by the verifier's independent parser"
+    },
+    "G7": {
+      "name": "table cell identity + numeric lexeme identity",
+      "checks": [
+        "identity-set bijection of (table_id, row_anchor, column_anchor) between source and candidate",
+        "cell content equality: whitelist for non-numeric token text, exact string equality for numeric lexemes",
+        "row/column order, spans, header relationships, and external unit declarations preserved",
+        "arithmetic divergence computed and reported, never corrected; divergence alone is not a failure"
+      ],
+      "fail_condition": "any cell identity, lexeme, order, span, or anchor change outside declared ops (no op may alter cells or numeric lexemes)",
+      "independence": "verifier's own table detector, extractor, and numeric lexer"
+    },
+    "G8": {
+      "name": "active-content/refusal scan",
+      "checks": [
+        "raw-byte and parsed-object scan of source and candidate for /Encrypt; signature dictionaries; /XFA; /JavaScript, /JS, /Launch, /EmbeddedFile, /GoToR, /GoToE (including /OpenAction, name trees, annotations); pending /Redact annotations"
+      ],
+      "fail_condition": "any listed construct present",
+      "independence": "verifier's own raw-object scan; never the builder's classification report"
+    },
+    "G9": {
+      "name": "resource budget + no-network observation",
+      "checks": [
+        "measured page count, object count, byte size, decoded pixel count, CPU time, wall time, temp storage, output size within lane 05 BUDGETS.json values",
+        "no-network evidence: no socket use during the pipeline, observed by the harness"
+      ],
+      "fail_condition": "budget exceeded or network use observed",
+      "not_ready_note": "budget VALUES are frozen by lane 05; if BUDGETS.json or harness observation is unavailable, G9 is NOT_EXERCISED",
+      "independence": "harness/OS-level measurement; never builder self-report"
+    },
+    "G10": {
+      "name": "independent-render visual/ink accounting",
+      "checks": [
+        "independent renderer renders source and candidate at 150 DPI",
+        "per-page ink coverage recorded",
+        "pixel-diff regions computed; each region explained by a whitelisted effect or a declared expected-delta region, else material visual difference"
+      ],
+      "frozen_constants": {
+        "render_dpi": 150,
+        "diff_region_min_bbox_px": [8, 8],
+        "aggregate_unexplained_area_fraction_max": 0.005
+      },
+      "fail_condition": "any material visual difference (see material_elements.material_visual_difference)",
+      "independence": "renderer of different lineage from the builder's writer and from the primary extractor"
+    }
+  },
+
+  "independence": {
+    "definition": "mechanical, not declared: for a gate to count as independent, the verifying tool (a) is not the builder's writer library and does not share its decisive code path for that computation, (b) is never invoked through builder APIs for that computation, and (c) is evidenced in lane 04 TOOLCHAIN.json",
+    "evidence_record": "lanes/04-dependencies-independence/TOOLCHAIN.json",
+    "fallback": "a gate run without recorded independence evidence must be recorded NOT_EXERCISED, never PASS"
+  },
+
+  "material_elements": {
+    "text_token": {
+      "definition": "maximal run of non-whitespace characters as segmented by the verifier extractor at frozen settings",
+      "identity": "normalized string (whitelist N-01..N-03) at its position in the containing reading-order element",
+      "mechanical_test": "ordered token sequence equality per element plus per-page token multiset equality, modulo declared deltas",
+      "material": "any difference outside the whitelist and outside declared deltas"
+    },
+    "numeric_lexeme": {
+      "definition": "maximal run of characters from [0-9 . , + - ( ) % / : $ € £ ¥] containing at least one digit",
+      "identity": "exact displayed string, character for character; leading zeros, precision, signs, parentheses, currency, percent, dates, times are part of identity",
+      "normalization": "none; no normalization ever applies to numeric lexemes",
+      "mechanical_test": "per-page ordered sequence of lexemes exactly equal between source and candidate",
+      "material": "any difference (string, count, or order); no operation may declare a delta over numeric lexemes"
+    },
+    "table_cell": {
+      "definition": "cell of a detected table",
+      "identity": "(table_id, row_anchor, column_anchor); table_id = (page_index, detection_order); row_anchor = exact normalized text of the row's leftmost cell; column_anchor = exact normalized text of the column's header cell",
+      "mechanical_test": "identity-set bijection source vs candidate plus per-cell content equality (whitelist for non-numeric, exact for numeric lexemes), preserving row/column order, spans, header relationships, external unit declarations",
+      "material": "any identity or content change; arithmetic divergence is reported, never corrected, and never a failure by itself"
+    },
+    "reading_order_element": {
+      "definition": "block unit: heading (explicit level), paragraph, list item, notice, caption, figure region, table region, header instance, footer instance",
+      "identity": "(page, type, level?, normalized anchor-token sequence, ordinal among same-type elements on the page)",
+      "mechanical_test": "element sequence identical source vs candidate modulo declared deltas; heading hierarchy valid: first heading level 1, each subsequent heading level <= previous heading level + 1",
+      "material": "any undeclared change to the sequence or hierarchy"
+    },
+    "navigation_target": {
+      "definition": "outline/bookmark item, TOC entry, or internal link",
+      "identity": "(kind, resolved destination page index, destination coordinates within 1.0pt, title/anchor text under the whitelist)",
+      "mechanical_test": "bijection source vs candidate after declared adds/repairs; zero dangling destinations; every added/repaired target declared and independently resolved",
+      "material": "lost target, dangling destination, undeclared target, or title change outside the whitelist"
+    },
+    "visible_ink": {
+      "definition": "rendered marks on the page, measured from an independent render",
+      "mechanical_test": "every material text-layer token has visible ink at its span region; ink differences beyond declared deltas are material",
+      "material": "ink absence for a material token, or ink change outside declared deltas"
+    },
+    "material_visual_difference": {
+      "definition": "a connected pixel-difference region between independent renders of source and candidate at 150 DPI whose bounding box exceeds 8x8 px, or aggregate unexplained diff area exceeding 0.5% of page area, attributable neither to a whitelisted normalization effect nor to a declared expected-delta region",
+      "constants": { "render_dpi": 150, "region_min_bbox_px": [8, 8], "aggregate_area_fraction_max": 0.005 }
+    }
+  },
+
+  "normalization_whitelist": {
+    "statement": "the exact finite list of text normalizations that are NOT material changes; everything not listed is material",
+    "entries": [
+      {
+        "id": "N-01",
+        "rule": "collapse any maximal run of horizontal whitespace characters (U+0009, U+0020) to a single U+0020"
+      },
+      {
+        "id": "N-02",
+        "rule": "strip runs of U+0009/U+0020 at the start and end of a line"
+      },
+      {
+        "id": "N-03",
+        "rule": "join a declared line-end hyphenation: 'x-' + line break + 'y' -> 'xy', only for hyphen U+002D, only where declared as a HYPHENATION_JOIN operation"
+      }
+    ],
+    "material_by_exclusion_examples": [
+      "case folding",
+      "dash variants (– — ‐ ‑ vs -)",
+      "quote variants (' ' \" \" vs ' \")",
+      "currency symbol variants",
+      "whitespace-to-nothing, including removing a line break or joining lines (line breaks inside a reading-order element are material; reflow is out of Phase 0)",
+      "any reordering",
+      "any numeric lexeme change",
+      "any glyph substitution that is not a declared glyph-verified typography operation"
+    ]
+  },
+
+  "operations": {
+    "allowed_operations": [
+      "OP_SPACING_NORMALIZE",
+      "OP_ALIGNMENT_NORMALIZE",
+      "OP_TYPOGRAPHY_SUBSTITUTION",
+      "OP_HYPHENATION_JOIN",
+      "OP_HEADER_FOOTER_NORMALIZATION",
+      "OP_STRUCTURE_TAGS",
+      "OP_READING_ORDER",
+      "OP_BOOKMARKS",
+      "OP_LINK_REPAIR",
+      "OP_PAGE_ROTATE"
+    ],
+    "delta_types": [
+      "SPACING_COLLAPSE",
+      "LINE_END_WHITESPACE_STRIP",
+      "ALIGNMENT_SHIFT",
+      "GLYPH_SUBSTITUTION",
+      "HYPHENATION_JOIN",
+      "HEADER_FOOTER_INSTANCE_NORMALIZATION",
+      "STRUCTURE_TAG_ADD",
+      "READING_ORDER_SET",
+      "BOOKMARK_ADD",
+      "BOOKMARK_DEST_REPAIR",
+      "LINK_DEST_REPAIR",
+      "PAGE_ROTATE_REVIEW"
+    ],
+    "forced_review_operations": ["PAGE_ROTATE_REVIEW"],
+    "expected_delta_rule": {
+      "declaration": "every planned operation declares {op_type, anchor (page/element/region ids), expected_delta {type in delta_types, scope {pages, element_ids}, bounded magnitude {max_affected_tokens, max_affected_regions, max_affected_area_fraction}}}",
+      "reconciliation": "the verifier reconciles observed vs expected; every observed material delta must be covered by a declared delta of matching type and scope within bounds; undeclared material deltas fail",
+      "glyph_verification": "GLYPH_SUBSTITUTION requires the substituted glyph to be independently extracted back as the intended character and its rendered ink to match the intended character shape within the declared region; it may never apply to a numeric lexeme",
+      "header_footer_scope": "HEADER_FOOTER_INSTANCE_NORMALIZATION scope is per detected instance only; a page lacking the repeated instance is never modified",
+      "numeric_protection": "no delta type may cover numeric lexemes; an observed numeric lexeme change is UNDECLARED_MATERIAL_DELTA; a declared attempt is PLAN_ILLEGAL; both REFUSE"
+    }
+  },
+
+  "reconciliation": {
+    "structure": {
+      "outcome": "one of reconciliation_outcomes",
+      "anomaly_kind": "optional: DUPLICATE_VERBATIM | DIVERGENT (with outcome HIDDEN_TEXT_ANOMALY)",
+      "plan_forced_review": "boolean: the plan contains a forced-review operation (PAGE_ROTATE_REVIEW)",
+      "undeclared_delta_types": "optional list of observed undeclared delta types",
+      "confirmed_uncertainty_ids": "replay path only; empty and unused in this run"
+    },
+    "outcomes": {
+      "RECONCILED": "all observed deltas declared, in scope, within bounds; plan legal",
+      "UNDECLARED_MATERIAL_DELTA": "an observed material delta has no covering declared delta",
+      "OUT_OF_BOUNDS": "an observed delta is declared but exceeds its declared magnitude bounds",
+      "PLAN_ILLEGAL": "the plan contains an operation outside the allowed set, an op targeting numeric lexemes, or a missing anchor/delta field",
+      "HIDDEN_TEXT_ANOMALY": "G4 found hidden text; anomaly_kind is DUPLICATE_VERBATIM or DIVERGENT",
+      "CLASSIFIER_CONFLICT": "ESC-01 fired: classifier and verifier disagree (table outside TEXT_TABLE, or non-empty plan in BENIGN)",
+      "RECONCILIATION_NOT_RUN": "the reconciliation step did not run"
+    }
+  },
+
+  "evaluation_dsl": {
+    "context": {
+      "class": "one of document_classes keys",
+      "gates": "map G1..G10 -> one of gate_statuses enum",
+      "recon": { "outcome": "one of reconciliation outcomes", "anomaly_kind": "optional", "plan_forced_review": "boolean" },
+      "confirmed": "boolean: the forced-review uncertainty U-FORCED-REVIEW-OP is human-confirmed (replay path only; false in this run)"
+    },
+    "atoms": {
+      "else": "always true (totality fallback; must be the last rule)",
+      "class_in": "context class is in the given list",
+      "gate_status_in": "the named gate's status is in the given status list",
+      "any_required_gate_status_in": "some gate REQUIRED for the class has a status in the given list",
+      "all_required_gate_statuses_in": "every gate REQUIRED for the class has a status in the given list",
+      "recon_outcome_in": "reconciliation outcome is in the given list",
+      "recon_anomaly_kind_in": "reconciliation anomaly_kind is in the given list",
+      "plan_forced_review_unconfirmed": "recon.plan_forced_review is true AND confirmed is false"
+    },
+    "combinators": ["all_of", "any_of", "not"],
+    "evaluation": "rules are evaluated in list order; the first rule whose condition evaluates true determines the disposition and the fired rule id; the last rule must be the else fallback"
+  },
+
+  "precedence_rules": [
+    {
+      "id": "PR-00",
+      "when": { "class_in": ["UNRESOLVED"] },
+      "disposition": "NOT_VERIFIABLE",
+      "rationale": "cannot classify, cannot verify"
+    },
+    {
+      "id": "PR-01",
+      "when": { "class_in": ["REFUSE_ENCRYPTED", "REFUSE_SIGNED", "REFUSE_XFA", "REFUSE_ACTIVE"] },
+      "disposition": "REFUSE",
+      "rationale": "refusal conditions are checked first; no candidate exists; gate statuses irrelevant"
+    },
+    {
+      "id": "PR-02",
+      "when": { "gate_status_in": { "gate": "G1", "statuses": ["FAIL", "ERROR"] } },
+      "disposition": "NOT_VERIFIABLE",
+      "rationale": "the original's identity is unproven; no comparison is meaningful"
+    },
+    {
+      "id": "PR-03",
+      "when": { "recon_outcome_in": ["CLASSIFIER_CONFLICT"] },
+      "disposition": "NOT_VERIFIABLE",
+      "rationale": "ESC-01: the class model is untrusted"
+    },
+    {
+      "id": "PR-04",
+      "when": { "gate_status_in": { "gate": "G8", "statuses": ["FAIL"] } },
+      "disposition": "REFUSE",
+      "rationale": "active/protected content discovered after classification"
+    },
+    {
+      "id": "PR-05",
+      "when": { "gate_status_in": { "gate": "G2", "statuses": ["FAIL"] } },
+      "disposition": "REFUSE",
+      "rationale": "immutable page invariants (count, order, boundaries) changed; never human-resolvable in Phase 0"
+    },
+    {
+      "id": "PR-06",
+      "when": {
+        "all_of": [
+          { "gate_status_in": { "gate": "G4", "statuses": ["FAIL"] } },
+          { "recon_anomaly_kind_in": ["DIVERGENT"] }
+        ]
+      },
+      "disposition": "REFUSE",
+      "rationale": "true hidden-text poison: hidden text diverges from the visible layer"
+    },
+    {
+      "id": "PR-07",
+      "when": { "recon_outcome_in": ["UNDECLARED_MATERIAL_DELTA", "OUT_OF_BOUNDS", "PLAN_ILLEGAL"] },
+      "disposition": "REFUSE",
+      "rationale": "the worst material element governs: any undeclared material delta, exceeded bound, or illegal operation refuses the candidate; no allowed operation may touch numeric lexemes"
+    },
+    {
+      "id": "PR-08",
+      "when": { "any_required_gate_status_in": ["NOT_EXERCISED", "ERROR"] },
+      "disposition": "NOT_VERIFIABLE",
+      "rationale": "a required proof could not be performed; blocks ACCEPT and is worse than REVIEW"
+    },
+    {
+      "id": "PR-09",
+      "when": { "gate_status_in": { "gate": "G5", "statuses": ["FAIL"] } },
+      "disposition": "REVIEW",
+      "rationale": "named uncertainty U-READING-ORDER: independent reading-order derivations disagree or hierarchy invalid; human-inspectable, never auto-ACCEPT"
+    },
+    {
+      "id": "PR-10",
+      "when": {
+        "all_of": [
+          { "gate_status_in": { "gate": "G4", "statuses": ["FAIL"] } },
+          { "not": { "recon_anomaly_kind_in": ["DIVERGENT"] } }
+        ]
+      },
+      "disposition": "REVIEW",
+      "rationale": "named uncertainty U-HIDDEN-TEXT: hidden text duplicating visible text verbatim cannot be mechanically declared harmless"
+    },
+    {
+      "id": "PR-11",
+      "when": {
+        "any_of": [
+          { "gate_status_in": { "gate": "G3", "statuses": ["FAIL"] } },
+          { "gate_status_in": { "gate": "G6", "statuses": ["FAIL"] } },
+          { "gate_status_in": { "gate": "G7", "statuses": ["FAIL"] } },
+          { "gate_status_in": { "gate": "G10", "statuses": ["FAIL"] } }
+        ]
+      },
+      "disposition": "REFUSE",
+      "rationale": "definite material text, navigation, table, or visible-ink failure; not resolvable into acceptance"
+    },
+    {
+      "id": "PR-12",
+      "when": { "plan_forced_review_unconfirmed": true },
+      "disposition": "REVIEW",
+      "rationale": "policy-forced review operation (PAGE_ROTATE_REVIEW) present and unconfirmed; confirmable via U-FORCED-REVIEW-OP on the replay path"
+    },
+    {
+      "id": "PR-13",
+      "when": {
+        "all_of": [
+          { "all_required_gate_statuses_in": ["PASS"] },
+          { "recon_outcome_in": ["RECONCILED"] },
+          { "not": { "plan_forced_review_unconfirmed": true } }
+        ]
+      },
+      "disposition": "ACCEPT",
+      "rationale": "all required checks passed and no unresolved material hypothesis"
+    },
+    {
+      "id": "PR-14",
+      "when": { "else": true },
+      "disposition": "NOT_VERIFIABLE",
+      "rationale": "totality fallback; the protocol never defaults to ACCEPT"
+    }
+  ],
+
+  "human_confirm_replay": {
+    "run_status": "NOT_EXERCISED",
+    "note": "this run never exercises human confirmation; no disposition in this run may depend on a CONFIRM record",
+    "uncertainties": [
+      {
+        "id": "U-FORCED-REVIEW-OP",
+        "raised_by": "PR-12",
+        "confirmable": true,
+        "confirm_resolves": "human authorization of the named review-required operation (PAGE_ROTATE_REVIEW) for this document, recorded with decision, identity, timestamp",
+        "replay_effect": "PR-12 does not fire; disposition recomputed by the same precedence list; ACCEPT possible via PR-13 only if all required gates PASS and reconciliation is RECONCILED",
+        "may_never": [
+          "convert any FAIL, NOT_EXERCISED, or ERROR gate status into a pass",
+          "alter, delete, or recompute any gate record",
+          "make an out-of-scope or refused class in-scope",
+          "apply to any meaning-preservation gate failure"
+        ]
+      },
+      {
+        "id": "U-READING-ORDER",
+        "raised_by": "PR-09",
+        "confirmable": false,
+        "reason": "G5 FAIL is meaning-preservation evidence; CONFIRM may never convert it"
+      },
+      {
+        "id": "U-HIDDEN-TEXT",
+        "raised_by": "PR-06 / PR-10",
+        "confirmable": false,
+        "reason": "G4 FAIL is meaning-preservation evidence; CONFIRM may never convert it; the REVIEW disposition remains REVIEW even after a confirmation attempt"
+      }
+    ]
+  },
+
+  "visible_improvement": {
+    "rule": "at least one supported fixture with disposition ACCEPT must be observably improved, judged by verifier-computed pre-declared criteria; visual improvement is never an acceptance gate and can never override a failed meaning-preservation gate",
+    "criteria": [
+      {
+        "id": "VC-1",
+        "name": "whitespace anomaly reduction",
+        "test": "count of horizontal-whitespace runs of length >= 2 in extracted text decreases, and is 0 on declared pages where SPACING_COLLAPSE was applied"
+      },
+      {
+        "id": "VC-2",
+        "name": "alignment variance reduction",
+        "test": "population variance of left-edge x-coordinates of body text span origins decreases within the declared alignment scope by at least the declared bound"
+      },
+      {
+        "id": "VC-3",
+        "name": "navigation gain",
+        "test": "where BOOKMARK_ADD was declared and the source outline was empty or incomplete, the candidate outline resolves >= 1 bookmark per top-level heading"
+      }
+    ],
+    "non_gating": true
+  },
+
+  "run_level": {
+    "INVALID_EXPERIMENT": {
+      "never_a_document_disposition": true,
+      "triggers": [
+        "sealed inputs or fixtures modified (hash mismatch)",
+        "a verifier repairing the candidate it evaluates",
+        "a gate status recorded without required independence evidence",
+        "the holdout opened before protocol freeze",
+        "any disposition derived outside this spec"
+      ],
+      "effect": "run-level flag overrides the run summary only; document records remain as computed"
+    }
+  }
+}
